@@ -1,0 +1,127 @@
+
+server:
+  servlet:
+    context-path: /${SANDBOX_NAME}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+spring:
+  main:
+    allow-circular-references: true
+    allow-bean-definition-overriding: true
+  flyway:
+    enabled: false
+    check-location: false
+    baselineOnMigrate: true
+  datasource:
+    url: jdbc:postgresql://db:5432/hapi
+    username: admin
+    password: admin
+    driverClassName: org.postgresql.Driver
+    max-active: 15
+
+    # database connection pool size
+    hikari:
+      maximum-pool-size: 10
+  jpa:
+    properties:
+      hibernate.format_sql: false
+      hibernate.show_sql: false
+      hibernate.dialect: ca.uhn.fhir.jpa.model.dialect.HapiFhirPostgresDialect
+      hibernate.search.enabled: true
+
+hapi:
+  fhir:
+    openapi_enabled: true
+    fhir_version: ${FHIR_VERSION}
+    allowed_bundle_types: COLLECTION,DOCUMENT,MESSAGE,TRANSACTION,TRANSACTIONRESPONSE,BATCH,BATCHRESPONSE,HISTORY,SEARCHSET
+    allow_cascading_deletes: true
+    allow_contains_searches: true
+#    allow_external_references: true
+    allow_multiple_delete: true
+    allow_override_default_search_params: true
+    auto_create_placeholder_reference_targets: false
+    #    cql_enabled: true
+    ips_enabled: false
+ #   advanced_lucene_indexing: false
+    language_search_parameter_enabled: true
+    #default_encoding: JSON
+    #default_pretty_print: true
+    #    default_page_size: 20
+    #    delete_expunge_enabled: true
+ #   enable_repository_validating_interceptor: false
+    enable_index_missing_fields: true
+    enable_index_of_type: true
+    enable_index_contained_resource: true
+#    implementationguides:
+#      mpd:
+#        name: hl7.fhir.eu.r5.mpd
+#        version: 0.1.0
+#        package-url: https://build.fhir.org/ig/hl7-eu/mpd/branches/r5/package.tgz
+#        install-mode: STORE_AND_INSTALL
+#      imaging:
+#        name: hl7.fhir.eu.imaging-r5
+#        version: 0.1.0-ballot
+#        package-url: https://build.fhir.org/ig/hl7-eu/imaging/branches/connecthaton39/package.tgz
+#        install-mode: STORE_AND_INSTALL
+#      ihe_mpd:
+#        name: ihe.pharm.mpd
+#        version: 1.0.0-comment
+#        package-url: https://profiles.ihe.net/PHARM/MPD/1.0.0-comment/package.tgz
+#        install-mode: STORE_AND_INSTALL
+#    remote_terminology_service:
+#      all:
+#        system: '*'
+#        url: 'https://tx.hl7europe.eu/r5/'
+
+#    enable_repository_validating_interceptor: true
+    use_apache_address_strategy: true
+    use_apache_address_strategy_https: true
+
+    custom_content_path: /custom
+    app_content_path: /apps
+  #  allow_contains_searches: true
+    allow_external_references: true
+    default_encoding: JSON
+    default_pretty_print: true
+    default_page_size: 10
+    client_id_strategy: ALPHANUMERIC
+  #  filter_search_enabled: true
+    narrative_enabled: true
+    cors:
+      allow_Credentials: true
+      # These are allowed_origin patterns, see: https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/cors/CorsConfiguration.html#setAllowedOriginPatterns-java.util.List-
+      allowed_origin:
+        - '*'
+
+    # Search coordinator thread pool sizes
+    search-coord-core-pool-size: 20
+    search-coord-max-pool-size: 100
+    search-coord-queue-capacity: 200
+    tester:
+      home:
+        name: Local Tester
+        server_address: ${HOSTNAME}${SANDBOX_NAME}/fhir
+        refuse_to_fetch_third_party_urls: false
+        fhir_version: ${FHIR_VERSION}
+
+      global:
+        name: Global Tester
+        server_address: "https://hapi.fhir.org/base${FHIR_VERSION}"
+        refuse_to_fetch_third_party_urls: false
+        fhir_version: ${FHIR_VERSION}
+
+#    subscription:
+#        resthook_enabled: false
+    subscription:
+      resthook_enabled: true
+      websocket_enabled: false
+      email:
+        from: some@test.com
+        host: google.com
+        port: 8080
+        username: jfca
+        password: jfca
