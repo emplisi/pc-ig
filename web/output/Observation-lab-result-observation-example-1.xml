@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="lab-result-observation-example-1"/>
+  <meta>
+    <profile value="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/lab-result-observation"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation lab-result-observation-example-1</b></p><a name="lab-result-observation-example-1"> </a><a name="hclab-result-observation-example-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-lab-result-observation.html">Lab Result</a></p></div><p><b>Lab test reference</b>: <a href="Basic-lab-test-example-1.html">Basic Chemistry lab test</a></p><p><b>Lab result patient reference</b>: <a href="Patient-ExamplePatientTransplant1.html">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/lab-result-id</code>/LR0001</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 2160-0}">Creatinine [Mass/volume] in Serum or Plasma</span></p><p><b>effective</b>: 2023-09-02 09:15:00+0100</p><p><b>value</b>: 1.2 mg/dL<span style="background: LightGoldenRodYellow"> (Details: Lab Result Unit CodeSystem  codemg_per_dL = 'mg/dL')</span></p><p><b>interpretation</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}">High</span></p><p><b>specimen</b>: <a href="Specimen-biosample-example-1.html">Specimen: extension = 2025-01-20,-&gt;Basic Exome sequencing,-&gt;Basic Methylation array epigenome study,-&gt;Basic Locus-level methylomic record,35.2; identifier = http://example.org/fhir/NamingSystem/bio-sample-id#BS0001; type = Blood</a></p></div>
+  </text>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/lab-result-labtest-ref">
+    <valueReference>
+      <reference value="Basic/lab-test-example-1"/>
+    </valueReference>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/lab-result-patient-ref">
+    <valueReference>
+      <reference value="Patient/ExamplePatientTransplant1"/>
+    </valueReference>
+  </extension>
+  <identifier>
+    <system value="http://example.org/fhir/NamingSystem/lab-result-id"/>
+    <value value="LR0001"/>
+  </identifier>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="Laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="2160-0"/>
+      <display value="Creatinine [Mass/volume] in Serum or Plasma"/>
+    </coding>
+  </code>
+  <effectiveDateTime value="2023-09-02T09:15:00+01:00"/>
+  <valueQuantity>
+    <value value="1.2"/>
+    <unit value="mg/dL"/>
+    <system value="http://example.org/fhir/CodeSystem/lab-result-unit"/>
+    <code value="mg_per_dL"/>
+  </valueQuantity>
+  <interpretation>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+      <code value="H"/>
+      <display value="High"/>
+    </coding>
+  </interpretation>
+  <specimen>
+    <reference value="Specimen/biosample-example-1"/>
+  </specimen>
+</Observation>

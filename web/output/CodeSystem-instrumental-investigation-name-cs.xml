@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="instrumental-investigation-name-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem instrumental-investigation-name-cs</b></p><a name="instrumental-investigation-name-cs"> </a><a name="hcinstrumental-investigation-name-cs"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/instrumental-investigation-name</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">718078008<a name="instrumental-investigation-name-cs-718078008"> </a></td><td>Liver doppler ultrasound</td></tr><tr><td style="white-space:nowrap">4061009<a name="instrumental-investigation-name-cs-4061009"> </a></td><td>Abdominal CT scan</td></tr><tr><td style="white-space:nowrap">4083230<a name="instrumental-investigation-name-cs-4083230"> </a></td><td>Abdominal MRI</td></tr><tr><td style="white-space:nowrap">4194588<a name="instrumental-investigation-name-cs-4194588"> </a></td><td>MRCP</td></tr><tr><td style="white-space:nowrap">37311324<a name="instrumental-investigation-name-cs-37311324"> </a></td><td>Brain MRI</td></tr><tr><td style="white-space:nowrap">4169785<a name="instrumental-investigation-name-cs-4169785"> </a></td><td>AngioTC</td></tr><tr><td style="white-space:nowrap">4299523<a name="instrumental-investigation-name-cs-4299523"> </a></td><td>Angiography</td></tr><tr><td style="white-space:nowrap">4181917<a name="instrumental-investigation-name-cs-4181917"> </a></td><td>EEG</td></tr><tr><td style="white-space:nowrap">36308175<a name="instrumental-investigation-name-cs-36308175"> </a></td><td>ECG</td></tr><tr><td style="white-space:nowrap">4167052<a name="instrumental-investigation-name-cs-4167052"> </a></td><td>Kidney doppler ultrasound</td></tr><tr><td style="white-space:nowrap">36713614<a name="instrumental-investigation-name-cs-36713614"> </a></td><td>Total body CT scan</td></tr><tr><td style="white-space:nowrap">scintigraphy<a name="instrumental-investigation-name-cs-scintigraphy"> </a></td><td>Scintigraphy</td></tr><tr><td style="white-space:nowrap">mcug<a name="instrumental-investigation-name-cs-mcug"> </a></td><td>Micturating Cystourethrogram (MCUG)</td></tr><tr><td style="white-space:nowrap">pet<a name="instrumental-investigation-name-cs-pet"> </a></td><td>PET</td></tr></table></div>
+  </text>
+  <url value="http://example.org/fhir/CodeSystem/instrumental-investigation-name"/>
+  <version value="0.1.0"/>
+  <name value="InstrumentalInvestigationNameCS"/>
+  <title value="Instrumental Investigation Name"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-12-09T16:44:49+01:00"/>
+  <publisher value="Your Organization"/>
+  <contact>
+    <name value="Your Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://example.org"/>
+    </telecom>
+  </contact>
+  <description value="Types of instrumental investigation tests conducted."/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="14"/>
+  <concept>
+    <code value="718078008"/>
+    <display value="Liver doppler ultrasound"/>
+  </concept>
+  <concept>
+    <code value="4061009"/>
+    <display value="Abdominal CT scan"/>
+  </concept>
+  <concept>
+    <code value="4083230"/>
+    <display value="Abdominal MRI"/>
+  </concept>
+  <concept>
+    <code value="4194588"/>
+    <display value="MRCP"/>
+  </concept>
+  <concept>
+    <code value="37311324"/>
+    <display value="Brain MRI"/>
+  </concept>
+  <concept>
+    <code value="4169785"/>
+    <display value="AngioTC"/>
+  </concept>
+  <concept>
+    <code value="4299523"/>
+    <display value="Angiography"/>
+  </concept>
+  <concept>
+    <code value="4181917"/>
+    <display value="EEG"/>
+  </concept>
+  <concept>
+    <code value="36308175"/>
+    <display value="ECG"/>
+  </concept>
+  <concept>
+    <code value="4167052"/>
+    <display value="Kidney doppler ultrasound"/>
+  </concept>
+  <concept>
+    <code value="36713614"/>
+    <display value="Total body CT scan"/>
+  </concept>
+  <concept>
+    <code value="scintigraphy"/>
+    <display value="Scintigraphy"/>
+  </concept>
+  <concept>
+    <code value="mcug"/>
+    <display value="Micturating Cystourethrogram (MCUG)"/>
+  </concept>
+  <concept>
+    <code value="pet"/>
+    <display value="PET"/>
+  </concept>
+</CodeSystem>

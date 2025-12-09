@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/ValueSet/patient-rh-factor-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "patient-rh-factor-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet patient-rh-factor-vs</b></p><a name=\"patient-rh-factor-vs\"> </a><a name=\"hcpatient-rh-factor-vs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-patient-rh-factor-cs.html\"><code>http://example.org/fhir/CodeSystem/patient-rh-factor</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-patient-rh-factor-cs.html#patient-rh-factor-cs-positive\">positive</a></td><td style=\"color: #cccccc\">Rh positive</td></tr><tr><td><a href=\"CodeSystem-patient-rh-factor-cs.html#patient-rh-factor-cs-negative\">negative</a></td><td style=\"color: #cccccc\">Rh negative</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-rh-factor-vs"^^xsd:anyURI ;
+     fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-rh-factor-vs>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "PatientRhFactorVS"] ; # 
+  fhir:title [ fhir:v "Patient Rh Factor ValueSet"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-12-09T16:44:49+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Your Organization"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Your Organization" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://example.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Allowed Rh factor values for transplant recipients."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://example.org/fhir/CodeSystem/patient-rh-factor"^^xsd:anyURI ;
+         fhir:l <http://example.org/fhir/CodeSystem/patient-rh-factor>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "positive" ]
+       ] [
+         fhir:code [ fhir:v "negative" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

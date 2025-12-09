@@ -1,0 +1,114 @@
+# Date of liver disease diagnosis - PROTECT-CHILD Pediatric Transplant Data Implementation Guide v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Date of liver disease diagnosis**
+
+## Extension: Date of liver disease diagnosis 
+
+| | |
+| :--- | :--- |
+| *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-liver-disease-diagnosis-date | *Version*:0.1.0 |
+| Draft as of 2025-12-09 | *Computable Name*:PatientLiverDiseaseDiagnosisDate |
+
+Date at which liver disease was diagnosed.
+
+**Context of Use**
+
+**Usage info**
+
+**Usages:**
+
+* Use this Extension: [Transplant Recipient](StructureDefinition-patient-transplant.md)
+* Examples for this Extension: [Patient/ExamplePatientTransplant1](Patient-ExamplePatientTransplant1.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/pc.ig|current/StructureDefinition/patient-liver-disease-diagnosis-date)
+
+### Formal Views of Extension Content
+
+ [Description of Profiles, Differentials, Snapshots, and how the XML and JSON presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-patient-liver-disease-diagnosis-date.csv), [Excel](StructureDefinition-patient-liver-disease-diagnosis-date.xlsx), [Schematron](StructureDefinition-patient-liver-disease-diagnosis-date.sch) 
+
+#### Constraints
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "patient-liver-disease-diagnosis-date",
+  "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-liver-disease-diagnosis-date",
+  "version" : "0.1.0",
+  "name" : "PatientLiverDiseaseDiagnosisDate",
+  "title" : "Date of liver disease diagnosis",
+  "status" : "draft",
+  "date" : "2025-12-09T16:44:49+01:00",
+  "publisher" : "Your Organization",
+  "contact" : [
+    {
+      "name" : "Your Organization",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "https://example.org"
+        }
+      ]
+    }
+  ],
+  "description" : "Date at which liver disease was diagnosed.",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [
+    {
+      "identity" : "rim",
+      "uri" : "http://hl7.org/v3",
+      "name" : "RIM Mapping"
+    }
+  ],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [
+    {
+      "type" : "element",
+      "expression" : "Element"
+    }
+  ],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [
+      {
+        "id" : "Extension",
+        "path" : "Extension",
+        "short" : "Date of liver disease diagnosis",
+        "definition" : "Date at which liver disease was diagnosed."
+      },
+      {
+        "id" : "Extension.extension",
+        "path" : "Extension.extension",
+        "max" : "0"
+      },
+      {
+        "id" : "Extension.url",
+        "path" : "Extension.url",
+        "fixedUri" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-liver-disease-diagnosis-date"
+      },
+      {
+        "id" : "Extension.value[x]",
+        "path" : "Extension.value[x]",
+        "type" : [
+          {
+            "code" : "date"
+          }
+        ]
+      }
+    ]
+  }
+}
+
+```

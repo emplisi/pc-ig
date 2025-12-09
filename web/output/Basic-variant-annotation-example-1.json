@@ -1,0 +1,56 @@
+{
+  "resourceType" : "Basic",
+  "id" : "variant-annotation-example-1",
+  "meta" : {
+    "profile" : ["http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Basic variant-annotation-example-1</b></p><a name=\"variant-annotation-example-1\"> </a><a name=\"hcvariant-annotation-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-variant-annotation.html\">Variant Annotation</a></p></div><p><b>Variant occurrence ID relationship</b>: <a href=\"Basic-variant-occurrence-example-1.html\">Basic Single nucleotide variant</a></p><p><b>Annotation database</b>: ClinVar</p><p><b>Variant origin</b>: germline</p><p><b>Variant pathogenicity</b>: pathogenic</p><p><b>Variant class level</b>: ACMG Class 5</p><p><b>Variant tier level</b>: Tier 1</p><p><b>Allele frequency</b>: 0.0001</p><p><b>Medication</b>: PARP inhibitor</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/variant-annotation-id</code>/VA0001</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/variant-annotation-type clinical}\">Clinical variant annotation</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-variant-occurrence-ref",
+    "valueReference" : {
+      "reference" : "Basic/variant-occurrence-example-1"
+    }
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-annotation-database",
+    "valueString" : "ClinVar"
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-variant-origin",
+    "valueString" : "germline"
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-variant-pathogeny",
+    "valueString" : "pathogenic"
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-variant-class-level",
+    "valueString" : "ACMG Class 5"
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-variant-tier-level",
+    "valueString" : "Tier 1"
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-allele-frequency",
+    "valueDecimal" : 0.0001
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-medication",
+    "valueString" : "PARP inhibitor"
+  }],
+  "identifier" : [{
+    "system" : "http://example.org/fhir/NamingSystem/variant-annotation-id",
+    "value" : "VA0001"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://example.org/fhir/CodeSystem/variant-annotation-type",
+      "code" : "clinical",
+      "display" : "Clinical variant annotation"
+    }]
+  }
+}

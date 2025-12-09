@@ -1,0 +1,47 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "visit-type-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem visit-type-cs</b></p><a name=\"visit-type-cs\"> </a><a name=\"hcvisit-type-cs\"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/visit-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">pre-transplant<a name=\"visit-type-cs-pre-transplant\"> </a></td><td>Pre-transplant visit</td></tr><tr><td style=\"white-space:nowrap\">month-1<a name=\"visit-type-cs-month-1\"> </a></td><td>1 month visit</td></tr><tr><td style=\"white-space:nowrap\">month-3<a name=\"visit-type-cs-month-3\"> </a></td><td>3 month visit</td></tr><tr><td style=\"white-space:nowrap\">month-5<a name=\"visit-type-cs-month-5\"> </a></td><td>5 month visit</td></tr><tr><td style=\"white-space:nowrap\">outcome<a name=\"visit-type-cs-outcome\"> </a></td><td>Outcome visit</td></tr></table></div>"
+  },
+  "url" : "http://example.org/fhir/CodeSystem/visit-type",
+  "version" : "0.1.0",
+  "name" : "VisitTypeCS",
+  "title" : "Visit Type CodeSystem",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-12-09T16:44:49+01:00",
+  "publisher" : "Your Organization",
+  "contact" : [{
+    "name" : "Your Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://example.org"
+    }]
+  }],
+  "description" : "Type of visit in the transplant follow-up schedule.",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "pre-transplant",
+    "display" : "Pre-transplant visit"
+  },
+  {
+    "code" : "month-1",
+    "display" : "1 month visit"
+  },
+  {
+    "code" : "month-3",
+    "display" : "3 month visit"
+  },
+  {
+    "code" : "month-5",
+    "display" : "5 month visit"
+  },
+  {
+    "code" : "outcome",
+    "display" : "Outcome visit"
+  }]
+}

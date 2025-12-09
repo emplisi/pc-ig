@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/Basic/post-event-type-example-1> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "post-event-type-example-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-type"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-type>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Basic post-event-type-example-1</b></p><a name=\"post-event-type-example-1\"> </a><a name=\"hcpost-event-type-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-post-event-type.html\">Post Event Type</a></p></div><p><b>Post event type name</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/post-event-type-name episodes-aki-after-ltx}\">Episodes of AKI after LTx</span></p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/post-event-type-id</code>/PET0001</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/post-event-type-category clinical-event}\">Clinical post-transplant event</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-type-name-ext"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-type-name-ext>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://example.org/fhir/CodeSystem/post-event-type-name"^^xsd:anyURI ;
+           fhir:l <http://example.org/fhir/CodeSystem/post-event-type-name>
+         ] ;
+         fhir:code [ fhir:v "episodes-aki-after-ltx" ] ;
+         fhir:display [ fhir:v "Episodes of AKI after LTx" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://example.org/fhir/NamingSystem/post-event-type-id"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/NamingSystem/post-event-type-id>
+     ] ;
+     fhir:value [ fhir:v "PET0001" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://example.org/fhir/CodeSystem/post-event-type-category"^^xsd:anyURI ;
+         fhir:l <http://example.org/fhir/CodeSystem/post-event-type-category>
+       ] ;
+       fhir:code [ fhir:v "clinical-event" ] ;
+       fhir:display [ fhir:v "Clinical post-transplant event" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,129 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/CodeSystem/outcome-type-name-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "outcome-type-name-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem outcome-type-name-cs</b></p><a name=\"outcome-type-name-cs\"> </a><a name=\"hcoutcome-type-name-cs\"> </a><p>This  code system <code>http://example.org/fhir/CodeSystem/outcome-type-name</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">ebv-infection<a name=\"outcome-type-name-cs-ebv-infection\"> </a></td><td>Epstein Barr Infection (Need more specific one)</td></tr><tr><td style=\"white-space:nowrap\">440032<a name=\"outcome-type-name-cs-440032\"> </a></td><td>Cytomegalovirus Infection</td></tr><tr><td style=\"white-space:nowrap\">4265526<a name=\"outcome-type-name-cs-4265526\"> </a></td><td>BK Virus Infection</td></tr><tr><td style=\"white-space:nowrap\">45765696<a name=\"outcome-type-name-cs-45765696\"> </a></td><td>Renal Calcineurin Inhibitors Toxicity</td></tr><tr><td style=\"white-space:nowrap\">mycophenolate-toxicity<a name=\"outcome-type-name-cs-mycophenolate-toxicity\"> </a></td><td>Mycophenolate toxicity</td></tr><tr><td style=\"white-space:nowrap\">mtor-toxicity<a name=\"outcome-type-name-cs-mtor-toxicity\"> </a></td><td>mTOR inhibitors toxicity</td></tr><tr><td style=\"white-space:nowrap\">321876<a name=\"outcome-type-name-cs-321876\"> </a></td><td>Microangiopathy</td></tr><tr><td style=\"white-space:nowrap\">kidney-rejection-episode<a name=\"outcome-type-name-cs-kidney-rejection-episode\"> </a></td><td>Kidney rejection episode</td></tr><tr><td style=\"white-space:nowrap\">4341657<a name=\"outcome-type-name-cs-4341657\"> </a></td><td>Liver rejection episode</td></tr><tr><td style=\"white-space:nowrap\">198185<a name=\"outcome-type-name-cs-198185\"> </a></td><td>Chronic renal failure after pLTx</td></tr><tr><td style=\"white-space:nowrap\">4267417<a name=\"outcome-type-name-cs-4267417\"> </a></td><td>Liver Graft fibrosis</td></tr><tr><td style=\"white-space:nowrap\">4064161<a name=\"outcome-type-name-cs-4064161\"> </a></td><td>Cirrhosis of Liver</td></tr><tr><td style=\"white-space:nowrap\">chronic-liver-failure<a name=\"outcome-type-name-cs-chronic-liver-failure\"> </a></td><td>Chronic liver failure (liver graft fibrosis and cirrhosis)</td></tr><tr><td style=\"white-space:nowrap\">4198610<a name=\"outcome-type-name-cs-4198610\"> </a></td><td>Chronic liver rejection</td></tr><tr><td style=\"white-space:nowrap\">435514<a name=\"outcome-type-name-cs-435514\"> </a></td><td>Chronic Kidney Rejection</td></tr><tr><td style=\"white-space:nowrap\">ptld<a name=\"outcome-type-name-cs-ptld\"> </a></td><td>Post-transplant lymphoproliferative disease (PTLD)</td></tr><tr><td style=\"white-space:nowrap\">316866<a name=\"outcome-type-name-cs-316866\"> </a></td><td>High Blood pressure</td></tr><tr><td style=\"white-space:nowrap\">35817874<a name=\"outcome-type-name-cs-35817874\"> </a></td><td>Diabetes</td></tr><tr><td style=\"white-space:nowrap\">alloimmunization<a name=\"outcome-type-name-cs-alloimmunization\"> </a></td><td>Alloimmunization</td></tr><tr><td style=\"white-space:nowrap\">4223098<a name=\"outcome-type-name-cs-4223098\"> </a></td><td>Hepatic artery thrombosis</td></tr><tr><td style=\"white-space:nowrap\">biliary-complications<a name=\"outcome-type-name-cs-biliary-complications\"> </a></td><td>Billiary complications</td></tr><tr><td style=\"white-space:nowrap\">urological-complications<a name=\"outcome-type-name-cs-urological-complications\"> </a></td><td>Urological Complications</td></tr><tr><td style=\"white-space:nowrap\">mortality<a name=\"outcome-type-name-cs-mortality\"> </a></td><td>Mortality</td></tr><tr><td style=\"white-space:nowrap\">graft-survival<a name=\"outcome-type-name-cs-graft-survival\"> </a></td><td>Graft survival</td></tr><tr><td style=\"white-space:nowrap\">liver-primary-nonfunction<a name=\"outcome-type-name-cs-liver-primary-nonfunction\"> </a></td><td>Liver primary nonfunction</td></tr><tr><td style=\"white-space:nowrap\">liver-early-allograft-dysfunction<a name=\"outcome-type-name-cs-liver-early-allograft-dysfunction\"> </a></td><td>Liver early allograft dysfunction</td></tr><tr><td style=\"white-space:nowrap\">kidney-primary-nonfunction<a name=\"outcome-type-name-cs-kidney-primary-nonfunction\"> </a></td><td>Kidney primary nonfunction</td></tr><tr><td style=\"white-space:nowrap\">delayed-kidney-graft-function<a name=\"outcome-type-name-cs-delayed-kidney-graft-function\"> </a></td><td>Delayed kidney graft function</td></tr><tr><td style=\"white-space:nowrap\">42872891<a name=\"outcome-type-name-cs-42872891\"> </a></td><td>Posterior reversible encelopathy (PRES)</td></tr><tr><td style=\"white-space:nowrap\">relapse-primary-immunomediated<a name=\"outcome-type-name-cs-relapse-primary-immunomediated\"> </a></td><td>Relapse of primary immunomediated disease</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://example.org/fhir/CodeSystem/outcome-type-name"^^xsd:anyURI ;
+     fhir:l <http://example.org/fhir/CodeSystem/outcome-type-name>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "OutcomeTypeNameCS"] ; # 
+  fhir:title [ fhir:v "Outcome Type Name"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-12-09T16:44:49+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Your Organization"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Your Organization" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://example.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Types of clinical outcomes after transplant."] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "30"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "ebv-infection" ] ;
+     fhir:display [ fhir:v "Epstein Barr Infection (Need more specific one)" ]
+  ] [
+     fhir:code [ fhir:v "440032" ] ;
+     fhir:display [ fhir:v "Cytomegalovirus Infection" ]
+  ] [
+     fhir:code [ fhir:v "4265526" ] ;
+     fhir:display [ fhir:v "BK Virus Infection" ]
+  ] [
+     fhir:code [ fhir:v "45765696" ] ;
+     fhir:display [ fhir:v "Renal Calcineurin Inhibitors Toxicity" ]
+  ] [
+     fhir:code [ fhir:v "mycophenolate-toxicity" ] ;
+     fhir:display [ fhir:v "Mycophenolate toxicity" ]
+  ] [
+     fhir:code [ fhir:v "mtor-toxicity" ] ;
+     fhir:display [ fhir:v "mTOR inhibitors toxicity" ]
+  ] [
+     fhir:code [ fhir:v "321876" ] ;
+     fhir:display [ fhir:v "Microangiopathy" ]
+  ] [
+     fhir:code [ fhir:v "kidney-rejection-episode" ] ;
+     fhir:display [ fhir:v "Kidney rejection episode" ]
+  ] [
+     fhir:code [ fhir:v "4341657" ] ;
+     fhir:display [ fhir:v "Liver rejection episode" ]
+  ] [
+     fhir:code [ fhir:v "198185" ] ;
+     fhir:display [ fhir:v "Chronic renal failure after pLTx" ]
+  ] [
+     fhir:code [ fhir:v "4267417" ] ;
+     fhir:display [ fhir:v "Liver Graft fibrosis" ]
+  ] [
+     fhir:code [ fhir:v "4064161" ] ;
+     fhir:display [ fhir:v "Cirrhosis of Liver" ]
+  ] [
+     fhir:code [ fhir:v "chronic-liver-failure" ] ;
+     fhir:display [ fhir:v "Chronic liver failure (liver graft fibrosis and cirrhosis)" ]
+  ] [
+     fhir:code [ fhir:v "4198610" ] ;
+     fhir:display [ fhir:v "Chronic liver rejection" ]
+  ] [
+     fhir:code [ fhir:v "435514" ] ;
+     fhir:display [ fhir:v "Chronic Kidney Rejection" ]
+  ] [
+     fhir:code [ fhir:v "ptld" ] ;
+     fhir:display [ fhir:v "Post-transplant lymphoproliferative disease (PTLD)" ]
+  ] [
+     fhir:code [ fhir:v "316866" ] ;
+     fhir:display [ fhir:v "High Blood pressure" ]
+  ] [
+     fhir:code [ fhir:v "35817874" ] ;
+     fhir:display [ fhir:v "Diabetes" ]
+  ] [
+     fhir:code [ fhir:v "alloimmunization" ] ;
+     fhir:display [ fhir:v "Alloimmunization" ]
+  ] [
+     fhir:code [ fhir:v "4223098" ] ;
+     fhir:display [ fhir:v "Hepatic artery thrombosis" ]
+  ] [
+     fhir:code [ fhir:v "biliary-complications" ] ;
+     fhir:display [ fhir:v "Billiary complications" ]
+  ] [
+     fhir:code [ fhir:v "urological-complications" ] ;
+     fhir:display [ fhir:v "Urological Complications" ]
+  ] [
+     fhir:code [ fhir:v "mortality" ] ;
+     fhir:display [ fhir:v "Mortality" ]
+  ] [
+     fhir:code [ fhir:v "graft-survival" ] ;
+     fhir:display [ fhir:v "Graft survival" ]
+  ] [
+     fhir:code [ fhir:v "liver-primary-nonfunction" ] ;
+     fhir:display [ fhir:v "Liver primary nonfunction" ]
+  ] [
+     fhir:code [ fhir:v "liver-early-allograft-dysfunction" ] ;
+     fhir:display [ fhir:v "Liver early allograft dysfunction" ]
+  ] [
+     fhir:code [ fhir:v "kidney-primary-nonfunction" ] ;
+     fhir:display [ fhir:v "Kidney primary nonfunction" ]
+  ] [
+     fhir:code [ fhir:v "delayed-kidney-graft-function" ] ;
+     fhir:display [ fhir:v "Delayed kidney graft function" ]
+  ] [
+     fhir:code [ fhir:v "42872891" ] ;
+     fhir:display [ fhir:v "Posterior reversible encelopathy (PRES)" ]
+  ] [
+     fhir:code [ fhir:v "relapse-primary-immunomediated" ] ;
+     fhir:display [ fhir:v "Relapse of primary immunomediated disease" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

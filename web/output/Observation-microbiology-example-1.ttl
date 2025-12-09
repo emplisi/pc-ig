@@ -1,0 +1,248 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/Observation/microbiology-example-1> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "microbiology-example-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation microbiology-example-1</b></p><a name=\"microbiology-example-1\"> </a><a name=\"hcmicrobiology-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-microbiology.html\">Microbiology</a></p></div><p><b>Blood EBV-DNA</b>: 2450</p><p><b>EBV serology IgM anti-EA</b>: false</p><p><b>EBV serology IgM anti-VCA</b>: false</p><p><b>EBV serology IgG anti-VCA</b>: true</p><p><b>EBV serology IgG EBNA</b>: true</p><p><b>Blood CMV-DNA</b>: false</p><p><b>CMV serology IgM</b>: false</p><p><b>CMV serology IgG</b>: true</p><p><b>Blood Parvovirus B19-DNA</b>: false</p><p><b>Parvovirus B19 serology IgG</b>: true</p><p><b>Parvovirus B19 serology IgM</b>: false</p><p><b>HSV serology IgG</b>: true</p><p><b>HSV serology IgM</b>: false</p><p><b>Adenovirus serology IgG</b>: true</p><p><b>Adenovirus serology IgM</b>: false</p><p><b>VZV serology IgG</b>: true</p><p><b>VZV serology IgM</b>: false</p><p><b>Blood BKV-DNA</b>: false</p><p><b>Urine BKV-DNA</b>: false</p><p><b>BKV-DNA on kidney biopsy</b>: false</p><p><b>BKV FISH on kidney biopsy</b>: false</p><p><b>Patient ID relationship</b>: <a href=\"Patient-ExamplePatientTransplant1.html\">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/microbiology-id</code>/M0001</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 24323-8}\">Microbiology studies (set)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatientTransplant1.html\">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-ebv-dna"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-ebv-dna>
+     ] ;
+     fhir:value [
+       a fhir:Decimal ;
+       fhir:v "2450"^^xsd:decimal
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-ebv-igm-anti-ea"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-ebv-igm-anti-ea>
+     ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v false
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-ebv-igm-anti-vca"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-ebv-igm-anti-vca>
+     ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v false
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-ebv-igg-anti-vca"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-ebv-igg-anti-vca>
+     ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v true
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-ebv-igg-ebna"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-ebv-igg-ebna>
+     ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v true
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-cmv-dna"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-cmv-dna>
+     ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v false
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-cmv-igm"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-cmv-igm>
+     ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v false
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-cmv-igg"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-cmv-igg>
+     ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v true
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-parvovirus-b19-dna"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-parvovirus-b19-dna>
+     ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v false
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-parvovirus-b19-dna-igg"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-parvovirus-b19-dna-igg>
+     ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v true
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-parvovirus-b19-dna-igm"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-parvovirus-b19-dna-igm>
+     ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v false
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-hsv-igg"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-hsv-igg>
+     ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v true
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-hsv-igm"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-hsv-igm>
+     ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v false
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-adenovirus-igg"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-adenovirus-igg>
+     ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v true
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-adenovirus-igm"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-adenovirus-igm>
+     ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v false
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-vzv-igg"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-vzv-igg>
+     ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v true
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-vzv-igm"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-vzv-igm>
+     ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v false
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-blood-bkv-dna"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-blood-bkv-dna>
+     ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v false
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-urine-bkv-dna"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-urine-bkv-dna>
+     ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v false
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-bkv-dna-kidney-biopsy"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-bkv-dna-kidney-biopsy>
+     ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v false
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-bkv-fish-kidney-biopsy"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-bkv-fish-kidney-biopsy>
+     ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v false
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-patient-ref"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-patient-ref>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Patient/ExamplePatientTransplant1> ;
+       fhir:reference [ fhir:v "Patient/ExamplePatientTransplant1" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://example.org/fhir/NamingSystem/microbiology-id"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/NamingSystem/microbiology-id>
+     ] ;
+     fhir:value [ fhir:v "M0001" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:24323-8 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "24323-8" ] ;
+       fhir:display [ fhir:v "Microbiology studies (set)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://example.org/fhir/Patient/ExamplePatientTransplant1> ;
+     fhir:reference [ fhir:v "Patient/ExamplePatientTransplant1" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

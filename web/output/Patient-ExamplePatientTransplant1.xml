@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="ExamplePatientTransplant1"/>
+  <meta>
+    <profile value="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-transplant"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Patient ExamplePatientTransplant1</b></p><a name="ExamplePatientTransplant1"> </a><a name="hcExamplePatientTransplant1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-patient-transplant.html">Transplant Recipient</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Date at which renal disease was diagnosed."><a href="StructureDefinition-patient-renal-disease-diagnosis-date.html">Date of renal disease diagnosis</a></td><td colspan="3">2021-02-10</td></tr><tr><td style="background-color: #f3f5da" title="Primary liver disease diagnosis (coding system TBD; may map from OMOP or local codes)."><a href="StructureDefinition-patient-liver-disease-code.html">Liver disease diagnosis code</a></td><td colspan="3"><span title="Codes:">Biliary atresia</span></td></tr><tr><td style="background-color: #f3f5da" title="Rh factor of the transplant recipient."><a href="StructureDefinition-patient-rh-factor.html">Patient Rh factor</a></td><td colspan="3"><span title="Codes:{http://example.org/fhir/CodeSystem/patient-rh-factor positive}">Rh positive</span></td></tr><tr><td style="background-color: #f3f5da" title="Date of histological diagnosis."><a href="StructureDefinition-patient-histological-diagnosis-date.html">Date of histological diagnosis</a></td><td colspan="3">2020-05-01</td></tr><tr><td style="background-color: #f3f5da" title="Recipient’s HLA Class I loci relevant for the transplant (HLA-A, HLA-B, HLA-C)."><a href="StructureDefinition-patient-allograft-hla-class-i.html">Patient allograft HLA Class I</a></td><td colspan="3"><span title="Codes:{http://example.org/fhir/CodeSystem/patient-hla-class-i HLA-A}, {http://example.org/fhir/CodeSystem/patient-hla-class-i HLA-B}, {http://example.org/fhir/CodeSystem/patient-hla-class-i HLA-C}">HLA-A</span></td></tr><tr><td style="background-color: #f3f5da" title="Recipient’s HLA Class II loci relevant for the transplant (HLA-DR, HLA-DP, HLA-DQ)."><a href="StructureDefinition-patient-allograft-hla-class-ii.html">Patient allograft HLA Class II</a></td><td colspan="3"><span title="Codes:{http://example.org/fhir/CodeSystem/patient-hla-class-ii HLA-DR}, {http://example.org/fhir/CodeSystem/patient-hla-class-ii HLA-DP}, {http://example.org/fhir/CodeSystem/patient-hla-class-ii HLA-DQ}">HLA-DR</span></td></tr><tr><td style="background-color: #f3f5da" title="Most recent panel-reactive antibody (PRA) percentage prior to transplant."><a href="StructureDefinition-patient-last-pra.html">Patient last PRA</a></td><td colspan="3">60</td></tr><tr><td style="background-color: #f3f5da" title="Primary renal disease diagnosis (coding system TBD; may map from OMOP or local codes)."><a href="StructureDefinition-patient-renal-disease-code.html">Renal disease diagnosis code</a></td><td colspan="3"><span title="Codes:">Chronic kidney disease, stage 3</span></td></tr><tr><td style="background-color: #f3f5da" title="Maximum panel-reactive antibody (PRA) percentage prior to transplant."><a href="StructureDefinition-patient-max-pra.html">Patient maximum PRA</a></td><td colspan="3">80</td></tr><tr><td style="background-color: #f3f5da" title="Additional description or free-text for the liver disease diagnosis."><a href="StructureDefinition-patient-liver-disease-extra.html">Liver disease diagnosis (free text)</a></td><td colspan="3">Progressive cholestatic disease</td></tr><tr><td style="background-color: #f3f5da" title="ABO blood group of the transplant recipient."><a href="StructureDefinition-patient-abo-group.html">Patient ABO group</a></td><td colspan="3"><span title="Codes:{http://example.org/fhir/CodeSystem/patient-abo-group A}">Group A</span></td></tr><tr><td style="background-color: #f3f5da" title="Date at which liver disease was diagnosed."><a href="StructureDefinition-patient-liver-disease-diagnosis-date.html">Date of liver disease diagnosis</a></td><td colspan="3">2019-11-15</td></tr><tr><td style="background-color: #f3f5da" title="Additional description or free-text for the renal disease diagnosis."><a href="StructureDefinition-patient-renal-disease-extra.html">Renal disease diagnosis (free text)</a></td><td colspan="3">Likely secondary to calcineurin-inhibitor toxicity</td></tr></table></div>
+  </text>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-abo-group">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://example.org/fhir/CodeSystem/patient-abo-group"/>
+        <code value="A"/>
+        <display value="Group A"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-rh-factor">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://example.org/fhir/CodeSystem/patient-rh-factor"/>
+        <code value="positive"/>
+        <display value="Rh positive"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-max-pra">
+    <valueInteger value="80"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-last-pra">
+    <valueInteger value="60"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-allograft-hla-class-i">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://example.org/fhir/CodeSystem/patient-hla-class-i"/>
+        <code value="HLA-A"/>
+      </coding>
+      <coding>
+        <system value="http://example.org/fhir/CodeSystem/patient-hla-class-i"/>
+        <code value="HLA-B"/>
+      </coding>
+      <coding>
+        <system value="http://example.org/fhir/CodeSystem/patient-hla-class-i"/>
+        <code value="HLA-C"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-allograft-hla-class-ii">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://example.org/fhir/CodeSystem/patient-hla-class-ii"/>
+        <code value="HLA-DR"/>
+      </coding>
+      <coding>
+        <system value="http://example.org/fhir/CodeSystem/patient-hla-class-ii"/>
+        <code value="HLA-DP"/>
+      </coding>
+      <coding>
+        <system value="http://example.org/fhir/CodeSystem/patient-hla-class-ii"/>
+        <code value="HLA-DQ"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-histological-diagnosis-date">
+    <valueDate value="2020-05-01"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-liver-disease-diagnosis-date">
+    <valueDate value="2019-11-15"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-liver-disease-code">
+    <valueCodeableConcept>
+      <text value="Biliary atresia"/>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-renal-disease-diagnosis-date">
+    <valueDate value="2021-02-10"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-renal-disease-code">
+    <valueCodeableConcept>
+      <text value="Chronic kidney disease, stage 3"/>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-liver-disease-extra">
+    <valueString value="Progressive cholestatic disease"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-renal-disease-extra">
+    <valueString value="Likely secondary to calcineurin-inhibitor toxicity"/>
+  </extension>
+  <identifier>
+    <system value="http://example.org/fhir/identifiers/patient"/>
+    <value value="P000456"/>
+  </identifier>
+  <gender value="female"/>
+  <birthDate value="2012-03-12"/>
+</Patient>

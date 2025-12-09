@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/Basic/immunosuppressant-example-1> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "immunosuppressant-example-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressant"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressant>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Basic immunosuppressant-example-1</b></p><a name=\"immunosuppressant-example-1\"> </a><a name=\"hcimmunosuppressant-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-immunosuppressant.html\">Immunosuppressant</a></p></div><p><b>Immunosuppressant name</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/immunosuppressant-drug-type 1506270}\">Steroid (methylprednisolone)</span></p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/immunosuppressant-id</code>/IMM0001</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/immunosuppressant-type drug}\">Immunosuppressive drug</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressant-name"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressant-name>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://example.org/fhir/CodeSystem/immunosuppressant-drug-type"^^xsd:anyURI ;
+           fhir:l <http://example.org/fhir/CodeSystem/immunosuppressant-drug-type>
+         ] ;
+         fhir:code [ fhir:v "1506270" ] ;
+         fhir:display [ fhir:v "Steroid (methylprednisolone)" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://example.org/fhir/NamingSystem/immunosuppressant-id"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/NamingSystem/immunosuppressant-id>
+     ] ;
+     fhir:value [ fhir:v "IMM0001" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://example.org/fhir/CodeSystem/immunosuppressant-type"^^xsd:anyURI ;
+         fhir:l <http://example.org/fhir/CodeSystem/immunosuppressant-type>
+       ] ;
+       fhir:code [ fhir:v "drug" ] ;
+       fhir:display [ fhir:v "Immunosuppressive drug" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

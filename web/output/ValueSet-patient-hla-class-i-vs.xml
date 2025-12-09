@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="patient-hla-class-i-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet patient-hla-class-i-vs</b></p><a name="patient-hla-class-i-vs"> </a><a name="hcpatient-hla-class-i-vs"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-patient-hla-class-i-cs.html"><code>http://example.org/fhir/CodeSystem/patient-hla-class-i</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-patient-hla-class-i-cs.html#patient-hla-class-i-cs-HLA-A">HLA-A</a></td><td style="color: #cccccc">HLA-A</td></tr><tr><td><a href="CodeSystem-patient-hla-class-i-cs.html#patient-hla-class-i-cs-HLA-B">HLA-B</a></td><td style="color: #cccccc">HLA-B</td></tr><tr><td><a href="CodeSystem-patient-hla-class-i-cs.html#patient-hla-class-i-cs-HLA-C">HLA-C</a></td><td style="color: #cccccc">HLA-C</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-hla-class-i-vs"/>
+  <version value="0.1.0"/>
+  <name value="PatientHLAClassIVS"/>
+  <title value="Patient HLA Class I Loci ValueSet"/>
+  <status value="draft"/>
+  <date value="2025-12-09T16:44:49+01:00"/>
+  <publisher value="Your Organization"/>
+  <contact>
+    <name value="Your Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://example.org"/>
+    </telecom>
+  </contact>
+  <description value="Allowed Class I HLA loci (HLA-A, HLA-B, HLA-C)."/>
+  <compose>
+    <include>
+      <system value="http://example.org/fhir/CodeSystem/patient-hla-class-i"/>
+      <concept>
+        <code value="HLA-A"/>
+      </concept>
+      <concept>
+        <code value="HLA-B"/>
+      </concept>
+      <concept>
+        <code value="HLA-C"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="TransplantExample1"/>
+  <meta>
+    <profile value="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter TransplantExample1</b></p><a name="TransplantExample1"> </a><a name="hcTransplantExample1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-transplant.html">Transplant</a></p></div><p><b>Transplant donor reference</b>: <a href="Patient-ExampleDonor1.html">Anonymous Patient Male, DoB: 1990-07-21 ( http://example.org/fhir/identifiers/donor#D000123)</a></p><p><b>Donor/recipient weight ratio</b>: 0.95</p><p><b>Vessel mismatch (donor-recipient)</b>: false</p><p><b>Cold ischaemia time (minutes)</b>: 480</p><p><b>Time from diagnosis to transplant (months)</b>: 18</p><p><b>Vascular anomalies</b>: Accessory hepatic artery reconstructed</p><p><b>First warm ischaemia time (minutes)</b>: 45</p><p><b>identifier</b>: <code>http://example.org/fhir/identifiers/transplant</code>/T000001</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/7.0.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP">ActCode: IMP</a> (inpatient encounter)</p><p><b>type</b>: <span title="Codes:{http://example.org/fhir/CodeSystem/transplant-type liver}">Liver transplant</span></p><p><b>subject</b>: <a href="Patient-ExamplePatientTransplant1.html">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p><p><b>period</b>: 2023-08-15 08:00:00+0100 --&gt; (ongoing)</p></div>
+  </text>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-donor-ref">
+    <valueReference>
+      <reference value="Patient/ExampleDonor1"/>
+    </valueReference>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-donor-recipient-weight-ratio">
+    <valueDecimal value="0.95"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-vessel-mismatch">
+    <valueBoolean value="false"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-cold-ischaemia-time">
+    <valueInteger value="480"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-time-diagnosis-to-transplant">
+    <valueInteger value="18"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-vascular-anomalies">
+    <valueString value="Accessory hepatic artery reconstructed"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-first-warm-ischemia-time">
+    <valueInteger value="45"/>
+  </extension>
+  <identifier>
+    <system value="http://example.org/fhir/identifiers/transplant"/>
+    <value value="T000001"/>
+  </identifier>
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="IMP"/>
+    <display value="inpatient encounter"/>
+  </class>
+  <type>
+    <coding>
+      <system value="http://example.org/fhir/CodeSystem/transplant-type"/>
+      <code value="liver"/>
+      <display value="Liver transplant"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/ExamplePatientTransplant1"/>
+  </subject>
+  <period>
+    <start value="2023-08-15T08:00:00+01:00"/>
+  </period>
+</Encounter>

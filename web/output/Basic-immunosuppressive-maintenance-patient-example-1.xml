@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="immunosuppressive-maintenance-patient-example-1"/>
+  <meta>
+    <profile value="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-patient"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Basic immunosuppressive-maintenance-patient-example-1</b></p><a name="immunosuppressive-maintenance-patient-example-1"> </a><a name="hcimmunosuppressive-maintenance-patient-example-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-immunosuppressive-maintenance-patient.html">Immunosuppressive Maintenance to Patient</a></p></div><p><b>Recipient patient reference</b>: <a href="Patient-ExamplePatientTransplant1.html">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p><p><b>Immunosuppressant ID relationship</b>: <a href="Basic-immunosuppressant-example-1.html">Basic Immunosuppressive drug</a></p><p><b>Dose of immunosuppressant</b>: 2</p><p><b>Unit ID</b>: mg/kg</p><p><b>Start date of maintenance therapy</b>: 2024-04-01</p><p><b>End date of maintenance therapy</b>: 2024-10-01</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/immunosuppressive-maintenance-patient-id</code>/IMMPAT0001</p><p><b>code</b>: <span title="Codes:{http://example.org/fhir/CodeSystem/immunosuppressive-maintenance-type maintenance-to-patient}">Immunosuppressive maintenance therapy to patient</span></p></div>
+  </text>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-patient-ref">
+    <valueReference>
+      <reference value="Patient/ExamplePatientTransplant1"/>
+    </valueReference>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-immunosuppressant-ref">
+    <valueReference>
+      <reference value="Basic/immunosuppressant-example-1"/>
+    </valueReference>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-dose">
+    <valueDecimal value="2"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-unit-id">
+    <valueString value="mg/kg"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-start-date">
+    <valueDate value="2024-04-01"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-end-date">
+    <valueDate value="2024-10-01"/>
+  </extension>
+  <identifier>
+    <system value="http://example.org/fhir/NamingSystem/immunosuppressive-maintenance-patient-id"/>
+    <value value="IMMPAT0001"/>
+  </identifier>
+  <code>
+    <coding>
+      <system value="http://example.org/fhir/CodeSystem/immunosuppressive-maintenance-type"/>
+      <code value="maintenance-to-patient"/>
+    </coding>
+    <text value="Immunosuppressive maintenance therapy to patient"/>
+  </code>
+</Basic>

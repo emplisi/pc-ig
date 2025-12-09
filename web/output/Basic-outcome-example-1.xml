@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="outcome-example-1"/>
+  <meta>
+    <profile value="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Basic outcome-example-1</b></p><a name="outcome-example-1"> </a><a name="hcoutcome-example-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-outcome.html">Outcome</a></p></div><p><b>Outcome type ID relationship</b>: <a href="Basic-outcome-type-example-1.html">Basic Clinical outcome type</a></p><p><b>Patient ID relationship</b>: <a href="Patient-ExamplePatientTransplant1.html">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p><p><b>Outcome date</b>: 2024-06-01</p><p><b>Pre-medication ID relationship</b>: <a href="Basic-pre-medication-example-1.html">Basic Pre-transplant medication record</a></p><p><b>Clinical variable ID relationship</b>: <a href="Basic-clinical-variable-example-1.html">Basic Vital signs</a></p><p><b>Concomitant episode ID relationship</b>: <a href="Basic-concomitant-episode-example-1.html">Basic Concomitant disease episode</a></p><p><b>Microbiology ID relationship</b>: <a href="Observation-microbiology-example-1.html">Observation Microbiology studies (set)</a></p><p><b>Patient instrumental investigation ID relationship</b>: <a href="Observation-patient-instrumental-investigation-example-1.html">Observation </a></p><p><b>Lab test ID relationship</b>: <a href="Basic-lab-test-example-1.html">Basic Chemistry lab test</a></p><p><b>Post event ID relationship</b>: <a href="Basic-post-event-example-1.html">Basic Post-transplant event</a></p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/outcome-id</code>/OUT0001</p><p><b>code</b>: <span title="Codes:{http://example.org/fhir/CodeSystem/outcome-type-code clinical}">Clinical outcome</span></p></div>
+  </text>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-type-ref">
+    <valueReference>
+      <reference value="Basic/outcome-type-example-1"/>
+    </valueReference>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-patient-ref">
+    <valueReference>
+      <reference value="Patient/ExamplePatientTransplant1"/>
+    </valueReference>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-date">
+    <valueDate value="2024-06-01"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-pre-medication-ref">
+    <valueReference>
+      <reference value="Basic/pre-medication-example-1"/>
+    </valueReference>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-clinical-variable-ref">
+    <valueReference>
+      <reference value="Basic/clinical-variable-example-1"/>
+    </valueReference>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-concomitant-episode-ref">
+    <valueReference>
+      <reference value="Basic/concomitant-episode-example-1"/>
+    </valueReference>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-microbiology-ref">
+    <valueReference>
+      <reference value="Observation/microbiology-example-1"/>
+    </valueReference>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-patient-instrumental-investigation-ref">
+    <valueReference>
+      <reference value="Observation/patient-instrumental-investigation-example-1"/>
+    </valueReference>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-lab-test-ref">
+    <valueReference>
+      <reference value="Basic/lab-test-example-1"/>
+    </valueReference>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-post-event-ref">
+    <valueReference>
+      <reference value="Basic/post-event-example-1"/>
+    </valueReference>
+  </extension>
+  <identifier>
+    <system value="http://example.org/fhir/NamingSystem/outcome-id"/>
+    <value value="OUT0001"/>
+  </identifier>
+  <code>
+    <coding>
+      <system value="http://example.org/fhir/CodeSystem/outcome-type-code"/>
+      <code value="clinical"/>
+      <display value="Clinical outcome"/>
+    </coding>
+  </code>
+</Basic>

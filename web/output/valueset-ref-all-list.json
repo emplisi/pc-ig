@@ -1,0 +1,1125 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/biliary-anastomosis-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BiliaryAnastomosisTypeVS",
+      "title" : "Type of surgical biliary anastomosis ValueSet",
+      "description" : "Allowed types of biliary anastomosis in liver transplant.",
+      "systems" : [
+        "http://example.org/fhir/CodeSystem/biliary-anastomosis-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-transplant-biliary-anastomosis-type.html" : "Type of surgical biliary anastomosis"
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/biosample-tissue-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BioSampleTissueTypeVS",
+      "title" : "BioSample Tissue Type ValueSet",
+      "description" : "Allowed tissue types for BioSample.tissue_type.",
+      "systems" : ["http://example.org/fhir/CodeSystem/biosample-tissue-type"],
+      "uses" : {
+      },
+      "StructureDefinition-biosample.html" : "Biological Sample",
+      "StructureDefinition-epigenome-study-sample-type.html" : "Sample type"
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/donor-liver-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "DonorLiverTypeVS",
+      "title" : "Donor Liver Type ValueSet",
+      "description" : "Allowed values for donor liver type (Complete, Partial).",
+      "systems" : ["http://example.org/fhir/CodeSystem/donor-liver-type"],
+      "uses" : {
+      },
+      "StructureDefinition-donor-liver-type.html" : "Donor liver graft type"
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/donor-pre-ktx-dialysis-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "DonorPreKtxDialysisTypeVS",
+      "title" : "Donor Pre-KTX Dialysis Type ValueSet",
+      "description" : "Allowed dialysis types for donor prior to kidney transplant.",
+      "systems" : [
+        "http://example.org/fhir/CodeSystem/donor-pre-ktx-dialysis-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-donor-pre-ktx-dialysis-type.html" : "Donor pre-kidney-transplant dialysis type"
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/immunosuppressive-maintenance-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ImmunosuppressiveMaintenanceTypeVS",
+      "title" : "Immunosuppressive Maintenance to Patient Type ValueSet",
+      "description" : "Allowed types for immunosuppressive maintenance records.",
+      "systems" : [
+        "http://example.org/fhir/CodeSystem/immunosuppressive-maintenance-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-immunosuppressive-maintenance-patient.html" : "Immunosuppressive Maintenance to Patient"
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/intraoperative-complication-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IntraoperativeComplicationVS",
+      "title" : "Intraoperative Complications ValueSet",
+      "description" : "Allowed intraoperative complications during liver transplantation.",
+      "systems" : [
+        "http://example.org/fhir/CodeSystem/intraoperative-complication"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-transplant-intraoperative-complications.html" : "Intraoperative complications"
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/kidney-side-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "KidneySideVS",
+      "title" : "Kidney Side ValueSet",
+      "description" : "Allowed values for kidney side.",
+      "systems" : ["http://example.org/fhir/CodeSystem/kidney-side"],
+      "uses" : {
+      },
+      "StructureDefinition-transplant-kidney-side.html" : "Kidney side"
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/lab-result-unit-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "LabResultUnitVS",
+      "title" : "Lab Result Unit ValueSet",
+      "description" : "Allowed units of measurement for lab result values (unit column).",
+      "systems" : ["http://example.org/fhir/CodeSystem/lab-result-unit"],
+      "uses" : {
+      },
+      "StructureDefinition-lab-result-observation.html" : "Lab Result"
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-abo-group-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PatientABOGroupVS",
+      "title" : "Patient ABO Group ValueSet",
+      "description" : "ABO blood groups for transplant recipients.",
+      "systems" : ["http://example.org/fhir/CodeSystem/patient-abo-group"],
+      "uses" : {
+      },
+      "StructureDefinition-patient-abo-group.html" : "Patient ABO group",
+      "StructureDefinition-donor-abo-group.html" : "Donor ABO group"
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-hla-class-i-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PatientHLAClassIVS",
+      "title" : "Patient HLA Class I Loci ValueSet",
+      "description" : "Allowed Class I HLA loci (HLA-A, HLA-B, HLA-C).",
+      "systems" : ["http://example.org/fhir/CodeSystem/patient-hla-class-i"],
+      "uses" : {
+      },
+      "StructureDefinition-patient-allograft-hla-class-i.html" : "Patient allograft HLA Class I",
+      "StructureDefinition-donor-allograft-hla-class-i.html" : "Donor allograft HLA Class I loci"
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-hla-class-ii-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PatientHLAClassIIVS",
+      "title" : "Patient HLA Class II Loci ValueSet",
+      "description" : "Allowed Class II HLA loci (HLA-DR, HLA-DP, HLA-DQ).",
+      "systems" : ["http://example.org/fhir/CodeSystem/patient-hla-class-ii"],
+      "uses" : {
+      },
+      "StructureDefinition-patient-allograft-hla-class-ii.html" : "Patient allograft HLA Class II",
+      "StructureDefinition-donor-allograft-hla-class-ii.html" : "Donor allograft HLA Class II loci"
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-instrumental-investigation-result-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PatientInstrumentalInvestigationResultVS",
+      "title" : "Patient Instrumental Investigation Result ValueSet",
+      "description" : "Allowed results for the instrumental investigation test (Normal, Abnormal).",
+      "systems" : [
+        "http://example.org/fhir/CodeSystem/patient-instrumental-investigation-result"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-patient-instrumental-investigation-result.html" : "Result of the instrumental investigation"
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-rh-factor-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PatientRhFactorVS",
+      "title" : "Patient Rh Factor ValueSet",
+      "description" : "Allowed Rh factor values for transplant recipients.",
+      "systems" : ["http://example.org/fhir/CodeSystem/patient-rh-factor"],
+      "uses" : {
+      },
+      "StructureDefinition-patient-rh-factor.html" : "Patient Rh factor",
+      "StructureDefinition-donor-rh-factor.html" : "Donor Rh factor"
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/pre-medication-antihypertensive-drug-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PreMedicationAntihypertensiveDrugVS",
+      "title" : "Pre-medication Antihypertensive Drug ValueSet",
+      "description" : "Allowed antihypertensive drugs for antihypertensive_treatment.",
+      "systems" : [
+        "http://example.org/fhir/CodeSystem/pre-medication-antihypertensive-drug"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-pre-medication-antihypertensive-treatment.html" : "Antihypertensive treatment"
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/pre-medication-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PreMedicationTypeVS",
+      "title" : "Pre-medication Type ValueSet",
+      "description" : "Allowed type(s) for pre-medication records.",
+      "systems" : ["http://example.org/fhir/CodeSystem/pre-medication-type"],
+      "uses" : {
+      },
+      "StructureDefinition-pre-medication.html" : "Pre-transplant Medication"
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/reference-genome-build-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ReferenceGenomeBuildVS",
+      "title" : "Reference Genome Build ValueSet",
+      "description" : "Allowed reference genome build names (GRCh38, GRCh37).",
+      "systems" : ["http://example.org/fhir/CodeSystem/reference-genome-build"],
+      "uses" : {
+      },
+      "StructureDefinition-reference-genome.html" : "Reference Genome"
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/transplant-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TransplantTypeVS",
+      "title" : "Transplant Type ValueSet",
+      "description" : "Allowed transplant types.",
+      "systems" : ["http://example.org/fhir/CodeSystem/transplant-type"],
+      "uses" : {
+      },
+      "StructureDefinition-transplant.html" : "Transplant"
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/visit-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VisitTypeVS",
+      "title" : "Visit Type ValueSet",
+      "description" : "Allowed types of visits in the transplant follow-up schedule.",
+      "systems" : ["http://example.org/fhir/CodeSystem/visit-type"],
+      "uses" : {
+      },
+      "StructureDefinition-visit.html" : "Visit"
+    },
+    {
+      "url" : "http://example.org/fhir/ValueSet/concomitant-disease-category",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ConcomitantDiseaseCategoryVS",
+      "title" : "Concomitant Disease Category ValueSet",
+      "description" : "ValueSet of relevant concomitant diseases.",
+      "systems" : [
+        "http://example.org/fhir/CodeSystem/concomitant-disease-category"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-concomitant-disease-name.html" : "Concomitant disease name(s)"
+    },
+    {
+      "url" : "http://example.org/fhir/ValueSet/concomitant-medication-category",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ConcomitantMedicationCategoryVS",
+      "title" : "Concomitant Medication Category ValueSet",
+      "description" : "ValueSet of concomitant medication categories.",
+      "systems" : [
+        "http://example.org/fhir/CodeSystem/concomitant-medication-category"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-concomitant-medication-code.html" : "Medication"
+    },
+    {
+      "url" : "http://example.org/fhir/ValueSet/immunosuppressant-drug-type",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ImmunosuppressantDrugTypeVS",
+      "title" : "Immunosuppressant Drug Type",
+      "description" : "ValueSet of immunosuppressive drug types.",
+      "systems" : [
+        "http://example.org/fhir/CodeSystem/immunosuppressant-drug-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-immunosuppressant-name.html" : "Immunosuppressant name"
+    },
+    {
+      "url" : "http://example.org/fhir/ValueSet/immunosuppressive-induction-dose-unit",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ImmunosuppressiveInductionDoseUnitVS",
+      "title" : "Immunosuppressant Induction Dose Unit",
+      "description" : "ValueSet of units for immunosuppressant induction dose.",
+      "systems" : [
+        "http://example.org/fhir/CodeSystem/immunosuppressive-induction-dose-unit"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-immunosuppressive-induction-dose-unit.html" : "Dose unit"
+    },
+    {
+      "url" : "http://example.org/fhir/ValueSet/instrumental-investigation-name",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "InstrumentalInvestigationNameVS",
+      "title" : "Instrumental Investigation Name",
+      "description" : "ValueSet of instrumental investigation tests conducted.",
+      "systems" : [
+        "http://example.org/fhir/CodeSystem/instrumental-investigation-name"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-instrumental-investigation-name-ext.html" : "Instrumental investigation name"
+    },
+    {
+      "url" : "http://example.org/fhir/ValueSet/lab-test-name",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "LabTestNameVS",
+      "title" : "Lab Test Name",
+      "description" : "ValueSet of laboratory tests conducted.",
+      "systems" : ["http://example.org/fhir/CodeSystem/lab-test-name"],
+      "uses" : {
+      },
+      "StructureDefinition-lab-test-name-ext.html" : "Lab test name"
+    },
+    {
+      "url" : "http://example.org/fhir/ValueSet/outcome-type-name",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "OutcomeTypeNameVS",
+      "title" : "Outcome Type Name",
+      "description" : "ValueSet of post-transplant outcome types.",
+      "systems" : ["http://example.org/fhir/CodeSystem/outcome-type-name"],
+      "uses" : {
+      },
+      "StructureDefinition-outcome-type-name-ext.html" : "Outcome type name"
+    },
+    {
+      "url" : "http://example.org/fhir/ValueSet/post-event-type-name",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PostEventTypeNameVS",
+      "title" : "Post Event Type Name",
+      "description" : "ValueSet of post-transplant event types.",
+      "systems" : ["http://example.org/fhir/CodeSystem/post-event-type-name"],
+      "uses" : {
+      },
+      "StructureDefinition-post-event-type-name-ext.html" : "Post event type name"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-donor.html" : "Transplant Donor",
+      "StructureDefinition-patient-transplant.html" : "Transplant Recipient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/basic-resource-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "BasicResourceTypes",
+      "title" : "Basic Resource Types",
+      "description" : "This value set defines codes for resources not yet supported by (or which will never be supported by) FHIR.  Many of the codes listed here will eventually be turned into official resources.  However, there is no guarantee that any particular resource will be created nor that the scope will be exactly as defined by the codes presented here.  Codes in this set will be deprecated if/when formal resources are defined that encompass these concepts.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/basic-resource-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.138"],
+      "sources" : ["2.16.840.1.113883.4.642.3.138"],
+      "uses" : {
+      },
+      "StructureDefinition-post-event.html" : "Post Event",
+      "StructureDefinition-outcome.html" : "Outcome",
+      "StructureDefinition-post-event-type.html" : "Post Event Type",
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation",
+      "StructureDefinition-marker-immune-function.html" : "Marker of Immune Function",
+      "StructureDefinition-outcome-type.html" : "Outcome Type",
+      "StructureDefinition-target-region.html" : "Target Region",
+      "StructureDefinition-concomitant-medication.html" : "Concomitant Medication",
+      "StructureDefinition-variant-occurrence.html" : "Variant Occurrence",
+      "StructureDefinition-immunosuppressive-induction-patient.html" : "Immunosuppressant Induction to Patient",
+      "StructureDefinition-clinical-variable.html" : "Clinical Variable",
+      "StructureDefinition-concomitant-disease.html" : "Concomitant Disease",
+      "StructureDefinition-instrumental-investigation.html" : "Instrumental Investigation",
+      "StructureDefinition-lab-test.html" : "Lab Test",
+      "StructureDefinition-concomitant-episode.html" : "Concomitant Episode",
+      "StructureDefinition-genomic-test.html" : "Genomic Test",
+      "StructureDefinition-epigenome-study.html" : "Epigenome Study",
+      "StructureDefinition-immunosuppressant.html" : "Immunosuppressant",
+      "StructureDefinition-methylomic-study.html" : "Methylomic Study"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.141"],
+      "sources" : ["2.16.840.1.113883.4.642.3.141"],
+      "uses" : {
+      },
+      "StructureDefinition-lab-result-observation.html" : "Lab Result",
+      "StructureDefinition-biosample.html" : "Biological Sample",
+      "StructureDefinition-patient-instrumental-investigation.html" : "Patient Instrumental Investigation",
+      "StructureDefinition-microbiology.html" : "Microbiology"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTClinicalFindings",
+      "title" : "SNOMED CT Clinical Findings",
+      "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.232"],
+      "sources" : ["2.16.840.1.113883.4.642.3.232"],
+      "uses" : {
+      },
+      "StructureDefinition-lab-report.html" : "Laboratory DiagnosticReport"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "DataAbsentReason",
+      "description" : "Used to specify why the normally expected content of the data element is missing.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.5"],
+      "sources" : ["2.16.840.1.113883.4.642.3.5"],
+      "uses" : {
+      },
+      "StructureDefinition-lab-result-observation.html" : "Lab Result",
+      "StructureDefinition-patient-instrumental-investigation.html" : "Patient Instrumental Investigation",
+      "StructureDefinition-microbiology.html" : "Microbiology"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosisRole",
+      "title" : "DiagnosisRole",
+      "description" : "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diagnosis-role"],
+      "oids" : ["2.16.840.1.113883.4.642.3.49"],
+      "sources" : ["2.16.840.1.113883.4.642.3.49"],
+      "uses" : {
+      },
+      "StructureDefinition-visit.html" : "Visit",
+      "StructureDefinition-transplant.html" : "Transplant"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnostic-report-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosticReportStatus",
+      "title" : "DiagnosticReportStatus",
+      "description" : "The status of the diagnostic report.",
+      "systems" : ["http://hl7.org/fhir/diagnostic-report-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.235"],
+      "sources" : ["2.16.840.1.113883.4.642.3.235"],
+      "uses" : {
+      },
+      "StructureDefinition-lab-report.html" : "Laboratory DiagnosticReport"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnostic-service-sections",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosticServiceSectionCodes",
+      "title" : "Diagnostic Service Section Codes",
+      "description" : "This value set includes all the codes in HL7 V2 table 0074.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0074"],
+      "oids" : ["2.16.840.1.113883.4.642.3.234"],
+      "sources" : ["2.16.840.1.113883.4.642.3.234"],
+      "uses" : {
+      },
+      "StructureDefinition-lab-report.html" : "Laboratory DiagnosticReport"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-admit-source",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdmitSource",
+      "title" : "Admit source",
+      "description" : "This value set defines a set of codes that can be used to indicate from where the patient came in.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/admit-source"],
+      "oids" : ["2.16.840.1.113883.4.642.3.257"],
+      "sources" : ["2.16.840.1.113883.4.642.3.257"],
+      "uses" : {
+      },
+      "StructureDefinition-visit.html" : "Visit",
+      "StructureDefinition-transplant.html" : "Transplant"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-diet",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Diet",
+      "title" : "Diet",
+      "description" : "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diet"],
+      "oids" : ["2.16.840.1.113883.4.642.3.255"],
+      "sources" : ["2.16.840.1.113883.4.642.3.255"],
+      "uses" : {
+      },
+      "StructureDefinition-visit.html" : "Visit",
+      "StructureDefinition-transplant.html" : "Transplant"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DischargeDisposition",
+      "title" : "Discharge disposition",
+      "description" : "This value set defines a set of codes that can be used to where the patient left the hospital.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/discharge-disposition"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.259"],
+      "sources" : ["2.16.840.1.113883.4.642.3.259"],
+      "uses" : {
+      },
+      "StructureDefinition-visit.html" : "Visit",
+      "StructureDefinition-transplant.html" : "Transplant"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-location-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterLocationStatus",
+      "title" : "EncounterLocationStatus",
+      "description" : "The status of the location.",
+      "systems" : ["http://hl7.org/fhir/encounter-location-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.262"],
+      "sources" : ["2.16.840.1.113883.4.642.3.262"],
+      "uses" : {
+      },
+      "StructureDefinition-visit.html" : "Visit",
+      "StructureDefinition-transplant.html" : "Transplant"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-participant-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantType",
+      "title" : "Participant type",
+      "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/participant-type",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.250"],
+      "sources" : ["2.16.840.1.113883.4.642.3.250"],
+      "uses" : {
+      },
+      "StructureDefinition-visit.html" : "Visit",
+      "StructureDefinition-transplant.html" : "Transplant"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterReasonCodes",
+      "title" : "Encounter Reason Codes",
+      "description" : "This examples value set defines the set of codes that can be used to indicate reasons for an encounter.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.261"],
+      "sources" : ["2.16.840.1.113883.4.642.3.261"],
+      "uses" : {
+      },
+      "StructureDefinition-visit.html" : "Visit",
+      "StructureDefinition-transplant.html" : "Transplant"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecialArrangements",
+      "title" : "Special arrangements",
+      "description" : "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.253"],
+      "sources" : ["2.16.840.1.113883.4.642.3.253"],
+      "uses" : {
+      },
+      "StructureDefinition-visit.html" : "Visit",
+      "StructureDefinition-transplant.html" : "Transplant"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecialCourtesy",
+      "title" : "Special courtesy",
+      "description" : "This value set defines a set of codes that can be used to indicate special courtesies provided to the patient.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.252"],
+      "sources" : ["2.16.840.1.113883.4.642.3.252"],
+      "uses" : {
+      },
+      "StructureDefinition-visit.html" : "Visit",
+      "StructureDefinition-transplant.html" : "Transplant"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterStatus",
+      "title" : "EncounterStatus",
+      "description" : "Current state of the encounter.",
+      "systems" : ["http://hl7.org/fhir/encounter-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.246"],
+      "sources" : ["2.16.840.1.113883.4.642.3.246"],
+      "uses" : {
+      },
+      "StructureDefinition-visit.html" : "Visit",
+      "StructureDefinition-transplant.html" : "Transplant"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Identifier Type Codes",
+      "title" : "IdentifierType",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-post-event-type.html" : "Post Event Type",
+      "StructureDefinition-visit.html" : "Visit",
+      "StructureDefinition-outcome-type.html" : "Outcome Type",
+      "StructureDefinition-concomitant-medication.html" : "Concomitant Medication",
+      "StructureDefinition-variant-occurrence.html" : "Variant Occurrence",
+      "StructureDefinition-lab-result-observation.html" : "Lab Result",
+      "StructureDefinition-immunosuppressive-induction-patient.html" : "Immunosuppressant Induction to Patient",
+      "StructureDefinition-concomitant-disease.html" : "Concomitant Disease",
+      "StructureDefinition-instrumental-investigation.html" : "Instrumental Investigation",
+      "StructureDefinition-genomic-test.html" : "Genomic Test",
+      "StructureDefinition-patient-transplant.html" : "Transplant Recipient",
+      "StructureDefinition-epigenome-study.html" : "Epigenome Study",
+      "StructureDefinition-transplant.html" : "Transplant",
+      "StructureDefinition-biosample.html" : "Biological Sample",
+      "StructureDefinition-immunosuppressive-maintenance-patient.html" : "Immunosuppressive Maintenance to Patient",
+      "StructureDefinition-post-event.html" : "Post Event",
+      "StructureDefinition-outcome.html" : "Outcome",
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation",
+      "StructureDefinition-marker-immune-function.html" : "Marker of Immune Function",
+      "StructureDefinition-patient-instrumental-investigation.html" : "Patient Instrumental Investigation",
+      "StructureDefinition-target-region.html" : "Target Region",
+      "StructureDefinition-donor.html" : "Transplant Donor",
+      "StructureDefinition-reference-genome.html" : "Reference Genome",
+      "StructureDefinition-clinical-variable.html" : "Clinical Variable",
+      "StructureDefinition-lab-test.html" : "Lab Test",
+      "StructureDefinition-concomitant-episode.html" : "Concomitant Episode",
+      "StructureDefinition-pre-medication.html" : "Pre-transplant Medication",
+      "StructureDefinition-immunosuppressant.html" : "Immunosuppressant",
+      "StructureDefinition-microbiology.html" : "Microbiology",
+      "StructureDefinition-methylomic-study.html" : "Methylomic Study"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-post-event-type.html" : "Post Event Type",
+      "StructureDefinition-visit.html" : "Visit",
+      "StructureDefinition-outcome-type.html" : "Outcome Type",
+      "StructureDefinition-concomitant-medication.html" : "Concomitant Medication",
+      "StructureDefinition-variant-occurrence.html" : "Variant Occurrence",
+      "StructureDefinition-lab-result-observation.html" : "Lab Result",
+      "StructureDefinition-immunosuppressive-induction-patient.html" : "Immunosuppressant Induction to Patient",
+      "StructureDefinition-concomitant-disease.html" : "Concomitant Disease",
+      "StructureDefinition-instrumental-investigation.html" : "Instrumental Investigation",
+      "StructureDefinition-genomic-test.html" : "Genomic Test",
+      "StructureDefinition-patient-transplant.html" : "Transplant Recipient",
+      "StructureDefinition-epigenome-study.html" : "Epigenome Study",
+      "StructureDefinition-transplant.html" : "Transplant",
+      "StructureDefinition-biosample.html" : "Biological Sample",
+      "StructureDefinition-immunosuppressive-maintenance-patient.html" : "Immunosuppressive Maintenance to Patient",
+      "StructureDefinition-post-event.html" : "Post Event",
+      "StructureDefinition-outcome.html" : "Outcome",
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation",
+      "StructureDefinition-marker-immune-function.html" : "Marker of Immune Function",
+      "StructureDefinition-patient-instrumental-investigation.html" : "Patient Instrumental Investigation",
+      "StructureDefinition-target-region.html" : "Target Region",
+      "StructureDefinition-donor.html" : "Transplant Donor",
+      "StructureDefinition-reference-genome.html" : "Reference Genome",
+      "StructureDefinition-clinical-variable.html" : "Clinical Variable",
+      "StructureDefinition-lab-test.html" : "Lab Test",
+      "StructureDefinition-concomitant-episode.html" : "Concomitant Episode",
+      "StructureDefinition-pre-medication.html" : "Pre-transplant Medication",
+      "StructureDefinition-immunosuppressant.html" : "Immunosuppressant",
+      "StructureDefinition-microbiology.html" : "Microbiology",
+      "StructureDefinition-methylomic-study.html" : "Methylomic Study"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-post-event-type.html" : "Post Event Type",
+      "StructureDefinition-visit.html" : "Visit",
+      "StructureDefinition-outcome-type.html" : "Outcome Type",
+      "StructureDefinition-concomitant-medication.html" : "Concomitant Medication",
+      "StructureDefinition-variant-occurrence.html" : "Variant Occurrence",
+      "StructureDefinition-lab-result-observation.html" : "Lab Result",
+      "StructureDefinition-immunosuppressive-induction-patient.html" : "Immunosuppressant Induction to Patient",
+      "StructureDefinition-concomitant-disease.html" : "Concomitant Disease",
+      "StructureDefinition-instrumental-investigation.html" : "Instrumental Investigation",
+      "StructureDefinition-genomic-test.html" : "Genomic Test",
+      "StructureDefinition-patient-transplant.html" : "Transplant Recipient",
+      "StructureDefinition-epigenome-study.html" : "Epigenome Study",
+      "StructureDefinition-transplant.html" : "Transplant",
+      "StructureDefinition-biosample.html" : "Biological Sample",
+      "StructureDefinition-immunosuppressive-maintenance-patient.html" : "Immunosuppressive Maintenance to Patient",
+      "StructureDefinition-post-event.html" : "Post Event",
+      "StructureDefinition-outcome.html" : "Outcome",
+      "StructureDefinition-variant-annotation.html" : "Variant Annotation",
+      "StructureDefinition-marker-immune-function.html" : "Marker of Immune Function",
+      "StructureDefinition-patient-instrumental-investigation.html" : "Patient Instrumental Investigation",
+      "StructureDefinition-target-region.html" : "Target Region",
+      "StructureDefinition-donor.html" : "Transplant Donor",
+      "StructureDefinition-reference-genome.html" : "Reference Genome",
+      "StructureDefinition-clinical-variable.html" : "Clinical Variable",
+      "StructureDefinition-lab-report.html" : "Laboratory DiagnosticReport",
+      "StructureDefinition-lab-test.html" : "Lab Test",
+      "StructureDefinition-concomitant-episode.html" : "Concomitant Episode",
+      "StructureDefinition-pre-medication.html" : "Pre-transplant Medication",
+      "StructureDefinition-immunosuppressant.html" : "Immunosuppressant",
+      "StructureDefinition-microbiology.html" : "Microbiology",
+      "StructureDefinition-methylomic-study.html" : "Methylomic Study"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "systems" : ["http://hl7.org/fhir/link-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.423"],
+      "sources" : ["2.16.840.1.113883.4.642.3.423"],
+      "uses" : {
+      },
+      "StructureDefinition-donor.html" : "Transplant Donor",
+      "StructureDefinition-patient-transplant.html" : "Transplant Recipient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationType",
+      "title" : "Location type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/location-physical-type"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.328"],
+      "sources" : ["2.16.840.1.113883.4.642.3.328"],
+      "uses" : {
+      },
+      "StructureDefinition-visit.html" : "Visit",
+      "StructureDefinition-transplant.html" : "Transplant"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/marital-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Marital Status Codes",
+      "title" : "MaritalStatus",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.29"],
+      "sources" : ["2.16.840.1.113883.4.642.3.29"],
+      "uses" : {
+      },
+      "StructureDefinition-donor.html" : "Transplant Donor",
+      "StructureDefinition-patient-transplant.html" : "Transplant Recipient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.403"],
+      "sources" : ["2.16.840.1.113883.4.642.3.403"],
+      "uses" : {
+      },
+      "StructureDefinition-lab-result-observation.html" : "Lab Result",
+      "StructureDefinition-patient-instrumental-investigation.html" : "Patient Instrumental Investigation",
+      "StructureDefinition-microbiology.html" : "Microbiology"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LOINCCodes",
+      "title" : "LOINC Codes",
+      "description" : "This value set includes all LOINC codes",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.396"],
+      "sources" : ["2.16.840.1.113883.4.642.3.396"],
+      "uses" : {
+      },
+      "StructureDefinition-lab-result-observation.html" : "Lab Result",
+      "StructureDefinition-patient-instrumental-investigation.html" : "Patient Instrumental Investigation",
+      "StructureDefinition-microbiology.html" : "Microbiology"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationInterpretationCodes",
+      "title" : "Observation Interpretation Codes",
+      "description" : "A categorical assessment, providing a rough qualitative interpretation of the observation value,    such as “normal”/ “abnormal”,”low” / “high”, “better” / “worse”, “susceptible” / “resistant”, “expected”/ “not expected”.    The value set is intended to be for ANY use where coded representation of an interpretation is needed.   \r\n   \r\n   Notes:\r\n   \r\n   This is being communicated in v2.x in OBX-8 (Observation Interpretation), in v3 in ObservationInterpretation (CWE) in R1 (Representative Realm) and in FHIR in    Observation.interpretation. Historically these values come from the laboratory domain, and these codes are extensively    used. The value set binding is extensible, so codes outside the value set that are needed for interpretation concepts    (i.e. particular meanings) that are not included in the value set can be used, and these new codes may also be added to    the value set and published in a future version.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.399"],
+      "sources" : ["2.16.840.1.113883.4.642.3.399"],
+      "uses" : {
+      },
+      "StructureDefinition-lab-result-observation.html" : "Lab Result",
+      "StructureDefinition-patient-instrumental-investigation.html" : "Patient Instrumental Investigation",
+      "StructureDefinition-microbiology.html" : "Microbiology"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationMethods",
+      "title" : "Observation Methods",
+      "description" : "Observation Method codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 272394005 (Technique (qualifier value)) or is-a 129264002 (Action (qualifier value)) or is-a 386053000 (Evaluation procedure(procedure))",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.395"],
+      "sources" : ["2.16.840.1.113883.4.642.3.395"],
+      "uses" : {
+      },
+      "StructureDefinition-lab-result-observation.html" : "Lab Result",
+      "StructureDefinition-patient-instrumental-investigation.html" : "Patient Instrumental Investigation",
+      "StructureDefinition-microbiology.html" : "Microbiology"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "ObservationStatus",
+      "description" : "Codes providing the status of an observation.",
+      "systems" : ["http://hl7.org/fhir/observation-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.400"],
+      "sources" : ["2.16.840.1.113883.4.642.3.400"],
+      "uses" : {
+      },
+      "StructureDefinition-lab-result-observation.html" : "Lab Result",
+      "StructureDefinition-patient-instrumental-investigation.html" : "Patient Instrumental Investigation",
+      "StructureDefinition-microbiology.html" : "Microbiology"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PatientContactRelationship",
+      "title" : "Patient Contact Relationship ",
+      "description" : "The nature of the relationship between the patient and the contact person.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1130"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1130"],
+      "uses" : {
+      },
+      "StructureDefinition-donor.html" : "Transplant Donor",
+      "StructureDefinition-patient-transplant.html" : "Transplant Recipient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "QuantityComparator",
+      "title" : "QuantityComparator",
+      "description" : "How the Quantity should be understood and represented.",
+      "systems" : ["http://hl7.org/fhir/quantity-comparator"],
+      "oids" : ["2.16.840.1.113883.4.642.3.59"],
+      "sources" : ["2.16.840.1.113883.4.642.3.59"],
+      "uses" : {
+      },
+      "StructureDefinition-lab-result-observation.html" : "Lab Result"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeAppliesToCodes",
+      "title" : "Observation Reference Range Applies To Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the particular target population the reference range applies to.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-Race",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.407"],
+      "sources" : ["2.16.840.1.113883.4.642.3.407"],
+      "uses" : {
+      },
+      "StructureDefinition-lab-result-observation.html" : "Lab Result",
+      "StructureDefinition-patient-instrumental-investigation.html" : "Patient Instrumental Investigation",
+      "StructureDefinition-microbiology.html" : "Microbiology"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeMeaningCodes",
+      "title" : "Observation Reference Range Meaning Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.397"],
+      "sources" : ["2.16.840.1.113883.4.642.3.397"],
+      "uses" : {
+      },
+      "StructureDefinition-lab-result-observation.html" : "Lab Result",
+      "StructureDefinition-patient-instrumental-investigation.html" : "Patient Instrumental Investigation",
+      "StructureDefinition-microbiology.html" : "Microbiology"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/report-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LOINCDiagnosticReportCodes",
+      "title" : "LOINC Diagnostic Report Codes",
+      "description" : "This value set includes LOINC codes that relate to Diagnostic Observations.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.233"],
+      "sources" : ["2.16.840.1.113883.4.642.3.233"],
+      "uses" : {
+      },
+      "StructureDefinition-lab-report.html" : "Laboratory DiagnosticReport"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/service-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceType",
+      "title" : "Service type",
+      "description" : "This value set defines an example set of codes of service-types.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/service-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.518"],
+      "sources" : ["2.16.840.1.113883.4.642.3.518"],
+      "uses" : {
+      },
+      "StructureDefinition-visit.html" : "Visit",
+      "StructureDefinition-transplant.html" : "Transplant"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/specimen-collection-method",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FHIRSpecimenCollectionMethod",
+      "title" : "FHIR Specimen Collection Method",
+      "description" : " This example value set defines a set of codes that can be used to indicate the method by which a specimen was collected.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.468"],
+      "sources" : ["2.16.840.1.113883.4.642.3.468"],
+      "uses" : {
+      },
+      "StructureDefinition-biosample.html" : "Biological Sample"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/specimen-container-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecimenContainerType",
+      "title" : "Specimen Container Type",
+      "description" : "Checks on the patient prior specimen collection. All SNOMED CT concepts descendants of 706041008 |Device for body fluid and tissue collection/transfer/processing (physical object)|",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.470"],
+      "sources" : ["2.16.840.1.113883.4.642.3.470"],
+      "uses" : {
+      },
+      "StructureDefinition-biosample.html" : "Biological Sample"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/specimen-processing-procedure",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecimenProcessingProcedure",
+      "title" : "Specimen processing procedure",
+      "description" : "The technique that is used to perform the process or preserve the specimen.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0373"],
+      "oids" : ["2.16.840.1.113883.4.642.3.469"],
+      "sources" : ["2.16.840.1.113883.4.642.3.469"],
+      "uses" : {
+      },
+      "StructureDefinition-biosample.html" : "Biological Sample"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/specimen-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecimenStatus",
+      "title" : "SpecimenStatus",
+      "description" : "Codes providing the status/availability of a specimen.",
+      "systems" : ["http://hl7.org/fhir/specimen-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.471"],
+      "sources" : ["2.16.840.1.113883.4.642.3.471"],
+      "uses" : {
+      },
+      "StructureDefinition-biosample.html" : "Biological Sample"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0092",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSReAdmissionIndicator",
+      "title" : "hl7VS-re-admissionIndicator",
+      "description" : "Value Set of codes which are used to specify that a patient is being re-admitted to a healthcare facility from which they were discharged, and indicates the circumstances around such re-admission.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0092"],
+      "oids" : ["2.16.840.1.113883.21.40"],
+      "sources" : ["2.16.840.1.113883.21.40"],
+      "uses" : {
+      },
+      "StructureDefinition-visit.html" : "Visit",
+      "StructureDefinition-transplant.html" : "Transplant"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0371",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSAdditivePreservative",
+      "title" : "hl7VS-additivePreservative",
+      "description" : "Concepts specifying any additive introduced to the specimen before or at the time of collection.  These additives may be introduced in order to preserve, maintain or enhance the particular nature or component of the specimen.  Used in Version 2 messaging in the SPM segment.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0371"],
+      "oids" : ["2.16.840.1.113883.21.245"],
+      "sources" : ["2.16.840.1.113883.21.245"],
+      "uses" : {
+      },
+      "StructureDefinition-biosample.html" : "Biological Sample"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0493",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSSpecimenCondition",
+      "title" : "hl7VS-specimenCondition",
+      "description" : "Concepts of modes or states of being that describe the nature of a specimen.  Used in Version 2 messaging in the SPM segment.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0493"],
+      "oids" : ["2.16.840.1.113883.21.333"],
+      "sources" : ["2.16.840.1.113883.21.333"],
+      "uses" : {
+      },
+      "StructureDefinition-biosample.html" : "Biological Sample"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0916",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSRelevantClincialInformation",
+      "title" : "hl7VS-relevantClincialInformation",
+      "description" : "Value Set of codes that specify additional clinical information about the patient or specimen to report the supporting and/or suspected diagnosis and clinical findings on requests for interpreted diagnostic studies.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0916"],
+      "oids" : ["2.16.840.1.113883.21.440"],
+      "sources" : ["2.16.840.1.113883.21.440"],
+      "uses" : {
+      },
+      "StructureDefinition-biosample.html" : "Biological Sample"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActEncounterCode",
+      "title" : "ActEncounterCode",
+      "description" : "Domain provides codes that qualify the ActEncounterClass (ENC)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "oids" : ["2.16.840.1.113883.1.11.13955"],
+      "sources" : ["2.16.840.1.113883.1.11.13955"],
+      "uses" : {
+      },
+      "StructureDefinition-visit.html" : "Visit",
+      "StructureDefinition-transplant.html" : "Transplant"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActPriority",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActPriority",
+      "title" : "ActPriority",
+      "description" : "A code or set of codes (e.g., for routine, emergency,) specifying the urgency under which the Act happened, can happen, is happening, is intended to happen, or is requested/demanded to happen.\r\n\r\n*Discussion:* This attribute is used in orders to indicate the ordered priority, and in event documentation it indicates the actual priority used to perform the act. In definition mood it indicates the available priorities.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActPriority"],
+      "oids" : ["2.16.840.1.113883.1.11.16866"],
+      "sources" : ["2.16.840.1.113883.1.11.16866"],
+      "uses" : {
+      },
+      "StructureDefinition-visit.html" : "Visit",
+      "StructureDefinition-transplant.html" : "Transplant"
+    }
+  ]
+}

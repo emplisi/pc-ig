@@ -1,0 +1,42 @@
+{
+  "resourceType" : "Basic",
+  "id" : "concomitant-episode-example-1",
+  "meta" : {
+    "profile" : ["http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-episode"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Basic concomitant-episode-example-1</b></p><a name=\"concomitant-episode-example-1\"> </a><a name=\"hcconcomitant-episode-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-concomitant-episode.html\">Concomitant Episode</a></p></div><p><b>Concomitant disease ID relationship</b>: <a href=\"Basic-concomitant-disease-example-1.html\">Basic Relevant concomitant disease(s)</a></p><p><b>Patient ID relationship</b>: <a href=\"Patient-ExamplePatientTransplant1.html\">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p><p><b>Episode date</b>: 2025-01-10</p><p><b>Episode description</b>: Episode of decompensated heart failure requiring hospitalization.</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/concomitant-episode-id</code>/CE0001</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/concomitant-episode-type episode}\">Concomitant disease episode</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-episode-disease-ref",
+    "valueReference" : {
+      "reference" : "Basic/concomitant-disease-example-1"
+    }
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-episode-patient-ref",
+    "valueReference" : {
+      "reference" : "Patient/ExamplePatientTransplant1"
+    }
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-episode-date",
+    "valueDate" : "2025-01-10"
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-episode-description",
+    "valueString" : "Episode of decompensated heart failure requiring hospitalization."
+  }],
+  "identifier" : [{
+    "system" : "http://example.org/fhir/NamingSystem/concomitant-episode-id",
+    "value" : "CE0001"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://example.org/fhir/CodeSystem/concomitant-episode-type",
+      "code" : "episode",
+      "display" : "Concomitant disease episode"
+    }]
+  }
+}

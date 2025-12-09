@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="outcome-type-name-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem outcome-type-name-cs</b></p><a name="outcome-type-name-cs"> </a><a name="hcoutcome-type-name-cs"> </a><p>This  code system <code>http://example.org/fhir/CodeSystem/outcome-type-name</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">ebv-infection<a name="outcome-type-name-cs-ebv-infection"> </a></td><td>Epstein Barr Infection (Need more specific one)</td></tr><tr><td style="white-space:nowrap">440032<a name="outcome-type-name-cs-440032"> </a></td><td>Cytomegalovirus Infection</td></tr><tr><td style="white-space:nowrap">4265526<a name="outcome-type-name-cs-4265526"> </a></td><td>BK Virus Infection</td></tr><tr><td style="white-space:nowrap">45765696<a name="outcome-type-name-cs-45765696"> </a></td><td>Renal Calcineurin Inhibitors Toxicity</td></tr><tr><td style="white-space:nowrap">mycophenolate-toxicity<a name="outcome-type-name-cs-mycophenolate-toxicity"> </a></td><td>Mycophenolate toxicity</td></tr><tr><td style="white-space:nowrap">mtor-toxicity<a name="outcome-type-name-cs-mtor-toxicity"> </a></td><td>mTOR inhibitors toxicity</td></tr><tr><td style="white-space:nowrap">321876<a name="outcome-type-name-cs-321876"> </a></td><td>Microangiopathy</td></tr><tr><td style="white-space:nowrap">kidney-rejection-episode<a name="outcome-type-name-cs-kidney-rejection-episode"> </a></td><td>Kidney rejection episode</td></tr><tr><td style="white-space:nowrap">4341657<a name="outcome-type-name-cs-4341657"> </a></td><td>Liver rejection episode</td></tr><tr><td style="white-space:nowrap">198185<a name="outcome-type-name-cs-198185"> </a></td><td>Chronic renal failure after pLTx</td></tr><tr><td style="white-space:nowrap">4267417<a name="outcome-type-name-cs-4267417"> </a></td><td>Liver Graft fibrosis</td></tr><tr><td style="white-space:nowrap">4064161<a name="outcome-type-name-cs-4064161"> </a></td><td>Cirrhosis of Liver</td></tr><tr><td style="white-space:nowrap">chronic-liver-failure<a name="outcome-type-name-cs-chronic-liver-failure"> </a></td><td>Chronic liver failure (liver graft fibrosis and cirrhosis)</td></tr><tr><td style="white-space:nowrap">4198610<a name="outcome-type-name-cs-4198610"> </a></td><td>Chronic liver rejection</td></tr><tr><td style="white-space:nowrap">435514<a name="outcome-type-name-cs-435514"> </a></td><td>Chronic Kidney Rejection</td></tr><tr><td style="white-space:nowrap">ptld<a name="outcome-type-name-cs-ptld"> </a></td><td>Post-transplant lymphoproliferative disease (PTLD)</td></tr><tr><td style="white-space:nowrap">316866<a name="outcome-type-name-cs-316866"> </a></td><td>High Blood pressure</td></tr><tr><td style="white-space:nowrap">35817874<a name="outcome-type-name-cs-35817874"> </a></td><td>Diabetes</td></tr><tr><td style="white-space:nowrap">alloimmunization<a name="outcome-type-name-cs-alloimmunization"> </a></td><td>Alloimmunization</td></tr><tr><td style="white-space:nowrap">4223098<a name="outcome-type-name-cs-4223098"> </a></td><td>Hepatic artery thrombosis</td></tr><tr><td style="white-space:nowrap">biliary-complications<a name="outcome-type-name-cs-biliary-complications"> </a></td><td>Billiary complications</td></tr><tr><td style="white-space:nowrap">urological-complications<a name="outcome-type-name-cs-urological-complications"> </a></td><td>Urological Complications</td></tr><tr><td style="white-space:nowrap">mortality<a name="outcome-type-name-cs-mortality"> </a></td><td>Mortality</td></tr><tr><td style="white-space:nowrap">graft-survival<a name="outcome-type-name-cs-graft-survival"> </a></td><td>Graft survival</td></tr><tr><td style="white-space:nowrap">liver-primary-nonfunction<a name="outcome-type-name-cs-liver-primary-nonfunction"> </a></td><td>Liver primary nonfunction</td></tr><tr><td style="white-space:nowrap">liver-early-allograft-dysfunction<a name="outcome-type-name-cs-liver-early-allograft-dysfunction"> </a></td><td>Liver early allograft dysfunction</td></tr><tr><td style="white-space:nowrap">kidney-primary-nonfunction<a name="outcome-type-name-cs-kidney-primary-nonfunction"> </a></td><td>Kidney primary nonfunction</td></tr><tr><td style="white-space:nowrap">delayed-kidney-graft-function<a name="outcome-type-name-cs-delayed-kidney-graft-function"> </a></td><td>Delayed kidney graft function</td></tr><tr><td style="white-space:nowrap">42872891<a name="outcome-type-name-cs-42872891"> </a></td><td>Posterior reversible encelopathy (PRES)</td></tr><tr><td style="white-space:nowrap">relapse-primary-immunomediated<a name="outcome-type-name-cs-relapse-primary-immunomediated"> </a></td><td>Relapse of primary immunomediated disease</td></tr></table></div>
+  </text>
+  <url value="http://example.org/fhir/CodeSystem/outcome-type-name"/>
+  <version value="0.1.0"/>
+  <name value="OutcomeTypeNameCS"/>
+  <title value="Outcome Type Name"/>
+  <status value="draft"/>
+  <date value="2025-12-09T16:44:49+01:00"/>
+  <publisher value="Your Organization"/>
+  <contact>
+    <name value="Your Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://example.org"/>
+    </telecom>
+  </contact>
+  <description value="Types of clinical outcomes after transplant."/>
+  <content value="complete"/>
+  <count value="30"/>
+  <concept>
+    <code value="ebv-infection"/>
+    <display value="Epstein Barr Infection (Need more specific one)"/>
+  </concept>
+  <concept>
+    <code value="440032"/>
+    <display value="Cytomegalovirus Infection"/>
+  </concept>
+  <concept>
+    <code value="4265526"/>
+    <display value="BK Virus Infection"/>
+  </concept>
+  <concept>
+    <code value="45765696"/>
+    <display value="Renal Calcineurin Inhibitors Toxicity"/>
+  </concept>
+  <concept>
+    <code value="mycophenolate-toxicity"/>
+    <display value="Mycophenolate toxicity"/>
+  </concept>
+  <concept>
+    <code value="mtor-toxicity"/>
+    <display value="mTOR inhibitors toxicity"/>
+  </concept>
+  <concept>
+    <code value="321876"/>
+    <display value="Microangiopathy"/>
+  </concept>
+  <concept>
+    <code value="kidney-rejection-episode"/>
+    <display value="Kidney rejection episode"/>
+  </concept>
+  <concept>
+    <code value="4341657"/>
+    <display value="Liver rejection episode"/>
+  </concept>
+  <concept>
+    <code value="198185"/>
+    <display value="Chronic renal failure after pLTx"/>
+  </concept>
+  <concept>
+    <code value="4267417"/>
+    <display value="Liver Graft fibrosis"/>
+  </concept>
+  <concept>
+    <code value="4064161"/>
+    <display value="Cirrhosis of Liver"/>
+  </concept>
+  <concept>
+    <code value="chronic-liver-failure"/>
+    <display value="Chronic liver failure (liver graft fibrosis and cirrhosis)"/>
+  </concept>
+  <concept>
+    <code value="4198610"/>
+    <display value="Chronic liver rejection"/>
+  </concept>
+  <concept>
+    <code value="435514"/>
+    <display value="Chronic Kidney Rejection"/>
+  </concept>
+  <concept>
+    <code value="ptld"/>
+    <display value="Post-transplant lymphoproliferative disease (PTLD)"/>
+  </concept>
+  <concept>
+    <code value="316866"/>
+    <display value="High Blood pressure"/>
+  </concept>
+  <concept>
+    <code value="35817874"/>
+    <display value="Diabetes"/>
+  </concept>
+  <concept>
+    <code value="alloimmunization"/>
+    <display value="Alloimmunization"/>
+  </concept>
+  <concept>
+    <code value="4223098"/>
+    <display value="Hepatic artery thrombosis"/>
+  </concept>
+  <concept>
+    <code value="biliary-complications"/>
+    <display value="Billiary complications"/>
+  </concept>
+  <concept>
+    <code value="urological-complications"/>
+    <display value="Urological Complications"/>
+  </concept>
+  <concept>
+    <code value="mortality"/>
+    <display value="Mortality"/>
+  </concept>
+  <concept>
+    <code value="graft-survival"/>
+    <display value="Graft survival"/>
+  </concept>
+  <concept>
+    <code value="liver-primary-nonfunction"/>
+    <display value="Liver primary nonfunction"/>
+  </concept>
+  <concept>
+    <code value="liver-early-allograft-dysfunction"/>
+    <display value="Liver early allograft dysfunction"/>
+  </concept>
+  <concept>
+    <code value="kidney-primary-nonfunction"/>
+    <display value="Kidney primary nonfunction"/>
+  </concept>
+  <concept>
+    <code value="delayed-kidney-graft-function"/>
+    <display value="Delayed kidney graft function"/>
+  </concept>
+  <concept>
+    <code value="42872891"/>
+    <display value="Posterior reversible encelopathy (PRES)"/>
+  </concept>
+  <concept>
+    <code value="relapse-primary-immunomediated"/>
+    <display value="Relapse of primary immunomediated disease"/>
+  </concept>
+</CodeSystem>

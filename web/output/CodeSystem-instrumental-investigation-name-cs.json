@@ -1,0 +1,83 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "instrumental-investigation-name-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem instrumental-investigation-name-cs</b></p><a name=\"instrumental-investigation-name-cs\"> </a><a name=\"hcinstrumental-investigation-name-cs\"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/instrumental-investigation-name</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">718078008<a name=\"instrumental-investigation-name-cs-718078008\"> </a></td><td>Liver doppler ultrasound</td></tr><tr><td style=\"white-space:nowrap\">4061009<a name=\"instrumental-investigation-name-cs-4061009\"> </a></td><td>Abdominal CT scan</td></tr><tr><td style=\"white-space:nowrap\">4083230<a name=\"instrumental-investigation-name-cs-4083230\"> </a></td><td>Abdominal MRI</td></tr><tr><td style=\"white-space:nowrap\">4194588<a name=\"instrumental-investigation-name-cs-4194588\"> </a></td><td>MRCP</td></tr><tr><td style=\"white-space:nowrap\">37311324<a name=\"instrumental-investigation-name-cs-37311324\"> </a></td><td>Brain MRI</td></tr><tr><td style=\"white-space:nowrap\">4169785<a name=\"instrumental-investigation-name-cs-4169785\"> </a></td><td>AngioTC</td></tr><tr><td style=\"white-space:nowrap\">4299523<a name=\"instrumental-investigation-name-cs-4299523\"> </a></td><td>Angiography</td></tr><tr><td style=\"white-space:nowrap\">4181917<a name=\"instrumental-investigation-name-cs-4181917\"> </a></td><td>EEG</td></tr><tr><td style=\"white-space:nowrap\">36308175<a name=\"instrumental-investigation-name-cs-36308175\"> </a></td><td>ECG</td></tr><tr><td style=\"white-space:nowrap\">4167052<a name=\"instrumental-investigation-name-cs-4167052\"> </a></td><td>Kidney doppler ultrasound</td></tr><tr><td style=\"white-space:nowrap\">36713614<a name=\"instrumental-investigation-name-cs-36713614\"> </a></td><td>Total body CT scan</td></tr><tr><td style=\"white-space:nowrap\">scintigraphy<a name=\"instrumental-investigation-name-cs-scintigraphy\"> </a></td><td>Scintigraphy</td></tr><tr><td style=\"white-space:nowrap\">mcug<a name=\"instrumental-investigation-name-cs-mcug\"> </a></td><td>Micturating Cystourethrogram (MCUG)</td></tr><tr><td style=\"white-space:nowrap\">pet<a name=\"instrumental-investigation-name-cs-pet\"> </a></td><td>PET</td></tr></table></div>"
+  },
+  "url" : "http://example.org/fhir/CodeSystem/instrumental-investigation-name",
+  "version" : "0.1.0",
+  "name" : "InstrumentalInvestigationNameCS",
+  "title" : "Instrumental Investigation Name",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-12-09T16:44:49+01:00",
+  "publisher" : "Your Organization",
+  "contact" : [{
+    "name" : "Your Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://example.org"
+    }]
+  }],
+  "description" : "Types of instrumental investigation tests conducted.",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 14,
+  "concept" : [{
+    "code" : "718078008",
+    "display" : "Liver doppler ultrasound"
+  },
+  {
+    "code" : "4061009",
+    "display" : "Abdominal CT scan"
+  },
+  {
+    "code" : "4083230",
+    "display" : "Abdominal MRI"
+  },
+  {
+    "code" : "4194588",
+    "display" : "MRCP"
+  },
+  {
+    "code" : "37311324",
+    "display" : "Brain MRI"
+  },
+  {
+    "code" : "4169785",
+    "display" : "AngioTC"
+  },
+  {
+    "code" : "4299523",
+    "display" : "Angiography"
+  },
+  {
+    "code" : "4181917",
+    "display" : "EEG"
+  },
+  {
+    "code" : "36308175",
+    "display" : "ECG"
+  },
+  {
+    "code" : "4167052",
+    "display" : "Kidney doppler ultrasound"
+  },
+  {
+    "code" : "36713614",
+    "display" : "Total body CT scan"
+  },
+  {
+    "code" : "scintigraphy",
+    "display" : "Scintigraphy"
+  },
+  {
+    "code" : "mcug",
+    "display" : "Micturating Cystourethrogram (MCUG)"
+  },
+  {
+    "code" : "pet",
+    "display" : "PET"
+  }]
+}

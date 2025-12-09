@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="immunosuppressant-drug-type-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem immunosuppressant-drug-type-cs</b></p><a name="immunosuppressant-drug-type-cs"> </a><a name="hcimmunosuppressant-drug-type-cs"> </a><p>This  code system <code>http://example.org/fhir/CodeSystem/immunosuppressant-drug-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1506270<a name="immunosuppressant-drug-type-cs-1506270"> </a></td><td>Steroid (methylprednisolone)</td></tr><tr><td style="white-space:nowrap">1551099<a name="immunosuppressant-drug-type-cs-1551099"> </a></td><td>Steroid (prednisone)</td></tr><tr><td style="white-space:nowrap">cni-fk506<a name="immunosuppressant-drug-type-cs-cni-fk506"> </a></td><td>CNI (FK506)</td></tr><tr><td style="white-space:nowrap">cni-csa<a name="immunosuppressant-drug-type-cs-cni-csa"> </a></td><td>CNI (CsA)</td></tr><tr><td style="white-space:nowrap">19003999<a name="immunosuppressant-drug-type-cs-19003999"> </a></td><td>MMF</td></tr><tr><td style="white-space:nowrap">19038440<a name="immunosuppressant-drug-type-cs-19038440"> </a></td><td>Basiliximab</td></tr><tr><td style="white-space:nowrap">35806359<a name="immunosuppressant-drug-type-cs-35806359"> </a></td><td>ATG</td></tr><tr><td style="white-space:nowrap">19011440<a name="immunosuppressant-drug-type-cs-19011440"> </a></td><td>Everolimus</td></tr><tr><td style="white-space:nowrap">19034726<a name="immunosuppressant-drug-type-cs-19034726"> </a></td><td>Sirolimus</td></tr></table></div>
+  </text>
+  <url value="http://example.org/fhir/CodeSystem/immunosuppressant-drug-type"/>
+  <version value="0.1.0"/>
+  <name value="ImmunosuppressantDrugTypeCS"/>
+  <title value="Immunosuppressant Drug Type"/>
+  <status value="draft"/>
+  <date value="2025-12-09T16:44:49+01:00"/>
+  <publisher value="Your Organization"/>
+  <contact>
+    <name value="Your Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://example.org"/>
+    </telecom>
+  </contact>
+  <description value="Types of immunosuppressive drugs used in the transplant setting."/>
+  <content value="complete"/>
+  <count value="9"/>
+  <concept>
+    <code value="1506270"/>
+    <display value="Steroid (methylprednisolone)"/>
+  </concept>
+  <concept>
+    <code value="1551099"/>
+    <display value="Steroid (prednisone)"/>
+  </concept>
+  <concept>
+    <code value="cni-fk506"/>
+    <display value="CNI (FK506)"/>
+  </concept>
+  <concept>
+    <code value="cni-csa"/>
+    <display value="CNI (CsA)"/>
+  </concept>
+  <concept>
+    <code value="19003999"/>
+    <display value="MMF"/>
+  </concept>
+  <concept>
+    <code value="19038440"/>
+    <display value="Basiliximab"/>
+  </concept>
+  <concept>
+    <code value="35806359"/>
+    <display value="ATG"/>
+  </concept>
+  <concept>
+    <code value="19011440"/>
+    <display value="Everolimus"/>
+  </concept>
+  <concept>
+    <code value="19034726"/>
+    <display value="Sirolimus"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="patient-hla-class-ii-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem patient-hla-class-ii-cs</b></p><a name="patient-hla-class-ii-cs"> </a><a name="hcpatient-hla-class-ii-cs"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/patient-hla-class-ii</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">HLA-DR<a name="patient-hla-class-ii-cs-HLA-DR"> </a></td></tr><tr><td style="white-space:nowrap">HLA-DP<a name="patient-hla-class-ii-cs-HLA-DP"> </a></td></tr><tr><td style="white-space:nowrap">HLA-DQ<a name="patient-hla-class-ii-cs-HLA-DQ"> </a></td></tr></table></div>
+  </text>
+  <url value="http://example.org/fhir/CodeSystem/patient-hla-class-ii"/>
+  <version value="0.1.0"/>
+  <name value="PatientHLAClassIICS"/>
+  <title value="Patient HLA Class II Loci CodeSystem"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-12-09T16:44:49+01:00"/>
+  <publisher value="Your Organization"/>
+  <contact>
+    <name value="Your Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://example.org"/>
+    </telecom>
+  </contact>
+  <description value="Class II HLA loci relevant to transplant matching."/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="HLA-DR"/>
+    <display value="HLA-DR"/>
+  </concept>
+  <concept>
+    <code value="HLA-DP"/>
+    <display value="HLA-DP"/>
+  </concept>
+  <concept>
+    <code value="HLA-DQ"/>
+    <display value="HLA-DQ"/>
+  </concept>
+</CodeSystem>

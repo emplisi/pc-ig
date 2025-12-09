@@ -1,0 +1,60 @@
+{
+  "resourceType" : "Basic",
+  "id" : "mark-imm-func-example-1",
+  "meta" : {
+    "profile" : ["http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Basic mark-imm-func-example-1</b></p><a name=\"mark-imm-func-example-1\"> </a><a name=\"hcmark-imm-func-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-marker-immune-function.html\">Marker of Immune Function</a></p></div><p><b>Patient ID relationship</b>: <a href=\"Patient-ExamplePatientTransplant1.html\">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p><p><b>HLA antibody class or locus</b>: HLA-DQ7</p><p><b>MFI value</b>: 3500</p><p><b>Donor-specific antibody (DSA)</b>: true</p><p><b>AT1R antibody result</b>: 12.3</p><p><b>ETAR antibody result</b>: 8.7</p><p><b>Anti-MICA antibody result</b>: 5.2</p><p><b>Anti-MICB antibody result</b>: 4.9</p><p><b>AECA / other non-HLA antibodies</b>: Low-titer anti-endothelial cell antibodies</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/marker-immune-function-id</code>/MIF0001</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/marker-immune-function-type antibody}\">Antibody marker</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-patient-ref",
+    "valueReference" : {
+      "reference" : "Patient/ExamplePatientTransplant1"
+    }
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-hla-antibody-class",
+    "valueString" : "HLA-DQ7"
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-mfi-value",
+    "valueString" : "3500"
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-dsa",
+    "valueBoolean" : true
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-atr1",
+    "valueDecimal" : 12.3
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-etar",
+    "valueDecimal" : 8.7
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-mica",
+    "valueDecimal" : 5.2
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-micb",
+    "valueDecimal" : 4.9
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-aeca-other",
+    "valueString" : "Low-titer anti-endothelial cell antibodies"
+  }],
+  "identifier" : [{
+    "system" : "http://example.org/fhir/NamingSystem/marker-immune-function-id",
+    "value" : "MIF0001"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://example.org/fhir/CodeSystem/marker-immune-function-type",
+      "code" : "antibody",
+      "display" : "Antibody marker"
+    }]
+  }
+}

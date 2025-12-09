@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "concomitant-disease-category-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet concomitant-disease-category-vs</b></p><a name=\"concomitant-disease-category-vs\"> </a><a name=\"hcconcomitant-disease-category-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-concomitant-disease-category.html\"><code>http://example.org/fhir/CodeSystem/concomitant-disease-category</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
+  },
+  "url" : "http://example.org/fhir/ValueSet/concomitant-disease-category",
+  "version" : "0.1.0",
+  "name" : "ConcomitantDiseaseCategoryVS",
+  "title" : "Concomitant Disease Category ValueSet",
+  "status" : "draft",
+  "date" : "2025-12-09T16:44:49+01:00",
+  "publisher" : "Your Organization",
+  "contact" : [{
+    "name" : "Your Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://example.org"
+    }]
+  }],
+  "description" : "ValueSet of relevant concomitant diseases.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.org/fhir/CodeSystem/concomitant-disease-category"
+    }]
+  }
+}

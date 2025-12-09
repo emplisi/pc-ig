@@ -1,0 +1,35 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "donor-pre-ktx-dialysis-type-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem donor-pre-ktx-dialysis-type-cs</b></p><a name=\"donor-pre-ktx-dialysis-type-cs\"> </a><a name=\"hcdonor-pre-ktx-dialysis-type-cs\"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/donor-pre-ktx-dialysis-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">hemodialysis<a name=\"donor-pre-ktx-dialysis-type-cs-hemodialysis\"> </a></td><td>Hemodialysis</td></tr><tr><td style=\"white-space:nowrap\">peritoneal-dialysis<a name=\"donor-pre-ktx-dialysis-type-cs-peritoneal-dialysis\"> </a></td><td>Peritoneal dialysis</td></tr></table></div>"
+  },
+  "url" : "http://example.org/fhir/CodeSystem/donor-pre-ktx-dialysis-type",
+  "version" : "0.1.0",
+  "name" : "DonorPreKtxDialysisTypeCS",
+  "title" : "Donor Pre-KTX Dialysis Type CodeSystem",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-12-09T16:44:49+01:00",
+  "publisher" : "Your Organization",
+  "contact" : [{
+    "name" : "Your Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://example.org"
+    }]
+  }],
+  "description" : "Dialysis type used for the donor prior to kidney transplantation.",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "hemodialysis",
+    "display" : "Hemodialysis"
+  },
+  {
+    "code" : "peritoneal-dialysis",
+    "display" : "Peritoneal dialysis"
+  }]
+}

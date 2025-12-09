@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/ValueSet/visit-type-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "visit-type-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet visit-type-vs</b></p><a name=\"visit-type-vs\"> </a><a name=\"hcvisit-type-vs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-visit-type-cs.html\"><code>http://example.org/fhir/CodeSystem/visit-type</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-visit-type-cs.html#visit-type-cs-pre-transplant\">pre-transplant</a></td><td style=\"color: #cccccc\">Pre-transplant visit</td></tr><tr><td><a href=\"CodeSystem-visit-type-cs.html#visit-type-cs-month-1\">month-1</a></td><td style=\"color: #cccccc\">1 month visit</td></tr><tr><td><a href=\"CodeSystem-visit-type-cs.html#visit-type-cs-month-3\">month-3</a></td><td style=\"color: #cccccc\">3 month visit</td></tr><tr><td><a href=\"CodeSystem-visit-type-cs.html#visit-type-cs-month-5\">month-5</a></td><td style=\"color: #cccccc\">5 month visit</td></tr><tr><td><a href=\"CodeSystem-visit-type-cs.html#visit-type-cs-outcome\">outcome</a></td><td style=\"color: #cccccc\">Outcome visit</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/visit-type-vs"^^xsd:anyURI ;
+     fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/visit-type-vs>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "VisitTypeVS"] ; # 
+  fhir:title [ fhir:v "Visit Type ValueSet"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-12-09T16:44:49+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Your Organization"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Your Organization" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://example.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Allowed types of visits in the transplant follow-up schedule."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://example.org/fhir/CodeSystem/visit-type"^^xsd:anyURI ;
+         fhir:l <http://example.org/fhir/CodeSystem/visit-type>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "pre-transplant" ]
+       ] [
+         fhir:code [ fhir:v "month-1" ]
+       ] [
+         fhir:code [ fhir:v "month-3" ]
+       ] [
+         fhir:code [ fhir:v "month-5" ]
+       ] [
+         fhir:code [ fhir:v "outcome" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

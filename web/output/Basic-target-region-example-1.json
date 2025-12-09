@@ -1,0 +1,48 @@
+{
+  "resourceType" : "Basic",
+  "id" : "target-region-example-1",
+  "meta" : {
+    "profile" : ["http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/target-region"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Basic target-region-example-1</b></p><a name=\"target-region-example-1\"> </a><a name=\"hctarget-region-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-target-region.html\">Target Region</a></p></div><p><b>Genomic test ID relationship</b>: <a href=\"Basic-genomic-test-example-1.html\">Basic Exome sequencing</a></p><p><b>HGNC ID</b>: HGNC:1100</p><p><b>HGNC symbol</b>: BRCA1</p><p><b>Chromosome ID</b>: 17</p><p><b>Start position</b>: 43044295</p><p><b>End position</b>: 43125482</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/target-region-id</code>/TR0001</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/target-region-type gene-region}\">Gene-level target region</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/target-region-genomic-test-ref",
+    "valueReference" : {
+      "reference" : "Basic/genomic-test-example-1"
+    }
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/target-region-hgnc-id",
+    "valueString" : "HGNC:1100"
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/target-region-hgnc-symbol",
+    "valueString" : "BRCA1"
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/target-region-chromosome-id",
+    "valueInteger" : 17
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/target-region-start-position",
+    "valueInteger" : 43044295
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/target-region-end-position",
+    "valueInteger" : 43125482
+  }],
+  "identifier" : [{
+    "system" : "http://example.org/fhir/NamingSystem/target-region-id",
+    "value" : "TR0001"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://example.org/fhir/CodeSystem/target-region-type",
+      "code" : "gene-region",
+      "display" : "Gene-level target region"
+    }]
+  }
+}

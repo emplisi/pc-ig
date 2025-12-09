@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="concomitant-episode-example-1"/>
+  <meta>
+    <profile value="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-episode"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Basic concomitant-episode-example-1</b></p><a name="concomitant-episode-example-1"> </a><a name="hcconcomitant-episode-example-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-concomitant-episode.html">Concomitant Episode</a></p></div><p><b>Concomitant disease ID relationship</b>: <a href="Basic-concomitant-disease-example-1.html">Basic Relevant concomitant disease(s)</a></p><p><b>Patient ID relationship</b>: <a href="Patient-ExamplePatientTransplant1.html">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p><p><b>Episode date</b>: 2025-01-10</p><p><b>Episode description</b>: Episode of decompensated heart failure requiring hospitalization.</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/concomitant-episode-id</code>/CE0001</p><p><b>code</b>: <span title="Codes:{http://example.org/fhir/CodeSystem/concomitant-episode-type episode}">Concomitant disease episode</span></p></div>
+  </text>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-episode-disease-ref">
+    <valueReference>
+      <reference value="Basic/concomitant-disease-example-1"/>
+    </valueReference>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-episode-patient-ref">
+    <valueReference>
+      <reference value="Patient/ExamplePatientTransplant1"/>
+    </valueReference>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-episode-date">
+    <valueDate value="2025-01-10"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-episode-description">
+    <valueString value="Episode of decompensated heart failure requiring hospitalization."/>
+  </extension>
+  <identifier>
+    <system value="http://example.org/fhir/NamingSystem/concomitant-episode-id"/>
+    <value value="CE0001"/>
+  </identifier>
+  <code>
+    <coding>
+      <system value="http://example.org/fhir/CodeSystem/concomitant-episode-type"/>
+      <code value="episode"/>
+      <display value="Concomitant disease episode"/>
+    </coding>
+  </code>
+</Basic>

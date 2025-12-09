@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="donor-liver-type-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem donor-liver-type-cs</b></p><a name="donor-liver-type-cs"> </a><a name="hcdonor-liver-type-cs"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/donor-liver-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">complete<a name="donor-liver-type-cs-complete"> </a></td><td>Complete liver graft</td></tr><tr><td style="white-space:nowrap">partial<a name="donor-liver-type-cs-partial"> </a></td><td>Partial liver graft</td></tr></table></div>
+  </text>
+  <url value="http://example.org/fhir/CodeSystem/donor-liver-type"/>
+  <version value="0.1.0"/>
+  <name value="DonorLiverTypeCS"/>
+  <title value="Donor Liver Type CodeSystem"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-12-09T16:44:49+01:00"/>
+  <publisher value="Your Organization"/>
+  <contact>
+    <name value="Your Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://example.org"/>
+    </telecom>
+  </contact>
+  <description value="Type of liver donation (complete vs partial)."/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="complete"/>
+    <display value="Complete liver graft"/>
+  </concept>
+  <concept>
+    <code value="partial"/>
+    <display value="Partial liver graft"/>
+  </concept>
+</CodeSystem>

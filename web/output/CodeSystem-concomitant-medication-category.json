@@ -1,0 +1,49 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "concomitant-medication-category",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem concomitant-medication-category</b></p><a name=\"concomitant-medication-category\"> </a><a name=\"hcconcomitant-medication-category\"> </a><p>This  code system <code>http://example.org/fhir/CodeSystem/concomitant-medication-category</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">antihypertensive<a name=\"concomitant-medication-category-antihypertensive\"> </a></td><td>Antihypertensive treatment</td></tr><tr><td style=\"white-space:nowrap\">antiviral-prophylaxis<a name=\"concomitant-medication-category-antiviral-prophylaxis\"> </a></td><td>Antiviral prophylaxis</td></tr><tr><td style=\"white-space:nowrap\">antibiotic-prophylaxis<a name=\"concomitant-medication-category-antibiotic-prophylaxis\"> </a></td><td>Antibiotic prophylaxis</td></tr><tr><td style=\"white-space:nowrap\">heparin-therapy-prophylaxis<a name=\"concomitant-medication-category-heparin-therapy-prophylaxis\"> </a></td><td>Heparin therapy/prophylaxis</td></tr><tr><td style=\"white-space:nowrap\">aspirin-therapy-prophylaxis<a name=\"concomitant-medication-category-aspirin-therapy-prophylaxis\"> </a></td><td>Aspirin therapy/prophylaxis</td></tr><tr><td style=\"white-space:nowrap\">ursodeoxycholic-acid<a name=\"concomitant-medication-category-ursodeoxycholic-acid\"> </a></td><td>Ursodeoxycholic acid</td></tr></table></div>"
+  },
+  "url" : "http://example.org/fhir/CodeSystem/concomitant-medication-category",
+  "version" : "0.1.0",
+  "name" : "ConcomitantMedicationCategory",
+  "title" : "Concomitant Medication Category",
+  "status" : "draft",
+  "date" : "2025-12-09T16:44:49+01:00",
+  "publisher" : "Your Organization",
+  "contact" : [{
+    "name" : "Your Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://example.org"
+    }]
+  }],
+  "description" : "Categories of concomitant medications.",
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "antihypertensive",
+    "display" : "Antihypertensive treatment"
+  },
+  {
+    "code" : "antiviral-prophylaxis",
+    "display" : "Antiviral prophylaxis"
+  },
+  {
+    "code" : "antibiotic-prophylaxis",
+    "display" : "Antibiotic prophylaxis"
+  },
+  {
+    "code" : "heparin-therapy-prophylaxis",
+    "display" : "Heparin therapy/prophylaxis"
+  },
+  {
+    "code" : "aspirin-therapy-prophylaxis",
+    "display" : "Aspirin therapy/prophylaxis"
+  },
+  {
+    "code" : "ursodeoxycholic-acid",
+    "display" : "Ursodeoxycholic acid"
+  }]
+}

@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "immunosuppressant-drug-type-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet immunosuppressant-drug-type-vs</b></p><a name=\"immunosuppressant-drug-type-vs\"> </a><a name=\"hcimmunosuppressant-drug-type-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-immunosuppressant-drug-type-cs.html\"><code>http://example.org/fhir/CodeSystem/immunosuppressant-drug-type</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
+  },
+  "url" : "http://example.org/fhir/ValueSet/immunosuppressant-drug-type",
+  "version" : "0.1.0",
+  "name" : "ImmunosuppressantDrugTypeVS",
+  "title" : "Immunosuppressant Drug Type",
+  "status" : "draft",
+  "date" : "2025-12-09T16:44:49+01:00",
+  "publisher" : "Your Organization",
+  "contact" : [{
+    "name" : "Your Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://example.org"
+    }]
+  }],
+  "description" : "ValueSet of immunosuppressive drug types.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.org/fhir/CodeSystem/immunosuppressant-drug-type"
+    }]
+  }
+}

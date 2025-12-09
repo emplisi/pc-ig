@@ -1,0 +1,196 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/Basic/variant-occurrence-example-1> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "variant-occurrence-example-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Basic variant-occurrence-example-1</b></p><a name=\"variant-occurrence-example-1\"> </a><a name=\"hcvariant-occurrence-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-variant-occurrence.html\">Variant Occurrence</a></p></div><p><b>Target region ID relationship</b>: <a href=\"Basic-target-region-example-1.html\">Basic Gene-level target region</a></p><p><b>Reference sequence</b>: NM_007294.4</p><p><b>dbSNP rsID</b>: rs80357713</p><p><b>Reference allele</b>: A</p><p><b>Alternate allele</b>: C</p><p><b>HGVS c. notation</b>: c.5266dupC</p><p><b>HGVS p. notation</b>: p.(Gln1756Profs*74)</p><p><b>Variant read depth</b>: 120</p><p><b>Variant exon number</b>: 20</p><p><b>Copy number</b>: 2</p><p><b>CNV locus</b>: chr17:43044295-43125482</p><p><b>Fusion breakpoint</b>: NA</p><p><b>Fusion supporting reads</b>: 0</p><p><b>Sequence alteration</b>: missense_variant</p><p><b>Variant feature</b>: pathogenic_variant</p><p><b>Genetic origin</b>: somatic</p><p><b>Genotype</b>: heterozygous</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/variant-occurrence-id</code>/VO0001</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/variant-occurrence-type snv}\">Single nucleotide variant</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-target-region-ref"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-target-region-ref>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Basic/target-region-example-1> ;
+       fhir:reference [ fhir:v "Basic/target-region-example-1" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-reference-sequence"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-reference-sequence>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "NM_007294.4"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-rs-id"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-rs-id>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "rs80357713"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-reference-allele"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-reference-allele>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "A"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-alternate-allele"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-alternate-allele>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "C"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-hgvs-c"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-hgvs-c>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "c.5266dupC"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-hgvs-p"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-hgvs-p>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "p.(Gln1756Profs*74)"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-variant-read-depth"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-variant-read-depth>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 120
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-variant-exon-number"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-variant-exon-number>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 20
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-copy-number"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-copy-number>
+     ] ;
+     fhir:value [
+       a fhir:Decimal ;
+       fhir:v "2"^^xsd:decimal
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-cnv-locus"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-cnv-locus>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "chr17:43044295-43125482"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-fusion-breakpoint"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-fusion-breakpoint>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "NA"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-fusion-supporting-reads"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-fusion-supporting-reads>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-sequence-alteration"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-sequence-alteration>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "missense_variant"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-variant-feature"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-variant-feature>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "pathogenic_variant"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-genetic-origin"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-genetic-origin>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "somatic"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-genotype"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-genotype>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "heterozygous"
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://example.org/fhir/NamingSystem/variant-occurrence-id"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/NamingSystem/variant-occurrence-id>
+     ] ;
+     fhir:value [ fhir:v "VO0001" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://example.org/fhir/CodeSystem/variant-occurrence-type"^^xsd:anyURI ;
+         fhir:l <http://example.org/fhir/CodeSystem/variant-occurrence-type>
+       ] ;
+       fhir:code [ fhir:v "snv" ] ;
+       fhir:display [ fhir:v "Single nucleotide variant" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

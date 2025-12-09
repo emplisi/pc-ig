@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Home - PROTECT-CHILD Pediatric Transplant Data Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/pc-header.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <div xmlns="http://www.w3.org/1999/xhtml"
+     id="pc-header"
+     style="display:flex;align-items:center;justify-content:space-between;">
+
+  <!-- Left -->
+  <a id="pc-logo-left" no-external="true"
+     href="https://protect-child.eu" target="_blank">
+    <img src="assets/images/hl7-eu-logo.png"
+         alt="hl7-eu-logo"
+         style="height:60px;"/>
+  </a>
+
+  <!-- Center: IG title + version -->
+  <div id="pc-title-block"
+       style="flex:1;text-align:center;margin:0 16px;">
+    <div id="ig-title"
+         style="font-size:1.6em;font-weight:bold;margin:0;">
+      PROTECT-CHILD Pediatric Transplant Data Implementation Guide
+    </div>
+    <div id="ig-version"
+         style="font-size:0.9em;margin-top:2px;">
+      0.1.0 - 
+    </div>
+  </div>
+
+  <!-- Right -->
+  <a id="pc-logo-right" no-external="true"
+     href="https://ec.europa.eu" target="_blank">
+    <img src="assets/images/fhir-logo-www.png"
+         alt="fhir logo"
+         style="height:60px;"/>
+  </a>
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">PROTECT-CHILD Pediatric Transplant Data Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <!-- Menu items -->
+  <li><a href="index.html">Home</a></li>
+  <li><a href="StructureDefinition-transplant-case.html">TransplantCase model</a></li>
+  <!-- <li><a href="project-overview.html">Project &amp; scope</a></li>
+  <li><a href="model-overview.html">Common model</a></li>-->
+  <li><a href="artifacts.html">Artifacts</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">PROTECT-CHILD Pediatric Transplant Data Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://example.org/fhir/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Home</h2>
+  
+
+
+
+
+
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://example.org/fhir/ImplementationGuide/donor-ig/ImplementationGuide/pc.ig<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://example.org/fhir/ImplementationGuide/donor-ig/ImplementationGuide/pc.ig"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://example.org/fhir/ImplementationGuide/donor-ig/ImplementationGuide/pc.ig|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2025-12-09
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">PROTECTChildTransplantIG</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h1 id="protect-child-transplant-data-implementation-guide-draft">PROTECT-CHILD Transplant Data Implementation Guide (DRAFT)</h1>
+
+<blockquote>
+  <p><strong>Status:</strong> This Implementation Guide is a <strong>draft</strong> and may change based on ongoing work in PROTECT-CHILD.</p>
+</blockquote>
+
+<p>This IG describes a FHIR-based representation of pediatric transplant data for the <strong>PROTECT-CHILD</strong> project.</p>
+
+<p>At the centre is the <strong>TransplantCase logical model</strong>, which links:</p>
+
+<ul>
+  <li><strong>Recipient &amp; donor</strong>
+    <ul>
+      <li><a href="StructureDefinition-patient-transplant.html"><code class="language-plaintext highlighter-rouge">Patient</code></a></li>
+      <li><a href="StructureDefinition-donor.html"><code class="language-plaintext highlighter-rouge">Donor</code></a></li>
+    </ul>
+  </li>
+  <li><strong>Transplant &amp; visits</strong>
+    <ul>
+      <li><a href="StructureDefinition-transplant.html"><code class="language-plaintext highlighter-rouge">Transplant</code></a> (index transplant encounter)</li>
+      <li><a href="StructureDefinition-visit.html"><code class="language-plaintext highlighter-rouge">Visit</code></a> (pre- and post-transplant follow-up)</li>
+    </ul>
+  </li>
+  <li><strong>Concomitant disease &amp; immunosuppression</strong>
+    <ul>
+      <li><a href="StructureDefinition-concomitant-disease.html"><code class="language-plaintext highlighter-rouge">ConcomitantDisease</code></a>, <a href="StructureDefinition-concomitant-episode.html"><code class="language-plaintext highlighter-rouge">ConcomitantEpisode</code></a>, <a href="StructureDefinition-concomitant-medication.html"><code class="language-plaintext highlighter-rouge">ConcomitantMedication</code></a></li>
+      <li><a href="StructureDefinition-pre-medication.html"><code class="language-plaintext highlighter-rouge">PreMedication</code></a>, <a href="StructureDefinition-immunosuppressive-induction-patient.html"><code class="language-plaintext highlighter-rouge">ImmunosuppressiveInductionPatient</code></a>, <a href="StructureDefinition-immunosuppressive-maintenance-patient.html"><code class="language-plaintext highlighter-rouge">ImmunosuppressiveMaintenancePatient</code></a>, <a href="StructureDefinition-immunosuppressant.html"><code class="language-plaintext highlighter-rouge">Immunosuppressant</code></a></li>
+    </ul>
+  </li>
+  <li><strong>Clinical data</strong>
+    <ul>
+      <li><a href="StructureDefinition-clinical-variable.html"><code class="language-plaintext highlighter-rouge">ClinicalVariable</code></a></li>
+      <li><a href="StructureDefinition-lab-result-observation.html"><code class="language-plaintext highlighter-rouge">LabResultObservation</code></a>, <a href="StructureDefinition-lab-report.html"><code class="language-plaintext highlighter-rouge">LabReport</code></a></li>
+      <li><a href="StructureDefinition-microbiology.html"><code class="language-plaintext highlighter-rouge">Microbiology</code></a></li>
+      <li><a href="StructureDefinition-patient-instrumental-investigation.html"><code class="language-plaintext highlighter-rouge">PatientInstrumentalInvestigation</code></a></li>
+    </ul>
+  </li>
+  <li><strong>Biospecimens &amp; omics</strong>
+    <ul>
+      <li><a href="StructureDefinition-biosample.html"><code class="language-plaintext highlighter-rouge">BioSample</code></a></li>
+      <li><a href="StructureDefinition-genomic-test.html"><code class="language-plaintext highlighter-rouge">GenomicTest</code></a>, <a href="StructureDefinition-epigenome-study.html"><code class="language-plaintext highlighter-rouge">EpigenomeStudy</code></a>, <a href="StructureDefinition-methylomic-study.html"><code class="language-plaintext highlighter-rouge">MethylomicStudy</code></a></li>
+      <li><a href="StructureDefinition-variant-occurrence.html"><code class="language-plaintext highlighter-rouge">VariantOccurrence</code></a>, <a href="StructureDefinition-variant-annotation.html"><code class="language-plaintext highlighter-rouge">VariantAnnotation</code></a></li>
+      <li><a href="StructureDefinition-reference-genome.html"><code class="language-plaintext highlighter-rouge">ReferenceGenome</code></a></li>
+    </ul>
+  </li>
+  <li><strong>Events &amp; outcomes</strong>
+    <ul>
+      <li><a href="StructureDefinition-post-event.html"><code class="language-plaintext highlighter-rouge">PostEvent</code></a></li>
+      <li><a href="StructureDefinition-outcome.html"><code class="language-plaintext highlighter-rouge">Outcome</code></a></li>
+    </ul>
+  </li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025 <a style="color:var(--footer-hyperlink-text-color)" href="https://example.org">Your Organization</a>.  Package pc.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 9, 2025 16:44+0100">2025-12-09</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

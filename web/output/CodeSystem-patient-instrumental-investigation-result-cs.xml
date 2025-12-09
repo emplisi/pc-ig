@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="patient-instrumental-investigation-result-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem patient-instrumental-investigation-result-cs</b></p><a name="patient-instrumental-investigation-result-cs"> </a><a name="hcpatient-instrumental-investigation-result-cs"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/patient-instrumental-investigation-result</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">normal<a name="patient-instrumental-investigation-result-cs-normal"> </a></td><td>Normal</td></tr><tr><td style="white-space:nowrap">abnormal<a name="patient-instrumental-investigation-result-cs-abnormal"> </a></td><td>Abnormal</td></tr></table></div>
+  </text>
+  <url value="http://example.org/fhir/CodeSystem/patient-instrumental-investigation-result"/>
+  <version value="0.1.0"/>
+  <name value="PatientInstrumentalInvestigationResultCS"/>
+  <title value="Patient Instrumental Investigation Result CodeSystem"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-12-09T16:44:49+01:00"/>
+  <publisher value="Your Organization"/>
+  <contact>
+    <name value="Your Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://example.org"/>
+    </telecom>
+  </contact>
+  <description value="Result of the instrumental investigation test conducted (Normal / Abnormal)."/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="normal"/>
+    <display value="Normal"/>
+  </concept>
+  <concept>
+    <code value="abnormal"/>
+    <display value="Abnormal"/>
+  </concept>
+</CodeSystem>

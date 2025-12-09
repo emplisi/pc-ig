@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="immunosuppressive-maintenance-type-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem immunosuppressive-maintenance-type-cs</b></p><a name="immunosuppressive-maintenance-type-cs"> </a><a name="hcimmunosuppressive-maintenance-type-cs"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/immunosuppressive-maintenance-type</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">maintenance-to-patient<a name="immunosuppressive-maintenance-type-cs-maintenance-to-patient"> </a></td><td>Immunosuppressive maintenance therapy to patient</td></tr></table></div>
+  </text>
+  <url value="http://example.org/fhir/CodeSystem/immunosuppressive-maintenance-type"/>
+  <version value="0.1.0"/>
+  <name value="ImmunosuppressiveMaintenanceTypeCS"/>
+  <title value="Immunosuppressive Maintenance to Patient Type CodeSystem"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-12-09T16:44:49+01:00"/>
+  <publisher value="Your Organization"/>
+  <contact>
+    <name value="Your Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://example.org"/>
+    </telecom>
+  </contact>
+  <description value="Type of immunosuppressive maintenance record."/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="1"/>
+  <concept>
+    <code value="maintenance-to-patient"/>
+    <display value="Immunosuppressive maintenance therapy to patient"/>
+  </concept>
+</CodeSystem>

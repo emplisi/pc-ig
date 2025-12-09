@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/CodeSystem/biliary-anastomosis-type-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "biliary-anastomosis-type-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem biliary-anastomosis-type-cs</b></p><a name=\"biliary-anastomosis-type-cs\"> </a><a name=\"hcbiliary-anastomosis-type-cs\"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/biliary-anastomosis-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">duct-to-duct<a name=\"biliary-anastomosis-type-cs-duct-to-duct\"> </a></td><td>Duct-to-duct anastomosis</td></tr><tr><td style=\"white-space:nowrap\">choledochoenterostomy<a name=\"biliary-anastomosis-type-cs-choledochoenterostomy\"> </a></td><td>Choledochoenterostomy</td></tr><tr><td style=\"white-space:nowrap\">bilioenteric<a name=\"biliary-anastomosis-type-cs-bilioenteric\"> </a></td><td>Bilioenteric anastomosis</td></tr><tr><td style=\"white-space:nowrap\">roux-en-y<a name=\"biliary-anastomosis-type-cs-roux-en-y\"> </a></td><td>Roux-en-Y hepaticojejunostomy</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://example.org/fhir/CodeSystem/biliary-anastomosis-type"^^xsd:anyURI ;
+     fhir:l <http://example.org/fhir/CodeSystem/biliary-anastomosis-type>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "BiliaryAnastomosisTypeCS"] ; # 
+  fhir:title [ fhir:v "Type of surgical biliary anastomosis CodeSystem"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-12-09T16:44:49+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Your Organization"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Your Organization" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://example.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Types of biliary anastomosis used in liver transplantation."] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "duct-to-duct" ] ;
+     fhir:display [ fhir:v "Duct-to-duct anastomosis" ]
+  ] [
+     fhir:code [ fhir:v "choledochoenterostomy" ] ;
+     fhir:display [ fhir:v "Choledochoenterostomy" ]
+  ] [
+     fhir:code [ fhir:v "bilioenteric" ] ;
+     fhir:display [ fhir:v "Bilioenteric anastomosis" ]
+  ] [
+     fhir:code [ fhir:v "roux-en-y" ] ;
+     fhir:display [ fhir:v "Roux-en-Y hepaticojejunostomy" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

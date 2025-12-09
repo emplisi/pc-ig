@@ -1,0 +1,83 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/CodeSystem/instrumental-investigation-name-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "instrumental-investigation-name-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem instrumental-investigation-name-cs</b></p><a name=\"instrumental-investigation-name-cs\"> </a><a name=\"hcinstrumental-investigation-name-cs\"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/instrumental-investigation-name</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">718078008<a name=\"instrumental-investigation-name-cs-718078008\"> </a></td><td>Liver doppler ultrasound</td></tr><tr><td style=\"white-space:nowrap\">4061009<a name=\"instrumental-investigation-name-cs-4061009\"> </a></td><td>Abdominal CT scan</td></tr><tr><td style=\"white-space:nowrap\">4083230<a name=\"instrumental-investigation-name-cs-4083230\"> </a></td><td>Abdominal MRI</td></tr><tr><td style=\"white-space:nowrap\">4194588<a name=\"instrumental-investigation-name-cs-4194588\"> </a></td><td>MRCP</td></tr><tr><td style=\"white-space:nowrap\">37311324<a name=\"instrumental-investigation-name-cs-37311324\"> </a></td><td>Brain MRI</td></tr><tr><td style=\"white-space:nowrap\">4169785<a name=\"instrumental-investigation-name-cs-4169785\"> </a></td><td>AngioTC</td></tr><tr><td style=\"white-space:nowrap\">4299523<a name=\"instrumental-investigation-name-cs-4299523\"> </a></td><td>Angiography</td></tr><tr><td style=\"white-space:nowrap\">4181917<a name=\"instrumental-investigation-name-cs-4181917\"> </a></td><td>EEG</td></tr><tr><td style=\"white-space:nowrap\">36308175<a name=\"instrumental-investigation-name-cs-36308175\"> </a></td><td>ECG</td></tr><tr><td style=\"white-space:nowrap\">4167052<a name=\"instrumental-investigation-name-cs-4167052\"> </a></td><td>Kidney doppler ultrasound</td></tr><tr><td style=\"white-space:nowrap\">36713614<a name=\"instrumental-investigation-name-cs-36713614\"> </a></td><td>Total body CT scan</td></tr><tr><td style=\"white-space:nowrap\">scintigraphy<a name=\"instrumental-investigation-name-cs-scintigraphy\"> </a></td><td>Scintigraphy</td></tr><tr><td style=\"white-space:nowrap\">mcug<a name=\"instrumental-investigation-name-cs-mcug\"> </a></td><td>Micturating Cystourethrogram (MCUG)</td></tr><tr><td style=\"white-space:nowrap\">pet<a name=\"instrumental-investigation-name-cs-pet\"> </a></td><td>PET</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://example.org/fhir/CodeSystem/instrumental-investigation-name"^^xsd:anyURI ;
+     fhir:l <http://example.org/fhir/CodeSystem/instrumental-investigation-name>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "InstrumentalInvestigationNameCS"] ; # 
+  fhir:title [ fhir:v "Instrumental Investigation Name"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-12-09T16:44:49+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Your Organization"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Your Organization" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://example.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Types of instrumental investigation tests conducted."] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "14"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "718078008" ] ;
+     fhir:display [ fhir:v "Liver doppler ultrasound" ]
+  ] [
+     fhir:code [ fhir:v "4061009" ] ;
+     fhir:display [ fhir:v "Abdominal CT scan" ]
+  ] [
+     fhir:code [ fhir:v "4083230" ] ;
+     fhir:display [ fhir:v "Abdominal MRI" ]
+  ] [
+     fhir:code [ fhir:v "4194588" ] ;
+     fhir:display [ fhir:v "MRCP" ]
+  ] [
+     fhir:code [ fhir:v "37311324" ] ;
+     fhir:display [ fhir:v "Brain MRI" ]
+  ] [
+     fhir:code [ fhir:v "4169785" ] ;
+     fhir:display [ fhir:v "AngioTC" ]
+  ] [
+     fhir:code [ fhir:v "4299523" ] ;
+     fhir:display [ fhir:v "Angiography" ]
+  ] [
+     fhir:code [ fhir:v "4181917" ] ;
+     fhir:display [ fhir:v "EEG" ]
+  ] [
+     fhir:code [ fhir:v "36308175" ] ;
+     fhir:display [ fhir:v "ECG" ]
+  ] [
+     fhir:code [ fhir:v "4167052" ] ;
+     fhir:display [ fhir:v "Kidney doppler ultrasound" ]
+  ] [
+     fhir:code [ fhir:v "36713614" ] ;
+     fhir:display [ fhir:v "Total body CT scan" ]
+  ] [
+     fhir:code [ fhir:v "scintigraphy" ] ;
+     fhir:display [ fhir:v "Scintigraphy" ]
+  ] [
+     fhir:code [ fhir:v "mcug" ] ;
+     fhir:display [ fhir:v "Micturating Cystourethrogram (MCUG)" ]
+  ] [
+     fhir:code [ fhir:v "pet" ] ;
+     fhir:display [ fhir:v "PET" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

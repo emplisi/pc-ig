@@ -1,0 +1,85 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/Observation/patient-instrumental-investigation-example-1> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "patient-instrumental-investigation-example-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-instrumental-investigation"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-instrumental-investigation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation patient-instrumental-investigation-example-1</b></p><a name=\"patient-instrumental-investigation-example-1\"> </a><a name=\"hcpatient-instrumental-investigation-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-patient-instrumental-investigation.html\">Patient Instrumental Investigation</a></p></div><p><b>Patient ID relationship</b>: <a href=\"Patient-ExamplePatientTransplant1.html\">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p><p><b>Instrumental investigation ID relationship</b>: <a href=\"Basic-instrumental-investigation-example-1.html\">Basic </a></p><p><b>Result of the instrumental investigation</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/patient-instrumental-investigation-result normal}\">Normal</span></p><p><b>Date of instrumental investigation</b>: 2024-03-10</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/patient-instrumental-investigation-id</code>/PII0001</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:\">Patient instrumental investigation</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatientTransplant1.html\">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-instrumental-investigation-patient-ref"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-instrumental-investigation-patient-ref>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Patient/ExamplePatientTransplant1> ;
+       fhir:reference [ fhir:v "Patient/ExamplePatientTransplant1" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-instrumental-investigation-instrument-ref"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-instrumental-investigation-instrument-ref>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Basic/instrumental-investigation-example-1> ;
+       fhir:reference [ fhir:v "Basic/instrumental-investigation-example-1" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-instrumental-investigation-result"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-instrumental-investigation-result>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://example.org/fhir/CodeSystem/patient-instrumental-investigation-result"^^xsd:anyURI ;
+           fhir:l <http://example.org/fhir/CodeSystem/patient-instrumental-investigation-result>
+         ] ;
+         fhir:code [ fhir:v "normal" ] ;
+         fhir:display [ fhir:v "Normal" ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-instrumental-investigation-date"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-instrumental-investigation-date>
+     ] ;
+     fhir:value [
+       a fhir:Date ;
+       fhir:v "2024-03-10"^^xsd:date
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://example.org/fhir/NamingSystem/patient-instrumental-investigation-id"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/NamingSystem/patient-instrumental-investigation-id>
+     ] ;
+     fhir:value [ fhir:v "PII0001" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:text [ fhir:v "Patient instrumental investigation" ]
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://example.org/fhir/Patient/ExamplePatientTransplant1> ;
+     fhir:reference [ fhir:v "Patient/ExamplePatientTransplant1" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

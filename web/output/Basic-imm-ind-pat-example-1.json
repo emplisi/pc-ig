@@ -1,0 +1,48 @@
+{
+  "resourceType" : "Basic",
+  "id" : "imm-ind-pat-example-1",
+  "meta" : {
+    "profile" : ["http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-induction-patient"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Basic imm-ind-pat-example-1</b></p><a name=\"imm-ind-pat-example-1\"> </a><a name=\"hcimm-ind-pat-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-immunosuppressive-induction-patient.html\">Immunosuppressant Induction to Patient</a></p></div><p><b>Immunosuppressant ID relationship</b>: <a href=\"Basic-immunosuppressant-example-1.html\">Basic Immunosuppressive drug</a></p><p><b>Patient ID relationship</b>: <a href=\"Patient-ExamplePatientTransplant1.html\">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p><p><b>Immunosuppressant dose</b>: 0.15</p><p><b>Dose unit</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/immunosuppressive-induction-dose-unit mg-kg}\">mg/kg</span></p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/immunosuppressive-induction-patient-id</code>/IIP0001</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/immunosuppressive-induction-patient-type induction}\">Immunosuppressive induction</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-induction-imm-ref",
+    "valueReference" : {
+      "reference" : "Basic/immunosuppressant-example-1"
+    }
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-induction-patient-ref",
+    "valueReference" : {
+      "reference" : "Patient/ExamplePatientTransplant1"
+    }
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-induction-dose",
+    "valueDecimal" : 0.15
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-induction-dose-unit",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://example.org/fhir/CodeSystem/immunosuppressive-induction-dose-unit",
+        "code" : "mg-kg",
+        "display" : "mg/kg"
+      }]
+    }
+  }],
+  "identifier" : [{
+    "system" : "http://example.org/fhir/NamingSystem/immunosuppressive-induction-patient-id",
+    "value" : "IIP0001"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://example.org/fhir/CodeSystem/immunosuppressive-induction-patient-type",
+      "code" : "induction",
+      "display" : "Immunosuppressive induction"
+    }]
+  }
+}

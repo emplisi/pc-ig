@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="epigenome-study-example-1"/>
+  <meta>
+    <profile value="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Basic epigenome-study-example-1</b></p><a name="epigenome-study-example-1"> </a><a name="hcepigenome-study-example-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-epigenome-study.html">Epigenome Study</a></p></div><p><b>Genomic test ID relationship</b>: <a href="Basic-genomic-test-example-1.html">Basic Exome sequencing</a></p><p><b>Bisulfite reference kit</b>: EZ DNA Methylation-Gold Kit</p><p><b>Bisulfite date</b>: 2025-01-10</p><p><b>Age at DNA extraction</b>: 45</p><p><b>Array date</b>: 2025-01-12</p><p><b>SNP reader device</b>: iScan System</p><p><b>Sample type</b>: <span title="Codes:{http://example.org/fhir/CodeSystem/biosample-tissue-type blood}">Blood</span></p><p><b>Pool ID</b>: POOL-01</p><p><b>Sample ID</b>: SAMPLE-123</p><p><b>Sentrix barcode array</b>: 203456789012</p><p><b>Sentrix position</b>: R01C01</p><p><b>Chip type</b>: Infinium MethylationEPIC BeadChip</p><p><b>Manifest number</b>: METH-EPIC-201</p><p><b>Scan date</b>: 2025-01-13</p><p><b>Raw data</b>: gs://bucket/methylation/ES0001/idat/</p><p><b>Target disease ID</b>: OMIM:123456</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/epigenome-study-id</code>/ES0001</p><p><b>code</b>: <span title="Codes:{http://example.org/fhir/CodeSystem/epigenome-study-type array}">Methylation array epigenome study</span></p></div>
+  </text>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-genomic-test-ref">
+    <valueReference>
+      <reference value="Basic/genomic-test-example-1"/>
+    </valueReference>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-bisulfite-reference-kit">
+    <valueString value="EZ DNA Methylation-Gold Kit"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-bisulfite-date">
+    <valueDate value="2025-01-10"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-age-at-dna-extraction">
+    <valueDecimal value="45"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-array-date">
+    <valueDate value="2025-01-12"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-snp-reader-device">
+    <valueString value="iScan System"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-sample-type">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://example.org/fhir/CodeSystem/biosample-tissue-type"/>
+        <code value="blood"/>
+        <display value="Blood"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-pool-id">
+    <valueString value="POOL-01"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-sample-id">
+    <valueString value="SAMPLE-123"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-sentrix-barcodearray">
+    <valueString value="203456789012"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-sentrix-position">
+    <valueString value="R01C01"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-chip-type">
+    <valueString value="Infinium MethylationEPIC BeadChip"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-manifest-number">
+    <valueString value="METH-EPIC-201"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-scan-date">
+    <valueDate value="2025-01-13"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-raw-data">
+    <valueString value="gs://bucket/methylation/ES0001/idat/"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-target-disease-id">
+    <valueString value="OMIM:123456"/>
+  </extension>
+  <identifier>
+    <system value="http://example.org/fhir/NamingSystem/epigenome-study-id"/>
+    <value value="ES0001"/>
+  </identifier>
+  <code>
+    <coding>
+      <system value="http://example.org/fhir/CodeSystem/epigenome-study-type"/>
+      <code value="array"/>
+      <display value="Methylation array epigenome study"/>
+    </coding>
+  </code>
+</Basic>

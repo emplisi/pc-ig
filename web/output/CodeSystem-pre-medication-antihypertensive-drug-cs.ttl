@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/CodeSystem/pre-medication-antihypertensive-drug-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "pre-medication-antihypertensive-drug-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem pre-medication-antihypertensive-drug-cs</b></p><a name=\"pre-medication-antihypertensive-drug-cs\"> </a><a name=\"hcpre-medication-antihypertensive-drug-cs\"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/pre-medication-antihypertensive-drug</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1332418<a name=\"pre-medication-antihypertensive-drug-cs-1332418\"> </a></td><td>Amlodipine</td></tr><tr><td style=\"white-space:nowrap\">1318853<a name=\"pre-medication-antihypertensive-drug-cs-1318853\"> </a></td><td>Nifedipine</td></tr><tr><td style=\"white-space:nowrap\">1340128<a name=\"pre-medication-antihypertensive-drug-cs-1340128\"> </a></td><td>Captopril</td></tr><tr><td style=\"white-space:nowrap\">1314002<a name=\"pre-medication-antihypertensive-drug-cs-1314002\"> </a></td><td>Atenolol</td></tr><tr><td style=\"white-space:nowrap\">1346823<a name=\"pre-medication-antihypertensive-drug-cs-1346823\"> </a></td><td>Carvedilol</td></tr><tr><td style=\"white-space:nowrap\">1353766<a name=\"pre-medication-antihypertensive-drug-cs-1353766\"> </a></td><td>Propranolol</td></tr><tr><td style=\"white-space:nowrap\">1309068<a name=\"pre-medication-antihypertensive-drug-cs-1309068\"> </a></td><td>Minoxidil</td></tr><tr><td style=\"white-space:nowrap\">1398937<a name=\"pre-medication-antihypertensive-drug-cs-1398937\"> </a></td><td>Clonidine</td></tr><tr><td style=\"white-space:nowrap\">1363053<a name=\"pre-medication-antihypertensive-drug-cs-1363053\"> </a></td><td>Doxazosin</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://example.org/fhir/CodeSystem/pre-medication-antihypertensive-drug"^^xsd:anyURI ;
+     fhir:l <http://example.org/fhir/CodeSystem/pre-medication-antihypertensive-drug>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "PreMedicationAntihypertensiveDrugCS"] ; # 
+  fhir:title [ fhir:v "Pre-medication Antihypertensive Drug CodeSystem"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-12-09T16:44:49+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Your Organization"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Your Organization" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://example.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Antihypertensive drugs used as pre-transplant medication."] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "9"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1332418" ] ;
+     fhir:display [ fhir:v "Amlodipine" ]
+  ] [
+     fhir:code [ fhir:v "1318853" ] ;
+     fhir:display [ fhir:v "Nifedipine" ]
+  ] [
+     fhir:code [ fhir:v "1340128" ] ;
+     fhir:display [ fhir:v "Captopril" ]
+  ] [
+     fhir:code [ fhir:v "1314002" ] ;
+     fhir:display [ fhir:v "Atenolol" ]
+  ] [
+     fhir:code [ fhir:v "1346823" ] ;
+     fhir:display [ fhir:v "Carvedilol" ]
+  ] [
+     fhir:code [ fhir:v "1353766" ] ;
+     fhir:display [ fhir:v "Propranolol" ]
+  ] [
+     fhir:code [ fhir:v "1309068" ] ;
+     fhir:display [ fhir:v "Minoxidil" ]
+  ] [
+     fhir:code [ fhir:v "1398937" ] ;
+     fhir:display [ fhir:v "Clonidine" ]
+  ] [
+     fhir:code [ fhir:v "1363053" ] ;
+     fhir:display [ fhir:v "Doxazosin" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

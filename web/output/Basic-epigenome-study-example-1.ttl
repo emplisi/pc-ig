@@ -1,0 +1,194 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/Basic/epigenome-study-example-1> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "epigenome-study-example-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Basic epigenome-study-example-1</b></p><a name=\"epigenome-study-example-1\"> </a><a name=\"hcepigenome-study-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-epigenome-study.html\">Epigenome Study</a></p></div><p><b>Genomic test ID relationship</b>: <a href=\"Basic-genomic-test-example-1.html\">Basic Exome sequencing</a></p><p><b>Bisulfite reference kit</b>: EZ DNA Methylation-Gold Kit</p><p><b>Bisulfite date</b>: 2025-01-10</p><p><b>Age at DNA extraction</b>: 45</p><p><b>Array date</b>: 2025-01-12</p><p><b>SNP reader device</b>: iScan System</p><p><b>Sample type</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/biosample-tissue-type blood}\">Blood</span></p><p><b>Pool ID</b>: POOL-01</p><p><b>Sample ID</b>: SAMPLE-123</p><p><b>Sentrix barcode array</b>: 203456789012</p><p><b>Sentrix position</b>: R01C01</p><p><b>Chip type</b>: Infinium MethylationEPIC BeadChip</p><p><b>Manifest number</b>: METH-EPIC-201</p><p><b>Scan date</b>: 2025-01-13</p><p><b>Raw data</b>: gs://bucket/methylation/ES0001/idat/</p><p><b>Target disease ID</b>: OMIM:123456</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/epigenome-study-id</code>/ES0001</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/epigenome-study-type array}\">Methylation array epigenome study</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-genomic-test-ref"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-genomic-test-ref>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Basic/genomic-test-example-1> ;
+       fhir:reference [ fhir:v "Basic/genomic-test-example-1" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-bisulfite-reference-kit"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-bisulfite-reference-kit>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "EZ DNA Methylation-Gold Kit"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-bisulfite-date"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-bisulfite-date>
+     ] ;
+     fhir:value [
+       a fhir:Date ;
+       fhir:v "2025-01-10"^^xsd:date
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-age-at-dna-extraction"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-age-at-dna-extraction>
+     ] ;
+     fhir:value [
+       a fhir:Decimal ;
+       fhir:v "45"^^xsd:decimal
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-array-date"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-array-date>
+     ] ;
+     fhir:value [
+       a fhir:Date ;
+       fhir:v "2025-01-12"^^xsd:date
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-snp-reader-device"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-snp-reader-device>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "iScan System"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-sample-type"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-sample-type>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://example.org/fhir/CodeSystem/biosample-tissue-type"^^xsd:anyURI ;
+           fhir:l <http://example.org/fhir/CodeSystem/biosample-tissue-type>
+         ] ;
+         fhir:code [ fhir:v "blood" ] ;
+         fhir:display [ fhir:v "Blood" ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-pool-id"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-pool-id>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "POOL-01"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-sample-id"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-sample-id>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "SAMPLE-123"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-sentrix-barcodearray"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-sentrix-barcodearray>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "203456789012"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-sentrix-position"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-sentrix-position>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "R01C01"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-chip-type"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-chip-type>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "Infinium MethylationEPIC BeadChip"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-manifest-number"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-manifest-number>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "METH-EPIC-201"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-scan-date"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-scan-date>
+     ] ;
+     fhir:value [
+       a fhir:Date ;
+       fhir:v "2025-01-13"^^xsd:date
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-raw-data"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-raw-data>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "gs://bucket/methylation/ES0001/idat/"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-target-disease-id"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-target-disease-id>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "OMIM:123456"
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://example.org/fhir/NamingSystem/epigenome-study-id"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/NamingSystem/epigenome-study-id>
+     ] ;
+     fhir:value [ fhir:v "ES0001" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://example.org/fhir/CodeSystem/epigenome-study-type"^^xsd:anyURI ;
+         fhir:l <http://example.org/fhir/CodeSystem/epigenome-study-type>
+       ] ;
+       fhir:code [ fhir:v "array" ] ;
+       fhir:display [ fhir:v "Methylation array epigenome study" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

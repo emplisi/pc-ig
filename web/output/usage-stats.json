@@ -1,0 +1,2175 @@
+{
+  "package": "pc.ig",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/bio-sample-dna-concentration",
+      "title": "DNA concentration",
+      "types": [
+        "decimal"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/bio-sample-epigenome-study-ref",
+      "title": "Epigenome Study ID Relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/bio-sample-genomic-test-ref",
+      "title": "Genomic Test ID Relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/bio-sample-methylomic-study-ref",
+      "title": "Methylomic Study ID Relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/bio-sample-send-ingemm-date",
+      "title": "Sample send to INGEMM date",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-date",
+      "title": "Date",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-diastolic-blood-pressure",
+      "title": "Diastolic blood pressure",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-heart-rate",
+      "title": "Heart rate",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-height",
+      "title": "Height",
+      "types": [
+        "decimal"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-oxygen-saturation",
+      "title": "Oxygen saturation",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-patient-ref",
+      "title": "Patient ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-systolic-blood-pressure",
+      "title": "Systolic blood pressure",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-temperature",
+      "title": "Temperature",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-weight",
+      "title": "Weight",
+      "types": [
+        "decimal"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-disease-name",
+      "title": "Concomitant disease name(s)",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-episode-date",
+      "title": "Episode date",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-episode-description",
+      "title": "Episode description",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-episode-disease-ref",
+      "title": "Concomitant disease ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-episode-patient-ref",
+      "title": "Patient ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-medication-code",
+      "title": "Medication",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-medication-episode-ref",
+      "title": "Concomitant episode ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/donor-abo-group",
+      "title": "Donor ABO group",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/donor-allograft-hla-class-i",
+      "title": "Donor allograft HLA Class I loci",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/donor-allograft-hla-class-ii",
+      "title": "Donor allograft HLA Class II loci",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/donor-liver-type",
+      "title": "Donor liver graft type",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/donor-pre-ktx-dialysis-type",
+      "title": "Donor pre-kidney-transplant dialysis type",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/donor-rh-factor",
+      "title": "Donor Rh factor",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-age-at-dna-extraction",
+      "title": "Age at DNA extraction",
+      "types": [
+        "decimal"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-array-date",
+      "title": "Array date",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-bisulfite-date",
+      "title": "Bisulfite date",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-bisulfite-reference-kit",
+      "title": "Bisulfite reference kit",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-chip-type",
+      "title": "Chip type",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-genomic-test-ref",
+      "title": "Genomic test ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-manifest-number",
+      "title": "Manifest number",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-pool-id",
+      "title": "Pool ID",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-raw-data",
+      "title": "Raw data",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-sample-id",
+      "title": "Sample ID",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-sample-type",
+      "title": "Sample type",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-scan-date",
+      "title": "Scan date",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-sentrix-barcodearray",
+      "title": "Sentrix barcode array",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-sentrix-position",
+      "title": "Sentrix position",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-snp-reader-device",
+      "title": "SNP reader device",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-target-disease-id",
+      "title": "Target disease ID",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-alignment-tools",
+      "title": "Alignment tools",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-annotation-databases",
+      "title": "Annotation databases",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-annotation-tools",
+      "title": "Annotation tools",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-chromosome-corrdinate",
+      "title": "Chromosome coordinate",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-mean-target-coverage",
+      "title": "Mean target coverage",
+      "types": [
+        "decimal"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-name",
+      "title": "Genomic Test Name",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-per-target-base-cover-100x",
+      "title": "Per target base cover x100",
+      "types": [
+        "decimal"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-read-length",
+      "title": "Read length",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-read-type",
+      "title": "Read type",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-reference-genome",
+      "title": "Reference Genome ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-sequencing-device",
+      "title": "Sequencing device",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-target-capture",
+      "title": "Target capture",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-variant-calling-tools",
+      "title": "Variant calling tools",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-version",
+      "title": "Genomic Test Version",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressant-name",
+      "title": "Immunosuppressant name",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-induction-dose",
+      "title": "Immunosuppressant dose",
+      "types": [
+        "decimal"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-induction-dose-unit",
+      "title": "Dose unit",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-induction-imm-ref",
+      "title": "Immunosuppressant ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-induction-patient-ref",
+      "title": "Patient ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-dose",
+      "title": "Dose of immunosuppressant",
+      "types": [
+        "decimal"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-end-date",
+      "title": "End date of maintenance therapy",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-immunosuppressant-ref",
+      "title": "Immunosuppressant ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-patient-ref",
+      "title": "Recipient patient reference",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-start-date",
+      "title": "Start date of maintenance therapy",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-unit-id",
+      "title": "Unit ID",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/instrumental-investigation-name-ext",
+      "title": "Instrumental investigation name",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/lab-result-labtest-ref",
+      "title": "Lab test reference",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/lab-result-patient-ref",
+      "title": "Lab result patient reference",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/lab-test-name-ext",
+      "title": "Lab test name",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/lab-test-unit-ref",
+      "title": "Unit ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-aeca-other",
+      "title": "AECA / other non-HLA antibodies",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-atr1",
+      "title": "AT1R antibody result",
+      "types": [
+        "decimal"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-dsa",
+      "title": "Donor-specific antibody (DSA)",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-etar",
+      "title": "ETAR antibody result",
+      "types": [
+        "decimal"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-hla-antibody-class",
+      "title": "HLA antibody class or locus",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-mfi-value",
+      "title": "MFI value",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-mica",
+      "title": "Anti-MICA antibody result",
+      "types": [
+        "decimal"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-micb",
+      "title": "Anti-MICB antibody result",
+      "types": [
+        "decimal"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-patient-ref",
+      "title": "Patient ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-beta-value",
+      "title": "Beta value",
+      "types": [
+        "decimal"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-detection-p-value",
+      "title": "Detection p-value",
+      "types": [
+        "decimal"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-m-value",
+      "title": "M value",
+      "types": [
+        "decimal"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-methylated-reads",
+      "title": "Methylated reads",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-read-count",
+      "title": "Read count",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-reference-genome-ref",
+      "title": "Reference genome ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-target-region-id",
+      "title": "Target region ID",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-adenovirus-igg",
+      "title": "Adenovirus serology IgG",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-adenovirus-igm",
+      "title": "Adenovirus serology IgM",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-bkv-dna-kidney-biopsy",
+      "title": "BKV-DNA on kidney biopsy",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-bkv-fish-kidney-biopsy",
+      "title": "BKV FISH on kidney biopsy",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-blood-bkv-dna",
+      "title": "Blood BKV-DNA",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-cmv-dna",
+      "title": "Blood CMV-DNA",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-cmv-igg",
+      "title": "CMV serology IgG",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-cmv-igm",
+      "title": "CMV serology IgM",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-donor-ref",
+      "title": "Donor ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-ebv-dna",
+      "title": "Blood EBV-DNA",
+      "types": [
+        "decimal"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-ebv-igg-anti-vca",
+      "title": "EBV serology IgG anti-VCA",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-ebv-igg-ebna",
+      "title": "EBV serology IgG EBNA",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-ebv-igm-anti-ea",
+      "title": "EBV serology IgM anti-EA",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-ebv-igm-anti-vca",
+      "title": "EBV serology IgM anti-VCA",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-hsv-igg",
+      "title": "HSV serology IgG",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-hsv-igm",
+      "title": "HSV serology IgM",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-parvovirus-b19-dna",
+      "title": "Blood Parvovirus B19-DNA",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-parvovirus-b19-dna-igg",
+      "title": "Parvovirus B19 serology IgG",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-parvovirus-b19-dna-igm",
+      "title": "Parvovirus B19 serology IgM",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-patient-ref",
+      "title": "Patient ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-urine-bkv-dna",
+      "title": "Urine BKV-DNA",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-vzv-igg",
+      "title": "VZV serology IgG",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-vzv-igm",
+      "title": "VZV serology IgM",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-clinical-variable-ref",
+      "title": "Clinical variable ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-concomitant-episode-ref",
+      "title": "Concomitant episode ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-date",
+      "title": "Outcome date",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-lab-test-ref",
+      "title": "Lab test ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-microbiology-ref",
+      "title": "Microbiology ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-patient-instrumental-investigation-ref",
+      "title": "Patient instrumental investigation ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-patient-ref",
+      "title": "Patient ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-post-event-ref",
+      "title": "Post event ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-pre-medication-ref",
+      "title": "Pre-medication ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-type-name-ext",
+      "title": "Outcome type name",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-type-ref",
+      "title": "Outcome type ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-abo-group",
+      "title": "Patient ABO group",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-allograft-hla-class-i",
+      "title": "Patient allograft HLA Class I",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-allograft-hla-class-ii",
+      "title": "Patient allograft HLA Class II",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-histological-diagnosis-date",
+      "title": "Date of histological diagnosis",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-instrumental-investigation-date",
+      "title": "Date of instrumental investigation",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-instrumental-investigation-instrument-ref",
+      "title": "Instrumental investigation ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-instrumental-investigation-patient-ref",
+      "title": "Patient ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-instrumental-investigation-result",
+      "title": "Result of the instrumental investigation",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-last-pra",
+      "title": "Patient last PRA",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-liver-disease-code",
+      "title": "Liver disease diagnosis code",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-liver-disease-diagnosis-date",
+      "title": "Date of liver disease diagnosis",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-liver-disease-extra",
+      "title": "Liver disease diagnosis (free text)",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-max-pra",
+      "title": "Patient maximum PRA",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-renal-disease-code",
+      "title": "Renal disease diagnosis code",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-renal-disease-diagnosis-date",
+      "title": "Date of renal disease diagnosis",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-renal-disease-extra",
+      "title": "Renal disease diagnosis (free text)",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-rh-factor",
+      "title": "Patient Rh factor",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-description",
+      "title": "Event description",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-end-date",
+      "title": "Event end date",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-onset-date",
+      "title": "Event onset date",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-patient-ref",
+      "title": "Patient ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-type-name-ext",
+      "title": "Post event type name",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-type-ref",
+      "title": "Post event type ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication-antihypertensive-treatment",
+      "title": "Antihypertensive treatment",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication-antiviral-phrophylaxis",
+      "title": "Antiviral prophylaxis pre-medication",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication-other-medications",
+      "title": "Other pre-transplant medications",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication-patient-ref",
+      "title": "Pre-medication patient reference",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication-rituximab",
+      "title": "Rituximab pre-medication",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/reference-genome-fasta-path",
+      "title": "Reference genome FASTA path",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/target-region-chromosome-id",
+      "title": "Chromosome ID",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/target-region-end-position",
+      "title": "End position",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/target-region-genomic-test-ref",
+      "title": "Genomic test ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/target-region-hgnc-id",
+      "title": "HGNC ID",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/target-region-hgnc-symbol",
+      "title": "HGNC symbol",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/target-region-start-position",
+      "title": "Start position",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-biliary-anastomosis-type",
+      "title": "Type of surgical biliary anastomosis",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-cold-ischaemia-time",
+      "title": "Cold ischaemia time (minutes)",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-donor-recipient-weight-ratio",
+      "title": "Donor/recipient weight ratio",
+      "types": [
+        "decimal"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-donor-ref",
+      "title": "Transplant donor reference",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-first-warm-ischemia-time",
+      "title": "First warm ischaemia time (minutes)",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-intraoperative-complications",
+      "title": "Intraoperative complications",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-intraoperative-complications-other",
+      "title": "Other intraoperative complications (free text)",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-kidney-side",
+      "title": "Kidney side",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-nephrectomy-original-kidney",
+      "title": "Nephrectomy of original kidney",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-second-warm-ischemia-time",
+      "title": "Second warm ischaemia time (minutes)",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-time-diagnosis-to-transplant",
+      "title": "Time from diagnosis to transplant (months)",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-vascular-anomalies",
+      "title": "Vascular anomalies",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-vessel-mismatch",
+      "title": "Vessel mismatch (donor-recipient)",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-allele-frequency",
+      "title": "Allele frequency",
+      "types": [
+        "decimal"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-annotation-database",
+      "title": "Annotation database",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-medication",
+      "title": "Medication",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-variant-class-level",
+      "title": "Variant class level",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-variant-occurrence-ref",
+      "title": "Variant occurrence ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-variant-origin",
+      "title": "Variant origin",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-variant-pathogeny",
+      "title": "Variant pathogenicity",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-variant-tier-level",
+      "title": "Variant tier level",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-alternate-allele",
+      "title": "Alternate allele",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-cnv-locus",
+      "title": "CNV locus",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-copy-number",
+      "title": "Copy number",
+      "types": [
+        "decimal"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-fusion-breakpoint",
+      "title": "Fusion breakpoint",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-fusion-supporting-reads",
+      "title": "Fusion supporting reads",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-genetic-origin",
+      "title": "Genetic origin",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-genotype",
+      "title": "Genotype",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-hgvs-c",
+      "title": "HGVS c. notation",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-hgvs-p",
+      "title": "HGVS p. notation",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-reference-allele",
+      "title": "Reference allele",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-reference-sequence",
+      "title": "Reference sequence",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-rs-id",
+      "title": "dbSNP rsID",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-sequence-alteration",
+      "title": "Sequence alteration",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-target-region-ref",
+      "title": "Target region ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-variant-exon-number",
+      "title": "Variant exon number",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-variant-feature",
+      "title": "Variant feature",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-variant-read-depth",
+      "title": "Variant read depth",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit-bio-sample-ref",
+      "title": "BioSample ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit-clinical-variable-ref",
+      "title": "Clinical variable ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit-concomitant-episode-ref",
+      "title": "Concomitant episode ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit-immunosuppressive-induction-ref",
+      "title": "Immunosuppressive induction ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit-immunosuppressive-maintenance-ref",
+      "title": "Immunosuppressive maintenance ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit-lab-result-ref",
+      "title": "Lab result ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit-microbiology-ref",
+      "title": "Microbiology ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit-outcome-ref",
+      "title": "Outcome ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit-patient-instrumental-investigation-ref",
+      "title": "Patient instrumental investigation ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit-post-event-ref",
+      "title": "Post-event ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit-pre-medication-ref",
+      "title": "Pre-medication ID relationship",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit-transplant-ref",
+      "title": "Transplant ID relationship",
+      "types": [
+        "Reference"
+      ]
+    }
+  ],
+  "profiles": {
+    "Specimen": [
+      {
+        "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/biosample",
+        "title": "Biological Sample"
+      }
+    ],
+    "Basic": [
+      {
+        "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation",
+        "title": "Variant Annotation"
+      },
+      {
+        "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence",
+        "title": "Variant Occurrence"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-transplant",
+        "title": "Transplant Recipient"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/lab-report",
+        "title": "Laboratory DiagnosticReport"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-instrumental-investigation",
+        "title": "Patient Instrumental Investigation"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit",
+        "title": "Visit"
+      }
+    ]
+  },
+  "usage": {
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/bio-sample-dna-concentration": [
+      "Specimen"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/bio-sample-epigenome-study-ref": [
+      "Specimen"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/bio-sample-genomic-test-ref": [
+      "Specimen"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/bio-sample-methylomic-study-ref": [
+      "Specimen"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/bio-sample-send-ingemm-date": [
+      "Specimen"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-date": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-diastolic-blood-pressure": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-heart-rate": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-height": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-oxygen-saturation": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-patient-ref": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-systolic-blood-pressure": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-temperature": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-weight": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-disease-name": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-episode-date": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-episode-description": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-episode-disease-ref": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-episode-patient-ref": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-medication-code": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-medication-episode-ref": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/donor-abo-group": [
+      "Patient"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/donor-allograft-hla-class-i": [
+      "Patient"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/donor-allograft-hla-class-ii": [
+      "Patient"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/donor-liver-type": [
+      "Patient"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/donor-pre-ktx-dialysis-type": [
+      "Patient"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/donor-rh-factor": [
+      "Patient"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-age-at-dna-extraction": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-array-date": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-bisulfite-date": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-bisulfite-reference-kit": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-chip-type": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-genomic-test-ref": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-manifest-number": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-pool-id": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-raw-data": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-sample-id": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-sample-type": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-scan-date": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-sentrix-barcodearray": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-sentrix-position": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-snp-reader-device": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/epigenome-study-target-disease-id": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-alignment-tools": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-annotation-databases": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-annotation-tools": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-chromosome-corrdinate": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-mean-target-coverage": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-name": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-per-target-base-cover-100x": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-read-length": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-read-type": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-reference-genome": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-sequencing-device": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-target-capture": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-variant-calling-tools": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-version": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressant-name": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-induction-dose": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-induction-dose-unit": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-induction-imm-ref": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-induction-patient-ref": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-dose": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-end-date": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-immunosuppressant-ref": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-patient-ref": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-start-date": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-unit-id": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/instrumental-investigation-name-ext": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/lab-result-labtest-ref": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/lab-result-patient-ref": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/lab-test-name-ext": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/lab-test-unit-ref": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-aeca-other": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-atr1": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-dsa": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-etar": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-hla-antibody-class": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-mfi-value": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-mica": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-micb": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-patient-ref": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-beta-value": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-detection-p-value": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-m-value": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-methylated-reads": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-read-count": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-reference-genome-ref": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-target-region-id": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-adenovirus-igg": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-adenovirus-igm": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-bkv-dna-kidney-biopsy": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-bkv-fish-kidney-biopsy": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-blood-bkv-dna": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-cmv-dna": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-cmv-igg": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-cmv-igm": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-donor-ref": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-ebv-dna": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-ebv-igg-anti-vca": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-ebv-igg-ebna": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-ebv-igm-anti-ea": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-ebv-igm-anti-vca": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-hsv-igg": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-hsv-igm": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-parvovirus-b19-dna": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-parvovirus-b19-dna-igg": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-parvovirus-b19-dna-igm": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-patient-ref": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-urine-bkv-dna": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-vzv-igg": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-vzv-igm": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-clinical-variable-ref": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-concomitant-episode-ref": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-date": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-lab-test-ref": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-microbiology-ref": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-patient-instrumental-investigation-ref": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-patient-ref": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-post-event-ref": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-pre-medication-ref": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-type-name-ext": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-type-ref": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-abo-group": [
+      "Patient"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-allograft-hla-class-i": [
+      "Patient"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-allograft-hla-class-ii": [
+      "Patient"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-histological-diagnosis-date": [
+      "Patient"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-instrumental-investigation-date": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-instrumental-investigation-instrument-ref": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-instrumental-investigation-patient-ref": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-instrumental-investigation-result": [
+      "Observation"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-last-pra": [
+      "Patient"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-liver-disease-code": [
+      "Patient"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-liver-disease-diagnosis-date": [
+      "Patient"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-liver-disease-extra": [
+      "Patient"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-max-pra": [
+      "Patient"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-renal-disease-code": [
+      "Patient"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-renal-disease-diagnosis-date": [
+      "Patient"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-renal-disease-extra": [
+      "Patient"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-rh-factor": [
+      "Patient"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-description": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-end-date": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-onset-date": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-patient-ref": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-type-name-ext": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-type-ref": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication-antihypertensive-treatment": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication-antiviral-phrophylaxis": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication-other-medications": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication-patient-ref": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication-rituximab": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/reference-genome-fasta-path": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/target-region-chromosome-id": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/target-region-end-position": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/target-region-genomic-test-ref": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/target-region-hgnc-id": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/target-region-hgnc-symbol": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/target-region-start-position": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-biliary-anastomosis-type": [
+      "Encounter"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-cold-ischaemia-time": [
+      "Encounter"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-donor-recipient-weight-ratio": [
+      "Encounter"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-donor-ref": [
+      "Encounter"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-first-warm-ischemia-time": [
+      "Encounter"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-intraoperative-complications": [
+      "Encounter"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-intraoperative-complications-other": [
+      "Encounter"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-kidney-side": [
+      "Encounter"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-nephrectomy-original-kidney": [
+      "Encounter"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-second-warm-ischemia-time": [
+      "Encounter"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-time-diagnosis-to-transplant": [
+      "Encounter"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-vascular-anomalies": [
+      "Encounter"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-vessel-mismatch": [
+      "Encounter"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-allele-frequency": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-annotation-database": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-medication": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-variant-class-level": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-variant-occurrence-ref": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-variant-origin": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-variant-pathogeny": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-variant-tier-level": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-alternate-allele": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-cnv-locus": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-copy-number": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-fusion-breakpoint": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-fusion-supporting-reads": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-genetic-origin": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-genotype": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-hgvs-c": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-hgvs-p": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-reference-allele": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-reference-sequence": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-rs-id": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-sequence-alteration": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-target-region-ref": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-variant-exon-number": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-variant-feature": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-variant-read-depth": [
+      "Basic"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit-bio-sample-ref": [
+      "Encounter"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit-clinical-variable-ref": [
+      "Encounter"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit-concomitant-episode-ref": [
+      "Encounter"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit-immunosuppressive-induction-ref": [
+      "Encounter"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit-immunosuppressive-maintenance-ref": [
+      "Encounter"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit-lab-result-ref": [
+      "Encounter"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit-microbiology-ref": [
+      "Encounter"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit-outcome-ref": [
+      "Encounter"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit-patient-instrumental-investigation-ref": [
+      "Encounter"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit-post-event-ref": [
+      "Encounter"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit-pre-medication-ref": [
+      "Encounter"
+    ],
+    "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit-transplant-ref": [
+      "Encounter"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ]
+  }
+}

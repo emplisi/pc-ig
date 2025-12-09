@@ -1,0 +1,38 @@
+{
+  "resourceType" : "Basic",
+  "id" : "concomitant-medication-example-1",
+  "meta" : {
+    "profile" : ["http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-medication"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Basic concomitant-medication-example-1</b></p><a name=\"concomitant-medication-example-1\"> </a><a name=\"hcconcomitant-medication-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-concomitant-medication.html\">Concomitant Medication</a></p></div><p><b>Concomitant episode ID relationship</b>: <a href=\"Basic-concomitant-episode-example-1.html\">Basic Concomitant disease episode</a></p><p><b>Medication</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/concomitant-medication-category antihypertensive}\">Antihypertensive treatment</span></p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/concomitant-medication-id</code>/CM0001</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/concomitant-medication-type concomitant}\">Concomitant medication</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-medication-episode-ref",
+    "valueReference" : {
+      "reference" : "Basic/concomitant-episode-example-1"
+    }
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-medication-code",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://example.org/fhir/CodeSystem/concomitant-medication-category",
+        "code" : "antihypertensive",
+        "display" : "Antihypertensive treatment"
+      }]
+    }
+  }],
+  "identifier" : [{
+    "system" : "http://example.org/fhir/NamingSystem/concomitant-medication-id",
+    "value" : "CM0001"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://example.org/fhir/CodeSystem/concomitant-medication-type",
+      "code" : "concomitant",
+      "display" : "Concomitant medication"
+    }]
+  }
+}

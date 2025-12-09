@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="lab-test-name-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem lab-test-name-cs</b></p><a name="lab-test-name-cs"> </a><a name="hclab-test-name-cs"> </a><p>This  code system <code>http://example.org/fhir/CodeSystem/lab-test-name</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">46273815<a name="lab-test-name-cs-46273815"> </a></td><td>Albumin</td></tr><tr><td style="white-space:nowrap">4108431<a name="lab-test-name-cs-4108431"> </a></td><td>Albumin/creatinine ratio</td></tr><tr><td style="white-space:nowrap">ALT<a name="lab-test-name-cs-ALT"> </a></td><td>ALT</td></tr><tr><td style="white-space:nowrap">4017613<a name="lab-test-name-cs-4017613"> </a></td><td>Ammonium levels</td></tr><tr><td style="white-space:nowrap">AST<a name="lab-test-name-cs-AST"> </a></td><td>AST</td></tr><tr><td style="white-space:nowrap">35816690<a name="lab-test-name-cs-35816690"> </a></td><td>Calcium</td></tr><tr><td style="white-space:nowrap">19059097<a name="lab-test-name-cs-19059097"> </a></td><td>Cholesterol</td></tr><tr><td style="white-space:nowrap">19071968<a name="lab-test-name-cs-19071968"> </a></td><td>Creatinine</td></tr><tr><td style="white-space:nowrap">creatinine-egfr<a name="lab-test-name-cs-creatinine-egfr"> </a></td><td>Creatinine Estimated Glomerular Filtration rate</td></tr><tr><td style="white-space:nowrap">44789161<a name="lab-test-name-cs-44789161"> </a></td><td>Cystatin C</td></tr><tr><td style="white-space:nowrap">cystatinc-egfr<a name="lab-test-name-cs-cystatinc-egfr"> </a></td><td>Cystatin C Estimated Glomerular Filtration rate</td></tr><tr><td style="white-space:nowrap">4216632<a name="lab-test-name-cs-4216632"> </a></td><td>Direct Bilirubin</td></tr><tr><td style="white-space:nowrap">35960055<a name="lab-test-name-cs-35960055"> </a></td><td>GGT</td></tr><tr><td style="white-space:nowrap">1560524<a name="lab-test-name-cs-1560524"> </a></td><td>Glucose</td></tr><tr><td style="white-space:nowrap">35198163<a name="lab-test-name-cs-35198163"> </a></td><td>Haptoglobin</td></tr><tr><td style="white-space:nowrap">36304734<a name="lab-test-name-cs-36304734"> </a></td><td>HbA1c</td></tr><tr><td style="white-space:nowrap">4151358<a name="lab-test-name-cs-4151358"> </a></td><td>Hematocrit</td></tr><tr><td style="white-space:nowrap">36862556<a name="lab-test-name-cs-36862556"> </a></td><td>Hemoglobin</td></tr><tr><td style="white-space:nowrap">indirect-bilirubin<a name="lab-test-name-cs-indirect-bilirubin"> </a></td><td>Indirect Bilirubin</td></tr><tr><td style="white-space:nowrap">INR<a name="lab-test-name-cs-INR"> </a></td><td>INR</td></tr><tr><td style="white-space:nowrap">19011035<a name="lab-test-name-cs-19011035"> </a></td><td>Lactate</td></tr><tr><td style="white-space:nowrap">35955655<a name="lab-test-name-cs-35955655"> </a></td><td>LDH</td></tr><tr><td style="white-space:nowrap">36309122<a name="lab-test-name-cs-36309122"> </a></td><td>Lymphocytes</td></tr><tr><td style="white-space:nowrap">36308680<a name="lab-test-name-cs-36308680"> </a></td><td>Neutrophils</td></tr><tr><td style="white-space:nowrap">21498711<a name="lab-test-name-cs-21498711"> </a></td><td>pH</td></tr><tr><td style="white-space:nowrap">36310193<a name="lab-test-name-cs-36310193"> </a></td><td>Platelets</td></tr><tr><td style="white-space:nowrap">19049024<a name="lab-test-name-cs-19049024"> </a></td><td>Potassium</td></tr><tr><td style="white-space:nowrap">proteinuria-creatininuria-ratio<a name="lab-test-name-cs-proteinuria-creatininuria-ratio"> </a></td><td>Proteinuria/creatininuria ratio</td></tr><tr><td style="white-space:nowrap">3002681<a name="lab-test-name-cs-3002681"> </a></td><td>Prothrombin Activity</td></tr><tr><td style="white-space:nowrap">4245261<a name="lab-test-name-cs-4245261"> </a></td><td>Prothrombin Time</td></tr><tr><td style="white-space:nowrap">4054726<a name="lab-test-name-cs-4054726"> </a></td><td>Red Blood Cells</td></tr><tr><td style="white-space:nowrap">4150494<a name="lab-test-name-cs-4150494"> </a></td><td>Serum bicarbonate</td></tr><tr><td style="white-space:nowrap">19136048<a name="lab-test-name-cs-19136048"> </a></td><td>Sodium</td></tr><tr><td style="white-space:nowrap">4230543<a name="lab-test-name-cs-4230543"> </a></td><td>Total Bilirubin</td></tr><tr><td style="white-space:nowrap">4119650<a name="lab-test-name-cs-4119650"> </a></td><td>Total protein</td></tr><tr><td style="white-space:nowrap">906914<a name="lab-test-name-cs-906914"> </a></td><td>Urea</td></tr><tr><td style="white-space:nowrap">43532213<a name="lab-test-name-cs-43532213"> </a></td><td>Uric acid</td></tr><tr><td style="white-space:nowrap">4150621<a name="lab-test-name-cs-4150621"> </a></td><td>Urine Creatinine</td></tr><tr><td style="white-space:nowrap">321414<a name="lab-test-name-cs-321414"> </a></td><td>Urine Haemoglobin</td></tr><tr><td style="white-space:nowrap">4198678<a name="lab-test-name-cs-4198678"> </a></td><td>White Blood Cells</td></tr><tr><td style="white-space:nowrap">phosphorus<a name="lab-test-name-cs-phosphorus"> </a></td><td>Phosphorus</td></tr><tr><td style="white-space:nowrap">pth<a name="lab-test-name-cs-pth"> </a></td><td>PTH (parathormone)</td></tr><tr><td style="white-space:nowrap">vitamin-d<a name="lab-test-name-cs-vitamin-d"> </a></td><td>Vitamin D</td></tr><tr><td style="white-space:nowrap">aPTT<a name="lab-test-name-cs-aPTT"> </a></td><td>aPTT</td></tr><tr><td style="white-space:nowrap">urine-microscopic-hematuria<a name="lab-test-name-cs-urine-microscopic-hematuria"> </a></td><td>Urine microscopic hematuria</td></tr><tr><td style="white-space:nowrap">quantitative-proteinuria<a name="lab-test-name-cs-quantitative-proteinuria"> </a></td><td>Quantitative proteinuria</td></tr><tr><td style="white-space:nowrap">bile-acids<a name="lab-test-name-cs-bile-acids"> </a></td><td>Bile acids</td></tr><tr><td style="white-space:nowrap">HCO3<a name="lab-test-name-cs-HCO3"> </a></td><td>HCO3</td></tr></table></div>
+  </text>
+  <url value="http://example.org/fhir/CodeSystem/lab-test-name"/>
+  <version value="0.1.0"/>
+  <name value="LabTestNameCS"/>
+  <title value="Lab Test Name"/>
+  <status value="draft"/>
+  <date value="2025-12-09T16:44:49+01:00"/>
+  <publisher value="Your Organization"/>
+  <contact>
+    <name value="Your Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://example.org"/>
+    </telecom>
+  </contact>
+  <description value="Types of laboratory tests conducted."/>
+  <content value="complete"/>
+  <count value="48"/>
+  <concept>
+    <code value="46273815"/>
+    <display value="Albumin"/>
+  </concept>
+  <concept>
+    <code value="4108431"/>
+    <display value="Albumin/creatinine ratio"/>
+  </concept>
+  <concept>
+    <code value="ALT"/>
+    <display value="ALT"/>
+  </concept>
+  <concept>
+    <code value="4017613"/>
+    <display value="Ammonium levels"/>
+  </concept>
+  <concept>
+    <code value="AST"/>
+    <display value="AST"/>
+  </concept>
+  <concept>
+    <code value="35816690"/>
+    <display value="Calcium"/>
+  </concept>
+  <concept>
+    <code value="19059097"/>
+    <display value="Cholesterol"/>
+  </concept>
+  <concept>
+    <code value="19071968"/>
+    <display value="Creatinine"/>
+  </concept>
+  <concept>
+    <code value="creatinine-egfr"/>
+    <display value="Creatinine Estimated Glomerular Filtration rate"/>
+  </concept>
+  <concept>
+    <code value="44789161"/>
+    <display value="Cystatin C"/>
+  </concept>
+  <concept>
+    <code value="cystatinc-egfr"/>
+    <display value="Cystatin C Estimated Glomerular Filtration rate"/>
+  </concept>
+  <concept>
+    <code value="4216632"/>
+    <display value="Direct Bilirubin"/>
+  </concept>
+  <concept>
+    <code value="35960055"/>
+    <display value="GGT"/>
+  </concept>
+  <concept>
+    <code value="1560524"/>
+    <display value="Glucose"/>
+  </concept>
+  <concept>
+    <code value="35198163"/>
+    <display value="Haptoglobin"/>
+  </concept>
+  <concept>
+    <code value="36304734"/>
+    <display value="HbA1c"/>
+  </concept>
+  <concept>
+    <code value="4151358"/>
+    <display value="Hematocrit"/>
+  </concept>
+  <concept>
+    <code value="36862556"/>
+    <display value="Hemoglobin"/>
+  </concept>
+  <concept>
+    <code value="indirect-bilirubin"/>
+    <display value="Indirect Bilirubin"/>
+  </concept>
+  <concept>
+    <code value="INR"/>
+    <display value="INR"/>
+  </concept>
+  <concept>
+    <code value="19011035"/>
+    <display value="Lactate"/>
+  </concept>
+  <concept>
+    <code value="35955655"/>
+    <display value="LDH"/>
+  </concept>
+  <concept>
+    <code value="36309122"/>
+    <display value="Lymphocytes"/>
+  </concept>
+  <concept>
+    <code value="36308680"/>
+    <display value="Neutrophils"/>
+  </concept>
+  <concept>
+    <code value="21498711"/>
+    <display value="pH"/>
+  </concept>
+  <concept>
+    <code value="36310193"/>
+    <display value="Platelets"/>
+  </concept>
+  <concept>
+    <code value="19049024"/>
+    <display value="Potassium"/>
+  </concept>
+  <concept>
+    <code value="proteinuria-creatininuria-ratio"/>
+    <display value="Proteinuria/creatininuria ratio"/>
+  </concept>
+  <concept>
+    <code value="3002681"/>
+    <display value="Prothrombin Activity"/>
+  </concept>
+  <concept>
+    <code value="4245261"/>
+    <display value="Prothrombin Time"/>
+  </concept>
+  <concept>
+    <code value="4054726"/>
+    <display value="Red Blood Cells"/>
+  </concept>
+  <concept>
+    <code value="4150494"/>
+    <display value="Serum bicarbonate"/>
+  </concept>
+  <concept>
+    <code value="19136048"/>
+    <display value="Sodium"/>
+  </concept>
+  <concept>
+    <code value="4230543"/>
+    <display value="Total Bilirubin"/>
+  </concept>
+  <concept>
+    <code value="4119650"/>
+    <display value="Total protein"/>
+  </concept>
+  <concept>
+    <code value="906914"/>
+    <display value="Urea"/>
+  </concept>
+  <concept>
+    <code value="43532213"/>
+    <display value="Uric acid"/>
+  </concept>
+  <concept>
+    <code value="4150621"/>
+    <display value="Urine Creatinine"/>
+  </concept>
+  <concept>
+    <code value="321414"/>
+    <display value="Urine Haemoglobin"/>
+  </concept>
+  <concept>
+    <code value="4198678"/>
+    <display value="White Blood Cells"/>
+  </concept>
+  <concept>
+    <code value="phosphorus"/>
+    <display value="Phosphorus"/>
+  </concept>
+  <concept>
+    <code value="pth"/>
+    <display value="PTH (parathormone)"/>
+  </concept>
+  <concept>
+    <code value="vitamin-d"/>
+    <display value="Vitamin D"/>
+  </concept>
+  <concept>
+    <code value="aPTT"/>
+    <display value="aPTT"/>
+  </concept>
+  <concept>
+    <code value="urine-microscopic-hematuria"/>
+    <display value="Urine microscopic hematuria"/>
+  </concept>
+  <concept>
+    <code value="quantitative-proteinuria"/>
+    <display value="Quantitative proteinuria"/>
+  </concept>
+  <concept>
+    <code value="bile-acids"/>
+    <display value="Bile acids"/>
+  </concept>
+  <concept>
+    <code value="HCO3"/>
+    <display value="HCO3"/>
+  </concept>
+</CodeSystem>

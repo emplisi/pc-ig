@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="intraoperative-complication-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet intraoperative-complication-vs</b></p><a name="intraoperative-complication-vs"> </a><a name="hcintraoperative-complication-vs"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-intraoperative-complication-cs.html"><code>http://example.org/fhir/CodeSystem/intraoperative-complication</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-intraoperative-complication-cs.html#intraoperative-complication-cs-major-bleeding">major-bleeding</a></td><td style="color: #cccccc">Major bleeding</td></tr><tr><td><a href="CodeSystem-intraoperative-complication-cs.html#intraoperative-complication-cs-bile-duct-injury">bile-duct-injury</a></td><td style="color: #cccccc">Bile duct injury</td></tr><tr><td><a href="CodeSystem-intraoperative-complication-cs.html#intraoperative-complication-cs-vessel-injury">vessel-injury</a></td><td style="color: #cccccc">Vessel injury</td></tr><tr><td><a href="CodeSystem-intraoperative-complication-cs.html#intraoperative-complication-cs-liver-ischemia">liver-ischemia</a></td><td style="color: #cccccc">Liver ischemia</td></tr><tr><td><a href="CodeSystem-intraoperative-complication-cs.html#intraoperative-complication-cs-other">other</a></td><td style="color: #cccccc">Other complication</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/intraoperative-complication-vs"/>
+  <version value="0.1.0"/>
+  <name value="IntraoperativeComplicationVS"/>
+  <title value="Intraoperative Complications ValueSet"/>
+  <status value="draft"/>
+  <date value="2025-12-09T16:44:49+01:00"/>
+  <publisher value="Your Organization"/>
+  <contact>
+    <name value="Your Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://example.org"/>
+    </telecom>
+  </contact>
+  <description value="Allowed intraoperative complications during liver transplantation."/>
+  <compose>
+    <include>
+      <system value="http://example.org/fhir/CodeSystem/intraoperative-complication"/>
+      <concept>
+        <code value="major-bleeding"/>
+      </concept>
+      <concept>
+        <code value="bile-duct-injury"/>
+      </concept>
+      <concept>
+        <code value="vessel-injury"/>
+      </concept>
+      <concept>
+        <code value="liver-ischemia"/>
+      </concept>
+      <concept>
+        <code value="other"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

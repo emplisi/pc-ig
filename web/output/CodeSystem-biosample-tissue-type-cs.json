@@ -1,0 +1,39 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "biosample-tissue-type-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem biosample-tissue-type-cs</b></p><a name=\"biosample-tissue-type-cs\"> </a><a name=\"hcbiosample-tissue-type-cs\"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/biosample-tissue-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">blood<a name=\"biosample-tissue-type-cs-blood\"> </a></td><td>Blood</td></tr><tr><td style=\"white-space:nowrap\">saliva<a name=\"biosample-tissue-type-cs-saliva\"> </a></td><td>Saliva</td></tr><tr><td style=\"white-space:nowrap\">other-tissue<a name=\"biosample-tissue-type-cs-other-tissue\"> </a></td><td>Other tissues</td></tr></table></div>"
+  },
+  "url" : "http://example.org/fhir/CodeSystem/biosample-tissue-type",
+  "version" : "0.1.0",
+  "name" : "BioSampleTissueTypeCS",
+  "title" : "BioSample Tissue Type CodeSystem",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-12-09T16:44:49+01:00",
+  "publisher" : "Your Organization",
+  "contact" : [{
+    "name" : "Your Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://example.org"
+    }]
+  }],
+  "description" : "Tissue types for biological samples (from the bio_sample table).",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "blood",
+    "display" : "Blood"
+  },
+  {
+    "code" : "saliva",
+    "display" : "Saliva"
+  },
+  {
+    "code" : "other-tissue",
+    "display" : "Other tissues"
+  }]
+}

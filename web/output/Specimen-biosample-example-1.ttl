@@ -1,0 +1,101 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/Specimen/biosample-example-1> a fhir:Specimen ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "biosample-example-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/biosample"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/biosample>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Specimen biosample-example-1</b></p><a name=\"biosample-example-1\"> </a><a name=\"hcbiosample-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-biosample.html\">Biological Sample</a></p></div><p><b>Sample send to INGEMM date</b>: 2025-01-20</p><p><b>Genomic Test ID Relationship</b>: <a href=\"Basic-genomic-test-example-1.html\">Basic Exome sequencing</a></p><p><b>Epigenome Study ID Relationship</b>: <a href=\"Basic-epigenome-study-example-1.html\">Basic Methylation array epigenome study</a></p><p><b>Methylomic Study ID Relationship</b>: <a href=\"Basic-methylomic-study-example-1.html\">Basic Locus-level methylomic record</a></p><p><b>DNA concentration</b>: 35.2</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/bio-sample-id</code>/BS0001</p><p><b>type</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/biosample-tissue-type blood}\">Peripheral blood</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatientTransplant1.html\">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>2025-01-15</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/bio-sample-send-ingemm-date"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/bio-sample-send-ingemm-date>
+     ] ;
+     fhir:value [
+       a fhir:Date ;
+       fhir:v "2025-01-20"^^xsd:date
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/bio-sample-genomic-test-ref"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/bio-sample-genomic-test-ref>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Basic/genomic-test-example-1> ;
+       fhir:reference [ fhir:v "Basic/genomic-test-example-1" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/bio-sample-epigenome-study-ref"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/bio-sample-epigenome-study-ref>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Basic/epigenome-study-example-1> ;
+       fhir:reference [ fhir:v "Basic/epigenome-study-example-1" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/bio-sample-methylomic-study-ref"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/bio-sample-methylomic-study-ref>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Basic/methylomic-study-example-1> ;
+       fhir:reference [ fhir:v "Basic/methylomic-study-example-1" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/bio-sample-dna-concentration"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/bio-sample-dna-concentration>
+     ] ;
+     fhir:value [
+       a fhir:Decimal ;
+       fhir:v 35.2
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://example.org/fhir/NamingSystem/bio-sample-id"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/NamingSystem/bio-sample-id>
+     ] ;
+     fhir:value [ fhir:v "BS0001" ]
+  ] ) ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://example.org/fhir/CodeSystem/biosample-tissue-type"^^xsd:anyURI ;
+         fhir:l <http://example.org/fhir/CodeSystem/biosample-tissue-type>
+       ] ;
+       fhir:code [ fhir:v "blood" ] ;
+       fhir:display [ fhir:v "Blood" ]
+     ] ) ;
+     fhir:text [ fhir:v "Peripheral blood" ]
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://example.org/fhir/Patient/ExamplePatientTransplant1> ;
+     fhir:reference [ fhir:v "Patient/ExamplePatientTransplant1" ]
+  ] ; # 
+  fhir:collection [
+     fhir:collected [
+       a fhir:DateTime ;
+       fhir:v "2025-01-15"^^xsd:date
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

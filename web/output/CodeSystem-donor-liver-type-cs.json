@@ -1,0 +1,35 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "donor-liver-type-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem donor-liver-type-cs</b></p><a name=\"donor-liver-type-cs\"> </a><a name=\"hcdonor-liver-type-cs\"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/donor-liver-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">complete<a name=\"donor-liver-type-cs-complete\"> </a></td><td>Complete liver graft</td></tr><tr><td style=\"white-space:nowrap\">partial<a name=\"donor-liver-type-cs-partial\"> </a></td><td>Partial liver graft</td></tr></table></div>"
+  },
+  "url" : "http://example.org/fhir/CodeSystem/donor-liver-type",
+  "version" : "0.1.0",
+  "name" : "DonorLiverTypeCS",
+  "title" : "Donor Liver Type CodeSystem",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-12-09T16:44:49+01:00",
+  "publisher" : "Your Organization",
+  "contact" : [{
+    "name" : "Your Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://example.org"
+    }]
+  }],
+  "description" : "Type of liver donation (complete vs partial).",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "complete",
+    "display" : "Complete liver graft"
+  },
+  {
+    "code" : "partial",
+    "display" : "Partial liver graft"
+  }]
+}

@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/Basic/concomitant-disease-example-1> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "concomitant-disease-example-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-disease"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-disease>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Basic concomitant-disease-example-1</b></p><a name=\"concomitant-disease-example-1\"> </a><a name=\"hcconcomitant-disease-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-concomitant-disease.html\">Concomitant Disease</a></p></div><p><b>Concomitant disease name(s)</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/concomitant-disease-category hypertension}\">Hypertension</span></p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/concomitant-disease-id</code>/CD0001</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/concomitant-disease-type relevant}\">Relevant concomitant disease(s)</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-disease-name"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-disease-name>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://example.org/fhir/CodeSystem/concomitant-disease-category"^^xsd:anyURI ;
+           fhir:l <http://example.org/fhir/CodeSystem/concomitant-disease-category>
+         ] ;
+         fhir:code [ fhir:v "hypertension" ] ;
+         fhir:display [ fhir:v "Hypertension" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://example.org/fhir/NamingSystem/concomitant-disease-id"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/NamingSystem/concomitant-disease-id>
+     ] ;
+     fhir:value [ fhir:v "CD0001" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://example.org/fhir/CodeSystem/concomitant-disease-type"^^xsd:anyURI ;
+         fhir:l <http://example.org/fhir/CodeSystem/concomitant-disease-type>
+       ] ;
+       fhir:code [ fhir:v "relevant" ] ;
+       fhir:display [ fhir:v "Relevant concomitant disease(s)" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

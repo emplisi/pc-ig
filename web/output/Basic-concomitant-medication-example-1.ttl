@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/Basic/concomitant-medication-example-1> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "concomitant-medication-example-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-medication"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-medication>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Basic concomitant-medication-example-1</b></p><a name=\"concomitant-medication-example-1\"> </a><a name=\"hcconcomitant-medication-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-concomitant-medication.html\">Concomitant Medication</a></p></div><p><b>Concomitant episode ID relationship</b>: <a href=\"Basic-concomitant-episode-example-1.html\">Basic Concomitant disease episode</a></p><p><b>Medication</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/concomitant-medication-category antihypertensive}\">Antihypertensive treatment</span></p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/concomitant-medication-id</code>/CM0001</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/concomitant-medication-type concomitant}\">Concomitant medication</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-medication-episode-ref"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-medication-episode-ref>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Basic/concomitant-episode-example-1> ;
+       fhir:reference [ fhir:v "Basic/concomitant-episode-example-1" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-medication-code"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/concomitant-medication-code>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://example.org/fhir/CodeSystem/concomitant-medication-category"^^xsd:anyURI ;
+           fhir:l <http://example.org/fhir/CodeSystem/concomitant-medication-category>
+         ] ;
+         fhir:code [ fhir:v "antihypertensive" ] ;
+         fhir:display [ fhir:v "Antihypertensive treatment" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://example.org/fhir/NamingSystem/concomitant-medication-id"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/NamingSystem/concomitant-medication-id>
+     ] ;
+     fhir:value [ fhir:v "CM0001" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://example.org/fhir/CodeSystem/concomitant-medication-type"^^xsd:anyURI ;
+         fhir:l <http://example.org/fhir/CodeSystem/concomitant-medication-type>
+       ] ;
+       fhir:code [ fhir:v "concomitant" ] ;
+       fhir:display [ fhir:v "Concomitant medication" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

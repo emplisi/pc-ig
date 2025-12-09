@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="target-region-example-1"/>
+  <meta>
+    <profile value="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/target-region"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Basic target-region-example-1</b></p><a name="target-region-example-1"> </a><a name="hctarget-region-example-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-target-region.html">Target Region</a></p></div><p><b>Genomic test ID relationship</b>: <a href="Basic-genomic-test-example-1.html">Basic Exome sequencing</a></p><p><b>HGNC ID</b>: HGNC:1100</p><p><b>HGNC symbol</b>: BRCA1</p><p><b>Chromosome ID</b>: 17</p><p><b>Start position</b>: 43044295</p><p><b>End position</b>: 43125482</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/target-region-id</code>/TR0001</p><p><b>code</b>: <span title="Codes:{http://example.org/fhir/CodeSystem/target-region-type gene-region}">Gene-level target region</span></p></div>
+  </text>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/target-region-genomic-test-ref">
+    <valueReference>
+      <reference value="Basic/genomic-test-example-1"/>
+    </valueReference>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/target-region-hgnc-id">
+    <valueString value="HGNC:1100"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/target-region-hgnc-symbol">
+    <valueString value="BRCA1"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/target-region-chromosome-id">
+    <valueInteger value="17"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/target-region-start-position">
+    <valueInteger value="43044295"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/target-region-end-position">
+    <valueInteger value="43125482"/>
+  </extension>
+  <identifier>
+    <system value="http://example.org/fhir/NamingSystem/target-region-id"/>
+    <value value="TR0001"/>
+  </identifier>
+  <code>
+    <coding>
+      <system value="http://example.org/fhir/CodeSystem/target-region-type"/>
+      <code value="gene-region"/>
+      <display value="Gene-level target region"/>
+    </coding>
+  </code>
+</Basic>

@@ -1,0 +1,35 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "patient-rh-factor-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem patient-rh-factor-cs</b></p><a name=\"patient-rh-factor-cs\"> </a><a name=\"hcpatient-rh-factor-cs\"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/patient-rh-factor</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">positive<a name=\"patient-rh-factor-cs-positive\"> </a></td><td>Rh positive</td></tr><tr><td style=\"white-space:nowrap\">negative<a name=\"patient-rh-factor-cs-negative\"> </a></td><td>Rh negative</td></tr></table></div>"
+  },
+  "url" : "http://example.org/fhir/CodeSystem/patient-rh-factor",
+  "version" : "0.1.0",
+  "name" : "PatientRhFactorCS",
+  "title" : "Patient Rh Factor CodeSystem",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-12-09T16:44:49+01:00",
+  "publisher" : "Your Organization",
+  "contact" : [{
+    "name" : "Your Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://example.org"
+    }]
+  }],
+  "description" : "Rh factor of the transplant recipient (maps from OMOP Positive/Negative).",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "positive",
+    "display" : "Rh positive"
+  },
+  {
+    "code" : "negative",
+    "display" : "Rh negative"
+  }]
+}

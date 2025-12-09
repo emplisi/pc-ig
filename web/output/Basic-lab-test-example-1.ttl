@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/Basic/lab-test-example-1> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "lab-test-example-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/lab-test"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/lab-test>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Basic lab-test-example-1</b></p><a name=\"lab-test-example-1\"> </a><a name=\"hclab-test-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-lab-test.html\">Lab Test</a></p></div><p><b>Lab test name</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/lab-test-name 46273815}\">Albumin</span></p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/lab-test-id</code>/LT0001</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/lab-test-type chemistry}\">Chemistry lab test</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/lab-test-name-ext"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/lab-test-name-ext>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://example.org/fhir/CodeSystem/lab-test-name"^^xsd:anyURI ;
+           fhir:l <http://example.org/fhir/CodeSystem/lab-test-name>
+         ] ;
+         fhir:code [ fhir:v "46273815" ] ;
+         fhir:display [ fhir:v "Albumin" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://example.org/fhir/NamingSystem/lab-test-id"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/NamingSystem/lab-test-id>
+     ] ;
+     fhir:value [ fhir:v "LT0001" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://example.org/fhir/CodeSystem/lab-test-type"^^xsd:anyURI ;
+         fhir:l <http://example.org/fhir/CodeSystem/lab-test-type>
+       ] ;
+       fhir:code [ fhir:v "chemistry" ] ;
+       fhir:display [ fhir:v "Chemistry lab test" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

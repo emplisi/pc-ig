@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="pre-medication-antihypertensive-drug-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem pre-medication-antihypertensive-drug-cs</b></p><a name="pre-medication-antihypertensive-drug-cs"> </a><a name="hcpre-medication-antihypertensive-drug-cs"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/pre-medication-antihypertensive-drug</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1332418<a name="pre-medication-antihypertensive-drug-cs-1332418"> </a></td><td>Amlodipine</td></tr><tr><td style="white-space:nowrap">1318853<a name="pre-medication-antihypertensive-drug-cs-1318853"> </a></td><td>Nifedipine</td></tr><tr><td style="white-space:nowrap">1340128<a name="pre-medication-antihypertensive-drug-cs-1340128"> </a></td><td>Captopril</td></tr><tr><td style="white-space:nowrap">1314002<a name="pre-medication-antihypertensive-drug-cs-1314002"> </a></td><td>Atenolol</td></tr><tr><td style="white-space:nowrap">1346823<a name="pre-medication-antihypertensive-drug-cs-1346823"> </a></td><td>Carvedilol</td></tr><tr><td style="white-space:nowrap">1353766<a name="pre-medication-antihypertensive-drug-cs-1353766"> </a></td><td>Propranolol</td></tr><tr><td style="white-space:nowrap">1309068<a name="pre-medication-antihypertensive-drug-cs-1309068"> </a></td><td>Minoxidil</td></tr><tr><td style="white-space:nowrap">1398937<a name="pre-medication-antihypertensive-drug-cs-1398937"> </a></td><td>Clonidine</td></tr><tr><td style="white-space:nowrap">1363053<a name="pre-medication-antihypertensive-drug-cs-1363053"> </a></td><td>Doxazosin</td></tr></table></div>
+  </text>
+  <url value="http://example.org/fhir/CodeSystem/pre-medication-antihypertensive-drug"/>
+  <version value="0.1.0"/>
+  <name value="PreMedicationAntihypertensiveDrugCS"/>
+  <title value="Pre-medication Antihypertensive Drug CodeSystem"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-12-09T16:44:49+01:00"/>
+  <publisher value="Your Organization"/>
+  <contact>
+    <name value="Your Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://example.org"/>
+    </telecom>
+  </contact>
+  <description value="Antihypertensive drugs used as pre-transplant medication."/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="9"/>
+  <concept>
+    <code value="1332418"/>
+    <display value="Amlodipine"/>
+  </concept>
+  <concept>
+    <code value="1318853"/>
+    <display value="Nifedipine"/>
+  </concept>
+  <concept>
+    <code value="1340128"/>
+    <display value="Captopril"/>
+  </concept>
+  <concept>
+    <code value="1314002"/>
+    <display value="Atenolol"/>
+  </concept>
+  <concept>
+    <code value="1346823"/>
+    <display value="Carvedilol"/>
+  </concept>
+  <concept>
+    <code value="1353766"/>
+    <display value="Propranolol"/>
+  </concept>
+  <concept>
+    <code value="1309068"/>
+    <display value="Minoxidil"/>
+  </concept>
+  <concept>
+    <code value="1398937"/>
+    <display value="Clonidine"/>
+  </concept>
+  <concept>
+    <code value="1363053"/>
+    <display value="Doxazosin"/>
+  </concept>
+</CodeSystem>

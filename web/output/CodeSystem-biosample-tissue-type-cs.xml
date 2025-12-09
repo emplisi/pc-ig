@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="biosample-tissue-type-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem biosample-tissue-type-cs</b></p><a name="biosample-tissue-type-cs"> </a><a name="hcbiosample-tissue-type-cs"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/biosample-tissue-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">blood<a name="biosample-tissue-type-cs-blood"> </a></td><td>Blood</td></tr><tr><td style="white-space:nowrap">saliva<a name="biosample-tissue-type-cs-saliva"> </a></td><td>Saliva</td></tr><tr><td style="white-space:nowrap">other-tissue<a name="biosample-tissue-type-cs-other-tissue"> </a></td><td>Other tissues</td></tr></table></div>
+  </text>
+  <url value="http://example.org/fhir/CodeSystem/biosample-tissue-type"/>
+  <version value="0.1.0"/>
+  <name value="BioSampleTissueTypeCS"/>
+  <title value="BioSample Tissue Type CodeSystem"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-12-09T16:44:49+01:00"/>
+  <publisher value="Your Organization"/>
+  <contact>
+    <name value="Your Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://example.org"/>
+    </telecom>
+  </contact>
+  <description value="Tissue types for biological samples (from the bio_sample table)."/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="blood"/>
+    <display value="Blood"/>
+  </concept>
+  <concept>
+    <code value="saliva"/>
+    <display value="Saliva"/>
+  </concept>
+  <concept>
+    <code value="other-tissue"/>
+    <display value="Other tissues"/>
+  </concept>
+</CodeSystem>

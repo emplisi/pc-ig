@@ -1,0 +1,160 @@
+# Immunosuppressant - PROTECT-CHILD Pediatric Transplant Data Implementation Guide v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Immunosuppressant**
+
+## Resource Profile: Immunosuppressant 
+
+| | |
+| :--- | :--- |
+| *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressant | *Version*:0.1.0 |
+| Draft as of 2025-12-09 | *Computable Name*:Immunosuppressant |
+
+ 
+Immunosuppressive drug definition used in initial or maintenance therapy. 
+
+**Usages:**
+
+* Refer to this Profile: [Immunosuppressant ID relationship](StructureDefinition-immunosuppressive-induction-imm-ref.md), [Immunosuppressant ID relationship](StructureDefinition-immunosuppressive-maintenance-immunosuppressant-ref.md) and [Transplant Case Logical Model](StructureDefinition-transplant-case.md)
+* Examples for this Profile: [Basic/immunosuppressant-example-1](Basic-immunosuppressant-example-1.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/pc.ig|current/StructureDefinition/immunosuppressant)
+
+### Formal Views of Profile Content
+
+ [Description of Profiles, Differentials, Snapshots and how the different presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-immunosuppressant.csv), [Excel](StructureDefinition-immunosuppressant.xlsx), [Schematron](StructureDefinition-immunosuppressant.sch) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "immunosuppressant",
+  "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressant",
+  "version" : "0.1.0",
+  "name" : "Immunosuppressant",
+  "title" : "Immunosuppressant",
+  "status" : "draft",
+  "date" : "2025-12-09T16:44:49+01:00",
+  "publisher" : "Your Organization",
+  "contact" : [
+    {
+      "name" : "Your Organization",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "https://example.org"
+        }
+      ]
+    }
+  ],
+  "description" : "Immunosuppressive drug definition used in initial or maintenance therapy.",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [
+    {
+      "identity" : "rim",
+      "uri" : "http://hl7.org/v3",
+      "name" : "RIM Mapping"
+    },
+    {
+      "identity" : "w5",
+      "uri" : "http://hl7.org/fhir/fivews",
+      "name" : "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind" : "resource",
+  "abstract" : false,
+  "type" : "Basic",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Basic",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [
+      {
+        "id" : "Basic",
+        "path" : "Basic"
+      },
+      {
+        "id" : "Basic.extension",
+        "path" : "Basic.extension",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "value",
+              "path" : "url"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        }
+      },
+      {
+        "id" : "Basic.extension:name",
+        "path" : "Basic.extension",
+        "sliceName" : "name",
+        "short" : "Name of the immunosuppressant drug (coded)",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressant-name"
+            ]
+          }
+        ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Basic.identifier",
+        "path" : "Basic.identifier",
+        "short" : "Immunosuppressant ID",
+        "min" : 1,
+        "max" : "1",
+        "mustSupport" : true
+      },
+      {
+        "id" : "Basic.identifier.system",
+        "path" : "Basic.identifier.system",
+        "min" : 1,
+        "fixedUri" : "http://example.org/fhir/NamingSystem/immunosuppressant-id"
+      },
+      {
+        "id" : "Basic.identifier.value",
+        "path" : "Basic.identifier.value",
+        "min" : 1
+      },
+      {
+        "id" : "Basic.code",
+        "path" : "Basic.code",
+        "short" : "Immunosuppressant record category",
+        "mustSupport" : true
+      },
+      {
+        "id" : "Basic.code.coding",
+        "path" : "Basic.code.coding",
+        "min" : 1,
+        "max" : "1"
+      },
+      {
+        "id" : "Basic.code.coding.system",
+        "path" : "Basic.code.coding.system",
+        "min" : 1,
+        "fixedUri" : "http://example.org/fhir/CodeSystem/immunosuppressant-type"
+      },
+      {
+        "id" : "Basic.code.coding.code",
+        "path" : "Basic.code.coding.code",
+        "min" : 1
+      }
+    ]
+  }
+}
+
+```

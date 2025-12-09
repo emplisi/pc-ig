@@ -1,0 +1,39 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "patient-hla-class-ii-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem patient-hla-class-ii-cs</b></p><a name=\"patient-hla-class-ii-cs\"> </a><a name=\"hcpatient-hla-class-ii-cs\"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/patient-hla-class-ii</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">HLA-DR<a name=\"patient-hla-class-ii-cs-HLA-DR\"> </a></td></tr><tr><td style=\"white-space:nowrap\">HLA-DP<a name=\"patient-hla-class-ii-cs-HLA-DP\"> </a></td></tr><tr><td style=\"white-space:nowrap\">HLA-DQ<a name=\"patient-hla-class-ii-cs-HLA-DQ\"> </a></td></tr></table></div>"
+  },
+  "url" : "http://example.org/fhir/CodeSystem/patient-hla-class-ii",
+  "version" : "0.1.0",
+  "name" : "PatientHLAClassIICS",
+  "title" : "Patient HLA Class II Loci CodeSystem",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-12-09T16:44:49+01:00",
+  "publisher" : "Your Organization",
+  "contact" : [{
+    "name" : "Your Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://example.org"
+    }]
+  }],
+  "description" : "Class II HLA loci relevant to transplant matching.",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "HLA-DR",
+    "display" : "HLA-DR"
+  },
+  {
+    "code" : "HLA-DP",
+    "display" : "HLA-DP"
+  },
+  {
+    "code" : "HLA-DQ",
+    "display" : "HLA-DQ"
+  }]
+}

@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/CodeSystem/patient-hla-class-i-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "patient-hla-class-i-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem patient-hla-class-i-cs</b></p><a name=\"patient-hla-class-i-cs\"> </a><a name=\"hcpatient-hla-class-i-cs\"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/patient-hla-class-i</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">HLA-A<a name=\"patient-hla-class-i-cs-HLA-A\"> </a></td></tr><tr><td style=\"white-space:nowrap\">HLA-B<a name=\"patient-hla-class-i-cs-HLA-B\"> </a></td></tr><tr><td style=\"white-space:nowrap\">HLA-C<a name=\"patient-hla-class-i-cs-HLA-C\"> </a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://example.org/fhir/CodeSystem/patient-hla-class-i"^^xsd:anyURI ;
+     fhir:l <http://example.org/fhir/CodeSystem/patient-hla-class-i>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "PatientHLAClassICS"] ; # 
+  fhir:title [ fhir:v "Patient HLA Class I Loci CodeSystem"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-12-09T16:44:49+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Your Organization"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Your Organization" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://example.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Class I HLA loci relevant to transplant matching."] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "HLA-A" ] ;
+     fhir:display [ fhir:v "HLA-A" ]
+  ] [
+     fhir:code [ fhir:v "HLA-B" ] ;
+     fhir:display [ fhir:v "HLA-B" ]
+  ] [
+     fhir:code [ fhir:v "HLA-C" ] ;
+     fhir:display [ fhir:v "HLA-C" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="intraoperative-complication-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem intraoperative-complication-cs</b></p><a name="intraoperative-complication-cs"> </a><a name="hcintraoperative-complication-cs"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/intraoperative-complication</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">major-bleeding<a name="intraoperative-complication-cs-major-bleeding"> </a></td><td>Major bleeding</td></tr><tr><td style="white-space:nowrap">bile-duct-injury<a name="intraoperative-complication-cs-bile-duct-injury"> </a></td><td>Bile duct injury</td></tr><tr><td style="white-space:nowrap">vessel-injury<a name="intraoperative-complication-cs-vessel-injury"> </a></td><td>Vessel injury</td></tr><tr><td style="white-space:nowrap">liver-ischemia<a name="intraoperative-complication-cs-liver-ischemia"> </a></td><td>Liver ischemia</td></tr><tr><td style="white-space:nowrap">other<a name="intraoperative-complication-cs-other"> </a></td><td>Other complication</td></tr></table></div>
+  </text>
+  <url value="http://example.org/fhir/CodeSystem/intraoperative-complication"/>
+  <version value="0.1.0"/>
+  <name value="IntraoperativeComplicationCS"/>
+  <title value="Intraoperative Complications CodeSystem"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-12-09T16:44:49+01:00"/>
+  <publisher value="Your Organization"/>
+  <contact>
+    <name value="Your Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://example.org"/>
+    </telecom>
+  </contact>
+  <description value="Intraoperative complications during liver transplantation."/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="major-bleeding"/>
+    <display value="Major bleeding"/>
+  </concept>
+  <concept>
+    <code value="bile-duct-injury"/>
+    <display value="Bile duct injury"/>
+  </concept>
+  <concept>
+    <code value="vessel-injury"/>
+    <display value="Vessel injury"/>
+  </concept>
+  <concept>
+    <code value="liver-ischemia"/>
+    <display value="Liver ischemia"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Other complication"/>
+  </concept>
+</CodeSystem>

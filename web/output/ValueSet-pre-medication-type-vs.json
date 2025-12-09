@@ -1,0 +1,31 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "pre-medication-type-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet pre-medication-type-vs</b></p><a name=\"pre-medication-type-vs\"> </a><a name=\"hcpre-medication-type-vs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-pre-medication-type-cs.html\"><code>http://example.org/fhir/CodeSystem/pre-medication-type</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-pre-medication-type-cs.html#pre-medication-type-cs-pre-medication\">pre-medication</a></td><td style=\"color: #cccccc\">Pre-transplant medication record</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/pre-medication-type-vs",
+  "version" : "0.1.0",
+  "name" : "PreMedicationTypeVS",
+  "title" : "Pre-medication Type ValueSet",
+  "status" : "draft",
+  "date" : "2025-12-09T16:44:49+01:00",
+  "publisher" : "Your Organization",
+  "contact" : [{
+    "name" : "Your Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://example.org"
+    }]
+  }],
+  "description" : "Allowed type(s) for pre-medication records.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.org/fhir/CodeSystem/pre-medication-type",
+      "concept" : [{
+        "code" : "pre-medication"
+      }]
+    }]
+  }
+}

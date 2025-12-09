@@ -1,0 +1,19 @@
+{
+  "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ImplementationGuide/pc.ig",
+  "name" : "PROTECTChildTransplantIG",
+  "title" : "PROTECT-CHILD Pediatric Transplant Data Implementation Guide",
+  "description" : "FHIR Implementation Guide for the PROTECT-CHILD project, defining a common pediatric transplant data model (recipient, donor, transplant events, follow-up, labs, microbiology, biospecimens, omics and outcomes) for use in local data space capsules and federated analytics.",
+  "status" : "draft",
+  "package-id" : "pc.ig",
+  "ig-ver" : "0.1.0",
+  "date" : "Tue, 09 Dec, 2025 16:44:49 +0100",
+  "dateISO8601" : "2025-12-09T16:44:49+01:00",
+  "errs" : 617,
+  "warnings" : 435,
+  "hints" : 62,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1607795744
+}

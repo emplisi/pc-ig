@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="mark-imm-func-example-1"/>
+  <meta>
+    <profile value="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Basic mark-imm-func-example-1</b></p><a name="mark-imm-func-example-1"> </a><a name="hcmark-imm-func-example-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-marker-immune-function.html">Marker of Immune Function</a></p></div><p><b>Patient ID relationship</b>: <a href="Patient-ExamplePatientTransplant1.html">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p><p><b>HLA antibody class or locus</b>: HLA-DQ7</p><p><b>MFI value</b>: 3500</p><p><b>Donor-specific antibody (DSA)</b>: true</p><p><b>AT1R antibody result</b>: 12.3</p><p><b>ETAR antibody result</b>: 8.7</p><p><b>Anti-MICA antibody result</b>: 5.2</p><p><b>Anti-MICB antibody result</b>: 4.9</p><p><b>AECA / other non-HLA antibodies</b>: Low-titer anti-endothelial cell antibodies</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/marker-immune-function-id</code>/MIF0001</p><p><b>code</b>: <span title="Codes:{http://example.org/fhir/CodeSystem/marker-immune-function-type antibody}">Antibody marker</span></p></div>
+  </text>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-patient-ref">
+    <valueReference>
+      <reference value="Patient/ExamplePatientTransplant1"/>
+    </valueReference>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-hla-antibody-class">
+    <valueString value="HLA-DQ7"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-mfi-value">
+    <valueString value="3500"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-dsa">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-atr1">
+    <valueDecimal value="12.3"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-etar">
+    <valueDecimal value="8.7"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-mica">
+    <valueDecimal value="5.2"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-micb">
+    <valueDecimal value="4.9"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-aeca-other">
+    <valueString value="Low-titer anti-endothelial cell antibodies"/>
+  </extension>
+  <identifier>
+    <system value="http://example.org/fhir/NamingSystem/marker-immune-function-id"/>
+    <value value="MIF0001"/>
+  </identifier>
+  <code>
+    <coding>
+      <system value="http://example.org/fhir/CodeSystem/marker-immune-function-type"/>
+      <code value="antibody"/>
+      <display value="Antibody marker"/>
+    </coding>
+  </code>
+</Basic>

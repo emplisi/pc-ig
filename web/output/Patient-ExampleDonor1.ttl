@@ -1,0 +1,152 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/Patient/ExampleDonor1> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleDonor1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/donor"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/donor>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient ExampleDonor1</b></p><a name=\"ExampleDonor1\"> </a><a name=\"hcExampleDonor1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-donor.html\">Transplant Donor</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient Male, DoB: 1990-07-21 ( http://example.org/fhir/identifiers/donor#D000123)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Donor HLA Class I loci relevant for the transplant (HLA-A, HLA-B, HLA-C).\"><a href=\"StructureDefinition-donor-allograft-hla-class-i.html\">Donor allograft HLA Class I loci</a></td><td colspan=\"3\"><span title=\"Codes:{http://example.org/fhir/CodeSystem/patient-hla-class-i HLA-A}, {http://example.org/fhir/CodeSystem/patient-hla-class-i HLA-B}, {http://example.org/fhir/CodeSystem/patient-hla-class-i HLA-C}\">HLA-A</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"ABO blood group of the donor.\"><a href=\"StructureDefinition-donor-abo-group.html\">Donor ABO group</a></td><td colspan=\"3\"><span title=\"Codes:{http://example.org/fhir/CodeSystem/patient-abo-group O}\">Group O</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Type of dialysis the donor received before kidney transplantation.\"><a href=\"StructureDefinition-donor-pre-ktx-dialysis-type.html\">Donor pre-kidney-transplant dialysis type</a></td><td colspan=\"3\"><span title=\"Codes:{http://example.org/fhir/CodeSystem/donor-pre-ktx-dialysis-type hemodialysis}\">Hemodialysis</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Whether the donor liver graft is complete or partial.\"><a href=\"StructureDefinition-donor-liver-type.html\">Donor liver graft type</a></td><td colspan=\"3\"><span title=\"Codes:{http://example.org/fhir/CodeSystem/donor-liver-type partial}\">Partial liver graft</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Donor HLA Class II loci relevant for the transplant (HLA-DR, HLA-DP, HLA-DQ).\"><a href=\"StructureDefinition-donor-allograft-hla-class-ii.html\">Donor allograft HLA Class II loci</a></td><td colspan=\"3\"><span title=\"Codes:{http://example.org/fhir/CodeSystem/patient-hla-class-ii HLA-DR}, {http://example.org/fhir/CodeSystem/patient-hla-class-ii HLA-DP}, {http://example.org/fhir/CodeSystem/patient-hla-class-ii HLA-DQ}\">HLA-DR</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Rh factor of the donor.\"><a href=\"StructureDefinition-donor-rh-factor.html\">Donor Rh factor</a></td><td colspan=\"3\"><span title=\"Codes:{http://example.org/fhir/CodeSystem/patient-rh-factor positive}\">Rh positive</span></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/donor-abo-group"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/donor-abo-group>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://example.org/fhir/CodeSystem/patient-abo-group"^^xsd:anyURI ;
+           fhir:l <http://example.org/fhir/CodeSystem/patient-abo-group>
+         ] ;
+         fhir:code [ fhir:v "O" ] ;
+         fhir:display [ fhir:v "Group O" ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/donor-rh-factor"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/donor-rh-factor>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://example.org/fhir/CodeSystem/patient-rh-factor"^^xsd:anyURI ;
+           fhir:l <http://example.org/fhir/CodeSystem/patient-rh-factor>
+         ] ;
+         fhir:code [ fhir:v "positive" ] ;
+         fhir:display [ fhir:v "Rh positive" ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/donor-allograft-hla-class-i"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/donor-allograft-hla-class-i>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://example.org/fhir/CodeSystem/patient-hla-class-i"^^xsd:anyURI ;
+           fhir:l <http://example.org/fhir/CodeSystem/patient-hla-class-i>
+         ] ;
+         fhir:code [ fhir:v "HLA-A" ]
+       ] [
+         fhir:system [
+           fhir:v "http://example.org/fhir/CodeSystem/patient-hla-class-i"^^xsd:anyURI ;
+           fhir:l <http://example.org/fhir/CodeSystem/patient-hla-class-i>
+         ] ;
+         fhir:code [ fhir:v "HLA-B" ]
+       ] [
+         fhir:system [
+           fhir:v "http://example.org/fhir/CodeSystem/patient-hla-class-i"^^xsd:anyURI ;
+           fhir:l <http://example.org/fhir/CodeSystem/patient-hla-class-i>
+         ] ;
+         fhir:code [ fhir:v "HLA-C" ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/donor-allograft-hla-class-ii"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/donor-allograft-hla-class-ii>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://example.org/fhir/CodeSystem/patient-hla-class-ii"^^xsd:anyURI ;
+           fhir:l <http://example.org/fhir/CodeSystem/patient-hla-class-ii>
+         ] ;
+         fhir:code [ fhir:v "HLA-DR" ]
+       ] [
+         fhir:system [
+           fhir:v "http://example.org/fhir/CodeSystem/patient-hla-class-ii"^^xsd:anyURI ;
+           fhir:l <http://example.org/fhir/CodeSystem/patient-hla-class-ii>
+         ] ;
+         fhir:code [ fhir:v "HLA-DP" ]
+       ] [
+         fhir:system [
+           fhir:v "http://example.org/fhir/CodeSystem/patient-hla-class-ii"^^xsd:anyURI ;
+           fhir:l <http://example.org/fhir/CodeSystem/patient-hla-class-ii>
+         ] ;
+         fhir:code [ fhir:v "HLA-DQ" ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/donor-liver-type"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/donor-liver-type>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://example.org/fhir/CodeSystem/donor-liver-type"^^xsd:anyURI ;
+           fhir:l <http://example.org/fhir/CodeSystem/donor-liver-type>
+         ] ;
+         fhir:code [ fhir:v "partial" ] ;
+         fhir:display [ fhir:v "Partial liver graft" ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/donor-pre-ktx-dialysis-type"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/donor-pre-ktx-dialysis-type>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://example.org/fhir/CodeSystem/donor-pre-ktx-dialysis-type"^^xsd:anyURI ;
+           fhir:l <http://example.org/fhir/CodeSystem/donor-pre-ktx-dialysis-type>
+         ] ;
+         fhir:code [ fhir:v "hemodialysis" ] ;
+         fhir:display [ fhir:v "Hemodialysis" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://example.org/fhir/identifiers/donor"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/identifiers/donor>
+     ] ;
+     fhir:value [ fhir:v "D000123" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1990-07-21"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+

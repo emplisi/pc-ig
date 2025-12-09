@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/CodeSystem/immunosuppressive-induction-dose-unit-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "immunosuppressive-induction-dose-unit-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem immunosuppressive-induction-dose-unit-cs</b></p><a name=\"immunosuppressive-induction-dose-unit-cs\"> </a><a name=\"hcimmunosuppressive-induction-dose-unit-cs\"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/immunosuppressive-induction-dose-unit</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">mg-kg<a name=\"immunosuppressive-induction-dose-unit-cs-mg-kg\"> </a></td><td>mg/kg</td></tr><tr><td style=\"white-space:nowrap\">mg-mq<a name=\"immunosuppressive-induction-dose-unit-cs-mg-mq\"> </a></td><td>mg/mq</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://example.org/fhir/CodeSystem/immunosuppressive-induction-dose-unit"^^xsd:anyURI ;
+     fhir:l <http://example.org/fhir/CodeSystem/immunosuppressive-induction-dose-unit>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ImmunosuppressiveInductionDoseUnitCS"] ; # 
+  fhir:title [ fhir:v "Immunosuppressant Induction Dose Unit"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-12-09T16:44:49+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Your Organization"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Your Organization" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://example.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Units for immunosuppressant induction dose."] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "mg-kg" ] ;
+     fhir:display [ fhir:v "mg/kg" ]
+  ] [
+     fhir:code [ fhir:v "mg-mq" ] ;
+     fhir:display [ fhir:v "mg/mq" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

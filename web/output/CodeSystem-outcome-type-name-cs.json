@@ -1,0 +1,145 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "outcome-type-name-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem outcome-type-name-cs</b></p><a name=\"outcome-type-name-cs\"> </a><a name=\"hcoutcome-type-name-cs\"> </a><p>This  code system <code>http://example.org/fhir/CodeSystem/outcome-type-name</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">ebv-infection<a name=\"outcome-type-name-cs-ebv-infection\"> </a></td><td>Epstein Barr Infection (Need more specific one)</td></tr><tr><td style=\"white-space:nowrap\">440032<a name=\"outcome-type-name-cs-440032\"> </a></td><td>Cytomegalovirus Infection</td></tr><tr><td style=\"white-space:nowrap\">4265526<a name=\"outcome-type-name-cs-4265526\"> </a></td><td>BK Virus Infection</td></tr><tr><td style=\"white-space:nowrap\">45765696<a name=\"outcome-type-name-cs-45765696\"> </a></td><td>Renal Calcineurin Inhibitors Toxicity</td></tr><tr><td style=\"white-space:nowrap\">mycophenolate-toxicity<a name=\"outcome-type-name-cs-mycophenolate-toxicity\"> </a></td><td>Mycophenolate toxicity</td></tr><tr><td style=\"white-space:nowrap\">mtor-toxicity<a name=\"outcome-type-name-cs-mtor-toxicity\"> </a></td><td>mTOR inhibitors toxicity</td></tr><tr><td style=\"white-space:nowrap\">321876<a name=\"outcome-type-name-cs-321876\"> </a></td><td>Microangiopathy</td></tr><tr><td style=\"white-space:nowrap\">kidney-rejection-episode<a name=\"outcome-type-name-cs-kidney-rejection-episode\"> </a></td><td>Kidney rejection episode</td></tr><tr><td style=\"white-space:nowrap\">4341657<a name=\"outcome-type-name-cs-4341657\"> </a></td><td>Liver rejection episode</td></tr><tr><td style=\"white-space:nowrap\">198185<a name=\"outcome-type-name-cs-198185\"> </a></td><td>Chronic renal failure after pLTx</td></tr><tr><td style=\"white-space:nowrap\">4267417<a name=\"outcome-type-name-cs-4267417\"> </a></td><td>Liver Graft fibrosis</td></tr><tr><td style=\"white-space:nowrap\">4064161<a name=\"outcome-type-name-cs-4064161\"> </a></td><td>Cirrhosis of Liver</td></tr><tr><td style=\"white-space:nowrap\">chronic-liver-failure<a name=\"outcome-type-name-cs-chronic-liver-failure\"> </a></td><td>Chronic liver failure (liver graft fibrosis and cirrhosis)</td></tr><tr><td style=\"white-space:nowrap\">4198610<a name=\"outcome-type-name-cs-4198610\"> </a></td><td>Chronic liver rejection</td></tr><tr><td style=\"white-space:nowrap\">435514<a name=\"outcome-type-name-cs-435514\"> </a></td><td>Chronic Kidney Rejection</td></tr><tr><td style=\"white-space:nowrap\">ptld<a name=\"outcome-type-name-cs-ptld\"> </a></td><td>Post-transplant lymphoproliferative disease (PTLD)</td></tr><tr><td style=\"white-space:nowrap\">316866<a name=\"outcome-type-name-cs-316866\"> </a></td><td>High Blood pressure</td></tr><tr><td style=\"white-space:nowrap\">35817874<a name=\"outcome-type-name-cs-35817874\"> </a></td><td>Diabetes</td></tr><tr><td style=\"white-space:nowrap\">alloimmunization<a name=\"outcome-type-name-cs-alloimmunization\"> </a></td><td>Alloimmunization</td></tr><tr><td style=\"white-space:nowrap\">4223098<a name=\"outcome-type-name-cs-4223098\"> </a></td><td>Hepatic artery thrombosis</td></tr><tr><td style=\"white-space:nowrap\">biliary-complications<a name=\"outcome-type-name-cs-biliary-complications\"> </a></td><td>Billiary complications</td></tr><tr><td style=\"white-space:nowrap\">urological-complications<a name=\"outcome-type-name-cs-urological-complications\"> </a></td><td>Urological Complications</td></tr><tr><td style=\"white-space:nowrap\">mortality<a name=\"outcome-type-name-cs-mortality\"> </a></td><td>Mortality</td></tr><tr><td style=\"white-space:nowrap\">graft-survival<a name=\"outcome-type-name-cs-graft-survival\"> </a></td><td>Graft survival</td></tr><tr><td style=\"white-space:nowrap\">liver-primary-nonfunction<a name=\"outcome-type-name-cs-liver-primary-nonfunction\"> </a></td><td>Liver primary nonfunction</td></tr><tr><td style=\"white-space:nowrap\">liver-early-allograft-dysfunction<a name=\"outcome-type-name-cs-liver-early-allograft-dysfunction\"> </a></td><td>Liver early allograft dysfunction</td></tr><tr><td style=\"white-space:nowrap\">kidney-primary-nonfunction<a name=\"outcome-type-name-cs-kidney-primary-nonfunction\"> </a></td><td>Kidney primary nonfunction</td></tr><tr><td style=\"white-space:nowrap\">delayed-kidney-graft-function<a name=\"outcome-type-name-cs-delayed-kidney-graft-function\"> </a></td><td>Delayed kidney graft function</td></tr><tr><td style=\"white-space:nowrap\">42872891<a name=\"outcome-type-name-cs-42872891\"> </a></td><td>Posterior reversible encelopathy (PRES)</td></tr><tr><td style=\"white-space:nowrap\">relapse-primary-immunomediated<a name=\"outcome-type-name-cs-relapse-primary-immunomediated\"> </a></td><td>Relapse of primary immunomediated disease</td></tr></table></div>"
+  },
+  "url" : "http://example.org/fhir/CodeSystem/outcome-type-name",
+  "version" : "0.1.0",
+  "name" : "OutcomeTypeNameCS",
+  "title" : "Outcome Type Name",
+  "status" : "draft",
+  "date" : "2025-12-09T16:44:49+01:00",
+  "publisher" : "Your Organization",
+  "contact" : [{
+    "name" : "Your Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://example.org"
+    }]
+  }],
+  "description" : "Types of clinical outcomes after transplant.",
+  "content" : "complete",
+  "count" : 30,
+  "concept" : [{
+    "code" : "ebv-infection",
+    "display" : "Epstein Barr Infection (Need more specific one)"
+  },
+  {
+    "code" : "440032",
+    "display" : "Cytomegalovirus Infection"
+  },
+  {
+    "code" : "4265526",
+    "display" : "BK Virus Infection"
+  },
+  {
+    "code" : "45765696",
+    "display" : "Renal Calcineurin Inhibitors Toxicity"
+  },
+  {
+    "code" : "mycophenolate-toxicity",
+    "display" : "Mycophenolate toxicity"
+  },
+  {
+    "code" : "mtor-toxicity",
+    "display" : "mTOR inhibitors toxicity"
+  },
+  {
+    "code" : "321876",
+    "display" : "Microangiopathy"
+  },
+  {
+    "code" : "kidney-rejection-episode",
+    "display" : "Kidney rejection episode"
+  },
+  {
+    "code" : "4341657",
+    "display" : "Liver rejection episode"
+  },
+  {
+    "code" : "198185",
+    "display" : "Chronic renal failure after pLTx"
+  },
+  {
+    "code" : "4267417",
+    "display" : "Liver Graft fibrosis"
+  },
+  {
+    "code" : "4064161",
+    "display" : "Cirrhosis of Liver"
+  },
+  {
+    "code" : "chronic-liver-failure",
+    "display" : "Chronic liver failure (liver graft fibrosis and cirrhosis)"
+  },
+  {
+    "code" : "4198610",
+    "display" : "Chronic liver rejection"
+  },
+  {
+    "code" : "435514",
+    "display" : "Chronic Kidney Rejection"
+  },
+  {
+    "code" : "ptld",
+    "display" : "Post-transplant lymphoproliferative disease (PTLD)"
+  },
+  {
+    "code" : "316866",
+    "display" : "High Blood pressure"
+  },
+  {
+    "code" : "35817874",
+    "display" : "Diabetes"
+  },
+  {
+    "code" : "alloimmunization",
+    "display" : "Alloimmunization"
+  },
+  {
+    "code" : "4223098",
+    "display" : "Hepatic artery thrombosis"
+  },
+  {
+    "code" : "biliary-complications",
+    "display" : "Billiary complications"
+  },
+  {
+    "code" : "urological-complications",
+    "display" : "Urological Complications"
+  },
+  {
+    "code" : "mortality",
+    "display" : "Mortality"
+  },
+  {
+    "code" : "graft-survival",
+    "display" : "Graft survival"
+  },
+  {
+    "code" : "liver-primary-nonfunction",
+    "display" : "Liver primary nonfunction"
+  },
+  {
+    "code" : "liver-early-allograft-dysfunction",
+    "display" : "Liver early allograft dysfunction"
+  },
+  {
+    "code" : "kidney-primary-nonfunction",
+    "display" : "Kidney primary nonfunction"
+  },
+  {
+    "code" : "delayed-kidney-graft-function",
+    "display" : "Delayed kidney graft function"
+  },
+  {
+    "code" : "42872891",
+    "display" : "Posterior reversible encelopathy (PRES)"
+  },
+  {
+    "code" : "relapse-primary-immunomediated",
+    "display" : "Relapse of primary immunomediated disease"
+  }]
+}

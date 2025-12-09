@@ -1,0 +1,67 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "lab-result-unit-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet lab-result-unit-vs</b></p><a name=\"lab-result-unit-vs\"> </a><a name=\"hclab-result-unit-vs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-lab-result-unit-cs.html\"><code>http://example.org/fhir/CodeSystem/lab-result-unit</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-lab-result-unit-cs.html#lab-result-unit-cs-mg_per_dL\">mg_per_dL</a></td><td style=\"color: #cccccc\">mg/dL</td></tr><tr><td><a href=\"CodeSystem-lab-result-unit-cs.html#lab-result-unit-cs-umol_per_L\">umol_per_L</a></td><td style=\"color: #cccccc\">µmol/L</td></tr><tr><td><a href=\"CodeSystem-lab-result-unit-cs.html#lab-result-unit-cs-mL_min_1_73m2\">mL_min_1_73m2</a></td><td style=\"color: #cccccc\">mL/min/1.73 m2</td></tr><tr><td><a href=\"CodeSystem-lab-result-unit-cs.html#lab-result-unit-cs-mEq_per_L\">mEq_per_L</a></td><td style=\"color: #cccccc\">mEq/L</td></tr><tr><td><a href=\"CodeSystem-lab-result-unit-cs.html#lab-result-unit-cs-g_per_dL\">g_per_dL</a></td><td style=\"color: #cccccc\">g/dL</td></tr><tr><td><a href=\"CodeSystem-lab-result-unit-cs.html#lab-result-unit-cs-g_per_L\">g_per_L</a></td><td style=\"color: #cccccc\">g/L</td></tr><tr><td><a href=\"CodeSystem-lab-result-unit-cs.html#lab-result-unit-cs-U_per_L\">U_per_L</a></td><td style=\"color: #cccccc\">U/L</td></tr><tr><td><a href=\"CodeSystem-lab-result-unit-cs.html#lab-result-unit-cs-percent\">percent</a></td><td style=\"color: #cccccc\">%</td></tr><tr><td><a href=\"CodeSystem-lab-result-unit-cs.html#lab-result-unit-cs-mmol_per_L\">mmol_per_L</a></td><td style=\"color: #cccccc\">mmol/L</td></tr><tr><td><a href=\"CodeSystem-lab-result-unit-cs.html#lab-result-unit-cs-10exp3_per_uL\">10exp3_per_uL</a></td><td style=\"color: #cccccc\">10^3/UL</td></tr><tr><td><a href=\"CodeSystem-lab-result-unit-cs.html#lab-result-unit-cs-10exp9_per_L\">10exp9_per_L</a></td><td style=\"color: #cccccc\">10^9/UL</td></tr><tr><td><a href=\"CodeSystem-lab-result-unit-cs.html#lab-result-unit-cs-10exp3_per_mm3\">10exp3_per_mm3</a></td><td style=\"color: #cccccc\">x 10^3/mm3</td></tr><tr><td><a href=\"CodeSystem-lab-result-unit-cs.html#lab-result-unit-cs-second\">second</a></td><td style=\"color: #cccccc\">s</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/lab-result-unit-vs",
+  "version" : "0.1.0",
+  "name" : "LabResultUnitVS",
+  "title" : "Lab Result Unit ValueSet",
+  "status" : "draft",
+  "date" : "2025-12-09T16:44:49+01:00",
+  "publisher" : "Your Organization",
+  "contact" : [{
+    "name" : "Your Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://example.org"
+    }]
+  }],
+  "description" : "Allowed units of measurement for lab result values (unit column).",
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.org/fhir/CodeSystem/lab-result-unit",
+      "concept" : [{
+        "code" : "mg_per_dL"
+      },
+      {
+        "code" : "umol_per_L"
+      },
+      {
+        "code" : "mL_min_1_73m2"
+      },
+      {
+        "code" : "mEq_per_L"
+      },
+      {
+        "code" : "g_per_dL"
+      },
+      {
+        "code" : "g_per_L"
+      },
+      {
+        "code" : "U_per_L"
+      },
+      {
+        "code" : "percent"
+      },
+      {
+        "code" : "mmol_per_L"
+      },
+      {
+        "code" : "10exp3_per_uL"
+      },
+      {
+        "code" : "10exp9_per_L"
+      },
+      {
+        "code" : "10exp3_per_mm3"
+      },
+      {
+        "code" : "second"
+      }]
+    }]
+  }
+}

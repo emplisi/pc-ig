@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="immunosuppressant-example-1"/>
+  <meta>
+    <profile value="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressant"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Basic immunosuppressant-example-1</b></p><a name="immunosuppressant-example-1"> </a><a name="hcimmunosuppressant-example-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-immunosuppressant.html">Immunosuppressant</a></p></div><p><b>Immunosuppressant name</b>: <span title="Codes:{http://example.org/fhir/CodeSystem/immunosuppressant-drug-type 1506270}">Steroid (methylprednisolone)</span></p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/immunosuppressant-id</code>/IMM0001</p><p><b>code</b>: <span title="Codes:{http://example.org/fhir/CodeSystem/immunosuppressant-type drug}">Immunosuppressive drug</span></p></div>
+  </text>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressant-name">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://example.org/fhir/CodeSystem/immunosuppressant-drug-type"/>
+        <code value="1506270"/>
+        <display value="Steroid (methylprednisolone)"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value="http://example.org/fhir/NamingSystem/immunosuppressant-id"/>
+    <value value="IMM0001"/>
+  </identifier>
+  <code>
+    <coding>
+      <system value="http://example.org/fhir/CodeSystem/immunosuppressant-type"/>
+      <code value="drug"/>
+      <display value="Immunosuppressive drug"/>
+    </coding>
+  </code>
+</Basic>

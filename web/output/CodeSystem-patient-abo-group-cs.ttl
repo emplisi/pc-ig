@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/CodeSystem/patient-abo-group-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "patient-abo-group-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem patient-abo-group-cs</b></p><a name=\"patient-abo-group-cs\"> </a><a name=\"hcpatient-abo-group-cs\"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/patient-abo-group</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">A<a name=\"patient-abo-group-cs-A\"> </a></td><td>Group A</td></tr><tr><td style=\"white-space:nowrap\">B<a name=\"patient-abo-group-cs-B\"> </a></td><td>Group B</td></tr><tr><td style=\"white-space:nowrap\">AB<a name=\"patient-abo-group-cs-AB\"> </a></td><td>Group AB</td></tr><tr><td style=\"white-space:nowrap\">O<a name=\"patient-abo-group-cs-O\"> </a></td><td>Group O</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://example.org/fhir/CodeSystem/patient-abo-group"^^xsd:anyURI ;
+     fhir:l <http://example.org/fhir/CodeSystem/patient-abo-group>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "PatientABOGroupCS"] ; # 
+  fhir:title [ fhir:v "Patient ABO Group CodeSystem"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-12-09T16:44:49+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Your Organization"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Your Organization" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://example.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "ABO blood groups for transplant recipients (maps from OMOP A/B/AB/0)."] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "A" ] ;
+     fhir:display [ fhir:v "Group A" ]
+  ] [
+     fhir:code [ fhir:v "B" ] ;
+     fhir:display [ fhir:v "Group B" ]
+  ] [
+     fhir:code [ fhir:v "AB" ] ;
+     fhir:display [ fhir:v "Group AB" ]
+  ] [
+     fhir:code [ fhir:v "O" ] ;
+     fhir:display [ fhir:v "Group O" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

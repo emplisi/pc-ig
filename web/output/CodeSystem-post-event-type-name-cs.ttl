@@ -1,0 +1,102 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/CodeSystem/post-event-type-name-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "post-event-type-name-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem post-event-type-name-cs</b></p><a name=\"post-event-type-name-cs\"> </a><a name=\"hcpost-event-type-name-cs\"> </a><p>This  code system <code>http://example.org/fhir/CodeSystem/post-event-type-name</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">episodes-aki-after-ltx<a name=\"post-event-type-name-cs-episodes-aki-after-ltx\"> </a></td><td>Episodes of AKI after LTx</td></tr><tr><td style=\"white-space:nowrap\">hypoxic-ischemic-after-pltx<a name=\"post-event-type-name-cs-hypoxic-ischemic-after-pltx\"> </a></td><td>Hypoxic ischemic events after pLTx</td></tr><tr><td style=\"white-space:nowrap\">liver-rejection-banff<a name=\"post-event-type-name-cs-liver-rejection-banff\"> </a></td><td>Histological evidence of liver rejection based on Banff classification (IC/IF/C4d)</td></tr><tr><td style=\"white-space:nowrap\">intestinal-mmf-toxicity<a name=\"post-event-type-name-cs-intestinal-mmf-toxicity\"> </a></td><td>Histological evidence of intestinal MMF toxicity on intestinal biopsy</td></tr><tr><td style=\"white-space:nowrap\">dialysis-after-tx<a name=\"post-event-type-name-cs-dialysis-after-tx\"> </a></td><td>Dialysis after transplant (yes/no, start and stop date, type)</td></tr><tr><td style=\"white-space:nowrap\">tma-kidney-biopsy<a name=\"post-event-type-name-cs-tma-kidney-biopsy\"> </a></td><td>Histological evidence of Thrombotic Microangiopathy (TMA) on kidney biopsy</td></tr><tr><td style=\"white-space:nowrap\">cni-toxicity<a name=\"post-event-type-name-cs-cni-toxicity\"> </a></td><td>Histological evidence of CNI toxicity</td></tr><tr><td style=\"white-space:nowrap\">bkv-kidney-biopsy<a name=\"post-event-type-name-cs-bkv-kidney-biopsy\"> </a></td><td>Histological evidence of BKV virus/ BKV-DNA on kidney biopsy/ BKV FISH on kidney biopsy</td></tr><tr><td style=\"white-space:nowrap\">mmf-related-enteropathy<a name=\"post-event-type-name-cs-mmf-related-enteropathy\"> </a></td><td>Histological evidence of MMF-related enteropathy</td></tr><tr><td style=\"white-space:nowrap\">regression-after-dose-change<a name=\"post-event-type-name-cs-regression-after-dose-change\"> </a></td><td>Regression of symptoms after suspension/dose reduction</td></tr><tr><td style=\"white-space:nowrap\">other-organ-damage<a name=\"post-event-type-name-cs-other-organ-damage\"> </a></td><td>Other organ damage</td></tr><tr><td style=\"white-space:nowrap\">alloimmunization<a name=\"post-event-type-name-cs-alloimmunization\"> </a></td><td>Alloimmunization</td></tr><tr><td style=\"white-space:nowrap\">delayed-graft-function<a name=\"post-event-type-name-cs-delayed-graft-function\"> </a></td><td>Delayed Graft function</td></tr><tr><td style=\"white-space:nowrap\">liver-rejection-episode-histology<a name=\"post-event-type-name-cs-liver-rejection-episode-histology\"> </a></td><td>Liver rejection episode histology (histology (description, Banff category, immunohistochemistry/IF/C4d)</td></tr><tr><td style=\"white-space:nowrap\">previous-liver-rejections<a name=\"post-event-type-name-cs-previous-liver-rejections\"> </a></td><td>Previous liver rejections (Banff category, treatment)</td></tr><tr><td style=\"white-space:nowrap\">chronic-liver-rejection-histology<a name=\"post-event-type-name-cs-chronic-liver-rejection-histology\"> </a></td><td>Chronic liver rejection histology (description, Banff, category, IHC/IF/C4d)</td></tr><tr><td style=\"white-space:nowrap\">monoclonal-proliferation-biopsy<a name=\"post-event-type-name-cs-monoclonal-proliferation-biopsy\"> </a></td><td>Monoclonal proliferation on biopsy</td></tr><tr><td style=\"white-space:nowrap\">liver-replacement-therapy<a name=\"post-event-type-name-cs-liver-replacement-therapy\"> </a></td><td>Liver replacement therapy (need for retransplantation)</td></tr><tr><td style=\"white-space:nowrap\">kidney-rejection-episode-histology<a name=\"post-event-type-name-cs-kidney-rejection-episode-histology\"> </a></td><td>Kidney rejection episode histology (description, Banff category, immunochemistry/if/c4D)</td></tr><tr><td style=\"white-space:nowrap\">previous-kidney-rejection<a name=\"post-event-type-name-cs-previous-kidney-rejection\"> </a></td><td>Previous kidney rejection (Banff category, treatment)</td></tr><tr><td style=\"white-space:nowrap\">kidney-replacement-therapy<a name=\"post-event-type-name-cs-kidney-replacement-therapy\"> </a></td><td>Kidney replacement therapy (Need for retransplantation)</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://example.org/fhir/CodeSystem/post-event-type-name"^^xsd:anyURI ;
+     fhir:l <http://example.org/fhir/CodeSystem/post-event-type-name>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "PostEventTypeNameCS"] ; # 
+  fhir:title [ fhir:v "Post Event Type Name"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-12-09T16:44:49+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Your Organization"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Your Organization" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://example.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Types of post-transplant events."] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "21"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "episodes-aki-after-ltx" ] ;
+     fhir:display [ fhir:v "Episodes of AKI after LTx" ]
+  ] [
+     fhir:code [ fhir:v "hypoxic-ischemic-after-pltx" ] ;
+     fhir:display [ fhir:v "Hypoxic ischemic events after pLTx" ]
+  ] [
+     fhir:code [ fhir:v "liver-rejection-banff" ] ;
+     fhir:display [ fhir:v "Histological evidence of liver rejection based on Banff classification (IC/IF/C4d)" ]
+  ] [
+     fhir:code [ fhir:v "intestinal-mmf-toxicity" ] ;
+     fhir:display [ fhir:v "Histological evidence of intestinal MMF toxicity on intestinal biopsy" ]
+  ] [
+     fhir:code [ fhir:v "dialysis-after-tx" ] ;
+     fhir:display [ fhir:v "Dialysis after transplant (yes/no, start and stop date, type)" ]
+  ] [
+     fhir:code [ fhir:v "tma-kidney-biopsy" ] ;
+     fhir:display [ fhir:v "Histological evidence of Thrombotic Microangiopathy (TMA) on kidney biopsy" ]
+  ] [
+     fhir:code [ fhir:v "cni-toxicity" ] ;
+     fhir:display [ fhir:v "Histological evidence of CNI toxicity" ]
+  ] [
+     fhir:code [ fhir:v "bkv-kidney-biopsy" ] ;
+     fhir:display [ fhir:v "Histological evidence of BKV virus/ BKV-DNA on kidney biopsy/ BKV FISH on kidney biopsy" ]
+  ] [
+     fhir:code [ fhir:v "mmf-related-enteropathy" ] ;
+     fhir:display [ fhir:v "Histological evidence of MMF-related enteropathy" ]
+  ] [
+     fhir:code [ fhir:v "regression-after-dose-change" ] ;
+     fhir:display [ fhir:v "Regression of symptoms after suspension/dose reduction" ]
+  ] [
+     fhir:code [ fhir:v "other-organ-damage" ] ;
+     fhir:display [ fhir:v "Other organ damage" ]
+  ] [
+     fhir:code [ fhir:v "alloimmunization" ] ;
+     fhir:display [ fhir:v "Alloimmunization" ]
+  ] [
+     fhir:code [ fhir:v "delayed-graft-function" ] ;
+     fhir:display [ fhir:v "Delayed Graft function" ]
+  ] [
+     fhir:code [ fhir:v "liver-rejection-episode-histology" ] ;
+     fhir:display [ fhir:v "Liver rejection episode histology (histology (description, Banff category, immunohistochemistry/IF/C4d)" ]
+  ] [
+     fhir:code [ fhir:v "previous-liver-rejections" ] ;
+     fhir:display [ fhir:v "Previous liver rejections (Banff category, treatment)" ]
+  ] [
+     fhir:code [ fhir:v "chronic-liver-rejection-histology" ] ;
+     fhir:display [ fhir:v "Chronic liver rejection histology (description, Banff, category, IHC/IF/C4d)" ]
+  ] [
+     fhir:code [ fhir:v "monoclonal-proliferation-biopsy" ] ;
+     fhir:display [ fhir:v "Monoclonal proliferation on biopsy" ]
+  ] [
+     fhir:code [ fhir:v "liver-replacement-therapy" ] ;
+     fhir:display [ fhir:v "Liver replacement therapy (need for retransplantation)" ]
+  ] [
+     fhir:code [ fhir:v "kidney-rejection-episode-histology" ] ;
+     fhir:display [ fhir:v "Kidney rejection episode histology (description, Banff category, immunochemistry/if/c4D)" ]
+  ] [
+     fhir:code [ fhir:v "previous-kidney-rejection" ] ;
+     fhir:display [ fhir:v "Previous kidney rejection (Banff category, treatment)" ]
+  ] [
+     fhir:code [ fhir:v "kidney-replacement-therapy" ] ;
+     fhir:display [ fhir:v "Kidney replacement therapy (Need for retransplantation)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

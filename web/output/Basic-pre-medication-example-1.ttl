@@ -1,0 +1,95 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/Basic/pre-medication-example-1> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "pre-medication-example-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Basic pre-medication-example-1</b></p><a name=\"pre-medication-example-1\"> </a><a name=\"hcpre-medication-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-pre-medication.html\">Pre-transplant Medication</a></p></div><p><b>Pre-medication patient reference</b>: <a href=\"Patient-ExamplePatientTransplant1.html\">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p><p><b>Antihypertensive treatment</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/pre-medication-antihypertensive-drug 1332418}\">Amlodipine</span></p><p><b>Rituximab pre-medication</b>: true</p><p><b>Other pre-transplant medications</b>: Low-dose aspirin</p><p><b>Antiviral prophylaxis pre-medication</b>: false</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/pre-medication-id</code>/PM0001</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/pre-medication-type pre-medication}\">Pre-transplant medication record</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication-patient-ref"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication-patient-ref>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Patient/ExamplePatientTransplant1> ;
+       fhir:reference [ fhir:v "Patient/ExamplePatientTransplant1" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication-antihypertensive-treatment"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication-antihypertensive-treatment>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://example.org/fhir/CodeSystem/pre-medication-antihypertensive-drug"^^xsd:anyURI ;
+           fhir:l <http://example.org/fhir/CodeSystem/pre-medication-antihypertensive-drug>
+         ] ;
+         fhir:code [ fhir:v "1332418" ] ;
+         fhir:display [ fhir:v "Amlodipine" ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication-rituximab"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication-rituximab>
+     ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v true
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication-other-medications"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication-other-medications>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "Low-dose aspirin"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication-antiviral-phrophylaxis"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication-antiviral-phrophylaxis>
+     ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v false
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://example.org/fhir/NamingSystem/pre-medication-id"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/NamingSystem/pre-medication-id>
+     ] ;
+     fhir:value [ fhir:v "PM0001" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://example.org/fhir/CodeSystem/pre-medication-type"^^xsd:anyURI ;
+         fhir:l <http://example.org/fhir/CodeSystem/pre-medication-type>
+       ] ;
+       fhir:code [ fhir:v "pre-medication" ] ;
+       fhir:display [ fhir:v "Pre-transplant medication record" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="lab-result-unit-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem lab-result-unit-cs</b></p><a name="lab-result-unit-cs"> </a><a name="hclab-result-unit-cs"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/lab-result-unit</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">mg_per_dL<a name="lab-result-unit-cs-mg_per_dL"> </a></td><td>mg/dL</td></tr><tr><td style="white-space:nowrap">umol_per_L<a name="lab-result-unit-cs-umol_per_L"> </a></td><td>µmol/L</td></tr><tr><td style="white-space:nowrap">mL_min_1_73m2<a name="lab-result-unit-cs-mL_min_1_73m2"> </a></td><td>mL/min/1.73 m2</td></tr><tr><td style="white-space:nowrap">mEq_per_L<a name="lab-result-unit-cs-mEq_per_L"> </a></td><td>mEq/L</td></tr><tr><td style="white-space:nowrap">g_per_dL<a name="lab-result-unit-cs-g_per_dL"> </a></td><td>g/dL</td></tr><tr><td style="white-space:nowrap">g_per_L<a name="lab-result-unit-cs-g_per_L"> </a></td><td>g/L</td></tr><tr><td style="white-space:nowrap">U_per_L<a name="lab-result-unit-cs-U_per_L"> </a></td><td>U/L</td></tr><tr><td style="white-space:nowrap">percent<a name="lab-result-unit-cs-percent"> </a></td><td>%</td></tr><tr><td style="white-space:nowrap">mmol_per_L<a name="lab-result-unit-cs-mmol_per_L"> </a></td><td>mmol/L</td></tr><tr><td style="white-space:nowrap">10exp3_per_uL<a name="lab-result-unit-cs-10exp3_per_uL"> </a></td><td>10^3/UL</td></tr><tr><td style="white-space:nowrap">10exp9_per_L<a name="lab-result-unit-cs-10exp9_per_L"> </a></td><td>10^9/UL</td></tr><tr><td style="white-space:nowrap">10exp3_per_mm3<a name="lab-result-unit-cs-10exp3_per_mm3"> </a></td><td>x 10^3/mm3</td></tr><tr><td style="white-space:nowrap">second<a name="lab-result-unit-cs-second"> </a></td><td>s</td></tr></table></div>
+  </text>
+  <url value="http://example.org/fhir/CodeSystem/lab-result-unit"/>
+  <version value="0.1.0"/>
+  <name value="LabResultUnitCS"/>
+  <title value="Lab Result Unit CodeSystem"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-12-09T16:44:49+01:00"/>
+  <publisher value="Your Organization"/>
+  <contact>
+    <name value="Your Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://example.org"/>
+    </telecom>
+  </contact>
+  <description value="Units of measurement used for laboratory results, aligned with the lab_result unit conceptual domain."/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="13"/>
+  <concept>
+    <code value="mg_per_dL"/>
+    <display value="mg/dL"/>
+  </concept>
+  <concept>
+    <code value="umol_per_L"/>
+    <display value="µmol/L"/>
+  </concept>
+  <concept>
+    <code value="mL_min_1_73m2"/>
+    <display value="mL/min/1.73 m2"/>
+  </concept>
+  <concept>
+    <code value="mEq_per_L"/>
+    <display value="mEq/L"/>
+  </concept>
+  <concept>
+    <code value="g_per_dL"/>
+    <display value="g/dL"/>
+  </concept>
+  <concept>
+    <code value="g_per_L"/>
+    <display value="g/L"/>
+  </concept>
+  <concept>
+    <code value="U_per_L"/>
+    <display value="U/L"/>
+  </concept>
+  <concept>
+    <code value="percent"/>
+    <display value="%"/>
+  </concept>
+  <concept>
+    <code value="mmol_per_L"/>
+    <display value="mmol/L"/>
+  </concept>
+  <concept>
+    <code value="10exp3_per_uL"/>
+    <display value="10^3/UL"/>
+  </concept>
+  <concept>
+    <code value="10exp9_per_L"/>
+    <display value="10^9/UL"/>
+  </concept>
+  <concept>
+    <code value="10exp3_per_mm3"/>
+    <display value="x 10^3/mm3"/>
+  </concept>
+  <concept>
+    <code value="second"/>
+    <display value="s"/>
+  </concept>
+</CodeSystem>

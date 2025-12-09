@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="immunosuppressive-maintenance-type-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet immunosuppressive-maintenance-type-vs</b></p><a name="immunosuppressive-maintenance-type-vs"> </a><a name="hcimmunosuppressive-maintenance-type-vs"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-immunosuppressive-maintenance-type-cs.html"><code>http://example.org/fhir/CodeSystem/immunosuppressive-maintenance-type</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-immunosuppressive-maintenance-type-cs.html#immunosuppressive-maintenance-type-cs-maintenance-to-patient">maintenance-to-patient</a></td><td style="color: #cccccc">Immunosuppressive maintenance therapy to patient</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/immunosuppressive-maintenance-type-vs"/>
+  <version value="0.1.0"/>
+  <name value="ImmunosuppressiveMaintenanceTypeVS"/>
+  <title value="Immunosuppressive Maintenance to Patient Type ValueSet"/>
+  <status value="draft"/>
+  <date value="2025-12-09T16:44:49+01:00"/>
+  <publisher value="Your Organization"/>
+  <contact>
+    <name value="Your Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://example.org"/>
+    </telecom>
+  </contact>
+  <description value="Allowed types for immunosuppressive maintenance records."/>
+  <compose>
+    <include>
+      <system value="http://example.org/fhir/CodeSystem/immunosuppressive-maintenance-type"/>
+      <concept>
+        <code value="maintenance-to-patient"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

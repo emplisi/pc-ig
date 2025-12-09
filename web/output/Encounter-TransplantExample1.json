@@ -1,0 +1,64 @@
+{
+  "resourceType" : "Encounter",
+  "id" : "TransplantExample1",
+  "meta" : {
+    "profile" : ["http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter TransplantExample1</b></p><a name=\"TransplantExample1\"> </a><a name=\"hcTransplantExample1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-transplant.html\">Transplant</a></p></div><p><b>Transplant donor reference</b>: <a href=\"Patient-ExampleDonor1.html\">Anonymous Patient Male, DoB: 1990-07-21 ( http://example.org/fhir/identifiers/donor#D000123)</a></p><p><b>Donor/recipient weight ratio</b>: 0.95</p><p><b>Vessel mismatch (donor-recipient)</b>: false</p><p><b>Cold ischaemia time (minutes)</b>: 480</p><p><b>Time from diagnosis to transplant (months)</b>: 18</p><p><b>Vascular anomalies</b>: Accessory hepatic artery reconstructed</p><p><b>First warm ischaemia time (minutes)</b>: 45</p><p><b>identifier</b>: <code>http://example.org/fhir/identifiers/transplant</code>/T000001</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.0.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP\">ActCode: IMP</a> (inpatient encounter)</p><p><b>type</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/transplant-type liver}\">Liver transplant</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatientTransplant1.html\">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p><p><b>period</b>: 2023-08-15 08:00:00+0100 --&gt; (ongoing)</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-donor-ref",
+    "valueReference" : {
+      "reference" : "Patient/ExampleDonor1"
+    }
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-donor-recipient-weight-ratio",
+    "valueDecimal" : 0.95
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-vessel-mismatch",
+    "valueBoolean" : false
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-cold-ischaemia-time",
+    "valueInteger" : 480
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-time-diagnosis-to-transplant",
+    "valueInteger" : 18
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-vascular-anomalies",
+    "valueString" : "Accessory hepatic artery reconstructed"
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-first-warm-ischemia-time",
+    "valueInteger" : 45
+  }],
+  "identifier" : [{
+    "system" : "http://example.org/fhir/identifiers/transplant",
+    "value" : "T000001"
+  }],
+  "status" : "finished",
+  "class" : {
+    "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code" : "IMP",
+    "display" : "inpatient encounter"
+  },
+  "type" : [{
+    "coding" : [{
+      "system" : "http://example.org/fhir/CodeSystem/transplant-type",
+      "code" : "liver",
+      "display" : "Liver transplant"
+    }]
+  }],
+  "subject" : {
+    "reference" : "Patient/ExamplePatientTransplant1"
+  },
+  "period" : {
+    "start" : "2023-08-15T08:00:00+01:00"
+  }
+}

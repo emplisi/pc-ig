@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/CodeSystem/intraoperative-complication-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "intraoperative-complication-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem intraoperative-complication-cs</b></p><a name=\"intraoperative-complication-cs\"> </a><a name=\"hcintraoperative-complication-cs\"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/intraoperative-complication</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">major-bleeding<a name=\"intraoperative-complication-cs-major-bleeding\"> </a></td><td>Major bleeding</td></tr><tr><td style=\"white-space:nowrap\">bile-duct-injury<a name=\"intraoperative-complication-cs-bile-duct-injury\"> </a></td><td>Bile duct injury</td></tr><tr><td style=\"white-space:nowrap\">vessel-injury<a name=\"intraoperative-complication-cs-vessel-injury\"> </a></td><td>Vessel injury</td></tr><tr><td style=\"white-space:nowrap\">liver-ischemia<a name=\"intraoperative-complication-cs-liver-ischemia\"> </a></td><td>Liver ischemia</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"intraoperative-complication-cs-other\"> </a></td><td>Other complication</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://example.org/fhir/CodeSystem/intraoperative-complication"^^xsd:anyURI ;
+     fhir:l <http://example.org/fhir/CodeSystem/intraoperative-complication>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "IntraoperativeComplicationCS"] ; # 
+  fhir:title [ fhir:v "Intraoperative Complications CodeSystem"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-12-09T16:44:49+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Your Organization"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Your Organization" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://example.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Intraoperative complications during liver transplantation."] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "major-bleeding" ] ;
+     fhir:display [ fhir:v "Major bleeding" ]
+  ] [
+     fhir:code [ fhir:v "bile-duct-injury" ] ;
+     fhir:display [ fhir:v "Bile duct injury" ]
+  ] [
+     fhir:code [ fhir:v "vessel-injury" ] ;
+     fhir:display [ fhir:v "Vessel injury" ]
+  ] [
+     fhir:code [ fhir:v "liver-ischemia" ] ;
+     fhir:display [ fhir:v "Liver ischemia" ]
+  ] [
+     fhir:code [ fhir:v "other" ] ;
+     fhir:display [ fhir:v "Other complication" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

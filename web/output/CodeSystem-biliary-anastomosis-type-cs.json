@@ -1,0 +1,43 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "biliary-anastomosis-type-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem biliary-anastomosis-type-cs</b></p><a name=\"biliary-anastomosis-type-cs\"> </a><a name=\"hcbiliary-anastomosis-type-cs\"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/biliary-anastomosis-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">duct-to-duct<a name=\"biliary-anastomosis-type-cs-duct-to-duct\"> </a></td><td>Duct-to-duct anastomosis</td></tr><tr><td style=\"white-space:nowrap\">choledochoenterostomy<a name=\"biliary-anastomosis-type-cs-choledochoenterostomy\"> </a></td><td>Choledochoenterostomy</td></tr><tr><td style=\"white-space:nowrap\">bilioenteric<a name=\"biliary-anastomosis-type-cs-bilioenteric\"> </a></td><td>Bilioenteric anastomosis</td></tr><tr><td style=\"white-space:nowrap\">roux-en-y<a name=\"biliary-anastomosis-type-cs-roux-en-y\"> </a></td><td>Roux-en-Y hepaticojejunostomy</td></tr></table></div>"
+  },
+  "url" : "http://example.org/fhir/CodeSystem/biliary-anastomosis-type",
+  "version" : "0.1.0",
+  "name" : "BiliaryAnastomosisTypeCS",
+  "title" : "Type of surgical biliary anastomosis CodeSystem",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-12-09T16:44:49+01:00",
+  "publisher" : "Your Organization",
+  "contact" : [{
+    "name" : "Your Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://example.org"
+    }]
+  }],
+  "description" : "Types of biliary anastomosis used in liver transplantation.",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "duct-to-duct",
+    "display" : "Duct-to-duct anastomosis"
+  },
+  {
+    "code" : "choledochoenterostomy",
+    "display" : "Choledochoenterostomy"
+  },
+  {
+    "code" : "bilioenteric",
+    "display" : "Bilioenteric anastomosis"
+  },
+  {
+    "code" : "roux-en-y",
+    "display" : "Roux-en-Y hepaticojejunostomy"
+  }]
+}

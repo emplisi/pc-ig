@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/CodeSystem/immunosuppressive-maintenance-type-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "immunosuppressive-maintenance-type-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem immunosuppressive-maintenance-type-cs</b></p><a name=\"immunosuppressive-maintenance-type-cs\"> </a><a name=\"hcimmunosuppressive-maintenance-type-cs\"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/immunosuppressive-maintenance-type</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">maintenance-to-patient<a name=\"immunosuppressive-maintenance-type-cs-maintenance-to-patient\"> </a></td><td>Immunosuppressive maintenance therapy to patient</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://example.org/fhir/CodeSystem/immunosuppressive-maintenance-type"^^xsd:anyURI ;
+     fhir:l <http://example.org/fhir/CodeSystem/immunosuppressive-maintenance-type>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ImmunosuppressiveMaintenanceTypeCS"] ; # 
+  fhir:title [ fhir:v "Immunosuppressive Maintenance to Patient Type CodeSystem"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-12-09T16:44:49+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Your Organization"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Your Organization" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://example.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Type of immunosuppressive maintenance record."] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "1"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "maintenance-to-patient" ] ;
+     fhir:display [ fhir:v "Immunosuppressive maintenance therapy to patient" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

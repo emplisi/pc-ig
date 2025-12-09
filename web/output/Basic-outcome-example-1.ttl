@@ -1,0 +1,141 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/Basic/outcome-example-1> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "outcome-example-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Basic outcome-example-1</b></p><a name=\"outcome-example-1\"> </a><a name=\"hcoutcome-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-outcome.html\">Outcome</a></p></div><p><b>Outcome type ID relationship</b>: <a href=\"Basic-outcome-type-example-1.html\">Basic Clinical outcome type</a></p><p><b>Patient ID relationship</b>: <a href=\"Patient-ExamplePatientTransplant1.html\">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p><p><b>Outcome date</b>: 2024-06-01</p><p><b>Pre-medication ID relationship</b>: <a href=\"Basic-pre-medication-example-1.html\">Basic Pre-transplant medication record</a></p><p><b>Clinical variable ID relationship</b>: <a href=\"Basic-clinical-variable-example-1.html\">Basic Vital signs</a></p><p><b>Concomitant episode ID relationship</b>: <a href=\"Basic-concomitant-episode-example-1.html\">Basic Concomitant disease episode</a></p><p><b>Microbiology ID relationship</b>: <a href=\"Observation-microbiology-example-1.html\">Observation Microbiology studies (set)</a></p><p><b>Patient instrumental investigation ID relationship</b>: <a href=\"Observation-patient-instrumental-investigation-example-1.html\">Observation </a></p><p><b>Lab test ID relationship</b>: <a href=\"Basic-lab-test-example-1.html\">Basic Chemistry lab test</a></p><p><b>Post event ID relationship</b>: <a href=\"Basic-post-event-example-1.html\">Basic Post-transplant event</a></p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/outcome-id</code>/OUT0001</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/outcome-type-code clinical}\">Clinical outcome</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-type-ref"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-type-ref>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Basic/outcome-type-example-1> ;
+       fhir:reference [ fhir:v "Basic/outcome-type-example-1" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-patient-ref"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-patient-ref>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Patient/ExamplePatientTransplant1> ;
+       fhir:reference [ fhir:v "Patient/ExamplePatientTransplant1" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-date"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-date>
+     ] ;
+     fhir:value [
+       a fhir:Date ;
+       fhir:v "2024-06-01"^^xsd:date
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-pre-medication-ref"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-pre-medication-ref>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Basic/pre-medication-example-1> ;
+       fhir:reference [ fhir:v "Basic/pre-medication-example-1" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-clinical-variable-ref"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-clinical-variable-ref>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Basic/clinical-variable-example-1> ;
+       fhir:reference [ fhir:v "Basic/clinical-variable-example-1" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-concomitant-episode-ref"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-concomitant-episode-ref>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Basic/concomitant-episode-example-1> ;
+       fhir:reference [ fhir:v "Basic/concomitant-episode-example-1" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-microbiology-ref"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-microbiology-ref>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Observation/microbiology-example-1> ;
+       fhir:reference [ fhir:v "Observation/microbiology-example-1" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-patient-instrumental-investigation-ref"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-patient-instrumental-investigation-ref>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Observation/patient-instrumental-investigation-example-1> ;
+       fhir:reference [ fhir:v "Observation/patient-instrumental-investigation-example-1" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-lab-test-ref"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-lab-test-ref>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Basic/lab-test-example-1> ;
+       fhir:reference [ fhir:v "Basic/lab-test-example-1" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-post-event-ref"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/outcome-post-event-ref>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Basic/post-event-example-1> ;
+       fhir:reference [ fhir:v "Basic/post-event-example-1" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://example.org/fhir/NamingSystem/outcome-id"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/NamingSystem/outcome-id>
+     ] ;
+     fhir:value [ fhir:v "OUT0001" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://example.org/fhir/CodeSystem/outcome-type-code"^^xsd:anyURI ;
+         fhir:l <http://example.org/fhir/CodeSystem/outcome-type-code>
+       ] ;
+       fhir:code [ fhir:v "clinical" ] ;
+       fhir:display [ fhir:v "Clinical outcome" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

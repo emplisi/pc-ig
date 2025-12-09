@@ -1,0 +1,43 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "visit-type-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet visit-type-vs</b></p><a name=\"visit-type-vs\"> </a><a name=\"hcvisit-type-vs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-visit-type-cs.html\"><code>http://example.org/fhir/CodeSystem/visit-type</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-visit-type-cs.html#visit-type-cs-pre-transplant\">pre-transplant</a></td><td style=\"color: #cccccc\">Pre-transplant visit</td></tr><tr><td><a href=\"CodeSystem-visit-type-cs.html#visit-type-cs-month-1\">month-1</a></td><td style=\"color: #cccccc\">1 month visit</td></tr><tr><td><a href=\"CodeSystem-visit-type-cs.html#visit-type-cs-month-3\">month-3</a></td><td style=\"color: #cccccc\">3 month visit</td></tr><tr><td><a href=\"CodeSystem-visit-type-cs.html#visit-type-cs-month-5\">month-5</a></td><td style=\"color: #cccccc\">5 month visit</td></tr><tr><td><a href=\"CodeSystem-visit-type-cs.html#visit-type-cs-outcome\">outcome</a></td><td style=\"color: #cccccc\">Outcome visit</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/visit-type-vs",
+  "version" : "0.1.0",
+  "name" : "VisitTypeVS",
+  "title" : "Visit Type ValueSet",
+  "status" : "draft",
+  "date" : "2025-12-09T16:44:49+01:00",
+  "publisher" : "Your Organization",
+  "contact" : [{
+    "name" : "Your Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://example.org"
+    }]
+  }],
+  "description" : "Allowed types of visits in the transplant follow-up schedule.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.org/fhir/CodeSystem/visit-type",
+      "concept" : [{
+        "code" : "pre-transplant"
+      },
+      {
+        "code" : "month-1"
+      },
+      {
+        "code" : "month-3"
+      },
+      {
+        "code" : "month-5"
+      },
+      {
+        "code" : "outcome"
+      }]
+    }]
+  }
+}

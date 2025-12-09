@@ -1,0 +1,47 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "intraoperative-complication-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem intraoperative-complication-cs</b></p><a name=\"intraoperative-complication-cs\"> </a><a name=\"hcintraoperative-complication-cs\"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/intraoperative-complication</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">major-bleeding<a name=\"intraoperative-complication-cs-major-bleeding\"> </a></td><td>Major bleeding</td></tr><tr><td style=\"white-space:nowrap\">bile-duct-injury<a name=\"intraoperative-complication-cs-bile-duct-injury\"> </a></td><td>Bile duct injury</td></tr><tr><td style=\"white-space:nowrap\">vessel-injury<a name=\"intraoperative-complication-cs-vessel-injury\"> </a></td><td>Vessel injury</td></tr><tr><td style=\"white-space:nowrap\">liver-ischemia<a name=\"intraoperative-complication-cs-liver-ischemia\"> </a></td><td>Liver ischemia</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"intraoperative-complication-cs-other\"> </a></td><td>Other complication</td></tr></table></div>"
+  },
+  "url" : "http://example.org/fhir/CodeSystem/intraoperative-complication",
+  "version" : "0.1.0",
+  "name" : "IntraoperativeComplicationCS",
+  "title" : "Intraoperative Complications CodeSystem",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-12-09T16:44:49+01:00",
+  "publisher" : "Your Organization",
+  "contact" : [{
+    "name" : "Your Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://example.org"
+    }]
+  }],
+  "description" : "Intraoperative complications during liver transplantation.",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "major-bleeding",
+    "display" : "Major bleeding"
+  },
+  {
+    "code" : "bile-duct-injury",
+    "display" : "Bile duct injury"
+  },
+  {
+    "code" : "vessel-injury",
+    "display" : "Vessel injury"
+  },
+  {
+    "code" : "liver-ischemia",
+    "display" : "Liver ischemia"
+  },
+  {
+    "code" : "other",
+    "display" : "Other complication"
+  }]
+}

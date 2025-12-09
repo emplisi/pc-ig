@@ -1,0 +1,497 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Lab Test Name - JSON Representation - PROTECT-CHILD Pediatric Transplant Data Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/pc-header.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2.279"}
+    h3,h4,h5,h6{--heading-prefix:"2.279"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <div xmlns="http://www.w3.org/1999/xhtml"
+     id="pc-header"
+     style="display:flex;align-items:center;justify-content:space-between;">
+
+  <!-- Left -->
+  <a id="pc-logo-left" no-external="true"
+     href="https://protect-child.eu" target="_blank">
+    <img src="assets/images/hl7-eu-logo.png"
+         alt="hl7-eu-logo"
+         style="height:60px;"/>
+  </a>
+
+  <!-- Center: IG title + version -->
+  <div id="pc-title-block"
+       style="flex:1;text-align:center;margin:0 16px;">
+    <div id="ig-title"
+         style="font-size:1.6em;font-weight:bold;margin:0;">
+      PROTECT-CHILD Pediatric Transplant Data Implementation Guide
+    </div>
+    <div id="ig-version"
+         style="font-size:0.9em;margin-top:2px;">
+      0.1.0 - 
+    </div>
+  </div>
+
+  <!-- Right -->
+  <a id="pc-logo-right" no-external="true"
+     href="https://ec.europa.eu" target="_blank">
+    <img src="assets/images/fhir-logo-www.png"
+         alt="fhir logo"
+         style="height:60px;"/>
+  </a>
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">PROTECT-CHILD Pediatric Transplant Data Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <!-- Menu items -->
+  <li><a href="index.html">Home</a></li>
+  <li><a href="StructureDefinition-transplant-case.html">TransplantCase model</a></li>
+  <!-- <li><a href="project-overview.html">Project &amp; scope</a></li>
+  <li><a href="model-overview.html">Common model</a></li>-->
+  <li><a href="artifacts.html">Artifacts</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Lab Test Name</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">PROTECT-CHILD Pediatric Transplant Data Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://example.org/fhir/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-lab-test-name-cs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-lab-test-name-cs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-lab-test-name-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Lab Test Name - JSON Representation</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2025-12-09
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-lab-test-name-cs.json" no-download="true">Raw json</a> | <a href="CodeSystem-lab-test-name-cs.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a>" : "lab-test-name-cs",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem lab-test-name-cs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;lab-test-name-cs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hclab-test-name-cs\&quot;&gt; &lt;/a&gt;&lt;p&gt;This  code system &lt;code&gt;http://example.org/fhir/CodeSystem/lab-test-name&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;46273815&lt;a name=\&quot;lab-test-name-cs-46273815\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Albumin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4108431&lt;a name=\&quot;lab-test-name-cs-4108431\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Albumin/creatinine ratio&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ALT&lt;a name=\&quot;lab-test-name-cs-ALT\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ALT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4017613&lt;a name=\&quot;lab-test-name-cs-4017613\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ammonium levels&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AST&lt;a name=\&quot;lab-test-name-cs-AST\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AST&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;35816690&lt;a name=\&quot;lab-test-name-cs-35816690\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Calcium&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;19059097&lt;a name=\&quot;lab-test-name-cs-19059097\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cholesterol&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;19071968&lt;a name=\&quot;lab-test-name-cs-19071968\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Creatinine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;creatinine-egfr&lt;a name=\&quot;lab-test-name-cs-creatinine-egfr\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Creatinine Estimated Glomerular Filtration rate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;44789161&lt;a name=\&quot;lab-test-name-cs-44789161\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cystatin C&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;cystatinc-egfr&lt;a name=\&quot;lab-test-name-cs-cystatinc-egfr\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cystatin C Estimated Glomerular Filtration rate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4216632&lt;a name=\&quot;lab-test-name-cs-4216632\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Direct Bilirubin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;35960055&lt;a name=\&quot;lab-test-name-cs-35960055\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;GGT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1560524&lt;a name=\&quot;lab-test-name-cs-1560524\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Glucose&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;35198163&lt;a name=\&quot;lab-test-name-cs-35198163\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Haptoglobin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;36304734&lt;a name=\&quot;lab-test-name-cs-36304734\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HbA1c&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4151358&lt;a name=\&quot;lab-test-name-cs-4151358\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hematocrit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;36862556&lt;a name=\&quot;lab-test-name-cs-36862556\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hemoglobin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;indirect-bilirubin&lt;a name=\&quot;lab-test-name-cs-indirect-bilirubin\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Indirect Bilirubin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;INR&lt;a name=\&quot;lab-test-name-cs-INR\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;INR&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;19011035&lt;a name=\&quot;lab-test-name-cs-19011035\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lactate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;35955655&lt;a name=\&quot;lab-test-name-cs-35955655\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;LDH&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;36309122&lt;a name=\&quot;lab-test-name-cs-36309122\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lymphocytes&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;36308680&lt;a name=\&quot;lab-test-name-cs-36308680\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Neutrophils&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;21498711&lt;a name=\&quot;lab-test-name-cs-21498711\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;pH&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;36310193&lt;a name=\&quot;lab-test-name-cs-36310193\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Platelets&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;19049024&lt;a name=\&quot;lab-test-name-cs-19049024\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Potassium&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;proteinuria-creatininuria-ratio&lt;a name=\&quot;lab-test-name-cs-proteinuria-creatininuria-ratio\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Proteinuria/creatininuria ratio&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;3002681&lt;a name=\&quot;lab-test-name-cs-3002681\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Prothrombin Activity&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4245261&lt;a name=\&quot;lab-test-name-cs-4245261\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Prothrombin Time&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4054726&lt;a name=\&quot;lab-test-name-cs-4054726\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Red Blood Cells&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4150494&lt;a name=\&quot;lab-test-name-cs-4150494\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Serum bicarbonate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;19136048&lt;a name=\&quot;lab-test-name-cs-19136048\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sodium&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4230543&lt;a name=\&quot;lab-test-name-cs-4230543\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Total Bilirubin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4119650&lt;a name=\&quot;lab-test-name-cs-4119650\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Total protein&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;906914&lt;a name=\&quot;lab-test-name-cs-906914\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Urea&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;43532213&lt;a name=\&quot;lab-test-name-cs-43532213\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uric acid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4150621&lt;a name=\&quot;lab-test-name-cs-4150621\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Urine Creatinine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;321414&lt;a name=\&quot;lab-test-name-cs-321414\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Urine Haemoglobin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4198678&lt;a name=\&quot;lab-test-name-cs-4198678\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;White Blood Cells&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;phosphorus&lt;a name=\&quot;lab-test-name-cs-phosphorus\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Phosphorus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;pth&lt;a name=\&quot;lab-test-name-cs-pth\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PTH (parathormone)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;vitamin-d&lt;a name=\&quot;lab-test-name-cs-vitamin-d\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vitamin D&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;aPTT&lt;a name=\&quot;lab-test-name-cs-aPTT\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;aPTT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;urine-microscopic-hematuria&lt;a name=\&quot;lab-test-name-cs-urine-microscopic-hematuria\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Urine microscopic hematuria&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;quantitative-proteinuria&lt;a name=\&quot;lab-test-name-cs-quantitative-proteinuria\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Quantitative proteinuria&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;bile-acids&lt;a name=\&quot;lab-test-name-cs-bile-acids\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bile acids&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HCO3&lt;a name=\&quot;lab-test-name-cs-HCO3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HCO3&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "http://example.org/fhir/CodeSystem/lab-test-name",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "0.1.0",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "LabTestNameCS",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "Lab Test Name",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2025-12-09T16:44:49+01:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "Your Organization",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Your Organization",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://example.org"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "Types of laboratory tests conducted.",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a>" : 48,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "46273815",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Albumin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "4108431",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Albumin/creatinine ratio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ALT",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ALT"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "4017613",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ammonium levels"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AST",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "AST"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "35816690",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Calcium"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "19059097",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cholesterol"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "19071968",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Creatinine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "creatinine-egfr",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Creatinine Estimated Glomerular Filtration rate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "44789161",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cystatin C"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "cystatinc-egfr",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cystatin C Estimated Glomerular Filtration rate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "4216632",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Direct Bilirubin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "35960055",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "GGT"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1560524",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Glucose"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "35198163",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Haptoglobin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "36304734",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "HbA1c"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "4151358",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hematocrit"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "36862556",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hemoglobin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "indirect-bilirubin",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Indirect Bilirubin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "INR",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "INR"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "19011035",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Lactate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "35955655",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "LDH"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "36309122",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Lymphocytes"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "36308680",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Neutrophils"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "21498711",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "pH"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "36310193",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Platelets"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "19049024",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Potassium"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "proteinuria-creatininuria-ratio",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Proteinuria/creatininuria ratio"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "3002681",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Prothrombin Activity"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "4245261",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Prothrombin Time"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "4054726",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Red Blood Cells"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "4150494",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Serum bicarbonate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "19136048",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sodium"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "4230543",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Total Bilirubin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "4119650",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Total protein"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "906914",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Urea"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "43532213",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Uric acid"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "4150621",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Urine Creatinine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "321414",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Urine Haemoglobin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "4198678",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "White Blood Cells"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "phosphorus",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Phosphorus"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "pth",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "PTH (parathormone)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "vitamin-d",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Vitamin D"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "aPTT",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "aPTT"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "urine-microscopic-hematuria",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Urine microscopic hematuria"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "quantitative-proteinuria",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Quantitative proteinuria"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "bile-acids",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Bile acids"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "HCO3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "HCO3"
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025 <a style="color:var(--footer-hyperlink-text-color)" href="https://example.org">Your Organization</a>.  Package pc.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 9, 2025 16:44+0100">2025-12-09</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

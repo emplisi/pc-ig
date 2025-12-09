@@ -56,6 +56,14 @@ hapi:
     enable_index_missing_fields: true
     enable_index_of_type: true
     enable_index_contained_resource: true
+    implementationguides:
+      protect_child_ig:
+        name: pc.ig          
+        version: 0.1.0          
+        packageUrl: "file:///apps/package.tgz"
+        installMode: STORE_AND_INSTALL
+        reloadExisting: false
+        fetchDependencies: true
 #    implementationguides:
 #      mpd:
 #        name: hl7.fhir.eu.r5.mpd

@@ -1,0 +1,115 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/Basic/variant-annotation-example-1> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "variant-annotation-example-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Basic variant-annotation-example-1</b></p><a name=\"variant-annotation-example-1\"> </a><a name=\"hcvariant-annotation-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-variant-annotation.html\">Variant Annotation</a></p></div><p><b>Variant occurrence ID relationship</b>: <a href=\"Basic-variant-occurrence-example-1.html\">Basic Single nucleotide variant</a></p><p><b>Annotation database</b>: ClinVar</p><p><b>Variant origin</b>: germline</p><p><b>Variant pathogenicity</b>: pathogenic</p><p><b>Variant class level</b>: ACMG Class 5</p><p><b>Variant tier level</b>: Tier 1</p><p><b>Allele frequency</b>: 0.0001</p><p><b>Medication</b>: PARP inhibitor</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/variant-annotation-id</code>/VA0001</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/variant-annotation-type clinical}\">Clinical variant annotation</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-variant-occurrence-ref"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-variant-occurrence-ref>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Basic/variant-occurrence-example-1> ;
+       fhir:reference [ fhir:v "Basic/variant-occurrence-example-1" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-annotation-database"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-annotation-database>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "ClinVar"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-variant-origin"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-variant-origin>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "germline"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-variant-pathogeny"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-variant-pathogeny>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "pathogenic"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-variant-class-level"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-variant-class-level>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "ACMG Class 5"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-variant-tier-level"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-variant-tier-level>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "Tier 1"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-allele-frequency"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-allele-frequency>
+     ] ;
+     fhir:value [
+       a fhir:Decimal ;
+       fhir:v 0.0001
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-medication"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-medication>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "PARP inhibitor"
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://example.org/fhir/NamingSystem/variant-annotation-id"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/NamingSystem/variant-annotation-id>
+     ] ;
+     fhir:value [ fhir:v "VA0001" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://example.org/fhir/CodeSystem/variant-annotation-type"^^xsd:anyURI ;
+         fhir:l <http://example.org/fhir/CodeSystem/variant-annotation-type>
+       ] ;
+       fhir:code [ fhir:v "clinical" ] ;
+       fhir:display [ fhir:v "Clinical variant annotation" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

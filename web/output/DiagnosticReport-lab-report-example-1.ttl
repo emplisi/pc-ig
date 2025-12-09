@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/DiagnosticReport/lab-report-example-1> a fhir:DiagnosticReport ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "lab-report-example-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/lab-report"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/lab-report>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport lab-report-example-1</b></p><a name=\"lab-report-example-1\"> </a><a name=\"hclab-report-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-lab-report.html\">Laboratory DiagnosticReport</a></p></div><h2><span title=\"Codes:{http://loinc.org 11502-2}\">Laboratory report</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 LAB}\">Laboratory</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</td></tr><tr><td>When For</td><td>2023-09-02 09:15:00+0100</td></tr><tr><td>Reported</td><td>2023-09-02 11:30:00+0100</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td></tr><tr><td><a href=\"Observation-lab-result-observation-example-1.html\"><span title=\"Codes:{http://loinc.org 2160-0}\">Creatinine [Mass/volume] in Serum or Plasma</span></a></td><td>1.2 mg/dL<span style=\"background: LightGoldenRodYellow\"> (Details: Lab Result Unit CodeSystem  codemg_per_dL = 'mg/dL')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v2-0074"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v2-0074>
+       ] ;
+       fhir:code [ fhir:v "LAB" ] ;
+       fhir:display [ fhir:v "Laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:11502-2 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "11502-2" ] ;
+       fhir:display [ fhir:v "Laboratory report" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://example.org/fhir/Patient/ExamplePatientTransplant1> ;
+     fhir:reference [ fhir:v "Patient/ExamplePatientTransplant1" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2023-09-02T09:15:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2023-09-02T11:30:00+01:00"^^xsd:dateTime] ; # 
+  fhir:specimen ( [
+     fhir:l <http://example.org/fhir/Specimen/biosample-example-1> ;
+     fhir:reference [ fhir:v "Specimen/biosample-example-1" ]
+  ] ) ; # 
+  fhir:result ( [
+     fhir:l <http://example.org/fhir/Observation/lab-result-observation-example-1> ;
+     fhir:reference [ fhir:v "Observation/lab-result-observation-example-1" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,43 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "patient-abo-group-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem patient-abo-group-cs</b></p><a name=\"patient-abo-group-cs\"> </a><a name=\"hcpatient-abo-group-cs\"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/patient-abo-group</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">A<a name=\"patient-abo-group-cs-A\"> </a></td><td>Group A</td></tr><tr><td style=\"white-space:nowrap\">B<a name=\"patient-abo-group-cs-B\"> </a></td><td>Group B</td></tr><tr><td style=\"white-space:nowrap\">AB<a name=\"patient-abo-group-cs-AB\"> </a></td><td>Group AB</td></tr><tr><td style=\"white-space:nowrap\">O<a name=\"patient-abo-group-cs-O\"> </a></td><td>Group O</td></tr></table></div>"
+  },
+  "url" : "http://example.org/fhir/CodeSystem/patient-abo-group",
+  "version" : "0.1.0",
+  "name" : "PatientABOGroupCS",
+  "title" : "Patient ABO Group CodeSystem",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-12-09T16:44:49+01:00",
+  "publisher" : "Your Organization",
+  "contact" : [{
+    "name" : "Your Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://example.org"
+    }]
+  }],
+  "description" : "ABO blood groups for transplant recipients (maps from OMOP A/B/AB/0).",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "A",
+    "display" : "Group A"
+  },
+  {
+    "code" : "B",
+    "display" : "Group B"
+  },
+  {
+    "code" : "AB",
+    "display" : "Group AB"
+  },
+  {
+    "code" : "O",
+    "display" : "Group O"
+  }]
+}

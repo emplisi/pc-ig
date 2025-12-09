@@ -1,0 +1,106 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/Basic/methylomic-study-example-1> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "methylomic-study-example-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Basic methylomic-study-example-1</b></p><a name=\"methylomic-study-example-1\"> </a><a name=\"hcmethylomic-study-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-methylomic-study.html\">Methylomic Study</a></p></div><p><b>Reference genome ID relationship</b>: <a href=\"Basic-reference-genome-grch38.html\">Basic GRCh38</a></p><p><b>Target region ID</b>: TR0001</p><p><b>Beta value</b>: 0.72</p><p><b>M value</b>: 1.85</p><p><b>Detection p-value</b>: 0.0003</p><p><b>Read count</b>: 250</p><p><b>Methylated reads</b>: 180</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/methylomic-study-id</code>/MS0001</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/methylomic-study-type locus}\">Locus-level methylomic record</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-reference-genome-ref"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-reference-genome-ref>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Basic/reference-genome-grch38> ;
+       fhir:reference [ fhir:v "Basic/reference-genome-grch38" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-target-region-id"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-target-region-id>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "TR0001"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-beta-value"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-beta-value>
+     ] ;
+     fhir:value [
+       a fhir:Decimal ;
+       fhir:v 0.72
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-m-value"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-m-value>
+     ] ;
+     fhir:value [
+       a fhir:Decimal ;
+       fhir:v 1.85
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-detection-p-value"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-detection-p-value>
+     ] ;
+     fhir:value [
+       a fhir:Decimal ;
+       fhir:v 0.0003
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-read-count"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-read-count>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 250
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-methylated-reads"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-methylated-reads>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 180
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://example.org/fhir/NamingSystem/methylomic-study-id"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/NamingSystem/methylomic-study-id>
+     ] ;
+     fhir:value [ fhir:v "MS0001" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://example.org/fhir/CodeSystem/methylomic-study-type"^^xsd:anyURI ;
+         fhir:l <http://example.org/fhir/CodeSystem/methylomic-study-type>
+       ] ;
+       fhir:code [ fhir:v "locus" ] ;
+       fhir:display [ fhir:v "Locus-level methylomic record" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

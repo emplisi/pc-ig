@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/CodeSystem/transplant-type-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "transplant-type-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem transplant-type-cs</b></p><a name=\"transplant-type-cs\"> </a><a name=\"hctransplant-type-cs\"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/transplant-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">liver<a name=\"transplant-type-cs-liver\"> </a></td><td>Liver transplant</td></tr><tr><td style=\"white-space:nowrap\">kidney<a name=\"transplant-type-cs-kidney\"> </a></td><td>Kidney transplant</td></tr><tr><td style=\"white-space:nowrap\">combined<a name=\"transplant-type-cs-combined\"> </a></td><td>Combined liver-kidney transplant</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://example.org/fhir/CodeSystem/transplant-type"^^xsd:anyURI ;
+     fhir:l <http://example.org/fhir/CodeSystem/transplant-type>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "TransplantTypeCS"] ; # 
+  fhir:title [ fhir:v "Transplant Type CodeSystem"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-12-09T16:44:49+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Your Organization"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Your Organization" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://example.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Type of solid-organ transplant (liver, kidney, combined liver-kidney)."] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "liver" ] ;
+     fhir:display [ fhir:v "Liver transplant" ]
+  ] [
+     fhir:code [ fhir:v "kidney" ] ;
+     fhir:display [ fhir:v "Kidney transplant" ]
+  ] [
+     fhir:code [ fhir:v "combined" ] ;
+     fhir:display [ fhir:v "Combined liver-kidney transplant" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

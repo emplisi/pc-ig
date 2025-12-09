@@ -1,0 +1,159 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/CodeSystem/concomitant-disease-category> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "concomitant-disease-category"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem concomitant-disease-category</b></p><a name=\"concomitant-disease-category\"> </a><a name=\"hcconcomitant-disease-category\"> </a><p>This  code system <code>http://example.org/fhir/CodeSystem/concomitant-disease-category</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">45879544<a name=\"concomitant-disease-category-45879544\"> </a></td><td>Edema</td></tr><tr><td style=\"white-space:nowrap\">4261202<a name=\"concomitant-disease-category-4261202\"> </a></td><td>Uremia</td></tr><tr><td style=\"white-space:nowrap\">45877479<a name=\"concomitant-disease-category-45877479\"> </a></td><td>Itching</td></tr><tr><td style=\"white-space:nowrap\">45884747<a name=\"concomitant-disease-category-45884747\"> </a></td><td>Diarrhea</td></tr><tr><td style=\"white-space:nowrap\">36308435<a name=\"concomitant-disease-category-36308435\"> </a></td><td>Ascites</td></tr><tr><td style=\"white-space:nowrap\">45881353<a name=\"concomitant-disease-category-45881353\"> </a></td><td>Jaundice</td></tr><tr><td style=\"white-space:nowrap\">134718<a name=\"concomitant-disease-category-134718\"> </a></td><td>Hirsutism</td></tr><tr><td style=\"white-space:nowrap\">45879799<a name=\"concomitant-disease-category-45879799\"> </a></td><td>Diabetes</td></tr><tr><td style=\"white-space:nowrap\">21499042<a name=\"concomitant-disease-category-21499042\"> </a></td><td>Oligoanuria</td></tr><tr><td style=\"white-space:nowrap\">200527<a name=\"concomitant-disease-category-200527\"> </a></td><td>Splenomegaly</td></tr><tr><td style=\"white-space:nowrap\">45881444<a name=\"concomitant-disease-category-45881444\"> </a></td><td>Fatigue</td></tr><tr><td style=\"white-space:nowrap\">315085<a name=\"concomitant-disease-category-315085\"> </a></td><td>Lymphadenopathy</td></tr><tr><td style=\"white-space:nowrap\">4010094<a name=\"concomitant-disease-category-4010094\"> </a></td><td>Spider veins</td></tr><tr><td style=\"white-space:nowrap\">195856<a name=\"concomitant-disease-category-195856\"> </a></td><td>Cholangitis</td></tr><tr><td style=\"white-space:nowrap\">4120314<a name=\"concomitant-disease-category-4120314\"> </a></td><td>Hypertriglyceridemia</td></tr><tr><td style=\"white-space:nowrap\">4029488<a name=\"concomitant-disease-category-4029488\"> </a></td><td>Hepatic encephalopathy</td></tr><tr><td style=\"white-space:nowrap\">4229881<a name=\"concomitant-disease-category-4229881\"> </a></td><td>Weight loss</td></tr><tr><td style=\"white-space:nowrap\">4272240<a name=\"concomitant-disease-category-4272240\"> </a></td><td>Malaise</td></tr><tr><td style=\"white-space:nowrap\">40480518<a name=\"concomitant-disease-category-40480518\"> </a></td><td>Gingival hyperplasia</td></tr><tr><td style=\"white-space:nowrap\">3013667<a name=\"concomitant-disease-category-3013667\"> </a></td><td>Pale stools</td></tr><tr><td style=\"white-space:nowrap\">197676<a name=\"concomitant-disease-category-197676\"> </a></td><td>Hepatomegaly</td></tr><tr><td style=\"white-space:nowrap\">4318546<a name=\"concomitant-disease-category-4318546\"> </a></td><td>Urethral stenosis</td></tr><tr><td style=\"white-space:nowrap\">42869825<a name=\"concomitant-disease-category-42869825\"> </a></td><td>Left ventricular hypertrophy</td></tr><tr><td style=\"white-space:nowrap\">376965<a name=\"concomitant-disease-category-376965\"> </a></td><td>Hypertensive retinopathy</td></tr><tr><td style=\"white-space:nowrap\">45877062<a name=\"concomitant-disease-category-45877062\"> </a></td><td>Abdominal pain</td></tr><tr><td style=\"white-space:nowrap\">44806743<a name=\"concomitant-disease-category-44806743\"> </a></td><td>Glucose intolerance</td></tr><tr><td style=\"white-space:nowrap\">4159144<a name=\"concomitant-disease-category-4159144\"> </a></td><td>Hepatopulmonary syndrome</td></tr><tr><td style=\"white-space:nowrap\">196455<a name=\"concomitant-disease-category-196455\"> </a></td><td>Hepatorenal syndrome</td></tr><tr><td style=\"white-space:nowrap\">434621<a name=\"concomitant-disease-category-434621\"> </a></td><td>Concomitant autoimmune disorder</td></tr><tr><td style=\"white-space:nowrap\">thyroid-disease-specify<a name=\"concomitant-disease-category-thyroid-disease-specify\"> </a></td><td>Thyroid disease (specify)</td></tr><tr><td style=\"white-space:nowrap\">anaemia<a name=\"concomitant-disease-category-anaemia\"> </a></td><td>Anaemia</td></tr><tr><td style=\"white-space:nowrap\">uremic-symptoms<a name=\"concomitant-disease-category-uremic-symptoms\"> </a></td><td>Uremic symptoms</td></tr><tr><td style=\"white-space:nowrap\">metabolic-acidosis<a name=\"concomitant-disease-category-metabolic-acidosis\"> </a></td><td>Metabolic acidosis</td></tr><tr><td style=\"white-space:nowrap\">hypertension<a name=\"concomitant-disease-category-hypertension\"> </a></td><td>Hypertension</td></tr><tr><td style=\"white-space:nowrap\">concomitant-pancreatic-disease<a name=\"concomitant-disease-category-concomitant-pancreatic-disease\"> </a></td><td>Concomitant pancreatic disease</td></tr><tr><td style=\"white-space:nowrap\">other-concomitant-diseases<a name=\"concomitant-disease-category-other-concomitant-diseases\"> </a></td><td>Other concomitant diseases</td></tr><tr><td style=\"white-space:nowrap\">other-organ-damage<a name=\"concomitant-disease-category-other-organ-damage\"> </a></td><td>Other organ damage</td></tr><tr><td style=\"white-space:nowrap\">4117779<a name=\"concomitant-disease-category-4117779\"> </a></td><td>Neurological symptom – Peripheral neuropathy</td></tr><tr><td style=\"white-space:nowrap\">376099<a name=\"concomitant-disease-category-376099\"> </a></td><td>Neurological symptom – Tremors</td></tr><tr><td style=\"white-space:nowrap\">373873005<a name=\"concomitant-disease-category-373873005\"> </a></td><td>Neurological symptom – PRES</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://example.org/fhir/CodeSystem/concomitant-disease-category"^^xsd:anyURI ;
+     fhir:l <http://example.org/fhir/CodeSystem/concomitant-disease-category>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ConcomitantDiseaseCategory"] ; # 
+  fhir:title [ fhir:v "Concomitant Disease Category"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-12-09T16:44:49+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Your Organization"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Your Organization" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://example.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Categories of relevant concomitant diseases."] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "40"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "45879544" ] ;
+     fhir:display [ fhir:v "Edema" ]
+  ] [
+     fhir:code [ fhir:v "4261202" ] ;
+     fhir:display [ fhir:v "Uremia" ]
+  ] [
+     fhir:code [ fhir:v "45877479" ] ;
+     fhir:display [ fhir:v "Itching" ]
+  ] [
+     fhir:code [ fhir:v "45884747" ] ;
+     fhir:display [ fhir:v "Diarrhea" ]
+  ] [
+     fhir:code [ fhir:v "36308435" ] ;
+     fhir:display [ fhir:v "Ascites" ]
+  ] [
+     fhir:code [ fhir:v "45881353" ] ;
+     fhir:display [ fhir:v "Jaundice" ]
+  ] [
+     fhir:code [ fhir:v "134718" ] ;
+     fhir:display [ fhir:v "Hirsutism" ]
+  ] [
+     fhir:code [ fhir:v "45879799" ] ;
+     fhir:display [ fhir:v "Diabetes" ]
+  ] [
+     fhir:code [ fhir:v "21499042" ] ;
+     fhir:display [ fhir:v "Oligoanuria" ]
+  ] [
+     fhir:code [ fhir:v "200527" ] ;
+     fhir:display [ fhir:v "Splenomegaly" ]
+  ] [
+     fhir:code [ fhir:v "45881444" ] ;
+     fhir:display [ fhir:v "Fatigue" ]
+  ] [
+     fhir:code [ fhir:v "315085" ] ;
+     fhir:display [ fhir:v "Lymphadenopathy" ]
+  ] [
+     fhir:code [ fhir:v "4010094" ] ;
+     fhir:display [ fhir:v "Spider veins" ]
+  ] [
+     fhir:code [ fhir:v "195856" ] ;
+     fhir:display [ fhir:v "Cholangitis" ]
+  ] [
+     fhir:code [ fhir:v "4120314" ] ;
+     fhir:display [ fhir:v "Hypertriglyceridemia" ]
+  ] [
+     fhir:code [ fhir:v "4029488" ] ;
+     fhir:display [ fhir:v "Hepatic encephalopathy" ]
+  ] [
+     fhir:code [ fhir:v "4229881" ] ;
+     fhir:display [ fhir:v "Weight loss" ]
+  ] [
+     fhir:code [ fhir:v "4272240" ] ;
+     fhir:display [ fhir:v "Malaise" ]
+  ] [
+     fhir:code [ fhir:v "40480518" ] ;
+     fhir:display [ fhir:v "Gingival hyperplasia" ]
+  ] [
+     fhir:code [ fhir:v "3013667" ] ;
+     fhir:display [ fhir:v "Pale stools" ]
+  ] [
+     fhir:code [ fhir:v "197676" ] ;
+     fhir:display [ fhir:v "Hepatomegaly" ]
+  ] [
+     fhir:code [ fhir:v "4318546" ] ;
+     fhir:display [ fhir:v "Urethral stenosis" ]
+  ] [
+     fhir:code [ fhir:v "42869825" ] ;
+     fhir:display [ fhir:v "Left ventricular hypertrophy" ]
+  ] [
+     fhir:code [ fhir:v "376965" ] ;
+     fhir:display [ fhir:v "Hypertensive retinopathy" ]
+  ] [
+     fhir:code [ fhir:v "45877062" ] ;
+     fhir:display [ fhir:v "Abdominal pain" ]
+  ] [
+     fhir:code [ fhir:v "44806743" ] ;
+     fhir:display [ fhir:v "Glucose intolerance" ]
+  ] [
+     fhir:code [ fhir:v "4159144" ] ;
+     fhir:display [ fhir:v "Hepatopulmonary syndrome" ]
+  ] [
+     fhir:code [ fhir:v "196455" ] ;
+     fhir:display [ fhir:v "Hepatorenal syndrome" ]
+  ] [
+     fhir:code [ fhir:v "434621" ] ;
+     fhir:display [ fhir:v "Concomitant autoimmune disorder" ]
+  ] [
+     fhir:code [ fhir:v "thyroid-disease-specify" ] ;
+     fhir:display [ fhir:v "Thyroid disease (specify)" ]
+  ] [
+     fhir:code [ fhir:v "anaemia" ] ;
+     fhir:display [ fhir:v "Anaemia" ]
+  ] [
+     fhir:code [ fhir:v "uremic-symptoms" ] ;
+     fhir:display [ fhir:v "Uremic symptoms" ]
+  ] [
+     fhir:code [ fhir:v "metabolic-acidosis" ] ;
+     fhir:display [ fhir:v "Metabolic acidosis" ]
+  ] [
+     fhir:code [ fhir:v "hypertension" ] ;
+     fhir:display [ fhir:v "Hypertension" ]
+  ] [
+     fhir:code [ fhir:v "concomitant-pancreatic-disease" ] ;
+     fhir:display [ fhir:v "Concomitant pancreatic disease" ]
+  ] [
+     fhir:code [ fhir:v "other-concomitant-diseases" ] ;
+     fhir:display [ fhir:v "Other concomitant diseases" ]
+  ] [
+     fhir:code [ fhir:v "other-organ-damage" ] ;
+     fhir:display [ fhir:v "Other organ damage" ]
+  ] [
+     fhir:code [ fhir:v "4117779" ] ;
+     fhir:display [ fhir:v "Neurological symptom – Peripheral neuropathy" ]
+  ] [
+     fhir:code [ fhir:v "376099" ] ;
+     fhir:display [ fhir:v "Neurological symptom – Tremors" ]
+  ] [
+     fhir:code [ fhir:v "373873005" ] ;
+     fhir:display [ fhir:v "Neurological symptom – PRES" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

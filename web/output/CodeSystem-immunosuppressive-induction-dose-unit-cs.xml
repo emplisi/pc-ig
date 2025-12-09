@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="immunosuppressive-induction-dose-unit-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem immunosuppressive-induction-dose-unit-cs</b></p><a name="immunosuppressive-induction-dose-unit-cs"> </a><a name="hcimmunosuppressive-induction-dose-unit-cs"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/immunosuppressive-induction-dose-unit</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">mg-kg<a name="immunosuppressive-induction-dose-unit-cs-mg-kg"> </a></td><td>mg/kg</td></tr><tr><td style="white-space:nowrap">mg-mq<a name="immunosuppressive-induction-dose-unit-cs-mg-mq"> </a></td><td>mg/mq</td></tr></table></div>
+  </text>
+  <url value="http://example.org/fhir/CodeSystem/immunosuppressive-induction-dose-unit"/>
+  <version value="0.1.0"/>
+  <name value="ImmunosuppressiveInductionDoseUnitCS"/>
+  <title value="Immunosuppressant Induction Dose Unit"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-12-09T16:44:49+01:00"/>
+  <publisher value="Your Organization"/>
+  <contact>
+    <name value="Your Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://example.org"/>
+    </telecom>
+  </contact>
+  <description value="Units for immunosuppressant induction dose."/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="mg-kg"/>
+    <display value="mg/kg"/>
+  </concept>
+  <concept>
+    <code value="mg-mq"/>
+    <display value="mg/mq"/>
+  </concept>
+</CodeSystem>

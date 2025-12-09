@@ -1,0 +1,98 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/Basic/immunosuppressive-maintenance-patient-example-1> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "immunosuppressive-maintenance-patient-example-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-patient"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Basic immunosuppressive-maintenance-patient-example-1</b></p><a name=\"immunosuppressive-maintenance-patient-example-1\"> </a><a name=\"hcimmunosuppressive-maintenance-patient-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-immunosuppressive-maintenance-patient.html\">Immunosuppressive Maintenance to Patient</a></p></div><p><b>Recipient patient reference</b>: <a href=\"Patient-ExamplePatientTransplant1.html\">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p><p><b>Immunosuppressant ID relationship</b>: <a href=\"Basic-immunosuppressant-example-1.html\">Basic Immunosuppressive drug</a></p><p><b>Dose of immunosuppressant</b>: 2</p><p><b>Unit ID</b>: mg/kg</p><p><b>Start date of maintenance therapy</b>: 2024-04-01</p><p><b>End date of maintenance therapy</b>: 2024-10-01</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/immunosuppressive-maintenance-patient-id</code>/IMMPAT0001</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/immunosuppressive-maintenance-type maintenance-to-patient}\">Immunosuppressive maintenance therapy to patient</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-patient-ref"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-patient-ref>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Patient/ExamplePatientTransplant1> ;
+       fhir:reference [ fhir:v "Patient/ExamplePatientTransplant1" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-immunosuppressant-ref"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-immunosuppressant-ref>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Basic/immunosuppressant-example-1> ;
+       fhir:reference [ fhir:v "Basic/immunosuppressant-example-1" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-dose"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-dose>
+     ] ;
+     fhir:value [
+       a fhir:Decimal ;
+       fhir:v "2"^^xsd:decimal
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-unit-id"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-unit-id>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "mg/kg"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-start-date"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-start-date>
+     ] ;
+     fhir:value [
+       a fhir:Date ;
+       fhir:v "2024-04-01"^^xsd:date
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-end-date"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-end-date>
+     ] ;
+     fhir:value [
+       a fhir:Date ;
+       fhir:v "2024-10-01"^^xsd:date
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://example.org/fhir/NamingSystem/immunosuppressive-maintenance-patient-id"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/NamingSystem/immunosuppressive-maintenance-patient-id>
+     ] ;
+     fhir:value [ fhir:v "IMMPAT0001" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://example.org/fhir/CodeSystem/immunosuppressive-maintenance-type"^^xsd:anyURI ;
+         fhir:l <http://example.org/fhir/CodeSystem/immunosuppressive-maintenance-type>
+       ] ;
+       fhir:code [ fhir:v "maintenance-to-patient" ]
+     ] ) ;
+     fhir:text [ fhir:v "Immunosuppressive maintenance therapy to patient" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

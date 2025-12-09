@@ -1,0 +1,55 @@
+{
+  "resourceType" : "Specimen",
+  "id" : "biosample-example-1",
+  "meta" : {
+    "profile" : ["http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/biosample"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Specimen biosample-example-1</b></p><a name=\"biosample-example-1\"> </a><a name=\"hcbiosample-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-biosample.html\">Biological Sample</a></p></div><p><b>Sample send to INGEMM date</b>: 2025-01-20</p><p><b>Genomic Test ID Relationship</b>: <a href=\"Basic-genomic-test-example-1.html\">Basic Exome sequencing</a></p><p><b>Epigenome Study ID Relationship</b>: <a href=\"Basic-epigenome-study-example-1.html\">Basic Methylation array epigenome study</a></p><p><b>Methylomic Study ID Relationship</b>: <a href=\"Basic-methylomic-study-example-1.html\">Basic Locus-level methylomic record</a></p><p><b>DNA concentration</b>: 35.2</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/bio-sample-id</code>/BS0001</p><p><b>type</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/biosample-tissue-type blood}\">Peripheral blood</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatientTransplant1.html\">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>2025-01-15</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/bio-sample-send-ingemm-date",
+    "valueDate" : "2025-01-20"
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/bio-sample-genomic-test-ref",
+    "valueReference" : {
+      "reference" : "Basic/genomic-test-example-1"
+    }
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/bio-sample-epigenome-study-ref",
+    "valueReference" : {
+      "reference" : "Basic/epigenome-study-example-1"
+    }
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/bio-sample-methylomic-study-ref",
+    "valueReference" : {
+      "reference" : "Basic/methylomic-study-example-1"
+    }
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/bio-sample-dna-concentration",
+    "valueDecimal" : 35.2
+  }],
+  "identifier" : [{
+    "system" : "http://example.org/fhir/NamingSystem/bio-sample-id",
+    "value" : "BS0001"
+  }],
+  "type" : {
+    "coding" : [{
+      "system" : "http://example.org/fhir/CodeSystem/biosample-tissue-type",
+      "code" : "blood",
+      "display" : "Blood"
+    }],
+    "text" : "Peripheral blood"
+  },
+  "subject" : {
+    "reference" : "Patient/ExamplePatientTransplant1"
+  },
+  "collection" : {
+    "collectedDateTime" : "2025-01-15"
+  }
+}

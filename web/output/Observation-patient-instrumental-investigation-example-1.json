@@ -1,0 +1,48 @@
+{
+  "resourceType" : "Observation",
+  "id" : "patient-instrumental-investigation-example-1",
+  "meta" : {
+    "profile" : ["http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-instrumental-investigation"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation patient-instrumental-investigation-example-1</b></p><a name=\"patient-instrumental-investigation-example-1\"> </a><a name=\"hcpatient-instrumental-investigation-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-patient-instrumental-investigation.html\">Patient Instrumental Investigation</a></p></div><p><b>Patient ID relationship</b>: <a href=\"Patient-ExamplePatientTransplant1.html\">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p><p><b>Instrumental investigation ID relationship</b>: <a href=\"Basic-instrumental-investigation-example-1.html\">Basic </a></p><p><b>Result of the instrumental investigation</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/patient-instrumental-investigation-result normal}\">Normal</span></p><p><b>Date of instrumental investigation</b>: 2024-03-10</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/patient-instrumental-investigation-id</code>/PII0001</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:\">Patient instrumental investigation</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatientTransplant1.html\">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-instrumental-investigation-patient-ref",
+    "valueReference" : {
+      "reference" : "Patient/ExamplePatientTransplant1"
+    }
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-instrumental-investigation-instrument-ref",
+    "valueReference" : {
+      "reference" : "Basic/instrumental-investigation-example-1"
+    }
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-instrumental-investigation-result",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://example.org/fhir/CodeSystem/patient-instrumental-investigation-result",
+        "code" : "normal",
+        "display" : "Normal"
+      }]
+    }
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-instrumental-investigation-date",
+    "valueDate" : "2024-03-10"
+  }],
+  "identifier" : [{
+    "system" : "http://example.org/fhir/NamingSystem/patient-instrumental-investigation-id",
+    "value" : "PII0001"
+  }],
+  "status" : "final",
+  "code" : {
+    "text" : "Patient instrumental investigation"
+  },
+  "subject" : {
+    "reference" : "Patient/ExamplePatientTransplant1"
+  }
+}

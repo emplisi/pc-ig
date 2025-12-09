@@ -1,0 +1,185 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "concomitant-disease-category",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem concomitant-disease-category</b></p><a name=\"concomitant-disease-category\"> </a><a name=\"hcconcomitant-disease-category\"> </a><p>This  code system <code>http://example.org/fhir/CodeSystem/concomitant-disease-category</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">45879544<a name=\"concomitant-disease-category-45879544\"> </a></td><td>Edema</td></tr><tr><td style=\"white-space:nowrap\">4261202<a name=\"concomitant-disease-category-4261202\"> </a></td><td>Uremia</td></tr><tr><td style=\"white-space:nowrap\">45877479<a name=\"concomitant-disease-category-45877479\"> </a></td><td>Itching</td></tr><tr><td style=\"white-space:nowrap\">45884747<a name=\"concomitant-disease-category-45884747\"> </a></td><td>Diarrhea</td></tr><tr><td style=\"white-space:nowrap\">36308435<a name=\"concomitant-disease-category-36308435\"> </a></td><td>Ascites</td></tr><tr><td style=\"white-space:nowrap\">45881353<a name=\"concomitant-disease-category-45881353\"> </a></td><td>Jaundice</td></tr><tr><td style=\"white-space:nowrap\">134718<a name=\"concomitant-disease-category-134718\"> </a></td><td>Hirsutism</td></tr><tr><td style=\"white-space:nowrap\">45879799<a name=\"concomitant-disease-category-45879799\"> </a></td><td>Diabetes</td></tr><tr><td style=\"white-space:nowrap\">21499042<a name=\"concomitant-disease-category-21499042\"> </a></td><td>Oligoanuria</td></tr><tr><td style=\"white-space:nowrap\">200527<a name=\"concomitant-disease-category-200527\"> </a></td><td>Splenomegaly</td></tr><tr><td style=\"white-space:nowrap\">45881444<a name=\"concomitant-disease-category-45881444\"> </a></td><td>Fatigue</td></tr><tr><td style=\"white-space:nowrap\">315085<a name=\"concomitant-disease-category-315085\"> </a></td><td>Lymphadenopathy</td></tr><tr><td style=\"white-space:nowrap\">4010094<a name=\"concomitant-disease-category-4010094\"> </a></td><td>Spider veins</td></tr><tr><td style=\"white-space:nowrap\">195856<a name=\"concomitant-disease-category-195856\"> </a></td><td>Cholangitis</td></tr><tr><td style=\"white-space:nowrap\">4120314<a name=\"concomitant-disease-category-4120314\"> </a></td><td>Hypertriglyceridemia</td></tr><tr><td style=\"white-space:nowrap\">4029488<a name=\"concomitant-disease-category-4029488\"> </a></td><td>Hepatic encephalopathy</td></tr><tr><td style=\"white-space:nowrap\">4229881<a name=\"concomitant-disease-category-4229881\"> </a></td><td>Weight loss</td></tr><tr><td style=\"white-space:nowrap\">4272240<a name=\"concomitant-disease-category-4272240\"> </a></td><td>Malaise</td></tr><tr><td style=\"white-space:nowrap\">40480518<a name=\"concomitant-disease-category-40480518\"> </a></td><td>Gingival hyperplasia</td></tr><tr><td style=\"white-space:nowrap\">3013667<a name=\"concomitant-disease-category-3013667\"> </a></td><td>Pale stools</td></tr><tr><td style=\"white-space:nowrap\">197676<a name=\"concomitant-disease-category-197676\"> </a></td><td>Hepatomegaly</td></tr><tr><td style=\"white-space:nowrap\">4318546<a name=\"concomitant-disease-category-4318546\"> </a></td><td>Urethral stenosis</td></tr><tr><td style=\"white-space:nowrap\">42869825<a name=\"concomitant-disease-category-42869825\"> </a></td><td>Left ventricular hypertrophy</td></tr><tr><td style=\"white-space:nowrap\">376965<a name=\"concomitant-disease-category-376965\"> </a></td><td>Hypertensive retinopathy</td></tr><tr><td style=\"white-space:nowrap\">45877062<a name=\"concomitant-disease-category-45877062\"> </a></td><td>Abdominal pain</td></tr><tr><td style=\"white-space:nowrap\">44806743<a name=\"concomitant-disease-category-44806743\"> </a></td><td>Glucose intolerance</td></tr><tr><td style=\"white-space:nowrap\">4159144<a name=\"concomitant-disease-category-4159144\"> </a></td><td>Hepatopulmonary syndrome</td></tr><tr><td style=\"white-space:nowrap\">196455<a name=\"concomitant-disease-category-196455\"> </a></td><td>Hepatorenal syndrome</td></tr><tr><td style=\"white-space:nowrap\">434621<a name=\"concomitant-disease-category-434621\"> </a></td><td>Concomitant autoimmune disorder</td></tr><tr><td style=\"white-space:nowrap\">thyroid-disease-specify<a name=\"concomitant-disease-category-thyroid-disease-specify\"> </a></td><td>Thyroid disease (specify)</td></tr><tr><td style=\"white-space:nowrap\">anaemia<a name=\"concomitant-disease-category-anaemia\"> </a></td><td>Anaemia</td></tr><tr><td style=\"white-space:nowrap\">uremic-symptoms<a name=\"concomitant-disease-category-uremic-symptoms\"> </a></td><td>Uremic symptoms</td></tr><tr><td style=\"white-space:nowrap\">metabolic-acidosis<a name=\"concomitant-disease-category-metabolic-acidosis\"> </a></td><td>Metabolic acidosis</td></tr><tr><td style=\"white-space:nowrap\">hypertension<a name=\"concomitant-disease-category-hypertension\"> </a></td><td>Hypertension</td></tr><tr><td style=\"white-space:nowrap\">concomitant-pancreatic-disease<a name=\"concomitant-disease-category-concomitant-pancreatic-disease\"> </a></td><td>Concomitant pancreatic disease</td></tr><tr><td style=\"white-space:nowrap\">other-concomitant-diseases<a name=\"concomitant-disease-category-other-concomitant-diseases\"> </a></td><td>Other concomitant diseases</td></tr><tr><td style=\"white-space:nowrap\">other-organ-damage<a name=\"concomitant-disease-category-other-organ-damage\"> </a></td><td>Other organ damage</td></tr><tr><td style=\"white-space:nowrap\">4117779<a name=\"concomitant-disease-category-4117779\"> </a></td><td>Neurological symptom – Peripheral neuropathy</td></tr><tr><td style=\"white-space:nowrap\">376099<a name=\"concomitant-disease-category-376099\"> </a></td><td>Neurological symptom – Tremors</td></tr><tr><td style=\"white-space:nowrap\">373873005<a name=\"concomitant-disease-category-373873005\"> </a></td><td>Neurological symptom – PRES</td></tr></table></div>"
+  },
+  "url" : "http://example.org/fhir/CodeSystem/concomitant-disease-category",
+  "version" : "0.1.0",
+  "name" : "ConcomitantDiseaseCategory",
+  "title" : "Concomitant Disease Category",
+  "status" : "draft",
+  "date" : "2025-12-09T16:44:49+01:00",
+  "publisher" : "Your Organization",
+  "contact" : [{
+    "name" : "Your Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://example.org"
+    }]
+  }],
+  "description" : "Categories of relevant concomitant diseases.",
+  "content" : "complete",
+  "count" : 40,
+  "concept" : [{
+    "code" : "45879544",
+    "display" : "Edema"
+  },
+  {
+    "code" : "4261202",
+    "display" : "Uremia"
+  },
+  {
+    "code" : "45877479",
+    "display" : "Itching"
+  },
+  {
+    "code" : "45884747",
+    "display" : "Diarrhea"
+  },
+  {
+    "code" : "36308435",
+    "display" : "Ascites"
+  },
+  {
+    "code" : "45881353",
+    "display" : "Jaundice"
+  },
+  {
+    "code" : "134718",
+    "display" : "Hirsutism"
+  },
+  {
+    "code" : "45879799",
+    "display" : "Diabetes"
+  },
+  {
+    "code" : "21499042",
+    "display" : "Oligoanuria"
+  },
+  {
+    "code" : "200527",
+    "display" : "Splenomegaly"
+  },
+  {
+    "code" : "45881444",
+    "display" : "Fatigue"
+  },
+  {
+    "code" : "315085",
+    "display" : "Lymphadenopathy"
+  },
+  {
+    "code" : "4010094",
+    "display" : "Spider veins"
+  },
+  {
+    "code" : "195856",
+    "display" : "Cholangitis"
+  },
+  {
+    "code" : "4120314",
+    "display" : "Hypertriglyceridemia"
+  },
+  {
+    "code" : "4029488",
+    "display" : "Hepatic encephalopathy"
+  },
+  {
+    "code" : "4229881",
+    "display" : "Weight loss"
+  },
+  {
+    "code" : "4272240",
+    "display" : "Malaise"
+  },
+  {
+    "code" : "40480518",
+    "display" : "Gingival hyperplasia"
+  },
+  {
+    "code" : "3013667",
+    "display" : "Pale stools"
+  },
+  {
+    "code" : "197676",
+    "display" : "Hepatomegaly"
+  },
+  {
+    "code" : "4318546",
+    "display" : "Urethral stenosis"
+  },
+  {
+    "code" : "42869825",
+    "display" : "Left ventricular hypertrophy"
+  },
+  {
+    "code" : "376965",
+    "display" : "Hypertensive retinopathy"
+  },
+  {
+    "code" : "45877062",
+    "display" : "Abdominal pain"
+  },
+  {
+    "code" : "44806743",
+    "display" : "Glucose intolerance"
+  },
+  {
+    "code" : "4159144",
+    "display" : "Hepatopulmonary syndrome"
+  },
+  {
+    "code" : "196455",
+    "display" : "Hepatorenal syndrome"
+  },
+  {
+    "code" : "434621",
+    "display" : "Concomitant autoimmune disorder"
+  },
+  {
+    "code" : "thyroid-disease-specify",
+    "display" : "Thyroid disease (specify)"
+  },
+  {
+    "code" : "anaemia",
+    "display" : "Anaemia"
+  },
+  {
+    "code" : "uremic-symptoms",
+    "display" : "Uremic symptoms"
+  },
+  {
+    "code" : "metabolic-acidosis",
+    "display" : "Metabolic acidosis"
+  },
+  {
+    "code" : "hypertension",
+    "display" : "Hypertension"
+  },
+  {
+    "code" : "concomitant-pancreatic-disease",
+    "display" : "Concomitant pancreatic disease"
+  },
+  {
+    "code" : "other-concomitant-diseases",
+    "display" : "Other concomitant diseases"
+  },
+  {
+    "code" : "other-organ-damage",
+    "display" : "Other organ damage"
+  },
+  {
+    "code" : "4117779",
+    "display" : "Neurological symptom – Peripheral neuropathy"
+  },
+  {
+    "code" : "376099",
+    "display" : "Neurological symptom – Tremors"
+  },
+  {
+    "code" : "373873005",
+    "display" : "Neurological symptom – PRES"
+  }]
+}

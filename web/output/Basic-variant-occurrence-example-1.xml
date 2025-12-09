@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="variant-occurrence-example-1"/>
+  <meta>
+    <profile value="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Basic variant-occurrence-example-1</b></p><a name="variant-occurrence-example-1"> </a><a name="hcvariant-occurrence-example-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-variant-occurrence.html">Variant Occurrence</a></p></div><p><b>Target region ID relationship</b>: <a href="Basic-target-region-example-1.html">Basic Gene-level target region</a></p><p><b>Reference sequence</b>: NM_007294.4</p><p><b>dbSNP rsID</b>: rs80357713</p><p><b>Reference allele</b>: A</p><p><b>Alternate allele</b>: C</p><p><b>HGVS c. notation</b>: c.5266dupC</p><p><b>HGVS p. notation</b>: p.(Gln1756Profs*74)</p><p><b>Variant read depth</b>: 120</p><p><b>Variant exon number</b>: 20</p><p><b>Copy number</b>: 2</p><p><b>CNV locus</b>: chr17:43044295-43125482</p><p><b>Fusion breakpoint</b>: NA</p><p><b>Fusion supporting reads</b>: 0</p><p><b>Sequence alteration</b>: missense_variant</p><p><b>Variant feature</b>: pathogenic_variant</p><p><b>Genetic origin</b>: somatic</p><p><b>Genotype</b>: heterozygous</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/variant-occurrence-id</code>/VO0001</p><p><b>code</b>: <span title="Codes:{http://example.org/fhir/CodeSystem/variant-occurrence-type snv}">Single nucleotide variant</span></p></div>
+  </text>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-target-region-ref">
+    <valueReference>
+      <reference value="Basic/target-region-example-1"/>
+    </valueReference>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-reference-sequence">
+    <valueString value="NM_007294.4"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-rs-id">
+    <valueString value="rs80357713"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-reference-allele">
+    <valueString value="A"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-alternate-allele">
+    <valueString value="C"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-hgvs-c">
+    <valueString value="c.5266dupC"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-hgvs-p">
+    <valueString value="p.(Gln1756Profs*74)"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-variant-read-depth">
+    <valueInteger value="120"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-variant-exon-number">
+    <valueInteger value="20"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-copy-number">
+    <valueDecimal value="2"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-cnv-locus">
+    <valueString value="chr17:43044295-43125482"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-fusion-breakpoint">
+    <valueString value="NA"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-fusion-supporting-reads">
+    <valueInteger value="0"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-sequence-alteration">
+    <valueString value="missense_variant"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-variant-feature">
+    <valueString value="pathogenic_variant"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-genetic-origin">
+    <valueString value="somatic"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-genotype">
+    <valueString value="heterozygous"/>
+  </extension>
+  <identifier>
+    <system value="http://example.org/fhir/NamingSystem/variant-occurrence-id"/>
+    <value value="VO0001"/>
+  </identifier>
+  <code>
+    <coding>
+      <system value="http://example.org/fhir/CodeSystem/variant-occurrence-type"/>
+      <code value="snv"/>
+      <display value="Single nucleotide variant"/>
+    </coding>
+  </code>
+</Basic>

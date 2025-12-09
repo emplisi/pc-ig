@@ -1,0 +1,124 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/Basic/clinical-variable-example-1> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "clinical-variable-example-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Basic clinical-variable-example-1</b></p><a name=\"clinical-variable-example-1\"> </a><a name=\"hcclinical-variable-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-clinical-variable.html\">Clinical Variable</a></p></div><p><b>Patient ID relationship</b>: <a href=\"Patient-ExamplePatientTransplant1.html\">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p><p><b>Date</b>: 2025-01-15</p><p><b>Weight</b>: 72.5</p><p><b>Height</b>: 175</p><p><b>Systolic blood pressure</b>: 120</p><p><b>Diastolic blood pressure</b>: 75</p><p><b>Heart rate</b>: 68</p><p><b>Oxygen saturation</b>: 98</p><p><b>Temperature</b>: 37</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/clinical-variable-id</code>/CV0001</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/clinical-variable-type vitals}\">Vital signs</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-patient-ref"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-patient-ref>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Patient/ExamplePatientTransplant1> ;
+       fhir:reference [ fhir:v "Patient/ExamplePatientTransplant1" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-date"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-date>
+     ] ;
+     fhir:value [
+       a fhir:Date ;
+       fhir:v "2025-01-15"^^xsd:date
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-weight"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-weight>
+     ] ;
+     fhir:value [
+       a fhir:Decimal ;
+       fhir:v 72.5
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-height"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-height>
+     ] ;
+     fhir:value [
+       a fhir:Decimal ;
+       fhir:v "175"^^xsd:decimal
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-systolic-blood-pressure"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-systolic-blood-pressure>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 120
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-diastolic-blood-pressure"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-diastolic-blood-pressure>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 75
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-heart-rate"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-heart-rate>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 68
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-oxygen-saturation"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-oxygen-saturation>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 98
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-temperature"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-temperature>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 37
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://example.org/fhir/NamingSystem/clinical-variable-id"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/NamingSystem/clinical-variable-id>
+     ] ;
+     fhir:value [ fhir:v "CV0001" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://example.org/fhir/CodeSystem/clinical-variable-type"^^xsd:anyURI ;
+         fhir:l <http://example.org/fhir/CodeSystem/clinical-variable-type>
+       ] ;
+       fhir:code [ fhir:v "vitals" ] ;
+       fhir:display [ fhir:v "Vital signs" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

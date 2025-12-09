@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="genomic-test-example-1"/>
+  <meta>
+    <profile value="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Basic genomic-test-example-1</b></p><a name="genomic-test-example-1"> </a><a name="hcgenomic-test-example-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-genomic-test.html">Genomic Test</a></p></div><p><b>Reference Genome ID relationship</b>: <a href="Basic-reference-genome-grch38.html">Basic GRCh38</a></p><p><b>Genomic Test Name</b>: ExomeSeq v1</p><p><b>Genomic Test Version</b>: 1.2.3</p><p><b>Sequencing device</b>: Illumina NovaSeq 6000</p><p><b>Target capture</b>: Exome capture kit XYZ v5</p><p><b>Read type</b>: Paired-end</p><p><b>Read length</b>: 150</p><p><b>Mean target coverage</b>: 120.5</p><p><b>Per target base cover x100</b>: 95.3</p><p><b>Alignment tools</b>: BWA-MEM 0.7.17</p><p><b>Variant calling tools</b>: GATK HaplotypeCaller 4.2.0</p><p><b>Chromosome coordinate</b>: GRCh38 (1-based, inclusive)</p><p><b>Annotation tools</b>: VEP 104</p><p><b>Annotation databases</b>: gnomAD v3.1, ClinVar 2025-01, dbNSFP 4.3</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/genomic-test-id</code>/GT0001</p><p><b>code</b>: <span title="Codes:{http://example.org/fhir/CodeSystem/genomic-test-type exome}">Exome sequencing</span></p></div>
+  </text>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-reference-genome">
+    <valueReference>
+      <reference value="Basic/reference-genome-grch38"/>
+    </valueReference>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-name">
+    <valueString value="ExomeSeq v1"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-version">
+    <valueString value="1.2.3"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-sequencing-device">
+    <valueString value="Illumina NovaSeq 6000"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-target-capture">
+    <valueString value="Exome capture kit XYZ v5"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-read-type">
+    <valueString value="Paired-end"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-read-length">
+    <valueInteger value="150"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-mean-target-coverage">
+    <valueDecimal value="120.5"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-per-target-base-cover-100x">
+    <valueDecimal value="95.3"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-alignment-tools">
+    <valueString value="BWA-MEM 0.7.17"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-variant-calling-tools">
+    <valueString value="GATK HaplotypeCaller 4.2.0"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-chromosome-corrdinate">
+    <valueString value="GRCh38 (1-based, inclusive)"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-annotation-tools">
+    <valueString value="VEP 104"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-annotation-databases">
+    <valueString value="gnomAD v3.1, ClinVar 2025-01, dbNSFP 4.3"/>
+  </extension>
+  <identifier>
+    <system value="http://example.org/fhir/NamingSystem/genomic-test-id"/>
+    <value value="GT0001"/>
+  </identifier>
+  <code>
+    <coding>
+      <system value="http://example.org/fhir/CodeSystem/genomic-test-type"/>
+      <code value="exome"/>
+      <display value="Exome sequencing"/>
+    </coding>
+  </code>
+</Basic>

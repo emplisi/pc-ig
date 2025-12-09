@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/CodeSystem/concomitant-medication-category> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "concomitant-medication-category"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem concomitant-medication-category</b></p><a name=\"concomitant-medication-category\"> </a><a name=\"hcconcomitant-medication-category\"> </a><p>This  code system <code>http://example.org/fhir/CodeSystem/concomitant-medication-category</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">antihypertensive<a name=\"concomitant-medication-category-antihypertensive\"> </a></td><td>Antihypertensive treatment</td></tr><tr><td style=\"white-space:nowrap\">antiviral-prophylaxis<a name=\"concomitant-medication-category-antiviral-prophylaxis\"> </a></td><td>Antiviral prophylaxis</td></tr><tr><td style=\"white-space:nowrap\">antibiotic-prophylaxis<a name=\"concomitant-medication-category-antibiotic-prophylaxis\"> </a></td><td>Antibiotic prophylaxis</td></tr><tr><td style=\"white-space:nowrap\">heparin-therapy-prophylaxis<a name=\"concomitant-medication-category-heparin-therapy-prophylaxis\"> </a></td><td>Heparin therapy/prophylaxis</td></tr><tr><td style=\"white-space:nowrap\">aspirin-therapy-prophylaxis<a name=\"concomitant-medication-category-aspirin-therapy-prophylaxis\"> </a></td><td>Aspirin therapy/prophylaxis</td></tr><tr><td style=\"white-space:nowrap\">ursodeoxycholic-acid<a name=\"concomitant-medication-category-ursodeoxycholic-acid\"> </a></td><td>Ursodeoxycholic acid</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://example.org/fhir/CodeSystem/concomitant-medication-category"^^xsd:anyURI ;
+     fhir:l <http://example.org/fhir/CodeSystem/concomitant-medication-category>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ConcomitantMedicationCategory"] ; # 
+  fhir:title [ fhir:v "Concomitant Medication Category"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-12-09T16:44:49+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Your Organization"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Your Organization" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://example.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Categories of concomitant medications."] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "antihypertensive" ] ;
+     fhir:display [ fhir:v "Antihypertensive treatment" ]
+  ] [
+     fhir:code [ fhir:v "antiviral-prophylaxis" ] ;
+     fhir:display [ fhir:v "Antiviral prophylaxis" ]
+  ] [
+     fhir:code [ fhir:v "antibiotic-prophylaxis" ] ;
+     fhir:display [ fhir:v "Antibiotic prophylaxis" ]
+  ] [
+     fhir:code [ fhir:v "heparin-therapy-prophylaxis" ] ;
+     fhir:display [ fhir:v "Heparin therapy/prophylaxis" ]
+  ] [
+     fhir:code [ fhir:v "aspirin-therapy-prophylaxis" ] ;
+     fhir:display [ fhir:v "Aspirin therapy/prophylaxis" ]
+  ] [
+     fhir:code [ fhir:v "ursodeoxycholic-acid" ] ;
+     fhir:display [ fhir:v "Ursodeoxycholic acid" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

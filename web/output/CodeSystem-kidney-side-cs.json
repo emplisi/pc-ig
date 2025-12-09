@@ -1,0 +1,39 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "kidney-side-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem kidney-side-cs</b></p><a name=\"kidney-side-cs\"> </a><a name=\"hckidney-side-cs\"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/kidney-side</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">left<a name=\"kidney-side-cs-left\"> </a></td><td>Left</td></tr><tr><td style=\"white-space:nowrap\">right<a name=\"kidney-side-cs-right\"> </a></td><td>Right</td></tr><tr><td style=\"white-space:nowrap\">both<a name=\"kidney-side-cs-both\"> </a></td><td>Both</td></tr></table></div>"
+  },
+  "url" : "http://example.org/fhir/CodeSystem/kidney-side",
+  "version" : "0.1.0",
+  "name" : "KidneySideCS",
+  "title" : "Kidney Side CodeSystem",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-12-09T16:44:49+01:00",
+  "publisher" : "Your Organization",
+  "contact" : [{
+    "name" : "Your Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://example.org"
+    }]
+  }],
+  "description" : "Side of the kidney for nephrectomy / transplant context.",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "left",
+    "display" : "Left"
+  },
+  {
+    "code" : "right",
+    "display" : "Right"
+  },
+  {
+    "code" : "both",
+    "display" : "Both"
+  }]
+}

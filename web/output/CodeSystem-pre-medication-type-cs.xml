@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="pre-medication-type-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem pre-medication-type-cs</b></p><a name="pre-medication-type-cs"> </a><a name="hcpre-medication-type-cs"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/pre-medication-type</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">pre-medication<a name="pre-medication-type-cs-pre-medication"> </a></td><td>Pre-transplant medication record</td></tr></table></div>
+  </text>
+  <url value="http://example.org/fhir/CodeSystem/pre-medication-type"/>
+  <version value="0.1.0"/>
+  <name value="PreMedicationTypeCS"/>
+  <title value="Pre-medication Type CodeSystem"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-12-09T16:44:49+01:00"/>
+  <publisher value="Your Organization"/>
+  <contact>
+    <name value="Your Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://example.org"/>
+    </telecom>
+  </contact>
+  <description value="Type of pre-transplant medication record."/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="1"/>
+  <concept>
+    <code value="pre-medication"/>
+    <display value="Pre-transplant medication record"/>
+  </concept>
+</CodeSystem>

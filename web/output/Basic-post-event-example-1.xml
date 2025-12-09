@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="post-event-example-1"/>
+  <meta>
+    <profile value="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Basic post-event-example-1</b></p><a name="post-event-example-1"> </a><a name="hcpost-event-example-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-post-event.html">Post Event</a></p></div><p><b>Post event type ID relationship</b>: <a href="Basic-post-event-type-example-1.html">Basic Clinical post-transplant event</a></p><p><b>Patient ID relationship</b>: <a href="Patient-ExamplePatientTransplant1.html">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p><p><b>Event onset date</b>: 2024-05-10</p><p><b>Event end date</b>: 2024-05-16</p><p><b>Event description</b>: Hospitalization due to bacterial cholangitis treated with IV antibiotics.</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/post-event-id</code>/PE0001</p><p><b>code</b>: <span title="Codes:{http://example.org/fhir/CodeSystem/post-event-type-code event}">Post-transplant event</span></p></div>
+  </text>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-type-ref">
+    <valueReference>
+      <reference value="Basic/post-event-type-example-1"/>
+    </valueReference>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-patient-ref">
+    <valueReference>
+      <reference value="Patient/ExamplePatientTransplant1"/>
+    </valueReference>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-onset-date">
+    <valueDate value="2024-05-10"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-end-date">
+    <valueDate value="2024-05-16"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-description">
+    <valueString value="Hospitalization due to bacterial cholangitis treated with IV antibiotics."/>
+  </extension>
+  <identifier>
+    <system value="http://example.org/fhir/NamingSystem/post-event-id"/>
+    <value value="PE0001"/>
+  </identifier>
+  <code>
+    <coding>
+      <system value="http://example.org/fhir/CodeSystem/post-event-type-code"/>
+      <code value="event"/>
+      <display value="Post-transplant event"/>
+    </coding>
+  </code>
+</Basic>

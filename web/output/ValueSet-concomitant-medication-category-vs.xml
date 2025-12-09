@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="concomitant-medication-category-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet concomitant-medication-category-vs</b></p><a name="concomitant-medication-category-vs"> </a><a name="hcconcomitant-medication-category-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-concomitant-medication-category.html"><code>http://example.org/fhir/CodeSystem/concomitant-medication-category</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span></li></ul></div>
+  </text>
+  <url value="http://example.org/fhir/ValueSet/concomitant-medication-category"/>
+  <version value="0.1.0"/>
+  <name value="ConcomitantMedicationCategoryVS"/>
+  <title value="Concomitant Medication Category ValueSet"/>
+  <status value="draft"/>
+  <date value="2025-12-09T16:44:49+01:00"/>
+  <publisher value="Your Organization"/>
+  <contact>
+    <name value="Your Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://example.org"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet of concomitant medication categories."/>
+  <compose>
+    <include>
+      <system value="http://example.org/fhir/CodeSystem/concomitant-medication-category"/>
+    </include>
+  </compose>
+</ValueSet>

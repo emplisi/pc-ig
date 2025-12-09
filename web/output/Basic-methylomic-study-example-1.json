@@ -1,0 +1,52 @@
+{
+  "resourceType" : "Basic",
+  "id" : "methylomic-study-example-1",
+  "meta" : {
+    "profile" : ["http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Basic methylomic-study-example-1</b></p><a name=\"methylomic-study-example-1\"> </a><a name=\"hcmethylomic-study-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-methylomic-study.html\">Methylomic Study</a></p></div><p><b>Reference genome ID relationship</b>: <a href=\"Basic-reference-genome-grch38.html\">Basic GRCh38</a></p><p><b>Target region ID</b>: TR0001</p><p><b>Beta value</b>: 0.72</p><p><b>M value</b>: 1.85</p><p><b>Detection p-value</b>: 0.0003</p><p><b>Read count</b>: 250</p><p><b>Methylated reads</b>: 180</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/methylomic-study-id</code>/MS0001</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/methylomic-study-type locus}\">Locus-level methylomic record</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-reference-genome-ref",
+    "valueReference" : {
+      "reference" : "Basic/reference-genome-grch38"
+    }
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-target-region-id",
+    "valueString" : "TR0001"
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-beta-value",
+    "valueDecimal" : 0.72
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-m-value",
+    "valueDecimal" : 1.85
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-detection-p-value",
+    "valueDecimal" : 0.0003
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-read-count",
+    "valueInteger" : 250
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-methylated-reads",
+    "valueInteger" : 180
+  }],
+  "identifier" : [{
+    "system" : "http://example.org/fhir/NamingSystem/methylomic-study-id",
+    "value" : "MS0001"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://example.org/fhir/CodeSystem/methylomic-study-type",
+      "code" : "locus",
+      "display" : "Locus-level methylomic record"
+    }]
+  }
+}

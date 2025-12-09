@@ -1,0 +1,89 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/Basic/post-event-example-1> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "post-event-example-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Basic post-event-example-1</b></p><a name=\"post-event-example-1\"> </a><a name=\"hcpost-event-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-post-event.html\">Post Event</a></p></div><p><b>Post event type ID relationship</b>: <a href=\"Basic-post-event-type-example-1.html\">Basic Clinical post-transplant event</a></p><p><b>Patient ID relationship</b>: <a href=\"Patient-ExamplePatientTransplant1.html\">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p><p><b>Event onset date</b>: 2024-05-10</p><p><b>Event end date</b>: 2024-05-16</p><p><b>Event description</b>: Hospitalization due to bacterial cholangitis treated with IV antibiotics.</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/post-event-id</code>/PE0001</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/post-event-type-code event}\">Post-transplant event</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-type-ref"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-type-ref>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Basic/post-event-type-example-1> ;
+       fhir:reference [ fhir:v "Basic/post-event-type-example-1" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-patient-ref"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-patient-ref>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Patient/ExamplePatientTransplant1> ;
+       fhir:reference [ fhir:v "Patient/ExamplePatientTransplant1" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-onset-date"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-onset-date>
+     ] ;
+     fhir:value [
+       a fhir:Date ;
+       fhir:v "2024-05-10"^^xsd:date
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-end-date"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-end-date>
+     ] ;
+     fhir:value [
+       a fhir:Date ;
+       fhir:v "2024-05-16"^^xsd:date
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-description"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/post-event-description>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "Hospitalization due to bacterial cholangitis treated with IV antibiotics."
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://example.org/fhir/NamingSystem/post-event-id"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/NamingSystem/post-event-id>
+     ] ;
+     fhir:value [ fhir:v "PE0001" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://example.org/fhir/CodeSystem/post-event-type-code"^^xsd:anyURI ;
+         fhir:l <http://example.org/fhir/CodeSystem/post-event-type-code>
+       ] ;
+       fhir:code [ fhir:v "event" ] ;
+       fhir:display [ fhir:v "Post-transplant event" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

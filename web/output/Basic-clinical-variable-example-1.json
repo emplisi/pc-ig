@@ -1,0 +1,60 @@
+{
+  "resourceType" : "Basic",
+  "id" : "clinical-variable-example-1",
+  "meta" : {
+    "profile" : ["http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Basic clinical-variable-example-1</b></p><a name=\"clinical-variable-example-1\"> </a><a name=\"hcclinical-variable-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-clinical-variable.html\">Clinical Variable</a></p></div><p><b>Patient ID relationship</b>: <a href=\"Patient-ExamplePatientTransplant1.html\">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p><p><b>Date</b>: 2025-01-15</p><p><b>Weight</b>: 72.5</p><p><b>Height</b>: 175</p><p><b>Systolic blood pressure</b>: 120</p><p><b>Diastolic blood pressure</b>: 75</p><p><b>Heart rate</b>: 68</p><p><b>Oxygen saturation</b>: 98</p><p><b>Temperature</b>: 37</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/clinical-variable-id</code>/CV0001</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/clinical-variable-type vitals}\">Vital signs</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-patient-ref",
+    "valueReference" : {
+      "reference" : "Patient/ExamplePatientTransplant1"
+    }
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-date",
+    "valueDate" : "2025-01-15"
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-weight",
+    "valueDecimal" : 72.5
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-height",
+    "valueDecimal" : 175
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-systolic-blood-pressure",
+    "valueInteger" : 120
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-diastolic-blood-pressure",
+    "valueInteger" : 75
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-heart-rate",
+    "valueInteger" : 68
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-oxygen-saturation",
+    "valueInteger" : 98
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-temperature",
+    "valueInteger" : 37
+  }],
+  "identifier" : [{
+    "system" : "http://example.org/fhir/NamingSystem/clinical-variable-id",
+    "value" : "CV0001"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://example.org/fhir/CodeSystem/clinical-variable-type",
+      "code" : "vitals",
+      "display" : "Vital signs"
+    }]
+  }
+}

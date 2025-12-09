@@ -1,0 +1,169 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/Basic/genomic-test-example-1> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "genomic-test-example-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Basic genomic-test-example-1</b></p><a name=\"genomic-test-example-1\"> </a><a name=\"hcgenomic-test-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-genomic-test.html\">Genomic Test</a></p></div><p><b>Reference Genome ID relationship</b>: <a href=\"Basic-reference-genome-grch38.html\">Basic GRCh38</a></p><p><b>Genomic Test Name</b>: ExomeSeq v1</p><p><b>Genomic Test Version</b>: 1.2.3</p><p><b>Sequencing device</b>: Illumina NovaSeq 6000</p><p><b>Target capture</b>: Exome capture kit XYZ v5</p><p><b>Read type</b>: Paired-end</p><p><b>Read length</b>: 150</p><p><b>Mean target coverage</b>: 120.5</p><p><b>Per target base cover x100</b>: 95.3</p><p><b>Alignment tools</b>: BWA-MEM 0.7.17</p><p><b>Variant calling tools</b>: GATK HaplotypeCaller 4.2.0</p><p><b>Chromosome coordinate</b>: GRCh38 (1-based, inclusive)</p><p><b>Annotation tools</b>: VEP 104</p><p><b>Annotation databases</b>: gnomAD v3.1, ClinVar 2025-01, dbNSFP 4.3</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/genomic-test-id</code>/GT0001</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/genomic-test-type exome}\">Exome sequencing</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-reference-genome"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-reference-genome>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Basic/reference-genome-grch38> ;
+       fhir:reference [ fhir:v "Basic/reference-genome-grch38" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-name"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-name>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "ExomeSeq v1"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-version"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-version>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "1.2.3"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-sequencing-device"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-sequencing-device>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "Illumina NovaSeq 6000"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-target-capture"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-target-capture>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "Exome capture kit XYZ v5"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-read-type"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-read-type>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "Paired-end"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-read-length"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-read-length>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 150
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-mean-target-coverage"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-mean-target-coverage>
+     ] ;
+     fhir:value [
+       a fhir:Decimal ;
+       fhir:v 120.5
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-per-target-base-cover-100x"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-per-target-base-cover-100x>
+     ] ;
+     fhir:value [
+       a fhir:Decimal ;
+       fhir:v 95.3
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-alignment-tools"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-alignment-tools>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "BWA-MEM 0.7.17"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-variant-calling-tools"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-variant-calling-tools>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "GATK HaplotypeCaller 4.2.0"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-chromosome-corrdinate"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-chromosome-corrdinate>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "GRCh38 (1-based, inclusive)"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-annotation-tools"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-annotation-tools>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "VEP 104"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-annotation-databases"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-annotation-databases>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "gnomAD v3.1, ClinVar 2025-01, dbNSFP 4.3"
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://example.org/fhir/NamingSystem/genomic-test-id"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/NamingSystem/genomic-test-id>
+     ] ;
+     fhir:value [ fhir:v "GT0001" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://example.org/fhir/CodeSystem/genomic-test-type"^^xsd:anyURI ;
+         fhir:l <http://example.org/fhir/CodeSystem/genomic-test-type>
+       ] ;
+       fhir:code [ fhir:v "exome" ] ;
+       fhir:display [ fhir:v "Exome sequencing" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

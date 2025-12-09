@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "concomitant-medication-category-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet concomitant-medication-category-vs</b></p><a name=\"concomitant-medication-category-vs\"> </a><a name=\"hcconcomitant-medication-category-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-concomitant-medication-category.html\"><code>http://example.org/fhir/CodeSystem/concomitant-medication-category</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
+  },
+  "url" : "http://example.org/fhir/ValueSet/concomitant-medication-category",
+  "version" : "0.1.0",
+  "name" : "ConcomitantMedicationCategoryVS",
+  "title" : "Concomitant Medication Category ValueSet",
+  "status" : "draft",
+  "date" : "2025-12-09T16:44:49+01:00",
+  "publisher" : "Your Organization",
+  "contact" : [{
+    "name" : "Your Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://example.org"
+    }]
+  }],
+  "description" : "ValueSet of concomitant medication categories.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.org/fhir/CodeSystem/concomitant-medication-category"
+    }]
+  }
+}

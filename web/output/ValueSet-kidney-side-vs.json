@@ -1,0 +1,37 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "kidney-side-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet kidney-side-vs</b></p><a name=\"kidney-side-vs\"> </a><a name=\"hckidney-side-vs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-kidney-side-cs.html\"><code>http://example.org/fhir/CodeSystem/kidney-side</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-kidney-side-cs.html#kidney-side-cs-left\">left</a></td><td style=\"color: #cccccc\">Left</td></tr><tr><td><a href=\"CodeSystem-kidney-side-cs.html#kidney-side-cs-right\">right</a></td><td style=\"color: #cccccc\">Right</td></tr><tr><td><a href=\"CodeSystem-kidney-side-cs.html#kidney-side-cs-both\">both</a></td><td style=\"color: #cccccc\">Both</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/kidney-side-vs",
+  "version" : "0.1.0",
+  "name" : "KidneySideVS",
+  "title" : "Kidney Side ValueSet",
+  "status" : "draft",
+  "date" : "2025-12-09T16:44:49+01:00",
+  "publisher" : "Your Organization",
+  "contact" : [{
+    "name" : "Your Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://example.org"
+    }]
+  }],
+  "description" : "Allowed values for kidney side.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.org/fhir/CodeSystem/kidney-side",
+      "concept" : [{
+        "code" : "left"
+      },
+      {
+        "code" : "right"
+      },
+      {
+        "code" : "both"
+      }]
+    }]
+  }
+}

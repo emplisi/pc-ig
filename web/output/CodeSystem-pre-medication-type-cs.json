@@ -1,0 +1,31 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "pre-medication-type-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem pre-medication-type-cs</b></p><a name=\"pre-medication-type-cs\"> </a><a name=\"hcpre-medication-type-cs\"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/pre-medication-type</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">pre-medication<a name=\"pre-medication-type-cs-pre-medication\"> </a></td><td>Pre-transplant medication record</td></tr></table></div>"
+  },
+  "url" : "http://example.org/fhir/CodeSystem/pre-medication-type",
+  "version" : "0.1.0",
+  "name" : "PreMedicationTypeCS",
+  "title" : "Pre-medication Type CodeSystem",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-12-09T16:44:49+01:00",
+  "publisher" : "Your Organization",
+  "contact" : [{
+    "name" : "Your Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://example.org"
+    }]
+  }],
+  "description" : "Type of pre-transplant medication record.",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "pre-medication",
+    "display" : "Pre-transplant medication record"
+  }]
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="pre-medication-example-1"/>
+  <meta>
+    <profile value="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Basic pre-medication-example-1</b></p><a name="pre-medication-example-1"> </a><a name="hcpre-medication-example-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-pre-medication.html">Pre-transplant Medication</a></p></div><p><b>Pre-medication patient reference</b>: <a href="Patient-ExamplePatientTransplant1.html">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p><p><b>Antihypertensive treatment</b>: <span title="Codes:{http://example.org/fhir/CodeSystem/pre-medication-antihypertensive-drug 1332418}">Amlodipine</span></p><p><b>Rituximab pre-medication</b>: true</p><p><b>Other pre-transplant medications</b>: Low-dose aspirin</p><p><b>Antiviral prophylaxis pre-medication</b>: false</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/pre-medication-id</code>/PM0001</p><p><b>code</b>: <span title="Codes:{http://example.org/fhir/CodeSystem/pre-medication-type pre-medication}">Pre-transplant medication record</span></p></div>
+  </text>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication-patient-ref">
+    <valueReference>
+      <reference value="Patient/ExamplePatientTransplant1"/>
+    </valueReference>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication-antihypertensive-treatment">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://example.org/fhir/CodeSystem/pre-medication-antihypertensive-drug"/>
+        <code value="1332418"/>
+        <display value="Amlodipine"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication-rituximab">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication-other-medications">
+    <valueString value="Low-dose aspirin"/>
+  </extension>
+  <extension url="http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication-antiviral-phrophylaxis">
+    <valueBoolean value="false"/>
+  </extension>
+  <identifier>
+    <system value="http://example.org/fhir/NamingSystem/pre-medication-id"/>
+    <value value="PM0001"/>
+  </identifier>
+  <code>
+    <coding>
+      <system value="http://example.org/fhir/CodeSystem/pre-medication-type"/>
+      <code value="pre-medication"/>
+      <display value="Pre-transplant medication record"/>
+    </coding>
+  </code>
+</Basic>

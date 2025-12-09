@@ -1,0 +1,103 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/Observation/lab-result-observation-example-1> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "lab-result-observation-example-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/lab-result-observation"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/lab-result-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation lab-result-observation-example-1</b></p><a name=\"lab-result-observation-example-1\"> </a><a name=\"hclab-result-observation-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-lab-result-observation.html\">Lab Result</a></p></div><p><b>Lab test reference</b>: <a href=\"Basic-lab-test-example-1.html\">Basic Chemistry lab test</a></p><p><b>Lab result patient reference</b>: <a href=\"Patient-ExamplePatientTransplant1.html\">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/lab-result-id</code>/LR0001</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 2160-0}\">Creatinine [Mass/volume] in Serum or Plasma</span></p><p><b>effective</b>: 2023-09-02 09:15:00+0100</p><p><b>value</b>: 1.2 mg/dL<span style=\"background: LightGoldenRodYellow\"> (Details: Lab Result Unit CodeSystem  codemg_per_dL = 'mg/dL')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></p><p><b>specimen</b>: <a href=\"Specimen-biosample-example-1.html\">Specimen: extension = 2025-01-20,-&gt;Basic Exome sequencing,-&gt;Basic Methylation array epigenome study,-&gt;Basic Locus-level methylomic record,35.2; identifier = http://example.org/fhir/NamingSystem/bio-sample-id#BS0001; type = Blood</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/lab-result-labtest-ref"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/lab-result-labtest-ref>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Basic/lab-test-example-1> ;
+       fhir:reference [ fhir:v "Basic/lab-test-example-1" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/lab-result-patient-ref"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/lab-result-patient-ref>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://example.org/fhir/Patient/ExamplePatientTransplant1> ;
+       fhir:reference [ fhir:v "Patient/ExamplePatientTransplant1" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://example.org/fhir/NamingSystem/lab-result-id"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/NamingSystem/lab-result-id>
+     ] ;
+     fhir:value [ fhir:v "LR0001" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "laboratory" ] ;
+       fhir:display [ fhir:v "Laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:2160-0 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "2160-0" ] ;
+       fhir:display [ fhir:v "Creatinine [Mass/volume] in Serum or Plasma" ]
+     ] )
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2023-09-02T09:15:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v 1.2 ] ;
+     fhir:unit [ fhir:v "mg/dL" ] ;
+     fhir:system [
+       fhir:v "http://example.org/fhir/CodeSystem/lab-result-unit"^^xsd:anyURI ;
+       fhir:l <http://example.org/fhir/CodeSystem/lab-result-unit>
+     ] ;
+     fhir:code [ fhir:v "mg_per_dL" ]
+  ] ; # 
+  fhir:interpretation ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation>
+       ] ;
+       fhir:code [ fhir:v "H" ] ;
+       fhir:display [ fhir:v "High" ]
+     ] )
+  ] ) ; # 
+  fhir:specimen [
+     fhir:l <http://example.org/fhir/Specimen/biosample-example-1> ;
+     fhir:reference [ fhir:v "Specimen/biosample-example-1" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

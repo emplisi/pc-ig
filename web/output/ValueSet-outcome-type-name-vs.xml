@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="outcome-type-name-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet outcome-type-name-vs</b></p><a name="outcome-type-name-vs"> </a><a name="hcoutcome-type-name-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-outcome-type-name-cs.html"><code>http://example.org/fhir/CodeSystem/outcome-type-name</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span></li></ul></div>
+  </text>
+  <url value="http://example.org/fhir/ValueSet/outcome-type-name"/>
+  <version value="0.1.0"/>
+  <name value="OutcomeTypeNameVS"/>
+  <title value="Outcome Type Name"/>
+  <status value="draft"/>
+  <date value="2025-12-09T16:44:49+01:00"/>
+  <publisher value="Your Organization"/>
+  <contact>
+    <name value="Your Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://example.org"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet of post-transplant outcome types."/>
+  <compose>
+    <include>
+      <system value="http://example.org/fhir/CodeSystem/outcome-type-name"/>
+    </include>
+  </compose>
+</ValueSet>

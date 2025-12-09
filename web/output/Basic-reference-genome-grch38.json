@@ -1,0 +1,26 @@
+{
+  "resourceType" : "Basic",
+  "id" : "reference-genome-grch38",
+  "meta" : {
+    "profile" : ["http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/reference-genome"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Basic reference-genome-grch38</b></p><a name=\"reference-genome-grch38\"> </a><a name=\"hcreference-genome-grch38\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-reference-genome.html\">Reference Genome</a></p></div><p><b>Reference genome FASTA path</b>: /data/genomes/GRCh38/GRCh38.fa</p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/reference-genome-id</code>/RG0001</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/CodeSystem/reference-genome-build GRCh38}\">GRCh38</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/reference-genome-fasta-path",
+    "valueString" : "/data/genomes/GRCh38/GRCh38.fa"
+  }],
+  "identifier" : [{
+    "system" : "http://example.org/fhir/NamingSystem/reference-genome-id",
+    "value" : "RG0001"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://example.org/fhir/CodeSystem/reference-genome-build",
+      "code" : "GRCh38",
+      "display" : "GRCh38"
+    }]
+  }
+}

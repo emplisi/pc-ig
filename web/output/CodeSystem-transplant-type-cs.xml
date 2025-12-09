@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="transplant-type-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem transplant-type-cs</b></p><a name="transplant-type-cs"> </a><a name="hctransplant-type-cs"> </a><p>This case-insensitive code system <code>http://example.org/fhir/CodeSystem/transplant-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">liver<a name="transplant-type-cs-liver"> </a></td><td>Liver transplant</td></tr><tr><td style="white-space:nowrap">kidney<a name="transplant-type-cs-kidney"> </a></td><td>Kidney transplant</td></tr><tr><td style="white-space:nowrap">combined<a name="transplant-type-cs-combined"> </a></td><td>Combined liver-kidney transplant</td></tr></table></div>
+  </text>
+  <url value="http://example.org/fhir/CodeSystem/transplant-type"/>
+  <version value="0.1.0"/>
+  <name value="TransplantTypeCS"/>
+  <title value="Transplant Type CodeSystem"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-12-09T16:44:49+01:00"/>
+  <publisher value="Your Organization"/>
+  <contact>
+    <name value="Your Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://example.org"/>
+    </telecom>
+  </contact>
+  <description value="Type of solid-organ transplant (liver, kidney, combined liver-kidney)."/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="liver"/>
+    <display value="Liver transplant"/>
+  </concept>
+  <concept>
+    <code value="kidney"/>
+    <display value="Kidney transplant"/>
+  </concept>
+  <concept>
+    <code value="combined"/>
+    <display value="Combined liver-kidney transplant"/>
+  </concept>
+</CodeSystem>

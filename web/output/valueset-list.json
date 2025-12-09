@@ -1,0 +1,260 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/biliary-anastomosis-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BiliaryAnastomosisTypeVS",
+      "title" : "Type of surgical biliary anastomosis ValueSet",
+      "description" : "Allowed types of biliary anastomosis in liver transplant.",
+      "systems" : [
+        "http://example.org/fhir/CodeSystem/biliary-anastomosis-type"
+      ]
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/biosample-tissue-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BioSampleTissueTypeVS",
+      "title" : "BioSample Tissue Type ValueSet",
+      "description" : "Allowed tissue types for BioSample.tissue_type.",
+      "systems" : ["http://example.org/fhir/CodeSystem/biosample-tissue-type"]
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/donor-liver-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "DonorLiverTypeVS",
+      "title" : "Donor Liver Type ValueSet",
+      "description" : "Allowed values for donor liver type (Complete, Partial).",
+      "systems" : ["http://example.org/fhir/CodeSystem/donor-liver-type"]
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/donor-pre-ktx-dialysis-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "DonorPreKtxDialysisTypeVS",
+      "title" : "Donor Pre-KTX Dialysis Type ValueSet",
+      "description" : "Allowed dialysis types for donor prior to kidney transplant.",
+      "systems" : [
+        "http://example.org/fhir/CodeSystem/donor-pre-ktx-dialysis-type"
+      ]
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/immunosuppressive-maintenance-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ImmunosuppressiveMaintenanceTypeVS",
+      "title" : "Immunosuppressive Maintenance to Patient Type ValueSet",
+      "description" : "Allowed types for immunosuppressive maintenance records.",
+      "systems" : [
+        "http://example.org/fhir/CodeSystem/immunosuppressive-maintenance-type"
+      ]
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/intraoperative-complication-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IntraoperativeComplicationVS",
+      "title" : "Intraoperative Complications ValueSet",
+      "description" : "Allowed intraoperative complications during liver transplantation.",
+      "systems" : [
+        "http://example.org/fhir/CodeSystem/intraoperative-complication"
+      ]
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/kidney-side-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "KidneySideVS",
+      "title" : "Kidney Side ValueSet",
+      "description" : "Allowed values for kidney side.",
+      "systems" : ["http://example.org/fhir/CodeSystem/kidney-side"]
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/lab-result-unit-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "LabResultUnitVS",
+      "title" : "Lab Result Unit ValueSet",
+      "description" : "Allowed units of measurement for lab result values (unit column).",
+      "systems" : ["http://example.org/fhir/CodeSystem/lab-result-unit"]
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-abo-group-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PatientABOGroupVS",
+      "title" : "Patient ABO Group ValueSet",
+      "description" : "ABO blood groups for transplant recipients.",
+      "systems" : ["http://example.org/fhir/CodeSystem/patient-abo-group"]
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-hla-class-i-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PatientHLAClassIVS",
+      "title" : "Patient HLA Class I Loci ValueSet",
+      "description" : "Allowed Class I HLA loci (HLA-A, HLA-B, HLA-C).",
+      "systems" : ["http://example.org/fhir/CodeSystem/patient-hla-class-i"]
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-hla-class-ii-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PatientHLAClassIIVS",
+      "title" : "Patient HLA Class II Loci ValueSet",
+      "description" : "Allowed Class II HLA loci (HLA-DR, HLA-DP, HLA-DQ).",
+      "systems" : ["http://example.org/fhir/CodeSystem/patient-hla-class-ii"]
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-instrumental-investigation-result-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PatientInstrumentalInvestigationResultVS",
+      "title" : "Patient Instrumental Investigation Result ValueSet",
+      "description" : "Allowed results for the instrumental investigation test (Normal, Abnormal).",
+      "systems" : [
+        "http://example.org/fhir/CodeSystem/patient-instrumental-investigation-result"
+      ]
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-rh-factor-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PatientRhFactorVS",
+      "title" : "Patient Rh Factor ValueSet",
+      "description" : "Allowed Rh factor values for transplant recipients.",
+      "systems" : ["http://example.org/fhir/CodeSystem/patient-rh-factor"]
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/pre-medication-antihypertensive-drug-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PreMedicationAntihypertensiveDrugVS",
+      "title" : "Pre-medication Antihypertensive Drug ValueSet",
+      "description" : "Allowed antihypertensive drugs for antihypertensive_treatment.",
+      "systems" : [
+        "http://example.org/fhir/CodeSystem/pre-medication-antihypertensive-drug"
+      ]
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/pre-medication-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PreMedicationTypeVS",
+      "title" : "Pre-medication Type ValueSet",
+      "description" : "Allowed type(s) for pre-medication records.",
+      "systems" : ["http://example.org/fhir/CodeSystem/pre-medication-type"]
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/reference-genome-build-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ReferenceGenomeBuildVS",
+      "title" : "Reference Genome Build ValueSet",
+      "description" : "Allowed reference genome build names (GRCh38, GRCh37).",
+      "systems" : ["http://example.org/fhir/CodeSystem/reference-genome-build"]
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/transplant-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TransplantTypeVS",
+      "title" : "Transplant Type ValueSet",
+      "description" : "Allowed transplant types.",
+      "systems" : ["http://example.org/fhir/CodeSystem/transplant-type"]
+    },
+    {
+      "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/visit-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VisitTypeVS",
+      "title" : "Visit Type ValueSet",
+      "description" : "Allowed types of visits in the transplant follow-up schedule.",
+      "systems" : ["http://example.org/fhir/CodeSystem/visit-type"]
+    },
+    {
+      "url" : "http://example.org/fhir/ValueSet/concomitant-disease-category",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ConcomitantDiseaseCategoryVS",
+      "title" : "Concomitant Disease Category ValueSet",
+      "description" : "ValueSet of relevant concomitant diseases.",
+      "systems" : [
+        "http://example.org/fhir/CodeSystem/concomitant-disease-category"
+      ]
+    },
+    {
+      "url" : "http://example.org/fhir/ValueSet/concomitant-medication-category",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ConcomitantMedicationCategoryVS",
+      "title" : "Concomitant Medication Category ValueSet",
+      "description" : "ValueSet of concomitant medication categories.",
+      "systems" : [
+        "http://example.org/fhir/CodeSystem/concomitant-medication-category"
+      ]
+    },
+    {
+      "url" : "http://example.org/fhir/ValueSet/immunosuppressant-drug-type",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ImmunosuppressantDrugTypeVS",
+      "title" : "Immunosuppressant Drug Type",
+      "description" : "ValueSet of immunosuppressive drug types.",
+      "systems" : [
+        "http://example.org/fhir/CodeSystem/immunosuppressant-drug-type"
+      ]
+    },
+    {
+      "url" : "http://example.org/fhir/ValueSet/immunosuppressive-induction-dose-unit",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ImmunosuppressiveInductionDoseUnitVS",
+      "title" : "Immunosuppressant Induction Dose Unit",
+      "description" : "ValueSet of units for immunosuppressant induction dose.",
+      "systems" : [
+        "http://example.org/fhir/CodeSystem/immunosuppressive-induction-dose-unit"
+      ]
+    },
+    {
+      "url" : "http://example.org/fhir/ValueSet/instrumental-investigation-name",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "InstrumentalInvestigationNameVS",
+      "title" : "Instrumental Investigation Name",
+      "description" : "ValueSet of instrumental investigation tests conducted.",
+      "systems" : [
+        "http://example.org/fhir/CodeSystem/instrumental-investigation-name"
+      ]
+    },
+    {
+      "url" : "http://example.org/fhir/ValueSet/lab-test-name",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "LabTestNameVS",
+      "title" : "Lab Test Name",
+      "description" : "ValueSet of laboratory tests conducted.",
+      "systems" : ["http://example.org/fhir/CodeSystem/lab-test-name"]
+    },
+    {
+      "url" : "http://example.org/fhir/ValueSet/outcome-type-name",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "OutcomeTypeNameVS",
+      "title" : "Outcome Type Name",
+      "description" : "ValueSet of post-transplant outcome types.",
+      "systems" : ["http://example.org/fhir/CodeSystem/outcome-type-name"]
+    },
+    {
+      "url" : "http://example.org/fhir/ValueSet/post-event-type-name",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PostEventTypeNameVS",
+      "title" : "Post Event Type Name",
+      "description" : "ValueSet of post-transplant event types.",
+      "systems" : ["http://example.org/fhir/CodeSystem/post-event-type-name"]
+    }
+  ]
+}

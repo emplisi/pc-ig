@@ -1,0 +1,116 @@
+{
+  "resourceType" : "Observation",
+  "id" : "microbiology-example-1",
+  "meta" : {
+    "profile" : ["http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation microbiology-example-1</b></p><a name=\"microbiology-example-1\"> </a><a name=\"hcmicrobiology-example-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-microbiology.html\">Microbiology</a></p></div><p><b>Blood EBV-DNA</b>: 2450</p><p><b>EBV serology IgM anti-EA</b>: false</p><p><b>EBV serology IgM anti-VCA</b>: false</p><p><b>EBV serology IgG anti-VCA</b>: true</p><p><b>EBV serology IgG EBNA</b>: true</p><p><b>Blood CMV-DNA</b>: false</p><p><b>CMV serology IgM</b>: false</p><p><b>CMV serology IgG</b>: true</p><p><b>Blood Parvovirus B19-DNA</b>: false</p><p><b>Parvovirus B19 serology IgG</b>: true</p><p><b>Parvovirus B19 serology IgM</b>: false</p><p><b>HSV serology IgG</b>: true</p><p><b>HSV serology IgM</b>: false</p><p><b>Adenovirus serology IgG</b>: true</p><p><b>Adenovirus serology IgM</b>: false</p><p><b>VZV serology IgG</b>: true</p><p><b>VZV serology IgM</b>: false</p><p><b>Blood BKV-DNA</b>: false</p><p><b>Urine BKV-DNA</b>: false</p><p><b>BKV-DNA on kidney biopsy</b>: false</p><p><b>BKV FISH on kidney biopsy</b>: false</p><p><b>Patient ID relationship</b>: <a href=\"Patient-ExamplePatientTransplant1.html\">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p><p><b>identifier</b>: <code>http://example.org/fhir/NamingSystem/microbiology-id</code>/M0001</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 24323-8}\">Microbiology studies (set)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatientTransplant1.html\">Anonymous Patient Female, DoB: 2012-03-12 ( http://example.org/fhir/identifiers/patient#P000456)</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-ebv-dna",
+    "valueDecimal" : 2450
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-ebv-igm-anti-ea",
+    "valueBoolean" : false
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-ebv-igm-anti-vca",
+    "valueBoolean" : false
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-ebv-igg-anti-vca",
+    "valueBoolean" : true
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-ebv-igg-ebna",
+    "valueBoolean" : true
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-cmv-dna",
+    "valueBoolean" : false
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-cmv-igm",
+    "valueBoolean" : false
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-cmv-igg",
+    "valueBoolean" : true
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-parvovirus-b19-dna",
+    "valueBoolean" : false
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-parvovirus-b19-dna-igg",
+    "valueBoolean" : true
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-parvovirus-b19-dna-igm",
+    "valueBoolean" : false
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-hsv-igg",
+    "valueBoolean" : true
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-hsv-igm",
+    "valueBoolean" : false
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-adenovirus-igg",
+    "valueBoolean" : true
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-adenovirus-igm",
+    "valueBoolean" : false
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-vzv-igg",
+    "valueBoolean" : true
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-vzv-igm",
+    "valueBoolean" : false
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-blood-bkv-dna",
+    "valueBoolean" : false
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-urine-bkv-dna",
+    "valueBoolean" : false
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-bkv-dna-kidney-biopsy",
+    "valueBoolean" : false
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-bkv-fish-kidney-biopsy",
+    "valueBoolean" : false
+  },
+  {
+    "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-patient-ref",
+    "valueReference" : {
+      "reference" : "Patient/ExamplePatientTransplant1"
+    }
+  }],
+  "identifier" : [{
+    "system" : "http://example.org/fhir/NamingSystem/microbiology-id",
+    "value" : "M0001"
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "24323-8",
+      "display" : "Microbiology studies (set)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ExamplePatientTransplant1"
+  }
+}
