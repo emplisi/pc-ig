@@ -62,8 +62,6 @@ hapi:
         version: 0.1.0          
         packageUrl: "file:///apps/package.tgz"
         installMode: STORE_AND_INSTALL
-        reloadExisting: false
-        fetchDependencies: true
 #    implementationguides:
 #      mpd:
 #        name: hl7.fhir.eu.r5.mpd
