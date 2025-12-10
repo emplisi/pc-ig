@@ -1,4 +1,4 @@
-# Biological Sample - PROTECT-CHILD Pediatric Transplant Data Implementation Guide v0.1.0
+# Biological Sample - (DRAFT) PROTECT-CHILD Pediatric Transplant Data Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-biosample.csv), [Exc
   "name" : "BioSample",
   "title" : "Biological Sample",
   "status" : "draft",
-  "date" : "2025-12-10T13:58:21+01:00",
+  "date" : "2025-12-10T14:43:23+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

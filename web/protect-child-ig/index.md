@@ -1,4 +1,4 @@
-# Home - PROTECT-CHILD Pediatric Transplant Data Implementation Guide v0.1.0
+# Home - (DRAFT) PROTECT-CHILD Pediatric Transplant Data Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -58,9 +58,9 @@ At the centre is the **TransplantCase logical model**, which links:
   "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ImplementationGuide/pc.ig",
   "version" : "0.1.0",
   "name" : "PROTECTChildTransplantIG",
-  "title" : "PROTECT-CHILD Pediatric Transplant Data Implementation Guide",
+  "title" : "(DRAFT) PROTECT-CHILD Pediatric Transplant Data Implementation Guide",
   "status" : "draft",
-  "date" : "2025-12-10T13:58:21+01:00",
+  "date" : "2025-12-10T14:43:23+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

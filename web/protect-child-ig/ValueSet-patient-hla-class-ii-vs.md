@@ -1,4 +1,4 @@
-# Patient HLA Class II Loci ValueSet - PROTECT-CHILD Pediatric Transplant Data Implementation Guide v0.1.0
+# Patient HLA Class II Loci ValueSet - (DRAFT) PROTECT-CHILD Pediatric Transplant Data Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -51,7 +51,7 @@ Allowed Class II HLA loci (HLA-DR, HLA-DP, HLA-DQ).
   "name" : "PatientHLAClassIIVS",
   "title" : "Patient HLA Class II Loci ValueSet",
   "status" : "draft",
-  "date" : "2025-12-10T13:58:21+01:00",
+  "date" : "2025-12-10T14:43:23+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

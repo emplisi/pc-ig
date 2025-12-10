@@ -1,4 +1,4 @@
-# Patient HLA Class I Loci ValueSet - PROTECT-CHILD Pediatric Transplant Data Implementation Guide v0.1.0
+# Patient HLA Class I Loci ValueSet - (DRAFT) PROTECT-CHILD Pediatric Transplant Data Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -51,7 +51,7 @@ Allowed Class I HLA loci (HLA-A, HLA-B, HLA-C).
   "name" : "PatientHLAClassIVS",
   "title" : "Patient HLA Class I Loci ValueSet",
   "status" : "draft",
-  "date" : "2025-12-10T13:58:21+01:00",
+  "date" : "2025-12-10T14:43:23+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

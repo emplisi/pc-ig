@@ -1,4 +1,4 @@
-# Renal disease diagnosis code - PROTECT-CHILD Pediatric Transplant Data Implementation Guide v0.1.0
+# Renal disease diagnosis code - (DRAFT) PROTECT-CHILD Pediatric Transplant Data Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-patient-renal-diseas
   "name" : "PatientRenalDiseaseCode",
   "title" : "Renal disease diagnosis code",
   "status" : "draft",
-  "date" : "2025-12-10T13:58:21+01:00",
+  "date" : "2025-12-10T14:43:23+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

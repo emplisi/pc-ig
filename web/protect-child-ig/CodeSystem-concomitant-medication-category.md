@@ -1,4 +1,4 @@
-# Concomitant Medication Category - PROTECT-CHILD Pediatric Transplant Data Implementation Guide v0.1.0
+# Concomitant Medication Category - (DRAFT) PROTECT-CHILD Pediatric Transplant Data Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -31,7 +31,7 @@ Categories of concomitant medications.
   "name" : "ConcomitantMedicationCategory",
   "title" : "Concomitant Medication Category",
   "status" : "draft",
-  "date" : "2025-12-10T13:58:21+01:00",
+  "date" : "2025-12-10T14:43:23+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

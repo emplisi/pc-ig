@@ -1,4 +1,4 @@
-# Concomitant Medication Category ValueSet - PROTECT-CHILD Pediatric Transplant Data Implementation Guide v0.1.0
+# Concomitant Medication Category ValueSet - (DRAFT) PROTECT-CHILD Pediatric Transplant Data Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -52,7 +52,7 @@ ValueSet of concomitant medication categories.
   "name" : "ConcomitantMedicationCategoryVS",
   "title" : "Concomitant Medication Category ValueSet",
   "status" : "draft",
-  "date" : "2025-12-10T13:58:21+01:00",
+  "date" : "2025-12-10T14:43:23+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Event end date - PROTECT-CHILD Pediatric Transplant Data Implementation Guide v0.1.0
+# Event end date - (DRAFT) PROTECT-CHILD Pediatric Transplant Data Implementation Guide v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-post-event-end-date.
   "name" : "PostEventEndDate",
   "title" : "Event end date",
   "status" : "draft",
-  "date" : "2025-12-10T13:58:21+01:00",
+  "date" : "2025-12-10T14:43:23+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {
