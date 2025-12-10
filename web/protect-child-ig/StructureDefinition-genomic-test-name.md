@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-name | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:GenomicTestName |
+| Draft as of 2025-12-10 | *Computable Name*:GenomicTestName |
 
 Name of the platform using sequencing, assigned by the institution.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-genomic-test-name.cs
   "name" : "GenomicTestName",
   "title" : "Genomic Test Name",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

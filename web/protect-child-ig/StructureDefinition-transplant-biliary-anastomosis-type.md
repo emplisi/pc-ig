@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-biliary-anastomosis-type | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:TransplantBiliaryAnastomosisType |
+| Draft as of 2025-12-10 | *Computable Name*:TransplantBiliaryAnastomosisType |
 
 Type of biliary reconstruction used (type_surgical_biliary_anastomosis).
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-transplant-biliary-a
   "name" : "TransplantBiliaryAnastomosisType",
   "title" : "Type of surgical biliary anastomosis",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

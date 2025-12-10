@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/lab-report | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:LabReport |
+| Draft as of 2025-12-10 | *Computable Name*:LabReport |
 
  
 Laboratory report grouping one or more lab result observations for a transplant recipient. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-lab-report.csv), [Ex
   "name" : "LabReport",
   "title" : "Laboratory DiagnosticReport",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

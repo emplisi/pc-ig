@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication-other-medications | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:PreMedicationOtherMedications |
+| Draft as of 2025-12-10 | *Computable Name*:PreMedicationOtherMedications |
 
 other_medications – any other relevant pre-transplant medications.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-pre-medication-other
   "name" : "PreMedicationOtherMedications",
   "title" : "Other pre-transplant medications",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

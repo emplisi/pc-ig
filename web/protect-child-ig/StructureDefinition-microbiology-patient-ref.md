@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-patient-ref | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:MicrobiologyPatientRef |
+| Draft as of 2025-12-10 | *Computable Name*:MicrobiologyPatientRef |
 
 patient_id – reference to the transplant recipient associated with this microbiology record.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-microbiology-patient
   "name" : "MicrobiologyPatientRef",
   "title" : "Patient ID relationship",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

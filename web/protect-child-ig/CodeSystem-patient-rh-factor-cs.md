@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/CodeSystem/patient-rh-factor | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:PatientRhFactorCS |
+| Draft as of 2025-12-10 | *Computable Name*:PatientRhFactorCS |
 
  
 Rh factor of the transplant recipient (maps from OMOP Positive/Negative). 
@@ -32,7 +32,7 @@ Rh factor of the transplant recipient (maps from OMOP Positive/Negative).
   "title" : "Patient Rh Factor CodeSystem",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/pre-medication-antihypertensive-drug-vs | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:PreMedicationAntihypertensiveDrugVS |
+| Draft as of 2025-12-10 | *Computable Name*:PreMedicationAntihypertensiveDrugVS |
 
  
 Allowed antihypertensive drugs for antihypertensive_treatment. 
@@ -50,7 +50,7 @@ Allowed antihypertensive drugs for antihypertensive_treatment.
   "name" : "PreMedicationAntihypertensiveDrugVS",
   "title" : "Pre-medication Antihypertensive Drug ValueSet",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-ebv-dna | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:MicrobiologyEBVDNA |
+| Draft as of 2025-12-10 | *Computable Name*:MicrobiologyEBVDNA |
 
 ebv_dna – EBV nucleic acid test result (quantitative, float).
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-microbiology-ebv-dna
   "name" : "MicrobiologyEBVDNA",
   "title" : "Blood EBV-DNA",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

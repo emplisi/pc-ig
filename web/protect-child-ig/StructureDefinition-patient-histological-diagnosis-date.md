@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-histological-diagnosis-date | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:PatientHistologicalDiagnosisDate |
+| Draft as of 2025-12-10 | *Computable Name*:PatientHistologicalDiagnosisDate |
 
 Date of histological diagnosis.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-patient-histological
   "name" : "PatientHistologicalDiagnosisDate",
   "title" : "Date of histological diagnosis",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

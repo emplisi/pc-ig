@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-detection-p-value | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:MethylomicStudyDetectionPValue |
+| Draft as of 2025-12-10 | *Computable Name*:MethylomicStudyDetectionPValue |
 
 Detection p-value for the methylation measurement.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-methylomic-study-det
   "name" : "MethylomicStudyDetectionPValue",
   "title" : "Detection p-value",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/genomic-test-per-target-base-cover-100x | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:GenomicTestPerTargetBaseCover100x |
+| Draft as of 2025-12-10 | *Computable Name*:GenomicTestPerTargetBaseCover100x |
 
 Percentage of selected bases covered at ≥100x.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-genomic-test-per-tar
   "name" : "GenomicTestPerTargetBaseCover100x",
   "title" : "Per target base cover x100",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

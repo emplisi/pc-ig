@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-reference-genome-ref | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:MethylomicStudyReferenceGenomeRef |
+| Draft as of 2025-12-10 | *Computable Name*:MethylomicStudyReferenceGenomeRef |
 
 Reference to the reference genome used in this methylomic study.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-methylomic-study-ref
   "name" : "MethylomicStudyReferenceGenomeRef",
   "title" : "Reference genome ID relationship",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

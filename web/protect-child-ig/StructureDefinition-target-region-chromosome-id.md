@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/target-region-chromosome-id | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:TargetRegionChromosomeId |
+| Draft as of 2025-12-10 | *Computable Name*:TargetRegionChromosomeId |
 
 Chromosome identifier (e.g. 1–22, 23=X, 24=Y, 25=MT).
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-target-region-chromo
   "name" : "TargetRegionChromosomeId",
   "title" : "Chromosome ID",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

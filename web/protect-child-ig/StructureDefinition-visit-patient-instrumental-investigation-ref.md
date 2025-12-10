@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit-patient-instrumental-investigation-ref | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:VisitPatientInstrumentalInvestigationRef |
+| Draft as of 2025-12-10 | *Computable Name*:VisitPatientInstrumentalInvestigationRef |
 
 Reference to a patient instrumental investigation associated with this visit (pat_inst_inv_id).
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-visit-patient-instru
   "name" : "VisitPatientInstrumentalInvestigationRef",
   "title" : "Patient instrumental investigation ID relationship",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

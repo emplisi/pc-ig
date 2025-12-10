@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit-post-event-ref | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:VisitPostEventRef |
+| Draft as of 2025-12-10 | *Computable Name*:VisitPostEventRef |
 
 Reference to a post-transplant event (e.g. rejection episode) occurring at this visit (post_event_id).
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-visit-post-event-ref
   "name" : "VisitPostEventRef",
   "title" : "Post-event ID relationship",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-liver-disease-extra | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:PatientLiverDiseaseExtra |
+| Draft as of 2025-12-10 | *Computable Name*:PatientLiverDiseaseExtra |
 
 Additional description or free-text for the liver disease diagnosis.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-patient-liver-diseas
   "name" : "PatientLiverDiseaseExtra",
   "title" : "Liver disease diagnosis (free text)",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

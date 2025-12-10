@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/CodeSystem/patient-abo-group | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:PatientABOGroupCS |
+| Draft as of 2025-12-10 | *Computable Name*:PatientABOGroupCS |
 
  
 ABO blood groups for transplant recipients (maps from OMOP A/B/AB/0). 
@@ -32,7 +32,7 @@ ABO blood groups for transplant recipients (maps from OMOP A/B/AB/0).
   "title" : "Patient ABO Group CodeSystem",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

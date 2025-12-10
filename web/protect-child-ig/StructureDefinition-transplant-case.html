@@ -243,7 +243,7 @@
         
           Draft
           
-            as of 2025-12-09
+            as of 2025-12-10
           
         
       </td>
@@ -294,7 +294,7 @@ represents a pediatric transplant case in PROTECT-CHILD.</p>
 
 <p>A child with a rare metabolic liver disease is referred to one of the TransplantChild ERN centres and
 enrolled in the PROTECT-CHILD cohort. The recipient is represented using the
-<a href="StructureDefinition-patient-transplant.html"><code class="language-plaintext highlighter-rouge">PatientTransplant</code></a> profile, and the donor as a
+<a href="StructureDefinition-patient-transplant.html"><code class="language-plaintext highlighter-rouge">Transplant Recipient</code></a> profile, and the donor as a
 <a href="StructureDefinition-donor.html"><code class="language-plaintext highlighter-rouge">Donor</code></a>. The transplant admission itself is captured as a
 <a href="StructureDefinition-transplant.html"><code class="language-plaintext highlighter-rouge">Transplant</code></a> encounter linking recipient and donor, with the
 transplant centre and organ type recorded in a structured way.</p>
@@ -325,7 +325,7 @@ overall graft and patient status at key time points are captured in <a href="Str
 <p>In particular:</p>
 
 <ul>
-  <li><strong><code class="language-plaintext highlighter-rouge">recipient</code></strong> → <a href="StructureDefinition-patient-transplant.html"><code class="language-plaintext highlighter-rouge">PatientTransplant</code></a> (recipient patient)</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">recipient</code></strong> → <a href="StructureDefinition-patient-transplant.html"><code class="language-plaintext highlighter-rouge">Transplant Recipient</code></a> (recipient patient)</li>
   <li><strong><code class="language-plaintext highlighter-rouge">donor</code></strong> → <a href="StructureDefinition-donor.html"><code class="language-plaintext highlighter-rouge">Donor</code></a> (donor patient)</li>
   <li><strong><code class="language-plaintext highlighter-rouge">transplant</code></strong> → <a href="StructureDefinition-transplant.html"><code class="language-plaintext highlighter-rouge">Transplant</code></a> (Encounter) plus optional rejection-related <a href="StructureDefinition-post-event.html"><code class="language-plaintext highlighter-rouge">PostEvent</code></a> and <a href="StructureDefinition-outcome.html"><code class="language-plaintext highlighter-rouge">Outcome</code></a> resources</li>
   <li><strong><code class="language-plaintext highlighter-rouge">visits</code></strong> → follow-up <a href="StructureDefinition-visit.html"><code class="language-plaintext highlighter-rouge">Visit</code></a> (Encounter) profiles</li>
@@ -840,7 +840,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Provenance notes</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // ecdc1ef4-e59c-401a-9cde-14fcee31595c
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33a77290-e780-47a9-99f0-00172e787e41
 document.getElementById('cbtransplant-caseK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('transplant-caseK'), 'binding', document.getElementById('cbtransplant-caseK-binding').checked, document.getElementById('pptransplant-caseK'));
 document.getElementById('cbtransplant-caseK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1186,7 +1186,7 @@ It connects the main clinical and data domains:
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Provenance notes</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // ecdc1ef4-e59c-401a-9cde-14fcee31595c
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33a77290-e780-47a9-99f0-00172e787e41
 document.getElementById('cbtransplant-caseD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('transplant-caseD'), 'binding', document.getElementById('cbtransplant-caseD-binding').checked, document.getElementById('pptransplant-caseD'));
 document.getElementById('cbtransplant-caseD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1655,7 +1655,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Provenance notes</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // ecdc1ef4-e59c-401a-9cde-14fcee31595c
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33a77290-e780-47a9-99f0-00172e787e41
 document.getElementById('cbtransplant-caseS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('transplant-caseS'), 'binding', document.getElementById('cbtransplant-caseS-binding').checked, document.getElementById('pptransplant-caseS'));
 document.getElementById('cbtransplant-caseS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2336,7 +2336,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Provenance notes</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // ecdc1ef4-e59c-401a-9cde-14fcee31595c
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33a77290-e780-47a9-99f0-00172e787e41
 document.getElementById('cbtransplant-caseKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('transplant-caseKA'), 'binding', document.getElementById('cbtransplant-caseKA-binding').checked, document.getElementById('pptransplant-caseKA'));
 document.getElementById('cbtransplant-caseKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2682,7 +2682,7 @@ It connects the main clinical and data domains:
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Provenance notes</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // ecdc1ef4-e59c-401a-9cde-14fcee31595c
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33a77290-e780-47a9-99f0-00172e787e41
 document.getElementById('cbtransplant-caseDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('transplant-caseDA'), 'binding', document.getElementById('cbtransplant-caseDA-binding').checked, document.getElementById('pptransplant-caseDA'));
 document.getElementById('cbtransplant-caseDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -3150,7 +3150,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Provenance notes</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // ecdc1ef4-e59c-401a-9cde-14fcee31595c
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 33a77290-e780-47a9-99f0-00172e787e41
 document.getElementById('cbtransplant-caseSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('transplant-caseSA'), 'binding', document.getElementById('cbtransplant-caseSA-binding').checked, document.getElementById('pptransplant-caseSA'));
 document.getElementById('cbtransplant-caseSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -3404,7 +3404,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025 <a style="color:var(--footer-hyperlink-text-color)" href="https://example.org">Your Organization</a>.  Package pc.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 9, 2025 16:44+0100">2025-12-09</span>
+          IG &#169; 2025 <a style="color:var(--footer-hyperlink-text-color)" href="https://example.org">Your Organization</a>.  Package pc.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 10, 2025 09:07+0100">2025-12-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

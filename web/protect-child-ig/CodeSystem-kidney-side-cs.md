@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/CodeSystem/kidney-side | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:KidneySideCS |
+| Draft as of 2025-12-10 | *Computable Name*:KidneySideCS |
 
  
 Side of the kidney for nephrectomy / transplant context. 
@@ -32,7 +32,7 @@ Side of the kidney for nephrectomy / transplant context.
   "title" : "Kidney Side CodeSystem",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

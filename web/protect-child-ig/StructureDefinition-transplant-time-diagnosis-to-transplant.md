@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-time-diagnosis-to-transplant | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:TransplantTimeDiagnosisToTransplant |
+| Draft as of 2025-12-10 | *Computable Name*:TransplantTimeDiagnosisToTransplant |
 
 Months between disease diagnosis and transplant date (time_diag_to_tx).
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-transplant-time-diag
   "name" : "TransplantTimeDiagnosisToTransplant",
   "title" : "Time from diagnosis to transplant (months)",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

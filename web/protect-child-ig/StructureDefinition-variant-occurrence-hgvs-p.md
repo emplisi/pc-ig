@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-hgvs-p | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:VariantOccurrenceHgvsP |
+| Draft as of 2025-12-10 | *Computable Name*:VariantOccurrenceHgvsP |
 
 Nomenclature for the sequence variant at the protein level (HGVS p. notation).
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-variant-occurrence-h
   "name" : "VariantOccurrenceHgvsP",
   "title" : "HGVS p. notation",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

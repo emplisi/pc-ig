@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-max-pra | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:PatientMaxPRA |
+| Draft as of 2025-12-10 | *Computable Name*:PatientMaxPRA |
 
 Maximum panel-reactive antibody (PRA) percentage prior to transplant.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-patient-max-pra.csv)
   "name" : "PatientMaxPRA",
   "title" : "Patient maximum PRA",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

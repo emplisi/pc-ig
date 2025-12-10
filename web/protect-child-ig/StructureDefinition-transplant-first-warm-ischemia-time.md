@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-first-warm-ischemia-time | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:TransplantFirstWarmIschaemiaTime |
+| Draft as of 2025-12-10 | *Computable Name*:TransplantFirstWarmIschaemiaTime |
 
 First warm ischaemia time for the graft in minutes (1_warm_ischemia_time).
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-transplant-first-war
   "name" : "TransplantFirstWarmIschaemiaTime",
   "title" : "First warm ischaemia time (minutes)",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

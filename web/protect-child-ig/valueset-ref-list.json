@@ -115,8 +115,8 @@
       "systems" : ["http://example.org/fhir/CodeSystem/patient-abo-group"],
       "uses" : {
       },
-      "StructureDefinition-patient-abo-group.html" : "Patient ABO group",
-      "StructureDefinition-donor-abo-group.html" : "Donor ABO group"
+      "StructureDefinition-donor-abo-group.html" : "Donor ABO group",
+      "StructureDefinition-patient-abo-group.html" : "Patient ABO group"
     },
     {
       "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-hla-class-i-vs",
@@ -141,8 +141,8 @@
       "systems" : ["http://example.org/fhir/CodeSystem/patient-hla-class-ii"],
       "uses" : {
       },
-      "StructureDefinition-patient-allograft-hla-class-ii.html" : "Patient allograft HLA Class II",
-      "StructureDefinition-donor-allograft-hla-class-ii.html" : "Donor allograft HLA Class II loci"
+      "StructureDefinition-donor-allograft-hla-class-ii.html" : "Donor allograft HLA Class II loci",
+      "StructureDefinition-patient-allograft-hla-class-ii.html" : "Patient allograft HLA Class II"
     },
     {
       "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-instrumental-investigation-result-vs",

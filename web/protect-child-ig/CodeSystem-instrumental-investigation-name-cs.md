@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/CodeSystem/instrumental-investigation-name | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:InstrumentalInvestigationNameCS |
+| Draft as of 2025-12-10 | *Computable Name*:InstrumentalInvestigationNameCS |
 
  
 Types of instrumental investigation tests conducted. 
@@ -32,7 +32,7 @@ Types of instrumental investigation tests conducted.
   "title" : "Instrumental Investigation Name",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

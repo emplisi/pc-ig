@@ -1,9 +1,9 @@
 PROTECTChildTransplantIG : Validation Results
 =========================================
 
-err = 617, warn = 435, info = 62
+err = 617, warn = 435, info = 103
 IG Publisher Version: 2.0.26 Out of date - current version is 2.0.28
-Generated Tue Dec 09 17:08:46 CET 2025. FHIR version 4.0.1 for pc.ig#0.1.0 (canonical = http://example.org/fhir)
+Generated Wed Dec 10 09:17:54 CET 2025. FHIR version 4.0.1 for pc.ig#0.1.0 (canonical = http://example.org/fhir)
  Build Errors : 0 / 4 / 0
  /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/Basic-clinical-variable-example-1 : 0 / 1 / 1
  /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/Basic-concomitant-disease-example-1 : 0 / 1 / 2
@@ -303,32 +303,32 @@ Generated Tue Dec 09 17:08:46 CET 2025. FHIR version 4.0.1 for pc.ig#0.1.0 (cano
  /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/StructureDefinition-visit-post-event-ref : 2 / 2 / 1
  /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/StructureDefinition-visit-pre-medication-ref : 2 / 2 / 1
  /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/StructureDefinition-visit-transplant-ref : 2 / 1 / 1
- /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-biliary-anastomosis-type-vs : 2 / 1 / 2
- /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-biosample-tissue-type-vs : 2 / 1 / 2
- /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-concomitant-disease-category-vs : 3 / 1 / 2
- /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-concomitant-medication-category-vs : 3 / 1 / 2
- /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-donor-liver-type-vs : 2 / 1 / 2
- /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-donor-pre-ktx-dialysis-type-vs : 2 / 1 / 2
- /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-immunosuppressant-drug-type-vs : 3 / 1 / 2
- /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-immunosuppressive-induction-dose-unit-vs : 3 / 1 / 2
+ /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-biliary-anastomosis-type-vs : 2 / 1 / 5
+ /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-biosample-tissue-type-vs : 2 / 1 / 4
+ /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-concomitant-disease-category-vs : 3 / 1 / 1
+ /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-concomitant-medication-category-vs : 3 / 1 / 1
+ /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-donor-liver-type-vs : 2 / 1 / 3
+ /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-donor-pre-ktx-dialysis-type-vs : 2 / 1 / 3
+ /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-immunosuppressant-drug-type-vs : 3 / 1 / 1
+ /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-immunosuppressive-induction-dose-unit-vs : 3 / 1 / 1
  /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-immunosuppressive-maintenance-type-vs : 2 / 1 / 2
- /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-instrumental-investigation-name-vs : 3 / 1 / 2
- /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-intraoperative-complication-vs : 2 / 1 / 2
- /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-kidney-side-vs : 2 / 1 / 2
- /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-lab-result-unit-vs : 2 / 1 / 2
- /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-lab-test-name-vs : 3 / 1 / 2
- /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-outcome-type-name-vs : 3 / 1 / 2
- /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-patient-abo-group-vs : 2 / 1 / 2
- /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-patient-hla-class-i-vs : 2 / 1 / 2
- /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-patient-hla-class-ii-vs : 2 / 1 / 2
- /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-patient-instrumental-investigation-result-vs : 2 / 1 / 2
- /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-patient-rh-factor-vs : 2 / 1 / 2
- /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-post-event-type-name-vs : 3 / 1 / 2
- /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-pre-medication-antihypertensive-drug-vs : 2 / 1 / 2
+ /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-instrumental-investigation-name-vs : 3 / 1 / 1
+ /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-intraoperative-complication-vs : 2 / 1 / 6
+ /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-kidney-side-vs : 2 / 1 / 4
+ /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-lab-result-unit-vs : 2 / 1 / 14
+ /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-lab-test-name-vs : 3 / 1 / 1
+ /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-outcome-type-name-vs : 3 / 1 / 1
+ /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-patient-abo-group-vs : 2 / 1 / 5
+ /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-patient-hla-class-i-vs : 2 / 1 / 4
+ /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-patient-hla-class-ii-vs : 2 / 1 / 4
+ /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-patient-instrumental-investigation-result-vs : 2 / 1 / 3
+ /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-patient-rh-factor-vs : 2 / 1 / 3
+ /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-post-event-type-name-vs : 3 / 1 / 1
+ /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-pre-medication-antihypertensive-drug-vs : 2 / 1 / 10
  /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-pre-medication-type-vs : 2 / 1 / 2
- /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-reference-genome-build-vs : 2 / 1 / 2
- /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-transplant-type-vs : 2 / 1 / 2
- /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-visit-type-vs : 2 / 1 / 2
+ /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-reference-genome-build-vs : 2 / 1 / 3
+ /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-transplant-type-vs : 2 / 1 / 4
+ /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-visit-type-vs : 2 / 1 / 6
 </table>
 == n/a ==
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
@@ -1633,139 +1633,180 @@ WARNING: StructureDefinition/visit-transplant-ref: StructureDefinition.context[0
 ERROR: /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/StructureDefinition-visit-transplant-ref: URL Mismatch http://example.org/fhir/StructureDefinition/visit-transplant-ref vs http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit-transplant-ref
 == fsh-generated/resources/ValueSet-biliary-anastomosis-type-vs.json ==
 ERROR: ValueSet.where(url = 'http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/biliary-anastomosis-type-vs'): Conformance resource /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-biliary-anastomosis-type-vs.json - the canonical URL (http://example.org/fhir/ValueSet/biliary-anastomosis-type-vs) does not match the URL (http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/biliary-anastomosis-type-vs). Use the special-url parameter if you really mean for it not to match
-INFORMATION: ValueSet/biliary-anastomosis-type-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
+INFORMATION: ValueSet/biliary-anastomosis-type-vs: ValueSet.compose.include[0].concept[0]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/biliary-anastomosis-type|0.1.0
+INFORMATION: ValueSet/biliary-anastomosis-type-vs: ValueSet.compose.include[0].concept[1]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/biliary-anastomosis-type|0.1.0
+INFORMATION: ValueSet/biliary-anastomosis-type-vs: ValueSet.compose.include[0].concept[2]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/biliary-anastomosis-type|0.1.0
+INFORMATION: ValueSet/biliary-anastomosis-type-vs: ValueSet.compose.include[0].concept[3]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/biliary-anastomosis-type|0.1.0
 WARNING: ValueSet/biliary-anastomosis-type-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-biliary-anastomosis-type-vs: URL Mismatch http://example.org/fhir/ValueSet/biliary-anastomosis-type-vs vs http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/biliary-anastomosis-type-vs
 == fsh-generated/resources/ValueSet-biosample-tissue-type-vs.json ==
 ERROR: ValueSet.where(url = 'http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/biosample-tissue-type-vs'): Conformance resource /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-biosample-tissue-type-vs.json - the canonical URL (http://example.org/fhir/ValueSet/biosample-tissue-type-vs) does not match the URL (http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/biosample-tissue-type-vs). Use the special-url parameter if you really mean for it not to match
-INFORMATION: ValueSet/biosample-tissue-type-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
+INFORMATION: ValueSet/biosample-tissue-type-vs: ValueSet.compose.include[0].concept[0]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/biosample-tissue-type|0.1.0
+INFORMATION: ValueSet/biosample-tissue-type-vs: ValueSet.compose.include[0].concept[1]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/biosample-tissue-type|0.1.0
+INFORMATION: ValueSet/biosample-tissue-type-vs: ValueSet.compose.include[0].concept[2]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/biosample-tissue-type|0.1.0
 WARNING: ValueSet/biosample-tissue-type-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-biosample-tissue-type-vs: URL Mismatch http://example.org/fhir/ValueSet/biosample-tissue-type-vs vs http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/biosample-tissue-type-vs
 == fsh-generated/resources/ValueSet-concomitant-disease-category-vs.json ==
 ERROR: ValueSet.where(url = 'http://example.org/fhir/ValueSet/concomitant-disease-category'): Conformance resource /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-concomitant-disease-category-vs.json - the canonical URL (http://example.org/fhir/ValueSet/concomitant-disease-category-vs) does not match the URL (http://example.org/fhir/ValueSet/concomitant-disease-category). Use the special-url parameter if you really mean for it not to match
 ERROR: ValueSet.url: Resource id/url mismatch: concomitant-disease-category-vs/http://example.org/fhir/ValueSet/concomitant-disease-category
-INFORMATION: ValueSet/concomitant-disease-category-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
 WARNING: ValueSet/concomitant-disease-category-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-concomitant-disease-category-vs: URL Mismatch http://example.org/fhir/ValueSet/concomitant-disease-category-vs vs http://example.org/fhir/ValueSet/concomitant-disease-category
 == fsh-generated/resources/ValueSet-concomitant-medication-category-vs.json ==
 ERROR: ValueSet.where(url = 'http://example.org/fhir/ValueSet/concomitant-medication-category'): Conformance resource /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-concomitant-medication-category-vs.json - the canonical URL (http://example.org/fhir/ValueSet/concomitant-medication-category-vs) does not match the URL (http://example.org/fhir/ValueSet/concomitant-medication-category). Use the special-url parameter if you really mean for it not to match
 ERROR: ValueSet.url: Resource id/url mismatch: concomitant-medication-category-vs/http://example.org/fhir/ValueSet/concomitant-medication-category
-INFORMATION: ValueSet/concomitant-medication-category-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
 WARNING: ValueSet/concomitant-medication-category-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-concomitant-medication-category-vs: URL Mismatch http://example.org/fhir/ValueSet/concomitant-medication-category-vs vs http://example.org/fhir/ValueSet/concomitant-medication-category
 == fsh-generated/resources/ValueSet-donor-liver-type-vs.json ==
 ERROR: ValueSet.where(url = 'http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/donor-liver-type-vs'): Conformance resource /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-donor-liver-type-vs.json - the canonical URL (http://example.org/fhir/ValueSet/donor-liver-type-vs) does not match the URL (http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/donor-liver-type-vs). Use the special-url parameter if you really mean for it not to match
-INFORMATION: ValueSet/donor-liver-type-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
+INFORMATION: ValueSet/donor-liver-type-vs: ValueSet.compose.include[0].concept[0]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/donor-liver-type|0.1.0
+INFORMATION: ValueSet/donor-liver-type-vs: ValueSet.compose.include[0].concept[1]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/donor-liver-type|0.1.0
 WARNING: ValueSet/donor-liver-type-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-donor-liver-type-vs: URL Mismatch http://example.org/fhir/ValueSet/donor-liver-type-vs vs http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/donor-liver-type-vs
 == fsh-generated/resources/ValueSet-donor-pre-ktx-dialysis-type-vs.json ==
 ERROR: ValueSet.where(url = 'http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/donor-pre-ktx-dialysis-type-vs'): Conformance resource /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-donor-pre-ktx-dialysis-type-vs.json - the canonical URL (http://example.org/fhir/ValueSet/donor-pre-ktx-dialysis-type-vs) does not match the URL (http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/donor-pre-ktx-dialysis-type-vs). Use the special-url parameter if you really mean for it not to match
-INFORMATION: ValueSet/donor-pre-ktx-dialysis-type-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
+INFORMATION: ValueSet/donor-pre-ktx-dialysis-type-vs: ValueSet.compose.include[0].concept[0]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/donor-pre-ktx-dialysis-type|0.1.0
+INFORMATION: ValueSet/donor-pre-ktx-dialysis-type-vs: ValueSet.compose.include[0].concept[1]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/donor-pre-ktx-dialysis-type|0.1.0
 WARNING: ValueSet/donor-pre-ktx-dialysis-type-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-donor-pre-ktx-dialysis-type-vs: URL Mismatch http://example.org/fhir/ValueSet/donor-pre-ktx-dialysis-type-vs vs http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/donor-pre-ktx-dialysis-type-vs
 == fsh-generated/resources/ValueSet-immunosuppressant-drug-type-vs.json ==
 ERROR: ValueSet.where(url = 'http://example.org/fhir/ValueSet/immunosuppressant-drug-type'): Conformance resource /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-immunosuppressant-drug-type-vs.json - the canonical URL (http://example.org/fhir/ValueSet/immunosuppressant-drug-type-vs) does not match the URL (http://example.org/fhir/ValueSet/immunosuppressant-drug-type). Use the special-url parameter if you really mean for it not to match
 ERROR: ValueSet.url: Resource id/url mismatch: immunosuppressant-drug-type-vs/http://example.org/fhir/ValueSet/immunosuppressant-drug-type
-INFORMATION: ValueSet/immunosuppressant-drug-type-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
 WARNING: ValueSet/immunosuppressant-drug-type-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-immunosuppressant-drug-type-vs: URL Mismatch http://example.org/fhir/ValueSet/immunosuppressant-drug-type-vs vs http://example.org/fhir/ValueSet/immunosuppressant-drug-type
 == fsh-generated/resources/ValueSet-immunosuppressive-induction-dose-unit-vs.json ==
 ERROR: ValueSet.where(url = 'http://example.org/fhir/ValueSet/immunosuppressive-induction-dose-unit'): Conformance resource /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-immunosuppressive-induction-dose-unit-vs.json - the canonical URL (http://example.org/fhir/ValueSet/immunosuppressive-induction-dose-unit-vs) does not match the URL (http://example.org/fhir/ValueSet/immunosuppressive-induction-dose-unit). Use the special-url parameter if you really mean for it not to match
 ERROR: ValueSet.url: Resource id/url mismatch: immunosuppressive-induction-dose-unit-vs/http://example.org/fhir/ValueSet/immunosuppressive-induction-dose-unit
-INFORMATION: ValueSet/immunosuppressive-induction-dose-unit-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
 WARNING: ValueSet/immunosuppressive-induction-dose-unit-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-immunosuppressive-induction-dose-unit-vs: URL Mismatch http://example.org/fhir/ValueSet/immunosuppressive-induction-dose-unit-vs vs http://example.org/fhir/ValueSet/immunosuppressive-induction-dose-unit
 == fsh-generated/resources/ValueSet-immunosuppressive-maintenance-type-vs.json ==
 ERROR: ValueSet.where(url = 'http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/immunosuppressive-maintenance-type-vs'): Conformance resource /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-immunosuppressive-maintenance-type-vs.json - the canonical URL (http://example.org/fhir/ValueSet/immunosuppressive-maintenance-type-vs) does not match the URL (http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/immunosuppressive-maintenance-type-vs). Use the special-url parameter if you really mean for it not to match
-INFORMATION: ValueSet/immunosuppressive-maintenance-type-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
+INFORMATION: ValueSet/immunosuppressive-maintenance-type-vs: ValueSet.compose.include[0].concept[0]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/immunosuppressive-maintenance-type|0.1.0
 WARNING: ValueSet/immunosuppressive-maintenance-type-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-immunosuppressive-maintenance-type-vs: URL Mismatch http://example.org/fhir/ValueSet/immunosuppressive-maintenance-type-vs vs http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/immunosuppressive-maintenance-type-vs
 == fsh-generated/resources/ValueSet-instrumental-investigation-name-vs.json ==
 ERROR: ValueSet.where(url = 'http://example.org/fhir/ValueSet/instrumental-investigation-name'): Conformance resource /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-instrumental-investigation-name-vs.json - the canonical URL (http://example.org/fhir/ValueSet/instrumental-investigation-name-vs) does not match the URL (http://example.org/fhir/ValueSet/instrumental-investigation-name). Use the special-url parameter if you really mean for it not to match
 ERROR: ValueSet.url: Resource id/url mismatch: instrumental-investigation-name-vs/http://example.org/fhir/ValueSet/instrumental-investigation-name
-INFORMATION: ValueSet/instrumental-investigation-name-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
 WARNING: ValueSet/instrumental-investigation-name-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-instrumental-investigation-name-vs: URL Mismatch http://example.org/fhir/ValueSet/instrumental-investigation-name-vs vs http://example.org/fhir/ValueSet/instrumental-investigation-name
 == fsh-generated/resources/ValueSet-intraoperative-complication-vs.json ==
 ERROR: ValueSet.where(url = 'http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/intraoperative-complication-vs'): Conformance resource /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-intraoperative-complication-vs.json - the canonical URL (http://example.org/fhir/ValueSet/intraoperative-complication-vs) does not match the URL (http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/intraoperative-complication-vs). Use the special-url parameter if you really mean for it not to match
-INFORMATION: ValueSet/intraoperative-complication-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
+INFORMATION: ValueSet/intraoperative-complication-vs: ValueSet.compose.include[0].concept[0]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/intraoperative-complication|0.1.0
+INFORMATION: ValueSet/intraoperative-complication-vs: ValueSet.compose.include[0].concept[1]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/intraoperative-complication|0.1.0
+INFORMATION: ValueSet/intraoperative-complication-vs: ValueSet.compose.include[0].concept[2]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/intraoperative-complication|0.1.0
+INFORMATION: ValueSet/intraoperative-complication-vs: ValueSet.compose.include[0].concept[3]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/intraoperative-complication|0.1.0
+INFORMATION: ValueSet/intraoperative-complication-vs: ValueSet.compose.include[0].concept[4]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/intraoperative-complication|0.1.0
 WARNING: ValueSet/intraoperative-complication-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-intraoperative-complication-vs: URL Mismatch http://example.org/fhir/ValueSet/intraoperative-complication-vs vs http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/intraoperative-complication-vs
 == fsh-generated/resources/ValueSet-kidney-side-vs.json ==
 ERROR: ValueSet.where(url = 'http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/kidney-side-vs'): Conformance resource /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-kidney-side-vs.json - the canonical URL (http://example.org/fhir/ValueSet/kidney-side-vs) does not match the URL (http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/kidney-side-vs). Use the special-url parameter if you really mean for it not to match
-INFORMATION: ValueSet/kidney-side-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
+INFORMATION: ValueSet/kidney-side-vs: ValueSet.compose.include[0].concept[0]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/kidney-side|0.1.0
+INFORMATION: ValueSet/kidney-side-vs: ValueSet.compose.include[0].concept[1]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/kidney-side|0.1.0
+INFORMATION: ValueSet/kidney-side-vs: ValueSet.compose.include[0].concept[2]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/kidney-side|0.1.0
 WARNING: ValueSet/kidney-side-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-kidney-side-vs: URL Mismatch http://example.org/fhir/ValueSet/kidney-side-vs vs http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/kidney-side-vs
 == fsh-generated/resources/ValueSet-lab-result-unit-vs.json ==
 ERROR: ValueSet.where(url = 'http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/lab-result-unit-vs'): Conformance resource /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-lab-result-unit-vs.json - the canonical URL (http://example.org/fhir/ValueSet/lab-result-unit-vs) does not match the URL (http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/lab-result-unit-vs). Use the special-url parameter if you really mean for it not to match
-INFORMATION: ValueSet/lab-result-unit-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
+INFORMATION: ValueSet/lab-result-unit-vs: ValueSet.compose.include[0].concept[0]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/lab-result-unit|0.1.0
+INFORMATION: ValueSet/lab-result-unit-vs: ValueSet.compose.include[0].concept[1]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/lab-result-unit|0.1.0
+INFORMATION: ValueSet/lab-result-unit-vs: ValueSet.compose.include[0].concept[2]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/lab-result-unit|0.1.0
+INFORMATION: ValueSet/lab-result-unit-vs: ValueSet.compose.include[0].concept[3]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/lab-result-unit|0.1.0
+INFORMATION: ValueSet/lab-result-unit-vs: ValueSet.compose.include[0].concept[4]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/lab-result-unit|0.1.0
+INFORMATION: ValueSet/lab-result-unit-vs: ValueSet.compose.include[0].concept[5]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/lab-result-unit|0.1.0
+INFORMATION: ValueSet/lab-result-unit-vs: ValueSet.compose.include[0].concept[6]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/lab-result-unit|0.1.0
+INFORMATION: ValueSet/lab-result-unit-vs: ValueSet.compose.include[0].concept[7]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/lab-result-unit|0.1.0
+INFORMATION: ValueSet/lab-result-unit-vs: ValueSet.compose.include[0].concept[8]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/lab-result-unit|0.1.0
+INFORMATION: ValueSet/lab-result-unit-vs: ValueSet.compose.include[0].concept[9]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/lab-result-unit|0.1.0
+INFORMATION: ValueSet/lab-result-unit-vs: ValueSet.compose.include[0].concept[10]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/lab-result-unit|0.1.0
+INFORMATION: ValueSet/lab-result-unit-vs: ValueSet.compose.include[0].concept[11]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/lab-result-unit|0.1.0
+INFORMATION: ValueSet/lab-result-unit-vs: ValueSet.compose.include[0].concept[12]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/lab-result-unit|0.1.0
 WARNING: ValueSet/lab-result-unit-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-lab-result-unit-vs: URL Mismatch http://example.org/fhir/ValueSet/lab-result-unit-vs vs http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/lab-result-unit-vs
 == fsh-generated/resources/ValueSet-lab-test-name-vs.json ==
 ERROR: ValueSet.where(url = 'http://example.org/fhir/ValueSet/lab-test-name'): Conformance resource /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-lab-test-name-vs.json - the canonical URL (http://example.org/fhir/ValueSet/lab-test-name-vs) does not match the URL (http://example.org/fhir/ValueSet/lab-test-name). Use the special-url parameter if you really mean for it not to match
 ERROR: ValueSet.url: Resource id/url mismatch: lab-test-name-vs/http://example.org/fhir/ValueSet/lab-test-name
-INFORMATION: ValueSet/lab-test-name-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
 WARNING: ValueSet/lab-test-name-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-lab-test-name-vs: URL Mismatch http://example.org/fhir/ValueSet/lab-test-name-vs vs http://example.org/fhir/ValueSet/lab-test-name
 == fsh-generated/resources/ValueSet-outcome-type-name-vs.json ==
 ERROR: ValueSet.where(url = 'http://example.org/fhir/ValueSet/outcome-type-name'): Conformance resource /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-outcome-type-name-vs.json - the canonical URL (http://example.org/fhir/ValueSet/outcome-type-name-vs) does not match the URL (http://example.org/fhir/ValueSet/outcome-type-name). Use the special-url parameter if you really mean for it not to match
 ERROR: ValueSet.url: Resource id/url mismatch: outcome-type-name-vs/http://example.org/fhir/ValueSet/outcome-type-name
-INFORMATION: ValueSet/outcome-type-name-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
 WARNING: ValueSet/outcome-type-name-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-outcome-type-name-vs: URL Mismatch http://example.org/fhir/ValueSet/outcome-type-name-vs vs http://example.org/fhir/ValueSet/outcome-type-name
 == fsh-generated/resources/ValueSet-patient-abo-group-vs.json ==
 ERROR: ValueSet.where(url = 'http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-abo-group-vs'): Conformance resource /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-patient-abo-group-vs.json - the canonical URL (http://example.org/fhir/ValueSet/patient-abo-group-vs) does not match the URL (http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-abo-group-vs). Use the special-url parameter if you really mean for it not to match
-INFORMATION: ValueSet/patient-abo-group-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
+INFORMATION: ValueSet/patient-abo-group-vs: ValueSet.compose.include[0].concept[0]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/patient-abo-group|0.1.0
+INFORMATION: ValueSet/patient-abo-group-vs: ValueSet.compose.include[0].concept[1]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/patient-abo-group|0.1.0
+INFORMATION: ValueSet/patient-abo-group-vs: ValueSet.compose.include[0].concept[2]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/patient-abo-group|0.1.0
+INFORMATION: ValueSet/patient-abo-group-vs: ValueSet.compose.include[0].concept[3]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/patient-abo-group|0.1.0
 WARNING: ValueSet/patient-abo-group-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-patient-abo-group-vs: URL Mismatch http://example.org/fhir/ValueSet/patient-abo-group-vs vs http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-abo-group-vs
 == fsh-generated/resources/ValueSet-patient-hla-class-i-vs.json ==
 ERROR: ValueSet.where(url = 'http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-hla-class-i-vs'): Conformance resource /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-patient-hla-class-i-vs.json - the canonical URL (http://example.org/fhir/ValueSet/patient-hla-class-i-vs) does not match the URL (http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-hla-class-i-vs). Use the special-url parameter if you really mean for it not to match
-INFORMATION: ValueSet/patient-hla-class-i-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
+INFORMATION: ValueSet/patient-hla-class-i-vs: ValueSet.compose.include[0].concept[0]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/patient-hla-class-i|0.1.0
+INFORMATION: ValueSet/patient-hla-class-i-vs: ValueSet.compose.include[0].concept[1]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/patient-hla-class-i|0.1.0
+INFORMATION: ValueSet/patient-hla-class-i-vs: ValueSet.compose.include[0].concept[2]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/patient-hla-class-i|0.1.0
 WARNING: ValueSet/patient-hla-class-i-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-patient-hla-class-i-vs: URL Mismatch http://example.org/fhir/ValueSet/patient-hla-class-i-vs vs http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-hla-class-i-vs
 == fsh-generated/resources/ValueSet-patient-hla-class-ii-vs.json ==
 ERROR: ValueSet.where(url = 'http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-hla-class-ii-vs'): Conformance resource /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-patient-hla-class-ii-vs.json - the canonical URL (http://example.org/fhir/ValueSet/patient-hla-class-ii-vs) does not match the URL (http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-hla-class-ii-vs). Use the special-url parameter if you really mean for it not to match
-INFORMATION: ValueSet/patient-hla-class-ii-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
+INFORMATION: ValueSet/patient-hla-class-ii-vs: ValueSet.compose.include[0].concept[0]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/patient-hla-class-ii|0.1.0
+INFORMATION: ValueSet/patient-hla-class-ii-vs: ValueSet.compose.include[0].concept[1]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/patient-hla-class-ii|0.1.0
+INFORMATION: ValueSet/patient-hla-class-ii-vs: ValueSet.compose.include[0].concept[2]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/patient-hla-class-ii|0.1.0
 WARNING: ValueSet/patient-hla-class-ii-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-patient-hla-class-ii-vs: URL Mismatch http://example.org/fhir/ValueSet/patient-hla-class-ii-vs vs http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-hla-class-ii-vs
 == fsh-generated/resources/ValueSet-patient-instrumental-investigation-result-vs.json ==
 ERROR: ValueSet.where(url = 'http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-instrumental-investigation-result-vs'): Conformance resource /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-patient-instrumental-investigation-result-vs.json - the canonical URL (http://example.org/fhir/ValueSet/patient-instrumental-investigation-result-vs) does not match the URL (http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-instrumental-investigation-result-vs). Use the special-url parameter if you really mean for it not to match
-INFORMATION: ValueSet/patient-instrumental-investigation-result-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
+INFORMATION: ValueSet/patient-instrumental-investigation-result-vs: ValueSet.compose.include[0].concept[0]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/patient-instrumental-investigation-result|0.1.0
+INFORMATION: ValueSet/patient-instrumental-investigation-result-vs: ValueSet.compose.include[0].concept[1]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/patient-instrumental-investigation-result|0.1.0
 WARNING: ValueSet/patient-instrumental-investigation-result-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-patient-instrumental-investigation-result-vs: URL Mismatch http://example.org/fhir/ValueSet/patient-instrumental-investigation-result-vs vs http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-instrumental-investigation-result-vs
 == fsh-generated/resources/ValueSet-patient-rh-factor-vs.json ==
 ERROR: ValueSet.where(url = 'http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-rh-factor-vs'): Conformance resource /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-patient-rh-factor-vs.json - the canonical URL (http://example.org/fhir/ValueSet/patient-rh-factor-vs) does not match the URL (http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-rh-factor-vs). Use the special-url parameter if you really mean for it not to match
-INFORMATION: ValueSet/patient-rh-factor-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
+INFORMATION: ValueSet/patient-rh-factor-vs: ValueSet.compose.include[0].concept[0]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/patient-rh-factor|0.1.0
+INFORMATION: ValueSet/patient-rh-factor-vs: ValueSet.compose.include[0].concept[1]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/patient-rh-factor|0.1.0
 WARNING: ValueSet/patient-rh-factor-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-patient-rh-factor-vs: URL Mismatch http://example.org/fhir/ValueSet/patient-rh-factor-vs vs http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-rh-factor-vs
 == fsh-generated/resources/ValueSet-post-event-type-name-vs.json ==
 ERROR: ValueSet.where(url = 'http://example.org/fhir/ValueSet/post-event-type-name'): Conformance resource /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-post-event-type-name-vs.json - the canonical URL (http://example.org/fhir/ValueSet/post-event-type-name-vs) does not match the URL (http://example.org/fhir/ValueSet/post-event-type-name). Use the special-url parameter if you really mean for it not to match
 ERROR: ValueSet.url: Resource id/url mismatch: post-event-type-name-vs/http://example.org/fhir/ValueSet/post-event-type-name
-INFORMATION: ValueSet/post-event-type-name-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
 WARNING: ValueSet/post-event-type-name-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-post-event-type-name-vs: URL Mismatch http://example.org/fhir/ValueSet/post-event-type-name-vs vs http://example.org/fhir/ValueSet/post-event-type-name
 == fsh-generated/resources/ValueSet-pre-medication-antihypertensive-drug-vs.json ==
 ERROR: ValueSet.where(url = 'http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/pre-medication-antihypertensive-drug-vs'): Conformance resource /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-pre-medication-antihypertensive-drug-vs.json - the canonical URL (http://example.org/fhir/ValueSet/pre-medication-antihypertensive-drug-vs) does not match the URL (http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/pre-medication-antihypertensive-drug-vs). Use the special-url parameter if you really mean for it not to match
-INFORMATION: ValueSet/pre-medication-antihypertensive-drug-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
+INFORMATION: ValueSet/pre-medication-antihypertensive-drug-vs: ValueSet.compose.include[0].concept[0]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/pre-medication-antihypertensive-drug|0.1.0
+INFORMATION: ValueSet/pre-medication-antihypertensive-drug-vs: ValueSet.compose.include[0].concept[1]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/pre-medication-antihypertensive-drug|0.1.0
+INFORMATION: ValueSet/pre-medication-antihypertensive-drug-vs: ValueSet.compose.include[0].concept[2]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/pre-medication-antihypertensive-drug|0.1.0
+INFORMATION: ValueSet/pre-medication-antihypertensive-drug-vs: ValueSet.compose.include[0].concept[3]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/pre-medication-antihypertensive-drug|0.1.0
+INFORMATION: ValueSet/pre-medication-antihypertensive-drug-vs: ValueSet.compose.include[0].concept[4]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/pre-medication-antihypertensive-drug|0.1.0
+INFORMATION: ValueSet/pre-medication-antihypertensive-drug-vs: ValueSet.compose.include[0].concept[5]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/pre-medication-antihypertensive-drug|0.1.0
+INFORMATION: ValueSet/pre-medication-antihypertensive-drug-vs: ValueSet.compose.include[0].concept[6]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/pre-medication-antihypertensive-drug|0.1.0
+INFORMATION: ValueSet/pre-medication-antihypertensive-drug-vs: ValueSet.compose.include[0].concept[7]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/pre-medication-antihypertensive-drug|0.1.0
+INFORMATION: ValueSet/pre-medication-antihypertensive-drug-vs: ValueSet.compose.include[0].concept[8]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/pre-medication-antihypertensive-drug|0.1.0
 WARNING: ValueSet/pre-medication-antihypertensive-drug-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-pre-medication-antihypertensive-drug-vs: URL Mismatch http://example.org/fhir/ValueSet/pre-medication-antihypertensive-drug-vs vs http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/pre-medication-antihypertensive-drug-vs
 == fsh-generated/resources/ValueSet-pre-medication-type-vs.json ==
 ERROR: ValueSet.where(url = 'http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/pre-medication-type-vs'): Conformance resource /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-pre-medication-type-vs.json - the canonical URL (http://example.org/fhir/ValueSet/pre-medication-type-vs) does not match the URL (http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/pre-medication-type-vs). Use the special-url parameter if you really mean for it not to match
-INFORMATION: ValueSet/pre-medication-type-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
+INFORMATION: ValueSet/pre-medication-type-vs: ValueSet.compose.include[0].concept[0]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/pre-medication-type|0.1.0
 WARNING: ValueSet/pre-medication-type-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-pre-medication-type-vs: URL Mismatch http://example.org/fhir/ValueSet/pre-medication-type-vs vs http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/pre-medication-type-vs
 == fsh-generated/resources/ValueSet-reference-genome-build-vs.json ==
 ERROR: ValueSet.where(url = 'http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/reference-genome-build-vs'): Conformance resource /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-reference-genome-build-vs.json - the canonical URL (http://example.org/fhir/ValueSet/reference-genome-build-vs) does not match the URL (http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/reference-genome-build-vs). Use the special-url parameter if you really mean for it not to match
-INFORMATION: ValueSet/reference-genome-build-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
+INFORMATION: ValueSet/reference-genome-build-vs: ValueSet.compose.include[0].concept[0]: Reference to draft CodeSystem http://example.org/fhir/CodeSystem/reference-genome-build|0.1.0
+INFORMATION: ValueSet/reference-genome-build-vs: ValueSet.compose.include[0].concept[1]: Reference to draft CodeSystem http://example.org/fhir/CodeSystem/reference-genome-build|0.1.0
 WARNING: ValueSet/reference-genome-build-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-reference-genome-build-vs: URL Mismatch http://example.org/fhir/ValueSet/reference-genome-build-vs vs http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/reference-genome-build-vs
 == fsh-generated/resources/ValueSet-transplant-type-vs.json ==
 ERROR: ValueSet.where(url = 'http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/transplant-type-vs'): Conformance resource /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-transplant-type-vs.json - the canonical URL (http://example.org/fhir/ValueSet/transplant-type-vs) does not match the URL (http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/transplant-type-vs). Use the special-url parameter if you really mean for it not to match
-INFORMATION: ValueSet/transplant-type-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
+INFORMATION: ValueSet/transplant-type-vs: ValueSet.compose.include[0].concept[0]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/transplant-type|0.1.0
+INFORMATION: ValueSet/transplant-type-vs: ValueSet.compose.include[0].concept[1]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/transplant-type|0.1.0
+INFORMATION: ValueSet/transplant-type-vs: ValueSet.compose.include[0].concept[2]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/transplant-type|0.1.0
 WARNING: ValueSet/transplant-type-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-transplant-type-vs: URL Mismatch http://example.org/fhir/ValueSet/transplant-type-vs vs http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/transplant-type-vs
 == fsh-generated/resources/ValueSet-visit-type-vs.json ==
 ERROR: ValueSet.where(url = 'http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/visit-type-vs'): Conformance resource /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-visit-type-vs.json - the canonical URL (http://example.org/fhir/ValueSet/visit-type-vs) does not match the URL (http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/visit-type-vs). Use the special-url parameter if you really mean for it not to match
-INFORMATION: ValueSet/visit-type-vs: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because there is no terminology server
+INFORMATION: ValueSet/visit-type-vs: ValueSet.compose.include[0].concept[0]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/visit-type|0.1.0
+INFORMATION: ValueSet/visit-type-vs: ValueSet.compose.include[0].concept[1]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/visit-type|0.1.0
+INFORMATION: ValueSet/visit-type-vs: ValueSet.compose.include[0].concept[2]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/visit-type|0.1.0
+INFORMATION: ValueSet/visit-type-vs: ValueSet.compose.include[0].concept[3]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/visit-type|0.1.0
+INFORMATION: ValueSet/visit-type-vs: ValueSet.compose.include[0].concept[4]: Reference to experimental CodeSystem http://example.org/fhir/CodeSystem/visit-type|0.1.0
 WARNING: ValueSet/visit-type-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: /Users/lilika/Documents/hl7/pc/donor-ig/fsh-generated/resources/ValueSet-visit-type-vs: URL Mismatch http://example.org/fhir/ValueSet/visit-type-vs vs http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/visit-type-vs

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/methylomic-study-beta-value | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:MethylomicStudyBetaValue |
+| Draft as of 2025-12-10 | *Computable Name*:MethylomicStudyBetaValue |
 
 Beta value representing methylation level.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-methylomic-study-bet
   "name" : "MethylomicStudyBetaValue",
   "title" : "Beta value",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

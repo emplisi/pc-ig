@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/bio-sample-methylomic-study-ref | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:BioSampleMethylomicStudyRef |
+| Draft as of 2025-12-10 | *Computable Name*:BioSampleMethylomicStudyRef |
 
 methylomic_study_id – reference to methylomic study linked to this sample.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-bio-sample-methylomi
   "name" : "BioSampleMethylomicStudyRef",
   "title" : "Methylomic Study ID Relationship",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

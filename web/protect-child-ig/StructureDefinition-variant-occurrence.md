@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:VariantOccurrence |
+| Draft as of 2025-12-10 | *Computable Name*:VariantOccurrence |
 
  
 Variant occurrence information within a target region. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-variant-occurrence.c
   "name" : "VariantOccurrence",
   "title" : "Variant Occurrence",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

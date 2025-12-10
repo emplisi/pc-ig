@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:Visit |
+| Draft as of 2025-12-10 | *Computable Name*:Visit |
 
  
 Encounter profile representing a visit in the transplant follow-up schedule, aligned with the visit table. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-visit.csv), [Excel](
   "name" : "Visit",
   "title" : "Visit",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

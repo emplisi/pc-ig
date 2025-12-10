@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/patient-allograft-hla-class-ii | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:PatientAllograftHLAClassII |
+| Draft as of 2025-12-10 | *Computable Name*:PatientAllograftHLAClassII |
 
 Recipient’s HLA Class II loci relevant for the transplant (HLA-DR, HLA-DP, HLA-DQ).
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-patient-allograft-hl
   "name" : "PatientAllograftHLAClassII",
   "title" : "Patient allograft HLA Class II",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

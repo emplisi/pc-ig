@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-parvovirus-b19-dna-igm | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:MicrobiologyParvoB19IgM |
+| Draft as of 2025-12-10 | *Computable Name*:MicrobiologyParvoB19IgM |
 
 parvovirus_b19_dna_igm – presence of IgM antibodies to parvovirus B19; false=Negative, true=Positive.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-microbiology-parvovi
   "name" : "MicrobiologyParvoB19IgM",
   "title" : "Parvovirus B19 serology IgM",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

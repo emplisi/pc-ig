@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-instrumental-investigation-result-vs | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:PatientInstrumentalInvestigationResultVS |
+| Draft as of 2025-12-10 | *Computable Name*:PatientInstrumentalInvestigationResultVS |
 
  
 Allowed results for the instrumental investigation test (Normal, Abnormal). 
@@ -50,7 +50,7 @@ Allowed results for the instrumental investigation test (Normal, Abnormal).
   "name" : "PatientInstrumentalInvestigationResultVS",
   "title" : "Patient Instrumental Investigation Result ValueSet",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

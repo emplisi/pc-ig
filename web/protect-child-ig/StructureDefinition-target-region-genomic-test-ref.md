@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/target-region-genomic-test-ref | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:TargetRegionGenomicTestRef |
+| Draft as of 2025-12-10 | *Computable Name*:TargetRegionGenomicTestRef |
 
 Reference to the genomic test (platform) containing this target region.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-target-region-genomi
   "name" : "TargetRegionGenomicTestRef",
   "title" : "Genomic test ID relationship",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

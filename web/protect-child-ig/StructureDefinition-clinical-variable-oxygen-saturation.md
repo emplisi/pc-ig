@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-oxygen-saturation | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:ClinicalVariableOxygenSaturation |
+| Draft as of 2025-12-10 | *Computable Name*:ClinicalVariableOxygenSaturation |
 
 Oxygen saturation at rest, in percent.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-clinical-variable-ox
   "name" : "ClinicalVariableOxygenSaturation",
   "title" : "Oxygen saturation",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

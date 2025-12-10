@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/visit-immunosuppressive-induction-ref | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:VisitImmunosuppressiveInductionRef |
+| Draft as of 2025-12-10 | *Computable Name*:VisitImmunosuppressiveInductionRef |
 
 Reference to immunosuppressive induction treatment associated with this visit (imm_ind_pat_id).
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-visit-immunosuppress
   "name" : "VisitImmunosuppressiveInductionRef",
   "title" : "Immunosuppressive induction ID relationship",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

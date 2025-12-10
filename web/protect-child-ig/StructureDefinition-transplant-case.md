@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/transplant-case | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:TransplantCase |
+| Draft as of 2025-12-10 | *Computable Name*:TransplantCase |
 
  
 High-level logical model summarising a pediatric transplant case in PROTECT-CHILD. 
@@ -31,7 +31,7 @@ The **TransplantCase** logical model provides a high-level, implementation-neutr
 
 **Example scenario**
 
-A child with a rare metabolic liver disease is referred to one of the TransplantChild ERN centres and enrolled in the PROTECT-CHILD cohort. The recipient is represented using the [`PatientTransplant`](StructureDefinition-patient-transplant.md) profile, and the donor as a [`Donor`](StructureDefinition-donor.md). The transplant admission itself is captured as a [`Transplant`](StructureDefinition-transplant.md) encounter linking recipient and donor, with the transplant centre and organ type recorded in a structured way.
+A child with a rare metabolic liver disease is referred to one of the TransplantChild ERN centres and enrolled in the PROTECT-CHILD cohort. The recipient is represented using the [`Transplant Recipient`](StructureDefinition-patient-transplant.md) profile, and the donor as a [`Donor`](StructureDefinition-donor.md). The transplant admission itself is captured as a [`Transplant`](StructureDefinition-transplant.md) encounter linking recipient and donor, with the transplant centre and organ type recorded in a structured way.
 
 In the months after surgery, each follow-up visit at the participating hospitals is recorded as a [`Visit`](StructureDefinition-visit.md), with routine laboratory monitoring ([`LabResult`](StructureDefinition-lab-result-observation.md) and [`LabReport`](StructureDefinition-lab-report.md)), infection work-up ([`Microbiology`](StructureDefinition-microbiology.md) observations grouped where appropriate in [`LabReport`](StructureDefinition-lab-report.md)), and instrumental investigations through [`PatientInstrumentalInvestigation`](StructureDefinition-patient-instrumental-investigation.md). Induction and maintenance immunosuppression are captured using [`PreMedication`](StructureDefinition-pre-medication.md), [`ImmunosuppressiveInductionPatient`](StructureDefinition-immunosuppressive-induction-patient.md), [`ImmunosuppressiveMaintenancePatient`](StructureDefinition-immunosuppressive-maintenance-patient.md), and the [`Immunosuppressant`](StructureDefinition-immunosuppressant.md) catalog.
 
@@ -39,7 +39,7 @@ Across the four pilot hospitals, biospecimens from these children (e.g. blood, l
 
 In particular:
 
-* **`recipient`** → [`PatientTransplant`](StructureDefinition-patient-transplant.md) (recipient patient)
+* **`recipient`** → [`Transplant Recipient`](StructureDefinition-patient-transplant.md) (recipient patient)
 * **`donor`** → [`Donor`](StructureDefinition-donor.md) (donor patient)
 * **`transplant`** → [`Transplant`](StructureDefinition-transplant.md) (Encounter) plus optional rejection-related [`PostEvent`](StructureDefinition-post-event.md) and [`Outcome`](StructureDefinition-outcome.md) resources
 * **`visits`** → follow-up [`Visit`](StructureDefinition-visit.md) (Encounter) profiles
@@ -78,7 +78,7 @@ Other representations of profile: [CSV](StructureDefinition-transplant-case.csv)
   "name" : "TransplantCase",
   "title" : "Transplant Case Logical Model",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

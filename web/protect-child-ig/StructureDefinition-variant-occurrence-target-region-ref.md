@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-occurrence-target-region-ref | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:VariantOccurrenceTargetRegionRef |
+| Draft as of 2025-12-10 | *Computable Name*:VariantOccurrenceTargetRegionRef |
 
 Reference to the target region (gene/region) for which the variant information is recorded.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-variant-occurrence-t
   "name" : "VariantOccurrenceTargetRegionRef",
   "title" : "Target region ID relationship",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

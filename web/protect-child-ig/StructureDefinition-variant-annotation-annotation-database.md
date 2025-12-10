@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/variant-annotation-annotation-database | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:VariantAnnotationAnnotationDatabase |
+| Draft as of 2025-12-10 | *Computable Name*:VariantAnnotationAnnotationDatabase |
 
 Database used for this variant annotation.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-variant-annotation-a
   "name" : "VariantAnnotationAnnotationDatabase",
   "title" : "Annotation database",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

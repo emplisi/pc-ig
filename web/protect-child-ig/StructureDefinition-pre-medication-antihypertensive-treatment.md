@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/pre-medication-antihypertensive-treatment | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:PreMedicationAntihypertensiveTreatment |
+| Draft as of 2025-12-10 | *Computable Name*:PreMedicationAntihypertensiveTreatment |
 
 antihypertensive_treatment – blood-pressure–lowering drug(s) used pre-transplant.
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-pre-medication-antih
   "name" : "PreMedicationAntihypertensiveTreatment",
   "title" : "Antihypertensive treatment",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

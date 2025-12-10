@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-temperature | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:ClinicalVariableTemperature |
+| Draft as of 2025-12-10 | *Computable Name*:ClinicalVariableTemperature |
 
 Body temperature in degrees Celsius.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-clinical-variable-te
   "name" : "ClinicalVariableTemperature",
   "title" : "Temperature",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

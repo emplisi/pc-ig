@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/microbiology-blood-bkv-dna | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:MicrobiologyBloodBKVDNA |
+| Draft as of 2025-12-10 | *Computable Name*:MicrobiologyBloodBKVDNA |
 
 blood_bkv_dna – detection of BK virus DNA in blood; false=Negative, true=Positive.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-microbiology-blood-b
   "name" : "MicrobiologyBloodBKVDNA",
   "title" : "Blood BKV-DNA",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

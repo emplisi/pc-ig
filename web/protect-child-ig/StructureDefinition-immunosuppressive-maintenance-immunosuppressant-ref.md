@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/immunosuppressive-maintenance-immunosuppressant-ref | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:ImmunosuppressiveMaintenanceImmunosuppressantRef |
+| Draft as of 2025-12-10 | *Computable Name*:ImmunosuppressiveMaintenanceImmunosuppressantRef |
 
 immunosuppressant_id – reference to the immunosuppressant drug used for maintenance.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-immunosuppressive-ma
   "name" : "ImmunosuppressiveMaintenanceImmunosuppressantRef",
   "title" : "Immunosuppressant ID relationship",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

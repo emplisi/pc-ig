@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-hla-antibody-class | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:MarkerImmuneFunctionHlaAntibodyClass |
+| Draft as of 2025-12-10 | *Computable Name*:MarkerImmuneFunctionHlaAntibodyClass |
 
 Class or locus of the HLA antibody being recorded.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-marker-immune-functi
   "name" : "MarkerImmuneFunctionHlaAntibodyClass",
   "title" : "HLA antibody class or locus",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

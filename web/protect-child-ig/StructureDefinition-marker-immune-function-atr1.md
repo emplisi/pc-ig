@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/marker-immune-function-atr1 | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:MarkerImmuneFunctionAtr1 |
+| Draft as of 2025-12-10 | *Computable Name*:MarkerImmuneFunctionAtr1 |
 
 Angiotensin II type-1 receptor (AT1R) antibody result.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-marker-immune-functi
   "name" : "MarkerImmuneFunctionAtr1",
   "title" : "AT1R antibody result",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/lab-result-labtest-ref | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:LabResultLabTestRef |
+| Draft as of 2025-12-10 | *Computable Name*:LabResultLabTestRef |
 
 lab_test_id – reference to the lab test definition (LabTest catalog row) associated with this lab result.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-lab-result-labtest-r
   "name" : "LabResultLabTestRef",
   "title" : "Lab test reference",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

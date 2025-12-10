@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/ImplementationGuide/pc.ig | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:PROTECTChildTransplantIG |
+| Draft as of 2025-12-10 | *Computable Name*:PROTECTChildTransplantIG |
 
 # PROTECT-CHILD Transplant Data Implementation Guide (DRAFT)
 
@@ -60,7 +60,7 @@ At the centre is the **TransplantCase logical model**, which links:
   "name" : "PROTECTChildTransplantIG",
   "title" : "PROTECT-CHILD Pediatric Transplant Data Implementation Guide",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

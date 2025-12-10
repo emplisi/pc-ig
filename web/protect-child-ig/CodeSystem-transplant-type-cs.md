@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/CodeSystem/transplant-type | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:TransplantTypeCS |
+| Draft as of 2025-12-10 | *Computable Name*:TransplantTypeCS |
 
  
 Type of solid-organ transplant (liver, kidney, combined liver-kidney). 
@@ -32,7 +32,7 @@ Type of solid-organ transplant (liver, kidney, combined liver-kidney).
   "title" : "Transplant Type CodeSystem",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

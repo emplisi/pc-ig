@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://example.org/fhir/ImplementationGuide/donor-ig/StructureDefinition/clinical-variable-date | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:ClinicalVariableDate |
+| Draft as of 2025-12-10 | *Computable Name*:ClinicalVariableDate |
 
 Date when vital signs were measured.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-clinical-variable-da
   "name" : "ClinicalVariableDate",
   "title" : "Date",
   "status" : "draft",
-  "date" : "2025-12-09T16:44:49+01:00",
+  "date" : "2025-12-10T09:07:26+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {
