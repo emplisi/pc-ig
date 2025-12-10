@@ -32,7 +32,7 @@ Rh factor of the transplant recipient (maps from OMOP Positive/Negative).
   "title" : "Patient Rh Factor CodeSystem",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-12-10T09:07:26+01:00",
+  "date" : "2025-12-10T13:58:21+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

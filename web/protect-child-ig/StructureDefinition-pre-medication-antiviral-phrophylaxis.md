@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-pre-medication-antiv
   "name" : "PreMedicationAntiviralPhrophylaxis",
   "title" : "Antiviral prophylaxis pre-medication",
   "status" : "draft",
-  "date" : "2025-12-10T09:07:26+01:00",
+  "date" : "2025-12-10T13:58:21+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

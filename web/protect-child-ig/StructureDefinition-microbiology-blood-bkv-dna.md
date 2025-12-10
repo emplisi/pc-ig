@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-microbiology-blood-b
   "name" : "MicrobiologyBloodBKVDNA",
   "title" : "Blood BKV-DNA",
   "status" : "draft",
-  "date" : "2025-12-10T09:07:26+01:00",
+  "date" : "2025-12-10T13:58:21+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

@@ -32,7 +32,7 @@ Tissue types for biological samples (from the bio_sample table).
   "title" : "BioSample Tissue Type CodeSystem",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-12-10T09:07:26+01:00",
+  "date" : "2025-12-10T13:58:21+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

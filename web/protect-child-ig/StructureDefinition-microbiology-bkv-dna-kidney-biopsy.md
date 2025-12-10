@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-microbiology-bkv-dna
   "name" : "MicrobiologyBKVDNAKidneyBiopsy",
   "title" : "BKV-DNA on kidney biopsy",
   "status" : "draft",
-  "date" : "2025-12-10T09:07:26+01:00",
+  "date" : "2025-12-10T13:58:21+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

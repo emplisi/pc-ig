@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-patient-renal-diseas
   "name" : "PatientRenalDiseaseExtra",
   "title" : "Renal disease diagnosis (free text)",
   "status" : "draft",
-  "date" : "2025-12-10T09:07:26+01:00",
+  "date" : "2025-12-10T13:58:21+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

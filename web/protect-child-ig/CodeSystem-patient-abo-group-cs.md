@@ -32,7 +32,7 @@ ABO blood groups for transplant recipients (maps from OMOP A/B/AB/0).
   "title" : "Patient ABO Group CodeSystem",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-12-10T09:07:26+01:00",
+  "date" : "2025-12-10T13:58:21+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {

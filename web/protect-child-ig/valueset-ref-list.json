@@ -24,8 +24,8 @@
       "systems" : ["http://example.org/fhir/CodeSystem/biosample-tissue-type"],
       "uses" : {
       },
-      "StructureDefinition-biosample.html" : "Biological Sample",
-      "StructureDefinition-epigenome-study-sample-type.html" : "Sample type"
+      "StructureDefinition-epigenome-study-sample-type.html" : "Sample type",
+      "StructureDefinition-biosample.html" : "Biological Sample"
     },
     {
       "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/donor-liver-type-vs",
@@ -115,8 +115,8 @@
       "systems" : ["http://example.org/fhir/CodeSystem/patient-abo-group"],
       "uses" : {
       },
-      "StructureDefinition-donor-abo-group.html" : "Donor ABO group",
-      "StructureDefinition-patient-abo-group.html" : "Patient ABO group"
+      "StructureDefinition-patient-abo-group.html" : "Patient ABO group",
+      "StructureDefinition-donor-abo-group.html" : "Donor ABO group"
     },
     {
       "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-hla-class-i-vs",
@@ -128,8 +128,8 @@
       "systems" : ["http://example.org/fhir/CodeSystem/patient-hla-class-i"],
       "uses" : {
       },
-      "StructureDefinition-patient-allograft-hla-class-i.html" : "Patient allograft HLA Class I",
-      "StructureDefinition-donor-allograft-hla-class-i.html" : "Donor allograft HLA Class I loci"
+      "StructureDefinition-donor-allograft-hla-class-i.html" : "Donor allograft HLA Class I loci",
+      "StructureDefinition-patient-allograft-hla-class-i.html" : "Patient allograft HLA Class I"
     },
     {
       "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/patient-hla-class-ii-vs",
@@ -168,8 +168,8 @@
       "systems" : ["http://example.org/fhir/CodeSystem/patient-rh-factor"],
       "uses" : {
       },
-      "StructureDefinition-patient-rh-factor.html" : "Patient Rh factor",
-      "StructureDefinition-donor-rh-factor.html" : "Donor Rh factor"
+      "StructureDefinition-donor-rh-factor.html" : "Donor Rh factor",
+      "StructureDefinition-patient-rh-factor.html" : "Patient Rh factor"
     },
     {
       "url" : "http://example.org/fhir/ImplementationGuide/donor-ig/ValueSet/pre-medication-antihypertensive-drug-vs",

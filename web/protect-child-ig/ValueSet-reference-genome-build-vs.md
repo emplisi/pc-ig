@@ -50,7 +50,7 @@ Allowed reference genome build names (GRCh38, GRCh37).
   "name" : "ReferenceGenomeBuildVS",
   "title" : "Reference Genome Build ValueSet",
   "status" : "draft",
-  "date" : "2025-12-10T09:07:26+01:00",
+  "date" : "2025-12-10T13:58:21+01:00",
   "publisher" : "Your Organization",
   "contact" : [
     {
